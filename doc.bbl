@@ -1,0 +1,41 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 2.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{ATLAS-CONF-2016-103}{article}{}
+  \field{sortinit}{S}
+  \field{number}{ATLAS-CONF-2016-103}
+  \field{title}{{Search for long-lived neutral particles decaying in the
+  hadronic calorimeter of ATLAS at $\sqrt{s} = 13~\mathrm{TeV}$ in
+  $3.2~\mathrm{fb^{-1}}$ of data}}
+  \verb{url}
+  \verb http://cds.cern.ch/record/2219571
+  \endverb
+  \list{location}{1}{%
+    {Geneva}%
+  }
+  \list{institution}{1}{%
+    {CERN}%
+  }
+  \field{year}{2016}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

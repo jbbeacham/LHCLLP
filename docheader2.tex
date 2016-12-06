@@ -1,0 +1,49 @@
+%embiggening figures: still a work in progress. 
+%\geometry{
+%	left=24.8mm, % left margin
+%	textwidth=120mm, % main text block
+%	marginparsep=5.2mm, % gutter between main text block and margin notes
+%	marginparwidth=39.4mm % width of margin notes
+%}
+
+\usepackage{etex}
+\reserveinserts{20}
+%,backref=true,maxcitenames=3,maxbibnames=3,
+
+\usepackage[hyperref=true,url=false,backend=bibtex,style=numeric,backref=false,firstinits=true,doi=false,eprint=true,language=USenglish]{biblatex}
+% from http://tex.stackexchange.com/questions/176965/biblatex-sentence-case-and-math-mode-not-working-together
+\DeclareFieldFormat{sentencecase}{\MakeSentenceCase{#1}}
+\renewbibmacro*{title}{%
+  \ifthenelse{\iffieldundef{title}\AND\iffieldundef{subtitle}}
+    {}
+    {\ifthenelse{\ifentrytype{article}\OR\ifentrytype{inbook}\OR\ifentrytype{report}%
+      \OR\ifentrytype{incollection}\OR\ifentrytype{inproceedings}%
+      \OR\ifentrytype{inreference}}
+      {\printtext[title]{%
+        \printfield[sentencecase]{title}%
+        \setunit{\subtitlepunct}%
+        \printfield[sentencecase]{subtitle}}}%
+      {\printtext[title]{%
+        \printfield[titlecase]{title}%
+        \setunit{\subtitlepunct}%
+        \printfield[titlecase]{subtitle}}}%
+     \newunit}%
+  \printfield{titleaddon}}
+% many of the following biblatex commands follow from examples by Ian Brock (ian.brock@cern.ch)
+\DeclareFieldFormat[article]{journaltitle}{#1\isdot}
+\DeclareFieldFormat[article]{journalsubtitle}{#1\isdot}
+\DeclareFieldFormat[article]{volume}{\textbf{#1}\isdot}
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{\emph{#1\isdot}}
+\errorcontextlines=100
+\renewcommand*{\newunitpunct}{\addcomma\space}
+\renewbibmacro{in:}{}
+\renewcommand{\bibpagespunct}{\space}
+\DefineBibliographyStrings{USenglish}{%
+  page = {},
+  pages = {}
+}
+\DefineBibliographyStrings{UKenglish}{%
+  page = {},
+  pages = {}
+}

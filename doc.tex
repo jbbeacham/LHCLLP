@@ -1,0 +1,77 @@
+\documentclass[a4paper,debug,notitlepage,nobib]{tufte-book}
+
+\input{docheader}
+
+\makeatletter
+\title{Long-lived particle searches at the ATLAS, CMS and LHCb \\ \smallskip \noindent experiments at the Large Hadron Collider at CERN}
+\author{LHC LLP Community}
+\date{\today}
+\usepackage{titling}
+
+% consistent symbols throughout document
+\input symbols.tex
+
+\input{docheader2}
+
+\addbibresource{doc.bib}
+
+\begin{document}
+
+%\morefloats
+\setcounter{secnumdepth}{3} % turn on section numbering, for now (3=subsubsection)
+
+\input{frontmatter.tex}
+
+\setcounter{tocdepth}{3}
+\tableofcontents
+ 
+\pagebreak
+
+\chapter{Introduction}
+\label{sec:Introduction}
+\input{tex/Introduction}
+
+\chapter{General motivations for LHC LLP searches}
+\label{subsec:motivation}
+\input{tex/Motivation}
+
+\chapter{Experimental signatures}
+\label{subsec:signatures}
+\input{tex/Signatures}
+
+\chapter{Recommendations for the presentation of search results}
+\label{app:recommendations}
+\input{tex/Recommendations}
+
+\chapter{Prospects for LLP searches in Runs 2 and 3 of the LHC and the HL-LHC}
+\label{sec:future} 
+\input{tex/Future}
+
+\chapter{Conclusions}
+\label{chapter:conclusions}
+\input{tex/Conclusions.tex}
+ 
+\input{tex/backmatter.tex}
+
+\appendix
+
+%\chapter{\texorpdfstring{Appendix: Table of cross sections for $t\bar{t}$+\MET searches}{Appendix: Table of cross sections for  ttbar+\MET searches}}
+%\label{app:TTBar_Xsecs}
+%\input{tex/TTBar_Xsecs_Appendix.tex}
+
+\chapter{Appendix: Explicit example of recommendations for search results}
+\label{app:ExampleRec_Appendix}
+\input{tex/ExampleRec_Appendix.tex}
+
+%\chapter{Bibliography}
+% \label{thebibliography}
+% \bibliographystyle{unsrtnat}
+% \bibliographystyle{dmf}
+%\bibliographystyle{hep}
+%\bibliographystyle{alpha}
+%\bibliographystyle{JHEP}
+%\bibliography{doc}
+%\addbibresource{doc.bib}
+\printbibliography
+
+\end{document}
