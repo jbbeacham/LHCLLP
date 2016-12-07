@@ -1,14 +1,67 @@
-Breaking down the possible LLP discovery methods at the LHC by detector signature.
+Breaking down the possible LLP discovery methods at the LHC by detector signature. See partially worked example below.
 
-\section{Signature One}
+\section{Displaced Jets}
+
 
 \subsection{Theoretical motivations}
 
+Many models give rise to predominantly (or exclusively) hadronic decays of long-lived particles. This can include:
+
+\begin{enumerate}
+
+\item Particles that decay via mixing with the SM Higgs boson. In this case, the LLP decays predominantly into $b\bar{b}$ pairs for $m_{\rm LLP}> 2m_b$. Given that LLP signatures could have very small signal cross sections, it is important to recover the most common decay modes to maximize discovery potential. In many of these models, the LLP is itself produced in Higgs decays, motivating searches for relatively low-mass/soft objects.
+
+\item Models of supersymmetry and many other solutions to the hierarchy problem feature top partner particles. LLPs can either be the top partners themselves or decay through processes mediated by the top partner. In either case, one expects to find final states rich in jets that may originate from the LLP. Exclusively hadronic final states are also expected in scenarios with baryon-number violation (such as baryonic $R$-parity violation), in which case the LLP decays into multiple jets.
+
+\item \ldots
+
+\end{enumerate}
+
 \subsection{Existing searches and limits}
+
+\begin{enumerate}
+
+\item {\bf CMS Displaced Jets:}~A search for a single LLP decaying to two jets in the inner detector. Tracks from the vertex are associated with the jets and jets with several prompt tracks are vetoed to reduce backgrounds. Search is sensitive to LLP decays to $2j+X$, since the dijet system is not required to point in the same direction as the secondary vertex. Search relies on an $H_{\rm T}$ trigger and has relatively high thresholds for the jets ($p_{\rm T}>60$ GeV) and so the search requires high-mass LLPs \cite{CMS:2014wda}.
+
+\item {\bf ATLAS Displaced Jets:}~Several searches for a pair of LLPs decaying to two jets each. The search is sensitive to combinations of LLP decays in the muon spectrometer and/or inner detector. Decays in the MS are triggered using a dedicated Muon ROI Cluster trigger, which allows relatively low-momentum events to be recorded, whereas events that fail this trigger can be recorded with a jet + $\slashed{E}_{\rm T}$ trigger that necessarily requires more energetic objects. Signals covered by the jet + $\slashed{E}_{\rm T}$ trigger can be probed from lifetimes of cm-m scale, while signals relying on the Muon ROI trigger can only be probed if their lifetimes are sufficiently long to reach the MS \cite{Aad:2015uaa}.
+
+\item {\bf ATLAS HCAL Search:}~A search for pairs of LLP decaying inside of the HCAL. Signal events are identified by narrow depositions of energy in the HCAL without associated ECAL depositions. A dedicated CalRatio trigger is used for the analysis, which allows for events to be recorded below usual jet thresholds. The analysis is most sensitive to signals with lifetimes that match the HCAL geometry \cite{Aad:2015asa}.
+
+\item \ldots
+
+\end{enumerate}
 
 \subsection{Known gaps in coverage}
 
+\begin{enumerate}
+
+\item {\bf Low-Mass LLPs:}~LLPs with relatively low masses (which can, for instance, be produced in exotic Higgs decay modes) give rise to relatively soft displaced signatures. Such signals would be missed in searches with high trigger and reconstruction thresholds, such as the CMS Displaced Jets search and the jet + $\slashed{E}_{\rm T}$-based search in the ATLAS Displaced Jets analysis. By contrast, the ATLAS searches for decays to displaced jets in the HCAL and MS are sensitive to softer objects, but are only valid in a particular range of lifetimes. For example, for LLPs with very long lifetimes, it would be rare to have two decays inside of either the HCAL or MS per event, and such particles could be missed.
+
+\item {\bf Singly produced LLPs:}~The ATLAS displaced jet searches typically require pairs of displaced vertices, and therefore would not have sensitivity to models with a single displaced object (whether because only one LLP is produced at a time, or the other LLPs escape the detector). The CMS search is sensitive to a single displaced vertex, but requires quite large momentum objects and would therefore not be sensitive to softer LLP decays. Additionally, if the hadrons from LLP decay are merged into a single jet, the search would not be sensitive because of the requirement of two jets.
+
+\item {\bf Boosted LLPs:}~Some searches require strict isolation requirements, such as the vertex reconstruction in the MS (to reduce punch-through backgrounds) or the search for LLP decays in the HCAL. This could be a problem for models with high multiplicities of particles produced at the primary vertex, which result in failed isolation criteria.
+
+\item {\bf Very short lifetimes:}~Searches in the inner detector can require impact parameters as large as 1 cm to suppress heavy-flavor backgrounds, while searches in the MS and HCAL are clearly insensitive to very short lifetimes. For heavy LLPs with lifetimes comparable to $B$ mesons, the signal is swamped in heavy-flavor backgrounds and current searches are not sensitive.
+
+
+\item \ldots
+
+\end{enumerate}
+
 \subsection{Proposals to improve coverage and sensitivity of existing searches}
+
+\begin{enumerate}
+
+\item {\bf Low-Mass LLPs:}~A major challenge of reconstructing low-mass, hadronically decaying LLPs is the requirement of passing the trigger. This motivates using associated objects to pass the trigger that is unrelated to the LLP:~suggestions include Higgs associated production modes such as VBF and Higgs-strahlung, monojet + $\slashed{E}_{\rm T}$ triggers in dark sector models, single lepton, etc.
+
+\item {\bf Singly produced LLPs:}~A major benefit of searches of pairs of LLPs is that backgrounds can be greatly reduced. For models with singly produced LLPs, the LLPs typically arise in association with other objects. Tagging these objects (such as jets + $\slashed{E}_{\rm T}$, forward jets, leptons, or resonances) could be used to reduce backgrounds in lieu of requiring a second displaced LLP to recover some sensitivity to scenarios with only one DV.
+
+\item {\bf Very short lifetimes:}~Often, lifetime is inversely correlated with mass, and so very short lifetimes are associated with heavier LLPs. One possibility would be to use a large mass or other kinematic features to distinguish signal from $B$-meson DVs, recognizing the very significant challenge associated with such an analysis.
+
+
+\item \ldots
+
+\end{enumerate}
 
 
 \section{Signature Two}
