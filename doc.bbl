@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.5 $
+% $ biblatex version 2.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,6 +16,52 @@
   {}
 \endgroup
 
+\entry{ATLAS-CONF-2016-103}{article}{}
+  \field{number}{ATLAS-CONF-2016-103}
+  \field{title}{{Search for long-lived neutral particles decaying in the
+  hadronic calorimeter of ATLAS at $\sqrt{s} = 13~\mathrm{TeV}$ in
+  $3.2~\mathrm{fb^{-1}}$ of data}}
+  \verb{url}
+  \verb http://cds.cern.ch/record/2219571
+  \endverb
+  \list{location}{1}{%
+    {Geneva}%
+  }
+  \list{institution}{1}{%
+    {CERN}%
+  }
+  \field{year}{2016}
+  \warn{\item Invalid format of field 'month'}
+\endentry
+
+\entry{CMS:2014wda}{article}{}
+  \true{moreauthor}
+  \name{author}{1}{}{%
+    {{}%
+     {Khachatryan}{K.}%
+     {Vardan}{V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{KV+1}
+  \strng{fullhash}{KV+1}
+  \verb{doi}
+  \verb 10.1103/PhysRevD.91.012007
+  \endverb
+  \verb{eprint}
+  \verb 1411.6530
+  \endverb
+  \field{number}{1}
+  \field{pages}{012007}
+  \field{title}{{Search for Long-Lived Neutral Particles Decaying to
+  Quark-Antiquark Pairs in Proton-Proton Collisions at $\sqrt{s} =$ 8 TeV}}
+  \field{volume}{D91}
+  \field{journaltitle}{Phys. Rev.}
+  \field{eprinttype}{arXiv}
+  \field{eprintclass}{hep-ex}
+  \field{year}{2015}
+\endentry
+
 \entry{Aad:2015uaa}{article}{}
   \true{moreauthor}
   \name{author}{1}{}{%
@@ -27,7 +73,6 @@
   }
   \strng{namehash}{AG+1}
   \strng{fullhash}{AG+1}
-  \field{sortinit}{A}
   \field{booktitle}{{Proceedings, Meeting of the APS Division of Particles and
   Fields (DPF 2015): Ann Arbor, Michigan, USA, 4-8 Aug 2015}}
   \verb{doi}
@@ -59,7 +104,6 @@
   }
   \strng{namehash}{AG+1}
   \strng{fullhash}{AG+1}
-  \field{sortinit}{A}
   \verb{doi}
   \verb 10.1016/j.physletb.2015.02.015
   \endverb
@@ -74,54 +118,6 @@
   \field{eprinttype}{arXiv}
   \field{eprintclass}{hep-ex}
   \field{year}{2015}
-\endentry
-
-\entry{CMS:2014wda}{article}{}
-  \true{moreauthor}
-  \name{author}{1}{}{%
-    {{}%
-     {Khachatryan}{K.}%
-     {Vardan}{V.}%
-     {}{}%
-     {}{}}%
-  }
-  \strng{namehash}{KV+1}
-  \strng{fullhash}{KV+1}
-  \field{sortinit}{K}
-  \verb{doi}
-  \verb 10.1103/PhysRevD.91.012007
-  \endverb
-  \verb{eprint}
-  \verb 1411.6530
-  \endverb
-  \field{number}{1}
-  \field{pages}{012007}
-  \field{title}{{Search for Long-Lived Neutral Particles Decaying to
-  Quark-Antiquark Pairs in Proton-Proton Collisions at $\sqrt{s} =$ 8 TeV}}
-  \field{volume}{D91}
-  \field{journaltitle}{Phys. Rev.}
-  \field{eprinttype}{arXiv}
-  \field{eprintclass}{hep-ex}
-  \field{year}{2015}
-\endentry
-
-\entry{ATLAS-CONF-2016-103}{article}{}
-  \field{sortinit}{S}
-  \field{number}{ATLAS-CONF-2016-103}
-  \field{title}{{Search for long-lived neutral particles decaying in the
-  hadronic calorimeter of ATLAS at $\sqrt{s} = 13~\mathrm{TeV}$ in
-  $3.2~\mathrm{fb^{-1}}$ of data}}
-  \verb{url}
-  \verb http://cds.cern.ch/record/2219571
-  \endverb
-  \list{location}{1}{%
-    {Geneva}%
-  }
-  \list{institution}{1}{%
-    {CERN}%
-  }
-  \field{year}{2016}
-  \warn{\item Invalid format of field 'month'}
 \endentry
 
 \lossort
