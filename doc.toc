@@ -1,0 +1,160 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{7}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Theoretical Motivations \& Simplified Models}{9}{chapter.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}General Motivations From Theory}{9}{section.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Simplified Models for Long-Lived Particle Production}{9}{section.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}LLP Pair Production}{10}{subsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.1}SM Gauge Interactions}{10}{subsubsection.2.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.2}Resonant Production of Parent Particle}{10}{subsubsection.2.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.3}Non-Resonant Production of Parent Particle}{10}{subsubsection.2.2.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1.4}Parent Particle Pair Production}{10}{subsubsection.2.2.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}LLP Single Production}{11}{subsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2.1}Electroweak Associated Production}{11}{subsubsection.2.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2.2}Associated Production of Hidden-Sector States}{11}{subsubsection.2.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2.3}New Neutrino States}{11}{subsubsection.2.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2.4}Production in Rare Meson Decays}{11}{subsubsection.2.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Multiple Production of Long-Lived Particles}{11}{subsection.2.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3.1}Dark Shower}{12}{subsubsection.2.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3.2}Quirks}{12}{subsubsection.2.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Rare Meson Decays}{12}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Long-Lived Particle Decay Modes}{12}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Experimental Reconstruction of Long-Lived Particles}{13}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Using the LHC Detectors to Look for LLPs}{13}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Inner Detector Tracking}{13}{subsection.3.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Calorimetry}{14}{subsection.3.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Muon Spectrometer}{14}{subsection.3.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}RICH Detectors (LHCb)}{14}{subsection.3.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.5}Combinations of Main Detector Systems}{14}{subsection.3.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.5.1}Lepton ID Algorithms}{14}{subsubsection.3.1.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.5.2}Jets}{14}{subsubsection.3.1.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.5.3}Displaced lepton jets}{14}{subsubsection.3.1.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.5.4}Combination of LHCb subsystems}{15}{subsubsection.3.1.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.1.5.5}Other Combinations}{15}{subsubsection.3.1.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.6}Non-Presence of $pp$ Collisions}{15}{subsection.3.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Summary of Existing LLP Searches}{15}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Signatures and Searches for Long-Lived Particles}{17}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Decay of a Single LLP In Detector}{17}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Displaced Lepton Pair (tracker)}{17}{subsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Displaced lepton jet (tracker + muon system)}{17}{subsection.4.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}Displaced tau(s) (tracker)}{17}{subsection.4.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Displaced jet pair (tracker)}{17}{subsection.4.1.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.5}Displaced lepton + multi-tracks (tracker)}{18}{subsection.4.1.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.6}Displaced multi-tracks (tracker)}{18}{subsection.4.1.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.7}Displaced tracks (muon system)}{18}{subsection.4.1.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.8}Single slow, non-pointing photon (tracker)}{18}{subsection.4.1.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.9}Displaced, late calo hits (\emph {e.g.,} decay in calo, no tracks, CalRatio)}{18}{subsection.4.1.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.10}Out-of-time calo hit (\emph {e.g.,} stopped gluino)}{18}{subsection.4.1.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Decay of Two LLPs In Detector}{18}{section.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Two displaced jets (tracker)}{18}{subsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Two displaced jets (muon spectrometer)}{18}{subsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Two displaced multi-track vertices (tracker)}{18}{subsection.4.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}Two displaced lepton jets (tracker + muon spectrometer)}{18}{subsection.4.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.5}Two slow, non-pointing photons (decay before ECAL)}{18}{subsection.4.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.6}Two large impact-parameter leptons (tracker)}{18}{subsection.4.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.7}Two large impact-parameter taus (tracker)}{18}{subsection.4.2.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Decay of Multiple LLPs in Detector}{18}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Emerging Jet Topology}{18}{subsection.4.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Soft Unclustered Energy Patterns (SUEP}{19}{subsection.4.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Exotic Track Signatures}{19}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Heavy Stable Charged (Electric or Magnetic) Tracks}{19}{subsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Very Low Ionization Tracks}{19}{subsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.3}Quirky Tracks}{19}{subsection.4.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.4}Disappearing Tracks}{19}{subsection.4.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.5}Kinked Tracks}{19}{subsection.4.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.6}Heavy, Stable, Hadronized Particle Signatures}{19}{subsection.4.4.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.7}Tracks with Unusual Mass}{19}{subsection.4.4.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.8}Tracks With Unusual Time of Flight}{19}{subsection.4.4.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.9}Other ideas?}{19}{subsection.4.4.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Auxiliary Detectors}{19}{section.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}MOEDAL}{20}{subsection.4.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}MilliQan}{20}{subsection.4.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.3}MATHUSLA}{20}{subsection.4.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.4}ATLAS/CMS Beampipe Stuck Monopole Search}{20}{subsection.4.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Ideas and Challenges for Triggers in LLP Searches:\nobreakspace {}Now and in the Future}{21}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Summary of Gaps in Current Searches and New Signatures}{23}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Recommendations for the Presentation of Search Results}{25}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Conclusions}{27}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Acknowledgements}{29}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Appendix:\nobreakspace {}Summary of Backgrounds for LLP Searches}{31}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Appendix:\nobreakspace {}Planned Detector Upgrades}{33}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Appendix:\nobreakspace {}Explicit Example of Recommendations for Search Results}{35}{appendix.C}
+\contentsfinish 
