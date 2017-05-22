@@ -16,7 +16,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Decay Modes}{10}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}A Proposed Basis for Simplified Models}{11}{section.2.4}
+\contentsline {section}{\numberline {2.4}Our Simplified Models Proposals}{11}{section.2.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Neutral LLPs}{11}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
@@ -26,7 +26,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Conventions for the Simplified Models Library}{13}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Exceptions and Caveats to the Simplified Models}{13}{section.2.6}
+\contentsline {section}{\numberline {2.6}Limitations, Exceptions and Caveats to the Simplified Models}{13}{section.2.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Experimental Coverage \& Recommendations for New Searches}{15}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -74,7 +74,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Our Proposals for Presentation of Results}{19}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}The Next Frontier:\nobreakspace {}Dark Showers}{21}{chapter.6}
+\contentsline {chapter}{\numberline {6}The Next Frontiers:\nobreakspace {}Dark Showers and Quirky Signatures}{21}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Dark Showers}{21}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Quirks}{21}{section.6.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Conclusions}{23}{chapter.7}
 \defcounter {refsection}{0}\relax 
