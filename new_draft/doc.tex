@@ -1,0 +1,93 @@
+\documentclass[a4paper,debug,notitlepage,nobib]{tufte-book}
+%\documentclass[a4paper,debug,notitlepage,nobib]{article}
+\input{docheader}
+
+\makeatletter
+\title{Long-lived particle searches at the ATLAS, CMS and LHCb \\ \smallskip \noindent experiments at the Large Hadron Collider at CERN}
+\author{LHC LLP Community}
+\date{\today}
+\usepackage{titling}
+\usepackage{notoccite}
+
+% consistent symbols throughout document
+\input symbols.tex
+
+\input{docheader2}
+
+\addbibresource{doc.bib}
+
+\begin{document}
+
+%\morefloats
+\setcounter{secnumdepth}{3} % turn on section numbering, for now (3=subsubsection)
+
+\input{frontmatter.tex}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+ 
+%\pagebreak
+
+\chapter{Introduction}
+\label{sec:Introduction}
+\input{tex/Introduction}
+
+\chapter{Simplified Model Framework}
+\label{sec:simplifiedmodel}
+\input{tex/SimplifiedModel}
+
+\chapter{Experimental Coverage \& Recommendations for New Searches}
+\label{sec:experimentcoverage}
+\input{tex/ExperimentCoverage}
+
+\chapter{Trigger and Detector Upgrades}
+\label{sec:triggers}
+\input{tex/triggers}
+
+\chapter{Recommendations for the Presentation of Search Results}
+\label{sec:recommendations}
+\input{tex/Recommendations}
+
+\chapter{The Next Frontier:~Dark Showers}
+\label{sec:showers}
+\input{tex/Showers}
+
+
+\chapter{Conclusions}
+\label{sec:conclusions}
+\input{tex/Conclusions.tex}
+ 
+
+\appendix
+
+
+
+
+\chapter{Appendix:~Summary of Backgrounds for LLP Searches}
+\label{sec:backgrounds}
+\input{tex/backgrounds.tex}
+
+\chapter{Appendix:~Overview of Current Experimental Searches}
+\label{sec:experimental_searches}
+\input{tex/experimental_searches.tex}
+
+%\chapter{Appendix:~Planned Detector Upgrades}
+%\label{app:Upgrade_Appendix}
+%\input{tex/Upgrade_Appendix.tex}
+
+%\chapter{Appendix:~Explicit Example of Recommendations for Search Results}
+%\label{app:ExampleRec_Appendix}
+%\input{tex/ExampleRec_Appendix.tex}
+
+%\chapter{Bibliography}
+% \label{thebibliography}
+%\bibliographystyle{unsrt}
+% \bibliographystyle{dmf}
+%\bibliographystyle{hep}
+%\bibliographystyle{alpha}
+%\bibliographystyle{JHEP}
+%\bibliography{doc}
+%\addbibresource{doc.bib}
+\printbibliography
+
+\end{document}
