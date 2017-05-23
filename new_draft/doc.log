@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2017 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAY 2017 20:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1454,33 +1454,33 @@ Package hyperref Info: Anchor `Item.11' on input line 25.
 
 LaTeX Warning: Marginpar on page 8 moved.
 
-Package hyperref Info: Anchor `section.2.2' on input line 28.
-Package hyperref Info: bookmark on input line 28:
+Package hyperref Info: Anchor `section.2.2' on input line 31.
+Package hyperref Info: bookmark on input line 31:
 (hyperref)             thecounter {2.2}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Existing Well-Motivated
  Theories for LLPs}
 (hyperref)             reference {section.2.2}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-LaTeX Font Info:    Try loading font information for TS1+pplj on input line 32.
+LaTeX Font Info:    Try loading font information for TS1+pplj on input line 35.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )
-Package hyperref Info: Anchor `page.8' on input line 34.
+Package hyperref Info: Anchor `page.8' on input line 37.
  [8
 Package `hyperref' Info: End of reference (link) `chapter.3', line 10.
 ]
-Package hyperref Info: Anchor `section.2.3' on input line 42.
-Package hyperref Info: bookmark on input line 42:
+Package hyperref Info: Anchor `section.2.3' on input line 45.
+Package hyperref Info: bookmark on input line 45:
 (hyperref)             thecounter {2.3}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi The Simplified Model Bu
 ilding Blocks}
 (hyperref)             reference {section.2.3}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsection.2.3.1' on input line 46.
-Package hyperref Info: bookmark on input line 46:
+Package hyperref Info: Anchor `subsection.2.3.1' on input line 49.
+Package hyperref Info: bookmark on input line 49:
 (hyperref)             thecounter {2.3.1}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Production Modes}
 (hyperref)             reference {subsection.2.3.1}
@@ -1493,34 +1493,27 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.9' on input line 53.
+Package hyperref Info: Anchor `page.9' on input line 54.
 [9]
 
 LaTeX Warning: Marginpar on page 10 moved.
 
-Package hyperref Info: Anchor `subsection.2.3.2' on input line 58.
-Package hyperref Info: bookmark on input line 58:
+Package hyperref Info: Anchor `subsection.2.3.2' on input line 61.
+Package hyperref Info: bookmark on input line 61:
 (hyperref)             thecounter {2.3.2}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Decay Modes}
 (hyperref)             reference {subsection.2.3.2}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `page.10' on input line 66.
+Package hyperref Info: Anchor `page.10' on input line 65.
 [10]
-Package hyperref Info: Anchor `section.2.4' on input line 74.
-Package hyperref Info: bookmark on input line 74:
+Package hyperref Info: Anchor `section.2.4' on input line 77.
+Package hyperref Info: bookmark on input line 77:
 (hyperref)             thecounter {2.4}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Our Simplified Models P
 roposals}
 (hyperref)             reference {section.2.4}
 (hyperref)             toclevel {1}
-(hyperref)             type {toc}.
-Package hyperref Info: Anchor `subsection.2.4.1' on input line 80.
-Package hyperref Info: bookmark on input line 80:
-(hyperref)             thecounter {2.4.1}
-(hyperref)             text {\ifttl@toclabel \ttl@a \fi Neutral LLPs}
-(hyperref)             reference {subsection.2.4.1}
-(hyperref)             toclevel {2}
 (hyperref)             type {toc}.
 
 
@@ -1529,37 +1522,42 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.11' on input line 85.
+Package hyperref Info: Anchor `page.11' on input line 82.
 [11]
-Overfull \hbox (30.71407pt too wide) in paragraph at lines 85--86
+Package hyperref Info: Anchor `subsection.2.4.1' on input line 83.
+Package hyperref Info: bookmark on input line 83:
+(hyperref)             thecounter {2.4.1}
+(hyperref)             text {\ifttl@toclabel \ttl@a \fi Neutral LLPs}
+(hyperref)             reference {subsection.2.4.1}
+(hyperref)             toclevel {2}
+(hyperref)             type {toc}.
+
+Overfull \hbox (30.71407pt too wide) in paragraph at lines 89--90
 []\T1/pplj/m/n/10 In each en-try of the ta-ble, we in-di-cate where a par-tic-u
 -lar $\OT1/zplm/m/n/10 ([]) \OMS/zplm/m/n/10 ^^B 
  []
 
 
-Overfull \hbox (164.7743pt too wide) in paragraph at lines 88--115
+Overfull \hbox (164.7743pt too wide) in paragraph at lines 92--119
  [] 
  []
 
-Package hyperref Info: Anchor `subsection.2.4.2' on input line 117.
+Package hyperref Info: Anchor `subsection.2.4.2' on input line 121.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 117.
+(Font)              scaled to size 11.40997pt on input line 121.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 117.
-Package hyperref Info: bookmark on input line 117:
+(Font)              scaled to size 11.40997pt on input line 121.
+Package hyperref Info: bookmark on input line 121:
 (hyperref)             thecounter {2.4.2}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Electrically Charged LL
 Ps:~$|Q|=1$}
 (hyperref)             reference {subsection.2.4.2}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-Package hyperref Info: Anchor `page.12' on input line 142.
- [12]
-Package hyperref Info: Anchor `subsection.2.4.3' on input line 144.
-Package hyperref Info: bookmark on input line 144:
+Package hyperref Info: Anchor `page.12' on input line 124.
+[12]
+Package hyperref Info: Anchor `subsection.2.4.3' on input line 148.
+Package hyperref Info: bookmark on input line 148:
 (hyperref)             thecounter {2.4.3}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi LLPs with Color Charge}
 
@@ -1567,27 +1565,35 @@ Package hyperref Info: bookmark on input line 144:
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
 
-Overfull \hbox (10.00537pt too wide) in paragraph at lines 149--150
+Overfull \hbox (10.00537pt too wide) in paragraph at lines 153--154
 []\T1/pplj/m/n/10 A com-pli-ca-tion of the QCD-charged LLP is that the LLP hadr
 onizes 
  []
 
-Package hyperref Info: Anchor `section.2.5' on input line 162.
-Package hyperref Info: bookmark on input line 162:
+Package hyperref Info: Anchor `section.2.5' on input line 166.
+Package hyperref Info: bookmark on input line 166:
 (hyperref)             thecounter {2.5}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Conventions for the Sim
 plified Models Library}
 (hyperref)             reference {section.2.5}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `section.2.6' on input line 165.
 
-Overfull \hbox (13.44751pt too wide) in paragraph at lines 165--165
+Package Fancyhdr Warning: \headheight is too small (14.0pt): 
+ Make it at least 26.07503pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+Package hyperref Info: Anchor `page.13' on input line 169.
+[13]
+Package hyperref Info: Anchor `section.2.6' on input line 169.
+
+Overfull \hbox (13.44751pt too wide) in paragraph at lines 169--169
 |[]\T1/pplj/m/it/12 Limitations, Ex-cep-tions and Caveats to the Sim-pli-fied M
 od-
  []
 
-Package hyperref Info: bookmark on input line 165:
+Package hyperref Info: bookmark on input line 169:
 (hyperref)             thecounter {2.6}
 (hyperref)             text {\ifttl@toclabel \ttl@a \fi Limitations, Exceptions
  and Caveats to the Simplified Models}
@@ -1595,18 +1601,8 @@ Package hyperref Info: bookmark on input line 165:
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
 )
-
-Package Fancyhdr Warning: \headheight is too small (14.0pt): 
- Make it at least 26.07503pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-Package hyperref Info: Anchor `page.13' on input line 39.
-[13]
 Package hyperref Info: Anchor `page.14' on input line 39.
- [14
-
-]
+ [14]
 Package hyperref Info: Anchor `chapter.3' on input line 39.
 
 Chapter 3.
@@ -1690,7 +1686,9 @@ Package hyperref Info: bookmark on input line 15:
 (hyperref)             type {toc}.
 )
 Package hyperref Info: Anchor `page.15' on input line 43.
- [15]
+ [15
+
+]
 Package hyperref Info: Anchor `page.16' on input line 43.
  [16
 
@@ -2085,17 +2083,8 @@ tex/experimental_searches.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
-
-Package rerunfilecheck Warning: File `doc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `doc.out':
-(rerunfilecheck)             Before: 27268C222C194116AB18F91B255B1099;7026
-(rerunfilecheck)             After:  74D001BCE217F736FFD45CC895E2A94C;7031.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `doc.out' has not changed.
+(rerunfilecheck)             Checksum: 74D001BCE217F736FFD45CC895E2A94C;7031.
 Package logreq Info: Writing requests to 'doc.run.xml'.
 \openout1 = `doc.run.xml'.
 
@@ -2104,11 +2093,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
 Here is how much of TeX's memory you used:
  21422 strings out of 493014
  329760 string characters out of 6133351
- 771160 words of memory out of 5000000
+ 769160 words of memory out of 5000000
  24410 multiletter control sequences out of 15000+600000
  86608 words of font info for 136 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,92p,1033b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,92p,1054b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -2123,7 +2112,7 @@ pe1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
 w/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palat
 ino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/upl
 ri8a.pfb>
-Output written on doc.pdf (28 pages, 165795 bytes).
+Output written on doc.pdf (28 pages, 167418 bytes).
 PDF statistics:
  399 PDF objects out of 1000 (max. 8388607)
  324 compressed objects within 4 object streams
