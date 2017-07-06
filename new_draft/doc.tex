@@ -8,6 +8,22 @@
 \date{\today}
 \usepackage{titling}
 \usepackage{notoccite}
+\usepackage{diagbox}
+
+
+\makeatletter
+\renewenvironment{figure}[1][htbp]{%
+  \@tufte@orig@float{figure}[#1]%
+}{%
+  \@tufte@orig@endfloat
+}
+\renewenvironment{table}[1][htbp]{%
+  \@tufte@orig@float{table}[#1]%
+}{%
+  \@tufte@orig@endfloat
+}
+
+
 
 % consistent symbols throughout document
 \input symbols.tex
