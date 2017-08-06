@@ -41,7 +41,7 @@ Here, we categorize a few broad classes of models that have conventionally provi
 %As we develop our simplified model framework, we will construct maps between the UV models and the simplified model channels to show the highest priority/best motivated combinations of production and decay modes for LLPs. 
 In developing our simplified model framework, we will construct maps between the UV models and the simplified model channels to illustrate some of the best motivated combinations of production and decay modes for LLPs. This will then allow us to focus on the most interesting scenarios and determine their coverage in particular parts of the model parameter space.
 
-\section{The Simplified Model Building Blocks}
+\section{The Simplified Model Building Blocks}\label{sec:building_blocks}
 
 Recall that in LLP searches production and decay can be factorized. This allows us to specify the relevant production and decay modes for LLP models separately; we then put them together and map the space of models into the existing motivated theories.
 
@@ -196,8 +196,44 @@ or gluino pair & & & &\\
 
 {\bf Add in paragraph about effects of hadronization}
 
-\section{Conventions for the Simplified Models Library}
-Can have library of FeynRules UFO models for production \& decay modes, separately stitch these together. {\bf [BS:~Would folks rather have LHE files or the relevant cards for running MG? Need to figure out.]}
+\section{A Simplified Model Library}
+
+The simplified models outlined in the above sections provide a common language for theorist and experimentalists to study the sensitivity of existing searches, propose new search ideas, and interpret results in terms of UV models. However, the above activities demand a simple framework for the simulation of signal events that can be used to evaluate signal efficiencies of different search strategies and map these back onto model parameters. Requiring individual users to create their own MC models for each simplified model is impractical, inefficient, and invites the introduction of errors into the comparison of results by different individuals.
+
+In this document, we propose and provide a draft version of a \emph{simplified model library} consisting of model files and Monte Carlo (MC) generator cards that can be used to generate events for various simplified models in a straightforward fashion. Because each experiment uses slightly different MC generators and settings, this allows each collaboration (as well as theorists) to generate events for each simplified model based on the provided files. Depending on how the LLP program expands and develops over the next few years, it may become expedient to go a step further and add to the simplified model library sets of events in a standard format (such as the Les Houches format) that can be directly fed into parton shower and detector simulation programs; given the factorization of production and decay of LLPs that is valid for all but QCD-charged LLPs, this could involve two mini-libraries:~a set of production events for LLPs, a set of decays for LLPs, along with a protocol for ``stitching'' the events together.
+
+The current version of the library can be found here:~{\bf [provide link]}
+
+We provide model files in the popular Universal Feynrules Output (UFO) format, which is designed to interface easily with parton-level simulation programs such as \texttt{MadGraph5\_aMC@}\texttt{NLO}. The goal is to cover as many of the simplified models of Section \ref{sec:building_blocks} with as few UFO models as possible; this limits the amount of upkeep needed to maintain the library and develops familiarity with the few UFO models needed to simulate the LLP simplified models. We then give specific instructions for how to simulate each simplified LLP channel using the UFO models. {\bf NOTE:~as this document is still in draft form, the library is not yet complete. If you need a simplified model that has not yet been filled in, or would like to contribute to completion of the library, please contact the organizers listed in the simplified model repository.}
+
+\subsection{Base Models for Library}
+
+In order to reproduce the simplified model channels of Section \ref{sec:building_blocks}, we need a collection of models that
+%
+\begin{itemize}
+\item Includes additional gauge bosons and scalars to allow vector and scalar portal production of LLPs;
+\item Includes new gauge-charged fermions and scalars to cover direct and simple cascade production modes of LLPs;
+\item Includes a right-handed-neutrino-like state with couplings to SM neutrinos and leptons;
+\item Allows for the decays of the LLP particle through all of the decay modes listed in Section \ref{sec:building_blocks}, either through renormalizable or high-dimensional couplings.
+\end{itemize}
+
+Fortunately, an extensive set of UFO models is already available for simulating the production of beyond-SM particles. We note that extensions or generalizations of only three already-available UFO models are needed at the present time:
+
+\begin{enumerate}
+
+\item {\bf The Minimally Supersymmetric SM (MSSM)}  contains a whole host of new particles with various gauge charges and spins. Therefore, an MSSM-based model allows for the simulation of many of the simplified model channels. In particular, we note that existing UFO variants of the MSSM that include gauge-mediated supersymmetry breaking (GMSB) couplings (including decays to light gravitinos) and $R$-parity violation (to allow for the decay of otherwise stable lightest SUSY particles) already cover most of the SUSY-motivated LLP scenarios.
+
+
+\item{\bf The Hidden Abelian Higgs Model (HAHM)} consists the SM supplemented by a ``hidden sector'' consisting of a new $\mathrm{U}(1)$ gauge boson and corresponding Higgs field. The physical gauge and Higgs bosons couple to the SM via kinetic and mass mixing, respectively, and can be easily supplemented with new matter fields. The HAHM allows for straightforward simulation of exotic decays of the SM Higgs, as well as $Z'$ models and many hidden sector scenarios.
+
+\item {\bf The left-right symmetric model} supplements the SM by an additional $\mathrm{SU}(2)_{\rm R}$ symmetry, which leads to additional charged and neutral gauge bosons. The model also contains a right-handed neutrino which is the typical LLP candidate, which can be produced via SM $W$, $Z$, or the new gauge bosons. 
+
+\end{enumerate}
+
+As outlined in the next section, nearly all of the simplified model channels can be simulated with minor variants of the above models. Note that this may require some funny-seeming adjustment of parameters:~for example, in the MSSM model which does not contain a $Z'$, the effects of a $Z'$ on signal production can be included by re-scaling the mass of the SM $Z$ boson. Because the libraries are mostly needed for simulation of signal events and not total production cross sections, this is acceptable within the simplified models framework. Similarly, the spins of the particles are generally not important:~replacing the direct production of a fermion with the direct production of a scalar will not substantially change the signature, so as long as results are expressed in terms of sensitivity to cross sections and not couplings, the results can be easily applied to any similar production mode regardless of spin.
+
+\subsection{Instructions for Simulating Simplified Model Channels}
+
 
 \section{Future Opportunities and Challenges}\label{sec:simplified_future}
 \begin{itemize}
