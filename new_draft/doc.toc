@@ -30,7 +30,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.2}Instructions for Simulating Simplified Model Channels}{18}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Future Opportunities and Challenges}{18}{section.2.6}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Neutral LLPs}{19}{subsubsection.2.5.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Future Opportunities and Challenges}{19}{section.2.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Experimental Coverage \& Recommendations for New Searches}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
