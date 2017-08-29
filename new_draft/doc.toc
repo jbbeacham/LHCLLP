@@ -22,13 +22,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.2}Electrically Charged LLPs:\nobreakspace {}$|Q|=1$}{17}{subsection.2.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.3}LLPs with Color Charge}{17}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.3}LLPs with Color Charge}{18}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}A Simplified Model Library}{18}{section.2.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.1}Base Models for Library}{19}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Instructions for Simulating Simplified Model Channels}{20}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Instructions for Simulating Simplified Model Channels}{21}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.2.1}Neutral LLPs}{21}{subsubsection.2.5.2.1}
 \defcounter {refsection}{0}\relax 
