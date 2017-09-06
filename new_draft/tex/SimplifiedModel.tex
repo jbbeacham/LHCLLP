@@ -24,7 +24,7 @@ We can exploit this observation to construct a simple basis of LLP production mo
 %focus here on the theory definition, which provides some control over the range of models that we expect to see at the LHC, while
 in Section \ref{sec:experimentcoverage} we map existing searches into this basis of simplified models to determine the gaps in coverage and make proposals for new searches.
 
-The list of simplified models presented here is  a starting point, rather than a final statement:~the present goal is to provide a set of simplified models that covers many of the best-motivated and simplest models containing singly- and doubly-produced LLPs. Simplified models by design do not include all of the specific details and subtle features that may be found in a given complete model.  Therefore, the provided list is meant to be expandable to cover new or more refined models as the LLP search program develops.  For instance,  extending the simplified model framework to separately treat heavy flavor is of high interest (in analogy to the prompt case, \cite{Essig:2011qg}); see Section \ref{sec:simplified_future} for a discussion of this and other future opportunities.   High-multiplicity signatures such as dark showers or emerging jets present different experimental and theoretical issues, as we discuss in  Section \ref{sec:showers}.
+The list of simplified models presented here is  a starting point, rather than a final statement:~the present goal is to provide a set of simplified models that covers many of the best-motivated and simplest models containing singly- and doubly-produced LLPs. Simplified models by design do not include all of the specific details and subtle features that may be found in a given complete model.  Therefore, the provided list is meant to be expandable to cover new or more refined models as the LLP search program develops.  For instance,  extending the simplified model framework to separately treat heavy flavor is of high interest (in analogy to the prompt case, \cite{Essig:2011qg}); see Section \ref{sec:simplified_future} for a discussion of this and other future opportunities.   High-multiplicity signatures such as dark showers or emerging jets present different experimental and theoretical issues, as we discuss in  Section \ref{sec:showers}. Finally, a broader set of simplified models may be needed to present the results of experimental searches and to allow ready application of experimental results to UV models of interest; this is discussed further in Section \ref{sec:recommendations}.
 
 %The simplified model framework is also not ideally suited to high-multiplicity signatures such as dark showers or emerging jets, whose phenomenology depends crucially on model parameters such as strong couplings, hadronization details, and  spectra and lifetime of large numbers of new hidden-sector particles; we therefore focus in this section on production of one or two LLPs, leaving a discussion of future opportunities in Section \ref{sec:simplified_future} and dark shower signatures in Section \ref{sec:showers}.
 
@@ -47,8 +47,10 @@ The purpose of the simplified model framework is to provide a simple, common lan
 \item Facilitate the re-interpretation of searches by supplying a sufficiently varied set of standard benchmark models\footnote{Note that  in general more benchmark models will be needed for enabling reliable re-interpretation than are strictly necessary for discovering a new particle, \emph{i.e.,}  it is important to consider both whether two simplified models share a common signature in a search, and also whether they look similar enough to have similar reconstruction efficiencies} for which experimental efficiencies can be provided for validation purposes.
 \end{enumerate}
 %
+Note that points \#1 and \#5 are somewhat in tension with one another:~one wishes to have a compact set of models that can be the subject of systematic study in terms of experimental signatures, but expressing experimental results in terms of only this set of simplified models may make it challenging to re-interpret experimental searches for UV models that are not precisely described by one of the simplified models. In this section, we prioritize having a minimal set of simplified models for the purposes of studying experimental coverages and new search ideas, while we defer a discussion of simplified models in the presentation and reinterpretation of search results to Section \ref{sec:recommendations}.
+
 In the following sections we will construct a proposal for a minimal basis of simplified models for events with one or two LLPs.
-We begin with a discussion of the theories that dominate the predictions for LLPs at the LHC, and identify a set of `umbrella' models that yield LLPs in Section~\ref{sec:motivated_theories}.  We next identify the relevant (simplified) production and decay modes for LLPs in Section~\ref{sec:building_blocks},  emphasizing that each production mode has a characteristic set of predictions for the number and nature of {\em prompt} objects accompanying the LLP.  In Section~\ref{sec:} we combine these production and decay modes into our simplified model basis and highlight how different umbrella models naturally populate the various LLP channels.  Section~\ref{sec:}  presents a framework and instructions for how the best motivated simplified model channels can be simulated in Monte Carlo using a model library that is currently under development. \JS{ probably want to change this wording} \BS{how about this?}
+We begin with a discussion of the theories that dominate the predictions for LLPs at the LHC, and identify a set of `umbrella' models that yield LLPs in Section~\ref{sec:motivated_theories}.  We next identify the relevant (simplified) production and decay modes for LLPs in Section~\ref{sec:building_blocks},  emphasizing that each production mode has a characteristic set of predictions for the number and nature of {\em prompt} objects accompanying the LLP.  In Section~\ref{sec:} we combine these production and decay modes into our simplified model basis and highlight how different umbrella models naturally populate the various LLP channels.  Section~\ref{sec:}  presents a framework and instructions for how the best motivated simplified model channels can be simulated in Monte Carlo using a model library that is currently under development. 
 
 %a simplified model framework for events with one and two LLPs.  Extending this  framework to models with dark showers will be discussed later.
 
@@ -81,7 +83,7 @@ The Higgs is also special in that it comes with a rich set of associated product
 
 \item {\bf Dark-matter theories (DM):}~ Non-SUSY and hidden sector DM scenarios are collected in this category, which encompasses models where dark matter is produced as a final state in the collider process. The main feature distinguishing this category from the Higgs and gauge scenarios above is that dark matter, i.e., missing momentum, is a necessary and irreducible component of each signature.
 
-\item {\bf Heavy neutrinos and friends (RH$\nu$):}  Models where  new weak-scale states are responsible for SM neutrino mass generation typically predict long-lived TeV-scale right-handed neutrinos, and may additionally predict new long-lived Higgs bosons.  Characteristic features of models in this category are singly-produced LLPs and lepton-rich signatures.
+\item {\bf Heavy neutrino theories (RH$\nu$):}  Models where  new weak-scale states are responsible for SM neutrino mass generation typically predict long-lived TeV-scale right-handed neutrinos, and may additionally predict new long-lived Higgs bosons.  Characteristic features of models in this category are singly-produced LLPs and lepton-rich signatures.
 
 \end{itemize}
 
@@ -137,7 +139,9 @@ sensitive to a variety of possible LLP decay modes.  This is in part
 because particles that decay far inside the detector offer fewer
 avenues for particle identification, (\emph{e.g.,} for an LLP decaying
 inside of the calorimeter, all decay products are either missing
-energy or a calorimeter deposition). It is also because backgrounds
+energy or a calorimeter deposition); consequently, particle identification
+criteria are typically relaxed in comparison to requirements on searches involving
+only a single primary vertex. It is also because backgrounds
 are often low enough that tight identification and/or reconstruction
 cuts typically found in exclusive analyses are not needed to suppress
 backgrounds. For example, ATLAS has a displaced vertex search
@@ -149,47 +153,38 @@ high-impact-parameter leptons without reconstructing a vertex
 
 However, in some cases the topology of a decay does matter:~for
 example, one potentially important factor is distinguishing cases
-where the LLP decays into two SM objects vs.~three, because this
-determines whether its mass can, in principle, be resonantly reconstructed by looking
-for two objects in a decay.  \JS{this point still needs some
-  refinement: in many cases there is simply is not enough information
-  to reconstruct a resonance.  This only applies for tracker decays
-  and I guess $X\to \mu\mu$ going off any where, which should be made
-  explicit.  It may be helpful to provide the explicit example of
-  lepton pairs in the tracker?} Whether or not this is possible in practice depends on the details
-  of the decay; for example, an LLP decay to a muon pair at any point in the detector
-   or a pair of any visible objects in the tracker
-  may be reconstructed as a resonance, while an LLP decay to hadrons inside of the calorimeter
-  cannot be reconstructed as a resonance. An additional simplified model 
-  featuring a non-resonant or 3-body decay of the LLP may be needed depending on the particular
-  search, and so we include the possibility of an LLP decays with additional non-reconstructed objects. \BS{Kind of a mouthful; maybe a better way to integrate?}
-
+where the LLP decays into two SM objects vs.~three, because the kinematics of multi-body
+decay are distinct from two-body decay and this may affect the 
+acceptance of particular search strategies.  An additional simplified model 
+  featuring a 3-body decay of the LLP may consequently be needed to span
+  the space of signatures.
+  
 {\bf We therefore emphasize that the following decay modes are defined
   loosely in the understanding that they will also provide good
   acceptance for similar and/or related decay modes, for example
   $2j+invisible$ is also a proxy for $3j$ because searches for
-  non-resonant hadronic LLP decays can be sensitive to both.} It
+  multi-body hadronic LLP decays can be sensitive to both.} It
 should also be emphasized that we are not recommending searches to be
 optimized to the exact, exclusive decay mode because that could
 suppress sensitivity to related but slightly more complicated models.
 
-\JS{Q: provide at least one familiar example for each of the following
-  bullets?}\BS{Check my examples below}
 
 \begin{itemize}
 \item {\bf Diphoton decays:}~The LLP can decay resonantly to
   $\gamma\gamma$ (like in Higgs-portal models) or to
   $\gamma\gamma+\mathrm{invisible}$ (in dark matter models). This
   latter mode stands as a proxy for other $\gamma\gamma+X$ decays
-  where the third object is not explicitly reconstructed. \emph{Example:~an
-  axion-like particle decaying to $\gamma\gamma$.}
+  where the third object is not explicitly reconstructed. \emph{Example:~a 
+  singlino decaying to a singlet (which decays to $\gamma\gamma$) and 
+  a gravitino in Stealth SUSY.}
 
 \item {\bf Single photon decays:}~The LLP decays to
   $\gamma+\mathrm{invisible}$ (like a bino in models with
   gauge-mediated SUSY-breaking).  While the SUSY signal mandates a
   near-massless invisible particle, a more generalsignature allows for
   a heavy invisible particle, as can arise in theories of dark matter
-  (ref). \emph{Example:~a bino decaying to photon plus gravitino in GMSB.}
+  (ref). \emph{Example:~a bino decaying to photon plus gravitino in gauge-mediated
+  models of SUSY breaking.}
 %dark matter framework can come with a heavy final state particle.
 
 \item {\bf Hadronic decays:}~The LLP can decay into two jets ($jj$)
@@ -197,11 +192,12 @@ suppress sensitivity to related but slightly more complicated models.
   invisible (SUSY, dark matter, or neutrino models), or $j$ +
   invisible (SUSY). Here, jet ($j$) means either a light-quark jet,
   gluon, or $b$-quark jet. \emph{Example:~a scalar LLP decaying to $b\bar{b}$
-  due to mixing with the SM Higgs boson}. 
+  due to mixing with the SM Higgs boson, as in models of
+  neutral naturalness}. 
 
 \item {\bf Semileptonic decays:}~The LLP can decay into a lepton + 1
-  or 2 jets (like in SUSY or neutrino models). \emph{Example:~a neutralino decaying
-  to a lepton and two quarks in RPV-SUSY models.}
+  or 2 jets (like in SUSY or neutrino models). \emph{Example:~a right-handed neutrino decaying to a left-handed
+   lepton and an on- or off-shell hadronically decaying $W$ boson. }
 
 \item {\bf Leptonic decays:}~The LLP can decay into
   $\ell^+\ell^-(+\mathrm{invisible})$, or
@@ -214,7 +210,8 @@ suppress sensitivity to related but slightly more complicated models.
 \item {\bf Flavored leptonic decays:}~The LLP can decay into
   $\ell_\alpha+\mathrm{invisible}$, $\ell_\alpha^+\ell_\beta^-$ or
   $\ell_\alpha^+\ell_\beta^-+\mathrm{invisible}$ where flavors
-  $\alpha\neq\beta$ (as in SUSY or neutrino models). \emph{Example:~a slepton decaying to lepton and bino in split SUSY, or a right-handed neutrino decaying to a left-handed lepton and an on- or off-shell $W/Z$ boson.}
+  $\alpha\neq\beta$ (as in SUSY or neutrino models). \emph{Example:~a neutralino decaying to two
+   leptons and a neutrino in $R$-parity-violating SUSY.}
 \end{itemize}
 
 In all cases, both the LLP mass and proper lifetime are free
@@ -252,9 +249,8 @@ fraction in addition to hadronic decay modes. This allows some level
 of prioritization of decay modes based on motivated UV-complete
 models, although it is ultimately desirable to retain independent
 sensitivity to each individual decay mode.  Indeed, for each decay
-mode listed above, models exist in the literature for which the given
-decay mode would be the discovery channel. \JS{I flag this addition as
-  it is a strong statement, but I am sure that this is true.}
+mode listed above, models exist  for which the given
+decay mode would be the discovery channel. 
 \linebreak
 
 
@@ -282,6 +278,8 @@ mass hierarchy, $\Delta \approx M_{\rm LLP}/2$.
 \section{Our Simplified Model Proposal}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+In this section, we have developed a compact set of simplified model channels that, broadly speaking, covers the space of theoretical models in order to motivate new experimental searches. Such a minimal, compact set may not be optimal for reinterpretation of results (where variations on our listed production and decay modes may influence signal efficiencies and cross section sensitivities), but rather provides a convenient characterization of possible signals to ensure that no major discovery mode is missed. These models may therefore serve as a starting point for understanding experimental coverage of LLP signatures and devising new searches, but may need to be extended to allow for ready reinterpretation of results for all UV models of interest. We turn to the study of experimental coverage of simplified models in Section \ref{sec:experimentcoverage} and to the study of reinterpretation of experimental results in Section \ref{sec:recommendations}.
+
 We separately consider LLPs that are:~(a)~neutral, (b)~electrically
 charged but color neutral, and (c)~color charged. These three
 possibilities are considered separately because the relevant
@@ -289,8 +287,8 @@ production modes are different (the latter two have irreducible
 production through SM gauge interactions) and their signatures can be
 different (such as disappearing tracks and hadronized LLPs).
 
-Once again, we emphasize that in spite of the many simplified model
-channels, there are a small number of experimental LLP searches that
+We emphasize that in spite of the many simplified model
+channels, a small number of experimental LLP searches can
 have excellent coverage for a wide range of channels. Our major goal
 is ultimately to identify whether there are other searches that could
 have a similarly high impact, and where the gaps are.
@@ -300,7 +298,10 @@ have a similarly high impact, and where the gaps are.
 %%%%%%
 
 The simplified model channels for neutral LLPs are shown in Table
-\ref{tab:neutral_LLP}. In the first iteration of the simplified
+\ref{tab:neutral_LLP}.  
+
+ 
+ In the first iteration of the simplified
 models, it is sufficient to consider as ``jets'' each of the
 following:~$j=u,d,s,c,b,g$. However, we comment that $b$-quarks pose
 unique challenges and opportunities. Since $b$-quarks are themselves
@@ -318,13 +319,7 @@ well-motivated production channels give rise to similar
 signatures. Typically only one of these production modes will need to
 be included when developing a search, but we include the different production modes
 to indicate where people's favorite models may lie. $X$ indicates the
-LLP. We further discuss the subtleties around our choice of simplified model channels in the final paragraph of this section.  \JS{I feel like our philosophy is not completely consistent
-  here.  We have earlier emphasized the desireability for multiple
-  models to help recast; here we are providing a really stripped down
-  set.  We should be very explicit about this choice and the reasoning
-  behind it (discovery only).  A useful avenue for future work would
-  be to study what additional simplified models might maximally help with recastability.}\BS{See new last paragraph of section; open to suggestions or edits}
-  
+LLP.
 
 
 In each entry of the table, we indicate which umbrella of well-motivated models
@@ -408,7 +403,6 @@ resonances\footnote{This is, of course, not to say that searches
   covered by each cell in Table \ref{tab:neutral_LLP} when designing
   searches.}.
   
-    We reiterate that a goal of this section is to develop a compact set of simplified model channels that, in broad brush strokes, covers the space of theoretical models in order to motivate new experimental searches. Such a minimal, compact set may not be optimal for reinterpretation of results (where variations on our listed production and decay modes may influence signal efficiencies and cross section sensitivities), but rather provides a convenient characterization of possible signals to ensure that no \emph{major} discovery mode is missed. We comment further on the sensitivity of current and proposed searches on the simplified model proposals and their variants, as well as discussing challenges surrounding reinterpretation of LHC results, in Sections \ref{sec:experimentcoverage} and \ref{sec:recommendations}, respectively. \BS{An attempt at giving the precision that Jessie recommends above}.
 
 \subsection{Electrically Charged LLPs:~$|Q|=1$}
 
@@ -469,7 +463,7 @@ The simplified models outlined in the above sections provide a common language f
 
 In this document, we propose and provide a draft version of a \emph{simplified model library} consisting of model files and Monte Carlo (MC) generator cards that can be used to generate events for various simplified models in a straightforward fashion. Because each experiment uses slightly different MC generators and settings, this allows each collaboration (as well as theorists) to generate events for each simplified model based on the provided files. Depending on how the LLP program expands and develops over the next few years, it may become expedient to go a step further and add to the simplified model library sets of events in a standard format (such as the Les Houches format) that can be directly fed into parton shower and detector simulation programs; given the factorization of production and decay of LLPs that is valid for all but QCD-charged LLPs, this could involve two mini-libraries:~a set of production events for LLPs, a set of decays for LLPs, along with a protocol for ``stitching'' the events together.
 
-The current version of the library can be found here:~{\bf [provide link]}
+The current version of the library can be found here:~{\bf [provide link]}. In Appendix \ref{sec:library}, we also provide tables that list how to simulate each LLP simplified model channels with one of the specified base models.
 
 We provide model files in the popular Universal Feynrules Output (UFO) format, which is designed to interface easily with parton-level simulation programs such as \texttt{MadGraph5\_aMC@}\texttt{NLO}. The goal is to cover as many of the simplified models of Section \ref{sec:building_blocks} with as few UFO models as possible; this limits the amount of upkeep needed to maintain the library and develops familiarity with the few UFO models needed to simulate the LLP simplified models. We then give specific instructions for how to simulate each simplified LLP channel using the UFO models. {\bf NOTE:~as this document is still in draft form, the library is not yet complete. If you need a simplified model that has not yet been filled in, or would like to contribute to completion of the library, please contact the organizers listed in the simplified model repository.}
 
@@ -499,314 +493,9 @@ Fortunately, an extensive set of UFO models is already available for simulating 
 
 As outlined in the next section, nearly all of the simplified model channels can be simulated with minor variants of the above models. Note that this may require some funny-seeming adjustment of parameters:~for example, in the MSSM model which does not contain a $Z'$, the effects of a $Z'$ on signal production can be included by re-scaling the mass of the SM $Z$ boson. Because the libraries are mostly needed for simulation of signal events and not total production cross sections, this is acceptable within the simplified models framework. Similarly, the spins of the particles are generally not important:~replacing the direct production of a fermion with the direct production of a scalar will not substantially change the signature, so as long as results are expressed in terms of sensitivity to cross sections and not couplings, the results can be easily applied to any similar production mode regardless of spin.
 
-\subsection{Instructions for Simulating Simplified Model Channels}
+A detailed list of processes that can be used to simulate each simplified model channel is provided in Appendix \ref{sec:library}.
 
-We refer here extensively to the simplified models in Tables  \ref{tab:neutral_LLP}-\ref{tab:color_LLP}. Because it is already quite an extensive task to come up with simplified models for so many (production)$\times$(decay) modes, we for now restrict ourselves to the ``filled'' entries in Tables  \ref{tab:neutral_LLP}-\ref{tab:color_LLP}. If you are interested in performing an experimental search or developing a simplified model library entry for one of the ``unfilled'' entries, please contact the conveners of the simplified model library found at the library link:~{\bf [provide link]}.
 
-Note that in all of the simplified model proposals below, any particles \emph{not} present in the production or decay chain should have their masses set to a very large value ($M\gtrsim5$ TeV) to ensure they are sufficiently decoupled from direct production at the LHC.
-
-\subsubsection{Neutral LLPs}
-
-The instructions for simulating the simplified model channels for neutral LLPs are given as follows:~Double Pair Production (DPP) in Table \ref{tab:DPP_neutral_library}, Heavy Parent (HP, QCD-charged parent) in Table \ref{tab:HP_QCD_neutral_library}.
-
- We then proceed to the Higgs (HIG) production modes in Tables \ref{tab:Higgs_neutral_library}-\ref{tab:Higgs_single_neutral_library}.
-
-For the $Z/Z'$ (ZP) production modes, we run into an issue:~many of the fermion LLPs and decay modes are implemented in the MSSM, but the vanilla MSSM model does not contain a $Z'$. It does, however, contain a $Z$:~by modifying the $Z$ mass to whatever value is needed for the $Z'$, the MSSM model can be re-purposed for many of the ZP modes. At this point, it is worth reiterating that these strategies are for \emph{simulating signal events alone}, from which cross section sensitivities can be estimated based on backgrounds, efficiencies, and luminosity. The cross sections from the ``hacked'' ZP event generation processes themselves should not be used. In the future, it may be preferable to create or use an extended version of the MSSM which explicitly includes an additional U(1) gauge boson, which would obviate the need for any such manipulation of the SM Z mass. We provide instructions for the $Z/Z'$ (ZP) production modes in Tables \ref{tab:Zp_neutral_library}-\ref{tab:Zp_single_neutral_library}.
-
-Finally, we provide instructions for the charged-current (CC) production modes in Table \ref{tab:CC_neutral_library}. This production mode is most easily simulated using a left-right symmetric model or other right-handed-neutrino model.
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma+$inv. & MSSM+GMSB. LLP is a bino $(\tilde\chi^0)$ produced due to $pp\rightarrow \tilde{\chi}^0\tilde{\chi}^0$ via $t$-channel squark   \\
-&   exchange ($M_{\tilde q}>5$ TeV). Bino decays to photon + gravitino, $\tilde\chi^0\rightarrow \gamma+\tilde{G}$. \\
-\hline
-$X\rightarrow jj$& MSSM+RPV. LLP is sneutrino LSP $(\tilde\nu)$ that is pair-produced via weak gauge interactions.  \\
-& $\tilde\nu \rightarrow q\bar q$  via the $QLd^{\rm c}$ operator.\\
-\hline
-%$X\rightarrow jj$+inv.& MSSM+split SUSY. LLP is wino LSP $\tilde\chi^0$ that is pair-produced via weak gauge interactions.  \\
-%&  $\tilde\chi^0\rightarrow q\bar{q}\nu$  via an off-shell sfermion and the  $QLd^{\rm c}$ operator.\\
-$X\rightarrow jj$+inv.& MSSM. LLP is second neutralino (wino) LSP $\tilde\chi_2^0$ that is pair-produced via   \\
-&  weak gauge interactions. $\tilde\chi_2^0\rightarrow q\bar{q}\tilde\chi_1^0$  via an off-shell sfermion, and the $\tilde\chi_1^0$ is invisible  \\
-& with arbitrary mass.\\
-\hline
-$X\rightarrow jjj$ & MSSM+RPV. While this is partially covered by $jj+\mathrm{inv.}$ in the case where the additional  \\
-& quark is not  reconstructed, we include it here for completeness. LLP is wino LSP $(\tilde\chi^0)$     \\
-&  that is pair-produced via weak interactions. $\tilde\chi^0\rightarrow q_\alpha q_\alpha q_\beta$ via an off-shell sfermion and  \\
-& the $u_\alpha^{\rm c}d_\alpha^{\rm c}d_\beta^{\rm c}$ operator.\\
-\hline
-$X\rightarrow jj \ell_\alpha$ & MSSM+RPV. LLP is wino LSP ($\tilde\chi^0$) that is pair-produced via weak interactions.  \\
-&  $\tilde\chi^0\rightarrow \ell_\alpha q\bar q$ via an off-shell sfermion and $L_\alpha Qd^{\rm c}$ operator.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & MSSM+RPV. LLP is sneutrino $\tilde \nu_\beta$ of flavor $\beta$ that is pair-produced via weak  interactions. \\
-& $\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$(+inv.) & MSSM. LLP is second neutralino $\tilde \chi_2^0$ that is pair-produced via weak  \\
-&  interactions. $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\ell_\alpha^+\ell_\alpha^-$ via an off-shell slepton.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\beta^-$(+inv.) & MSSM+RPV. LLP is sneutrino $\tilde \nu_\alpha$ of flavor $\alpha$ that is pair-produced via weak   interactions.  \\
-& $\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. An additional massless invisible final state can be  \\
-&  obtained with a wino LLP decaying into $\ell_\alpha^+\ell_\beta^-\nu_\alpha$ through the same operator and an \\
-& off-shell slepton. The massive invisible case is less  motivated for $\alpha\neq\beta$.\\
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for Double Pair Production (DPP) production mode. Where a ``wino'' LSP is specified, an admixture of Higgsino is required to lead to direct pair production of the neutral wino component. As an alternative, one could have $pp\rightarrow \tilde\chi^\pm \tilde\chi^0$, $\tilde\chi^\pm \rightarrow {W^\pm}^* \tilde\chi^0$ promptly, and take the $\tilde\chi^\pm$ to be degenerate with $\tilde\chi^0$ such that the additional charged decay products are essentially unobservable.  }\label{tab:DPP_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma+$inv. & MSSM+GMSB. LLP is a bino $(\tilde\chi)$ produced via $pp\rightarrow \tilde{q}\tilde{q}^*$, $\tilde{q}\rightarrow \tilde\chi+q$. Bino decays to   \\
-&     photon+ gravitino, $\tilde\chi\rightarrow \gamma+\tilde{G}$. \\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is wino LSP $\tilde\chi_2^0$ that is produced via $pp\rightarrow \tilde q\tilde q^*$, $\tilde{q}\rightarrow q\tilde{\chi}_2^0$.    \\
-&  Then,  $\tilde\chi_2^0\rightarrow q\bar{q}\tilde\chi_1^0$ via an   off-shell quark.\\
-\hline
-$X\rightarrow jjj$ & MSSM+RPV. LLP is bino LSP $\tilde\chi$ that is produced via $pp\rightarrow \tilde q\tilde q^*$, $\tilde{q}\rightarrow q\tilde{\chi}$. Then,   \\
-& $\tilde\chi\rightarrow q_\alpha q_\alpha q_\beta$  via the $u_\alpha^{\rm c}d_\alpha^{\rm c}d_\beta^{\rm c}$ operator.\\
-\hline
-$X\rightarrow jj \ell_\alpha$ & MSSM+RPV. LLP is bino LSP ($\tilde\chi$) that is produced via $pp\rightarrow \tilde q\tilde q^*$, $\tilde q\rightarrow q\tilde \chi$. $\tilde\chi\rightarrow \ell_\alpha q\bar q$  \\
-&   via an off-shell sfermion and $L_\alpha Qd^{\rm c}$ operator.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ or $\ell_\alpha^+\ell_\beta^-$ & MSSM+RPV. LLP is sneutrino ($\tilde \nu$) that is produced via $pp\rightarrow \tilde{g}\tilde g$, $\tilde g\rightarrow jj \tilde\chi$, $\tilde\chi\rightarrow \tilde\nu \bar\nu$. \\
-&  Then, $\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ or $\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv.& MSSM. LLP is second neutralino ($\tilde \chi_2^0$) that is produced via $pp\rightarrow \tilde{q}\tilde q^*$,   \\
- &  $\tilde q\rightarrow q\tilde\chi_2^0$. Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^- \tilde\chi_1^0$.  \\
- \hline
- $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv.& MSSM+RPV. LLP is bino ($\tilde \chi^0$) that is produced via $pp\rightarrow \tilde{q}\tilde q^*$, $\tilde q\rightarrow q\tilde\chi^0$. Then,  \\
- &  $\tilde\chi^0\rightarrow \ell_\alpha^+\ell_\beta^- \nu_\alpha$ via $L_\alpha L_\beta E^{\rm c}_\alpha$ operator and off-shell slepton (massless invisible only).  \\
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for Heavy Parent (HP) production mode where the parent particle carries a QCD charge. In most of the above cases, a squark parent can be replaced by a gluino parent with an additional jet in its decay.  }\label{tab:HP_QCD_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma+$inv. & MSSM+GMSB. LLP is a bino $(\tilde\chi^0)$ produced via $pp\rightarrow \tilde{\chi}^+\tilde{\chi}^-$, $\tilde \chi^+ \rightarrow W^+\tilde\chi^0$ ($\tilde\chi^+$ is a     \\
-&   wino). Bino decays to  photon+ gravitino, $\tilde\chi\rightarrow \gamma+\tilde{G}$. \\
-\hline
-$X\rightarrow jj$& MSSM+RPV. LLP is sneutrino LSP $(\tilde \nu)$ produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$, $\tilde\chi^+\rightarrow \tilde\nu \ell^+$. The    \\
-&   sneutrino decays via $\tilde \nu\rightarrow q\bar{q}$  via the $u^{\rm c}_\alpha d^{\rm c}_\alpha d^{\rm c}_\beta$ operator.\\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is wino $\tilde\chi_2^0$ that is produced via $pp\rightarrow\tilde\chi^+\tilde\chi^-$, $\tilde\chi_2^+\rightarrow W^+\tilde\chi_2^0$.   \\
-&  Then,   $\tilde\chi_2^0\rightarrow q\bar{q}\tilde\chi_1^0$  via an  off-shell  squark.\\
-\hline
-$X\rightarrow jjj$ & MSSM+RPV. LLP is bino LSP ($\tilde\chi^0$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$, $\tilde \chi^+\rightarrow W^+\tilde\chi^0$.  \\
-&  Then, $\tilde\chi^0\rightarrow qqq$ via  an off-shell sfermion and the $u^{\rm c}d^{\rm c}d^{\rm c}$ operator.\\
-\hline
-$X\rightarrow jj \ell_\alpha$ & MSSM+RPV. LLP is bino LSP ($\tilde\chi^0$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$, $\tilde \chi^+\rightarrow W^+\tilde\chi^0$.  \\
-&  Then, $\tilde\chi^0\rightarrow qq'\ell_\alpha$ via  an off-shell sfermion and the $Qd^{\rm c}L_\alpha$ operator.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ or $\ell_\alpha^+\ell_\beta^-$ & MSSM+RPV. LLP is sneutrino ($\tilde \nu$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$, $\tilde\chi^+\rightarrow \ell^+\tilde \nu$. Then, \\
-& $\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ or $\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv.& MSSM. LLP is second neutralino ($\tilde \chi_2^0$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$,  \\
- & $\tilde \chi^+\rightarrow W^+\tilde\chi_2^0$. Then,  $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^- \tilde\chi_1^0$ via an off-shell slepton and the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv. & MSSM+RPV. LLP is bino ($\tilde \chi^0$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$, $\tilde \chi^+\rightarrow W^+\tilde\chi^0$. Then,  \\
- & $\tilde\chi^0\rightarrow \ell_\alpha^+\ell_\alpha^- \nu_\beta$ or $\tilde\chi^0\rightarrow \ell_\alpha^+\ell_\beta^-\nu_\alpha$ via an off-shell slepton and the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for Heavy Parent (HP) production mode where the parent particle carries electroweak charge. }\label{tab:HP_EW_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma\gamma$ & HAHM. LLP is the singlet scalar Higgs ($h_{\rm D}$)   produced via $pp\rightarrow h$, $h\rightarrow h_{\rm D}h_{\rm D}$. Then,    \\
-&  $h_{\rm D}\rightarrow\gamma\gamma$ via mixing with the SM Higgs. \\
-\hline
-$X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.    \\
-&  Then,  $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
-\hline
-$X\rightarrow jj$& HAHM. LLP is singlet scalar Higgs $(h_{\rm D})$ produced via  $pp\rightarrow h$, $h\rightarrow h_{\rm D}h_{\rm D}$. Then,      \\
-&   $h_{\rm D}\rightarrow j j$ via mixing with the SM Higgs.\\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is wino $\tilde\chi_2^0$ that is produced via $pp\rightarrow h $, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.  Then, \\
-&  $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & HAHM. LLP is hidden gauge boson ($Z_{\rm D}$) that is produced via $pp\rightarrow h$, $h\rightarrow Z_{\rm D}Z_{\rm D}$.  \\
-&  Then, $Z_{\rm D}\rightarrow \ell_\alpha^+\ell_\alpha^-$ via  mixing with the SM gauge bosons.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM.  LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
-&  Then, $\tilde\chi_2^0\rightarrow\ell_\alpha^+\ell_\alpha^-\tilde\chi^0_1$ via  an off-shell slepton.\\
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for Higgs (HIG) production mode where the Higgs decays to two LLPs. These modes are particularly important because they can come in association with forward jets (VBF) or leptons and $\slashed{E}_{\rm T}$ (VH). Note that, in cases of $M_X>M_h/2$, the same production modes could occur with an off-shell SM Higgs. }\label{tab:Higgs_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma\gamma$ & (N)MSSM. LLP is a pseudoscalar or singlino ($a$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$,    \\
-& $\tilde\chi_2^0\rightarrow\tilde\chi_1^0a$. Finally, $a\rightarrow\gamma\gamma$. \\
-\hline
-$X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\nu\tilde\nu^*$,    \\
-&  $\tilde\nu\rightarrow\tilde\chi_2^0\nu$. Then,  $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
-\hline
-$X\rightarrow jj$& MSSM+RPV. LLP is a sneutrino $(\tilde\nu)$ produced via  $pp\rightarrow h$, $h\rightarrow \tilde\chi_1^0\tilde\chi_1^0$, $\tilde\chi_1^0\rightarrow \tilde\nu\bar\nu$.      \\
-&   Then, $\tilde\nu\rightarrow jj$  via the RPV operator $LQd^{\rm c}$.\\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $,  \\
-& $h\rightarrow \tilde\nu\tilde\nu^*$, $\tilde\nu\rightarrow \nu\tilde\chi_2^0$.  Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ &  MSSM+RPV. LLP is a sneutrino $(\tilde\nu_\beta)$ produced via  $pp\rightarrow h$, $h\rightarrow \tilde\chi_1^0\tilde\chi_1^0$, $\tilde\chi_1^0\rightarrow \tilde\nu_\beta\bar\nu_\beta$.     \\
-&    Then, $\tilde\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$  via the RPV operator $L_\alpha L_\beta E^{\rm c}_\alpha$.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $,  \\
-& $h\rightarrow \tilde\nu\tilde\nu^*$, $\tilde\nu\rightarrow \nu\tilde\chi_2^0$.  Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^-\tilde\chi_1^0$  via an  off-shell  slepton.\\
-
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for Higgs (HIG) production mode where the Higgs decays to two LLPs plus invisible. These modes are particularly important because they can come in association with forward jets (VBF) or leptons and $\slashed{E}_{\rm T}$ (VH). Note that, in cases of $M_X>M_h/2$, the same production modes could occur with an off-shell SM Higgs. }\label{tab:Higgs_inv_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow\tilde\chi_2^0\tilde\chi_1^0$.  Then,  \\
-&    $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $,  \\
-& $h\rightarrow \tilde\chi_2^0\tilde\chi_1^0$. Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $,  \\
-& $h\rightarrow \tilde\chi_2^0\tilde\chi_1^0$.  Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^-\tilde\chi_1^0$  via an  off-shell  slepton.\\
-
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for Higgs (HIG) production mode where the Higgs decays to single LLP plus invisible. These modes are particularly important because they can come in association with forward jets (VBF) or leptons and $\slashed{E}_{\rm T}$ (VH). Note that, in cases of $M_X>M_h/2$, the same production modes could occur with an off-shell SM Higgs. }\label{tab:Higgs_single_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma\gamma$ & (N)MSSM. LLP is a degenerate pseudoscalar $a$ and scalar $s$   produced via $pp\rightarrow Z$,     \\
-&  $Z\rightarrow as$. Finally, $a\rightarrow\gamma\gamma$ and $s\rightarrow \gamma\gamma$. Modify $Z$ mass to desired $Z'$ mass. \\
-\hline
-$X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is a mixed Higgsino/bino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow Z$, $Z\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.    \\
-&  Then,  $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
-\hline
-$X\rightarrow jj$& MSSM+RPV. LLP is a sneutrino $(\tilde\nu)$ produced via  $pp\rightarrow Z$, $Z\rightarrow \tilde\nu\tilde\nu^*$.  Then, $\tilde\nu\rightarrow jj$    \\
-&    via the RPV operator $LQd^{\rm c}$.\\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is a mixed Higgsino/bino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow Z $,  $Z\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.\\
-&   Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
-\hline
-$X\rightarrow \ell^+\ell$ &  MSSM. sneutrino $(\tilde\nu)$ produced via  $pp\rightarrow Z$, $Z\rightarrow \tilde\nu\tilde\nu^*$.  Then, $\tilde\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ or \\
-&    $\tilde\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ (depending on flavor structure)  via the RPV operator $L_\alpha L_\beta E^{\rm c}_\alpha$.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM. LLP is a mixed Higgsino/bino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow Z $, $Z\rightarrow\tilde\chi_2^0\tilde\chi_2^0$.  \\
-& Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^-\tilde\chi_1^0$  via an  off-shell  slepton.\\
-
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for $Z/Z'$ (ZP) production mode where the $Z'$ decays to two LLPs. For this section, we typically use an MSSM model {\bf with a modified $Z$ mass}, and use this ``$Z$'' as our $Z'$. Note that, in cases of $M_X>M_{Z'}/2$, the same production modes could occur with an off-shell SM Higgs.  }\label{tab:Zp_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma\gamma$ & (N)MSSM.LLP is a pseudoscalar or singlino ($a$)   produced via $pp\rightarrow Z$, $Z\rightarrow \tilde\chi_2^0\tilde\chi_2^0$,    \\
-& $\tilde\chi_2^0\rightarrow\tilde\chi_1^0a$. Finally, $a\rightarrow\gamma\gamma$. \\
-\hline
-$X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow Z$, $Z\rightarrow \tilde\nu\tilde\nu^*$,    \\
-&  $\tilde\nu\rightarrow\tilde\chi_2^0\nu$. Then,  $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
-\hline
-$X\rightarrow jj$& MSSM+RPV. LLP is a sneutrino $(\tilde\nu)$ produced via  $pp\rightarrow Z$, $Z\rightarrow \tilde\chi_1^0\tilde\chi_1^0$, $\tilde\chi_1^0\rightarrow \tilde\nu\bar\nu$.      \\
-&   Then, $\tilde\nu\rightarrow jj$  via the RPV operator $LQd^{\rm c}$.\\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is a second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow Z $,  \\
-& $Z\rightarrow \tilde\nu\tilde\nu^*$, $\tilde\nu\rightarrow \nu\tilde\chi_2^0$.  Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
-
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ &  MSSM+RPV. LLP is a sneutrino $(\tilde\nu_\beta)$ produced via  $pp\rightarrow Z$, $Z\rightarrow \tilde\chi_1^0\tilde\chi_1^0$, $\tilde\chi_1^0\rightarrow \tilde\nu_\beta\bar\nu_\beta$.     \\
-&    Then, $\tilde\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$  via the RPV operator $L_\alpha L_\beta E^{\rm c}_\alpha$.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow Z $,  \\
-& $Z\rightarrow \tilde\nu\tilde\nu^*$, $\tilde\nu\rightarrow \nu\tilde\chi_2^0$.  Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^-\tilde\chi_1^0$  via an  off-shell  slepton.\\
-
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for $Z/Z'$ (ZP) production mode where the $Z'$ decays to two LLPs plus invisible. For this section, we typically use an MSSM model {\bf with a modified $Z$ mass}, and use this ``$Z$'' as our $Z'$. Note that, in cases of $M_X>M_{Z'}/2$, the same production modes could occur with an off-shell SM Higgs.  }\label{tab:Zp_inv_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow Z$, $Z\rightarrow\tilde\chi_2^0\tilde\chi_1^0$.  Then,  \\
-&    $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
-\hline
-$X\rightarrow jj$+inv.& MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow Z $,  \\
-& $Z\rightarrow \tilde\chi_2^0\tilde\chi_1^0$. Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow Z$,  \\
-& $Z\rightarrow \tilde\chi_2^0\tilde\chi_1^0$.  Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^-\tilde\chi_1^0$  via an  off-shell  slepton.\\
-
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for $Z/Z'$ (ZP) production mode where the $Z'$ decays to single LLP plus invisible. For this section, we typically use an MSSM model {\bf with a modified $Z$ mass}, and use this ``$Z$'' as our $Z'$. Note that, in cases of $M_X>M_{Z'}/2$, the same production modes could occur with an off-shell SM Higgs. }\label{tab:Zp_single_neutral_library}
-\end{table}
-
-\begin{table}
-\begin{center}
-\begin{tabular}{ |c|l|} 
- \hline
-Decay Mode & Simplified Model Library Process \\
-\hline\hline
-$X\rightarrow jj$+inv. & LR. LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.    \\
-& Then,   $\nu_{\rm R}\rightarrow q\bar{q}\nu$ via an off-shell $W$. For massive invisible state, it may be possible   \\
-&  to use a cascade $\nu_{\rm R2}\rightarrow q\bar{q}\nu_{\rm R1}$ treating the lightest right-handed neutrino as stable. \\
-\hline
-$X\rightarrow jj\ell^\pm$& LR. LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.  \\
-& Then,   $\nu_{\rm R}\rightarrow q\bar{q}'\ell^\pm$ via an off-shell $W$.\\
-\hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & LR.LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.  \\
-or $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv.  & Then,   $\nu_{\rm R}\rightarrow \ell_\alpha^+\ell_\alpha^-\nu_\beta$ or $\nu_{\rm R}\rightarrow \ell_\alpha^+\ell_\beta^-\nu_\alpha$ via an off-shell $W/Z$.\\
-
-\hline
-\end{tabular}
-\end{center}
-\caption{Simplified model library process proposals for charged current (CC) production mode, $W_{\rm SM}^\pm/{W'}^\pm\rightarrow X+\ell^\pm$; these can be simulated using left-right symmetric models using either the $W$ or $W'$ (for simplicity, in the table above we only state explicitly $W$). Right-handed neutrino lifetimes are most naturally long for sub-weak-scale masses. }\label{tab:CC_neutral_library}
-\end{table}
 
 
 \section{Future Opportunities and Challenges}\label{sec:simplified_future}
