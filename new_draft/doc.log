@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 SEP 2017 23:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 SEP 2017 23:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1455,18 +1455,43 @@ l Framework}
 (hyperref)             toclevel {0}
 (hyperref)             type {toc}.
 (./tex/SimplifiedModel.tex
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 6.
+Package hyperref Info: Reference (cite) `cite.0@Chen:1995yu' on input line 6.
+Package hyperref Info: Reference (cite) `cite.0@Thomas:1998wy' on input line 6.
 
+Package hyperref Info: Reference (cite) `cite.0@Feng:1999fu' on input line 6.
+Package hyperref Info: Reference (cite) `cite.0@Strassler:2006im' on input line
+ 6.
+Package hyperref Info: Reference (cite) `cite.0@Strassler:2006ri' on input line
+ 6.
+Package hyperref Info: Reference (cite) `cite.0@LHC-LLP' on input line 11.
+Package hyperref Info: Reference (cite) `cite.0@Alves:2011wf' on input line 20.
 
-LaTeX Warning: Citation 'Alves:2011wf' on page 7 undefined on input line 20.
-
+Package hyperref Info: Reference (cite) `cite.0@Abdallah:2015ter' on input line
+ 20.
+Package hyperref Info: Reference (cite) `cite.0@Liu:2015bma' on input line 20.
+Package hyperref Info: Reference (cite) `cite.0@Khoze:2017ixx' on input line 20
+.
+Package hyperref Info: Reference (cite) `cite.0@Buchmueller:2017uqu' on input l
+ine 20.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package hyperref Info: Anchor `page.7' on input line 21.
  [7
 
+Package `hyperref' Info: End of reference (cite) `cite.0@Chen:1995yu', line 6.
+Package `hyperref' Info: End of reference (cite) `cite.0@Thomas:1998wy', line 6
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Feng:1999fu', line 6.
+Package `hyperref' Info: End of reference (cite) `cite.0@Strassler:2006im', lin
+e 6.
+Package `hyperref' Info: End of reference (cite) `cite.0@Strassler:2006ri', lin
+e 6.
+Package `hyperref' Info: End of reference (cite) `cite.0@LHC-LLP', line 11.
+Package `hyperref' Info: End of reference (cite) `cite.0@Alves:2011wf', line 20
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Abdallah:2015ter', lin
+e 20.
 ]
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 22.
 
@@ -1519,14 +1544,19 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 5.21004pt on input line 22.
 Package hyperref Info: Reference (link) `subsection.2.4.3' on input line 22.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 23.
 Package hyperref Info: Reference (link) `chapter.3' on input line 25.
 
 
 LaTeX Warning: Marginpar on page 8 moved.
 
+Package hyperref Info: Reference (cite) `cite.0@Essig:2011qg' on input line 27.
 
-LaTeX Warning: Citation 'Essig:2011qg' on page 8 undefined on input line 27.
+Package hyperref Info: Reference (cite) `cite.0@Brust:2011tb' on input line 27.
 
+Package hyperref Info: Reference (cite) `cite.0@Papucci:2011wy' on input line 2
+7.
 Package hyperref Info: Reference (link) `section.2.6' on input line 27.
 Package hyperref Info: Reference (link) `chapter.6' on input line 27.
 Package hyperref Info: Reference (link) `chapter.5' on input line 27.
@@ -1543,8 +1573,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package hyperref Info: Anchor `page.8' on input line 41.
  [8
+Package `hyperref' Info: End of reference (cite) `cite.0@Liu:2015bma', line 20.
+
+Package `hyperref' Info: End of reference (cite) `cite.0@Khoze:2017ixx', line 2
+0.
+Package `hyperref' Info: End of reference (cite) `cite.0@Buchmueller:2017uqu', 
+line 20.
 Package `hyperref' Info: End of reference (link) `subsection.2.4.3', line 22.
 Package `hyperref' Info: End of reference (link) `chapter.3', line 25.
+Package `hyperref' Info: End of reference (cite) `cite.0@Essig:2011qg', line 27
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Brust:2011tb', line 27
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Papucci:2011wy', line 
+27.
 Package `hyperref' Info: End of reference (link) `section.2.6', line 27.
 Package `hyperref' Info: End of reference (link) `chapter.6', line 27.
 Package `hyperref' Info: End of reference (link) `chapter.5', line 27.
@@ -1561,12 +1603,8 @@ LaTeX Warning: Marginpar on page 9 moved.
 Package hyperref Info: Reference (link) `chapter.5' on input line 50.
 Package hyperref Info: Reference (link) `section.2.2' on input line 53.
 Package hyperref Info: Reference (link) `section.2.3' on input line 53.
-
-LaTeX Warning: Reference `sec:' on page 9 undefined on input line 53.
-
-
-LaTeX Warning: Reference `sec:' on page 9 undefined on input line 53.
-
+Package hyperref Info: Reference (link) `section.2.4' on input line 53.
+Package hyperref Info: Reference (link) `section.2.5' on input line 53.
 Package hyperref Info: Anchor `section.2.2' on input line 58.
 Package hyperref Info: bookmark on input line 58:
 (hyperref)             thecounter {2.2}
@@ -1586,14 +1624,146 @@ Package hyperref Info: Anchor `page.9' on input line 64.
 Package `hyperref' Info: End of reference (link) `chapter.5', line 50.
 Package `hyperref' Info: End of reference (link) `section.2.2', line 53.
 Package `hyperref' Info: End of reference (link) `section.2.3', line 53.
+Package `hyperref' Info: End of reference (link) `section.2.4', line 53.
+Package `hyperref' Info: End of reference (link) `section.2.5', line 53.
 ]
 LaTeX Font Info:    Try loading font information for TS1+pplj on input line 65.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )
+Package hyperref Info: Reference (cite) `cite.0@Barbier:2004ez' on input line 6
+8.
+Package hyperref Info: Reference (cite) `cite.0@Dimopoulos:1996vz' on input lin
+e 69.
+Package hyperref Info: Reference (cite) `cite.0@ArkaniHamed:2004fb' on input li
+ne 70.
+Package hyperref Info: Reference (cite) `cite.0@Chen:1995yu' on input line 71.
+Package hyperref Info: Reference (cite) `cite.0@Thomas:1998wy' on input line 71
+.
+Package hyperref Info: Reference (cite) `cite.0@Feng:1999fu' on input line 71.
+Package hyperref Info: Reference (cite) `cite.0@Khachatryan:2014jba' on input l
+ine 78.
+Package hyperref Info: Reference (cite) `cite.0@Aad:2015pla' on input line 78.
+Package hyperref Info: Reference (cite) `cite.0@Curtin:2013fra' on input line 7
+8.
+Package hyperref Info: Reference (cite) `cite.0@Strassler:2006im' on input line
+ 78.
+Package hyperref Info: Reference (cite) `cite.0@Strassler:2006ri' on input line
+ 78.
+Package hyperref Info: Reference (cite) `cite.0@Chacko:2005pe' on input line 78
+.
+Package hyperref Info: Reference (cite) `cite.0@Burdman:2006tz' on input line 7
+8.
+Package hyperref Info: Reference (cite) `cite.0@Craig:2015pha' on input line 78
+.
+Package hyperref Info: Reference (cite) `cite.0@Silveira:1985rk' on input line 
+78.
+Package hyperref Info: Reference (cite) `cite.0@Langacker:2008yv' on input line
+ 82.
+Package hyperref Info: Reference (cite) `cite.0@Holdom:1985ag' on input line 82
+.
+Package hyperref Info: Reference (cite) `cite.0@Feng:2009hw' on input line 82.
+Package hyperref Info: Reference (cite) `cite.0@Buckley:2009in' on input line 8
+2.
+Package hyperref Info: Reference (cite) `cite.0@Tulin:2012wi' on input line 82.
+
+Package hyperref Info: Reference (cite) `cite.0@Boehm:2003hm' on input line 82.
+
+Package hyperref Info: Reference (cite) `cite.0@Boehm:2003ha' on input line 82.
+
+Package hyperref Info: Reference (cite) `cite.0@Pospelov:2007mp' on input line 
+82.
+Package hyperref Info: Reference (cite) `cite.0@ArkaniHamed:2008qp' on input li
+ne 82.
+Package hyperref Info: Reference (cite) `cite.0@ArkaniHamed:2008qn' on input li
+ne 82.
+Package hyperref Info: Reference (cite) `cite.0@Strassler:2006im' on input line
+ 84.
+Package hyperref Info: Reference (cite) `cite.0@Strassler:2006ri' on input line
+ 84.
+Package hyperref Info: Reference (cite) `cite.0@Baumgart:2009tn' on input line 
+84.
+Package hyperref Info: Reference (cite) `cite.0@Falkowski:2010cm' on input line
+ 84.
+Package hyperref Info: Reference (cite) `cite.0@Bai:2011jg' on input line 84.
+Package hyperref Info: Reference (cite) `cite.0@Primulando:2015lfa' on input li
+ne 84.
+Package hyperref Info: Reference (cite) `cite.0@Bai:2015nfa' on input line 84.
+Package hyperref Info: Reference (cite) `cite.0@Izaguirre:2015zva' on input lin
+e 84.
+Package hyperref Info: Reference (cite) `cite.0@Khoze:2017ixx' on input line 84
+.
+Package hyperref Info: Reference (cite) `cite.0@Buchmueller:2017uqu' on input l
+ine 84.
+
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
 Package hyperref Info: Anchor `page.10' on input line 85.
- [10]
+ [10
+Package `hyperref' Info: End of reference (cite) `cite.0@Barbier:2004ez', line 
+68.
+Package `hyperref' Info: End of reference (cite) `cite.0@Dimopoulos:1996vz', li
+ne 69.
+Package `hyperref' Info: End of reference (cite) `cite.0@ArkaniHamed:2004fb', l
+ine 70.
+Package `hyperref' Info: End of reference (cite) `cite.0@Chen:1995yu', line 71.
+
+Package `hyperref' Info: End of reference (cite) `cite.0@Thomas:1998wy', line 7
+1.
+Package `hyperref' Info: End of reference (cite) `cite.0@Feng:1999fu', line 71.
+
+Package `hyperref' Info: End of reference (cite) `cite.0@Khachatryan:2014jba', 
+line 78.
+Package `hyperref' Info: End of reference (cite) `cite.0@Aad:2015pla', line 78.
+
+Package `hyperref' Info: End of reference (cite) `cite.0@Curtin:2013fra', line 
+78.
+Package `hyperref' Info: End of reference (cite) `cite.0@Strassler:2006im', lin
+e 78.
+Package `hyperref' Info: End of reference (cite) `cite.0@Strassler:2006ri', lin
+e 78.
+Package `hyperref' Info: End of reference (cite) `cite.0@Chacko:2005pe', line 7
+8.
+Package `hyperref' Info: End of reference (cite) `cite.0@Burdman:2006tz', line 
+78.
+Package `hyperref' Info: End of reference (cite) `cite.0@Craig:2015pha', line 7
+8.
+Package `hyperref' Info: End of reference (cite) `cite.0@Silveira:1985rk', line
+ 78.
+Package `hyperref' Info: End of reference (cite) `cite.0@Langacker:2008yv', lin
+e 82.
+Package `hyperref' Info: End of reference (cite) `cite.0@Holdom:1985ag', line 8
+2.
+Package `hyperref' Info: End of reference (cite) `cite.0@Feng:2009hw', line 82.
+
+Package `hyperref' Info: End of reference (cite) `cite.0@Buckley:2009in', line 
+82.
+Package `hyperref' Info: End of reference (cite) `cite.0@Tulin:2012wi', line 82
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Boehm:2003hm', line 82
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Boehm:2003ha', line 82
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Pospelov:2007mp', line
+ 82.
+Package `hyperref' Info: End of reference (cite) `cite.0@ArkaniHamed:2008qp', l
+ine 82.
+Package `hyperref' Info: End of reference (cite) `cite.0@ArkaniHamed:2008qn', l
+ine 82.
+]
+Package hyperref Info: Reference (cite) `cite.0@Minkowski:1977sc' on input line
+ 86.
+Package hyperref Info: Reference (cite) `cite.0@Yanagida:1979as' on input line 
+86.
+Package hyperref Info: Reference (cite) `cite.0@Mohapatra:1979ia' on input line
+ 86.
+Package hyperref Info: Reference (cite) `cite.0@Mohapatra:1986bd' on input line
+ 86.
+Package hyperref Info: Reference (cite) `cite.0@Basso:2008iv' on input line 86.
+
+Package hyperref Info: Reference (cite) `cite.0@Perez:2009mu' on input line 86.
+
 Package hyperref Info: Anchor `section.2.3' on input line 97.
 Package hyperref Info: bookmark on input line 97:
 (hyperref)             thecounter {2.3}
@@ -1617,7 +1787,39 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package hyperref Info: Anchor `page.11' on input line 118.
-[11]
+[11
+Package `hyperref' Info: End of reference (cite) `cite.0@Strassler:2006im', lin
+e 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Strassler:2006ri', lin
+e 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Baumgart:2009tn', line
+ 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Falkowski:2010cm', lin
+e 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Bai:2011jg', line 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Primulando:2015lfa', l
+ine 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Bai:2015nfa', line 84.
+
+Package `hyperref' Info: End of reference (cite) `cite.0@Izaguirre:2015zva', li
+ne 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Khoze:2017ixx', line 8
+4.
+Package `hyperref' Info: End of reference (cite) `cite.0@Buchmueller:2017uqu', 
+line 84.
+Package `hyperref' Info: End of reference (cite) `cite.0@Minkowski:1977sc', lin
+e 86.
+Package `hyperref' Info: End of reference (cite) `cite.0@Yanagida:1979as', line
+ 86.
+Package `hyperref' Info: End of reference (cite) `cite.0@Mohapatra:1979ia', lin
+e 86.
+Package `hyperref' Info: End of reference (cite) `cite.0@Mohapatra:1986bd', lin
+e 86.
+Package `hyperref' Info: End of reference (cite) `cite.0@Basso:2008iv', line 86
+.
+Package `hyperref' Info: End of reference (cite) `cite.0@Perez:2009mu', line 86
+.
+]
 
 LaTeX Warning: Marginpar on page 12 moved.
 
@@ -1628,7 +1830,7 @@ Package hyperref Info: bookmark on input line 133:
 (hyperref)             reference {subsection.2.3.2}
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `page.12' on input line 154.
+Package hyperref Info: Anchor `page.12' on input line 153.
 [12]
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1636,7 +1838,7 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.13' on input line 215.
+Package hyperref Info: Anchor `page.13' on input line 209.
 [13]
 Underfull \hbox (badness 10000) in paragraph at lines 237--255
  
@@ -1647,8 +1849,8 @@ Package hyperref Info: Anchor `page.14' on input line 270.
 Package hyperref Info: Anchor `section.2.4' on input line 278.
 Package hyperref Info: bookmark on input line 278:
 (hyperref)             thecounter {2.4}
-(hyperref)             text {\ifttl@toclabel \ttl@a \fi Our Simplified Model Pr
-oposal}
+(hyperref)             text {\ifttl@toclabel \ttl@a \fi A Simplified Model Prop
+osal}
 (hyperref)             reference {section.2.4}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
@@ -1675,7 +1877,6 @@ Package hyperref Info: Anchor `page.15' on input line 315.
 Package `hyperref' Info: End of reference (link) `chapter.3', line 281.
 Package `hyperref' Info: End of reference (link) `chapter.5', line 281.
 Package `hyperref' Info: End of reference (link) `subsection.2.4.1', line 301.
-Package `hyperref' Info: End of reference (link) `section.2.6', line 312.
 ]
 Package hyperref Info: Reference (link) `section.2.2' on input line 326.
 
@@ -1711,15 +1912,17 @@ Overfull \hbox (10.28407pt too wide) in paragraph at lines 325--375
 ic-u-lar $\OT1/zplm/m/n/10 ([]) \OMS/zplm/m/n/10 ^^B 
  []
 
-Package hyperref Info: Reference (link) `subsection.2.4.1' on input line 397.
-Package hyperref Info: Reference (link) `subsection.2.4.1' on input line 404.
-Package hyperref Info: Anchor `page.16' on input line 405.
+Package hyperref Info: Anchor `page.16' on input line 375.
 [16
+Package `hyperref' Info: End of reference (link) `section.2.6', line 312.
 Package `hyperref' Info: End of reference (link) `section.2.2', line 326.
 Package `hyperref' Info: End of reference (link) `section.2.2', line 361.
 Package `hyperref' Info: End of reference (link) `subsection.2.4.1', line 365.
 Package `hyperref' Info: End of reference (link) `subsection.2.4.1', line 371.
 ]
+Package hyperref Info: Reference (link) `subsection.2.4.1' on input line 397.
+Package hyperref Info: Reference (link) `subsection.2.4.1' on input line 404.
+
 
 LaTeX Warning: Marginpar on page 17 moved.
 
@@ -1763,10 +1966,8 @@ Package hyperref Info: bookmark on input line 437:
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
 
-Overfull \hbox (10.00537pt too wide) in paragraph at lines 442--443
-[]\T1/pplj/m/n/10 A com-pli-ca-tion of the QCD-charged LLP is that the LLP hadr
-onizes 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1774,11 +1975,16 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.17' on input line 443.
+Package hyperref Info: Anchor `page.17' on input line 441.
 [17
 Package `hyperref' Info: End of reference (link) `subsection.2.4.1', line 397.
 Package `hyperref' Info: End of reference (link) `subsection.2.4.1', line 404.
 ]
+Overfull \hbox (10.00537pt too wide) in paragraph at lines 442--443
+[]\T1/pplj/m/n/10 A com-pli-ca-tion of the QCD-charged LLP is that the LLP hadr
+onizes 
+ []
+
 Package hyperref Info: bookmark on input line 455:
 (hyperref)             thecounter {2.3}
 (hyperref)             text {\protect \numberline {\csname the\@captype \endcsn
@@ -1806,11 +2012,11 @@ ary}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
 Package hyperref Info: Anchor `page.18' on input line 463.
- [18
+[18
 Package `hyperref' Info: End of reference (link) `section.2.2', line 434.
 Package `hyperref' Info: End of reference (link) `section.2.2', line 455.
 ]
-Package hyperref Info: Reference (link) `appendix.C' on input line 466.
+Package hyperref Info: Reference (link) `section.2.5' on input line 466.
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 468.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
@@ -1827,7 +2033,6 @@ Package hyperref Info: bookmark on input line 470:
 (hyperref)             toclevel {2}
 (hyperref)             type {toc}.
 Package hyperref Info: Reference (link) `section.2.3' on input line 472.
-Package hyperref Info: Reference (link) `section.2.3' on input line 478.
 
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -1835,16 +2040,21 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.19' on input line 479.
+Package hyperref Info: Anchor `page.19' on input line 477.
 [19
-Package `hyperref' Info: End of reference (link) `appendix.C', line 466.
+Package `hyperref' Info: End of reference (link) `section.2.5', line 466.
 Package `hyperref' Info: End of reference (link) `section.2.3', line 468.
 Package `hyperref' Info: End of reference (link) `section.2.3', line 472.
 ]
+Package hyperref Info: Reference (link) `section.2.3' on input line 478.
 Package hyperref Info: Anchor `Item.11' on input line 485.
 Package hyperref Info: Anchor `Item.12' on input line 488.
 Package hyperref Info: Anchor `Item.13' on input line 490.
 Package hyperref Info: Reference (link) `appendix.C' on input line 496.
+Package hyperref Info: Anchor `page.20' on input line 497.
+ [20
+Package `hyperref' Info: End of reference (link) `section.2.3', line 478.
+]
 Package hyperref Info: Anchor `section.2.6' on input line 501.
 Package hyperref Info: bookmark on input line 501:
 (hyperref)             thecounter {2.6}
@@ -1853,11 +2063,7 @@ d Challenges}
 (hyperref)             reference {section.2.6}
 (hyperref)             toclevel {1}
 (hyperref)             type {toc}.
-Package hyperref Info: Anchor `page.20' on input line 504.
- [20
-Package `hyperref' Info: End of reference (link) `section.2.3', line 478.
-Package `hyperref' Info: End of reference (link) `appendix.C', line 496.
-])
+)
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
@@ -1865,7 +2071,9 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package hyperref Info: Anchor `page.21' on input line 58.
-[21]
+[21
+Package `hyperref' Info: End of reference (link) `appendix.C', line 496.
+]
 Package hyperref Info: Anchor `page.22' on input line 58.
  [22
 
@@ -2398,13 +2606,8 @@ r $W'$ (for simplicity, in the table above we only state explicitly $W$). Right
 (hyperref)             toclevel {0}
 (hyperref)             type {lot}.
 )
-
-LaTeX Warning: Empty bibliography on input line 114.
-
-
-AED: lastpage setting LastPage
-Package hyperref Info: Anchor `page.38' on input line 116.
-[38
+Package hyperref Info: Anchor `page.38' on input line 114.
+ [38
 Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
 16.
 ]
@@ -2414,9 +2617,9 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.39' on input line 116.
+Package hyperref Info: Anchor `page.39' on input line 114.
 [39]
-Package hyperref Info: Anchor `page.40' on input line 116.
+Package hyperref Info: Anchor `page.40' on input line 114.
  [40]
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
@@ -2424,20 +2627,156 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.41' on input line 116.
+Package hyperref Info: Anchor `page.41' on input line 114.
 [41]
-Package hyperref Info: Anchor `page.42' on input line 116.
+Package hyperref Info: Anchor `page.42' on input line 114.
  [42]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package hyperref Info: Anchor `appendix*.2' on input line 114.
+Package hyperref Info: Anchor `cite.0@Chen:1995yu' on input line 114.
+Package hyperref Info: Anchor `cite.0@Thomas:1998wy' on input line 114.
+Package hyperref Info: Anchor `cite.0@Feng:1999fu' on input line 114.
+Package hyperref Info: Anchor `cite.0@Strassler:2006im' on input line 114.
+Package hyperref Info: Anchor `cite.0@Strassler:2006ri' on input line 114.
+Package hyperref Info: Anchor `cite.0@LHC-LLP' on input line 114.
+Package hyperref Info: Anchor `cite.0@Alves:2011wf' on input line 114.
+Package hyperref Info: Anchor `cite.0@Abdallah:2015ter' on input line 114.
+Package hyperref Info: Anchor `cite.0@Liu:2015bma' on input line 114.
+Package hyperref Info: Anchor `cite.0@Khoze:2017ixx' on input line 114.
+Package hyperref Info: Anchor `cite.0@Buchmueller:2017uqu' on input line 114.
+Package hyperref Info: Anchor `cite.0@Essig:2011qg' on input line 114.
+Package hyperref Info: Anchor `cite.0@Brust:2011tb' on input line 114.
+Package hyperref Info: Anchor `cite.0@Papucci:2011wy' on input line 114.
+Package hyperref Info: Anchor `cite.0@Barbier:2004ez' on input line 114.
+Package hyperref Info: Anchor `page.43' on input line 114.
+ [43
 
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+]
+Package hyperref Info: Anchor `cite.0@Dimopoulos:1996vz' on input line 114.
+Package hyperref Info: Anchor `cite.0@ArkaniHamed:2004fb' on input line 114.
+Package hyperref Info: Anchor `cite.0@Khachatryan:2014jba' on input line 114.
+Package hyperref Info: Anchor `cite.0@Aad:2015pla' on input line 114.
+Package hyperref Info: Anchor `cite.0@Curtin:2013fra' on input line 114.
+Package hyperref Info: Anchor `cite.0@Chacko:2005pe' on input line 114.
+Package hyperref Info: Anchor `cite.0@Burdman:2006tz' on input line 114.
+Package hyperref Info: Anchor `cite.0@Craig:2015pha' on input line 114.
+Package hyperref Info: Anchor `cite.0@Silveira:1985rk' on input line 114.
+Package hyperref Info: Anchor `cite.0@Langacker:2008yv' on input line 114.
+Package hyperref Info: Anchor `cite.0@Holdom:1985ag' on input line 114.
+Package hyperref Info: Anchor `cite.0@Feng:2009hw' on input line 114.
+Package hyperref Info: Anchor `cite.0@Buckley:2009in' on input line 114.
+Package hyperref Info: Anchor `cite.0@Tulin:2012wi' on input line 114.
+Package hyperref Info: Anchor `cite.0@Boehm:2003hm' on input line 114.
+Package hyperref Info: Anchor `cite.0@Boehm:2003ha' on input line 114.
+Package hyperref Info: Anchor `cite.0@Pospelov:2007mp' on input line 114.
+Package hyperref Info: Anchor `page.44' on input line 114.
+ [44
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+]
+Package hyperref Info: Anchor `cite.0@ArkaniHamed:2008qp' on input line 114.
+Package hyperref Info: Anchor `cite.0@ArkaniHamed:2008qn' on input line 114.
+Package hyperref Info: Anchor `cite.0@Baumgart:2009tn' on input line 114.
+Package hyperref Info: Anchor `cite.0@Falkowski:2010cm' on input line 114.
+Package hyperref Info: Anchor `cite.0@Bai:2011jg' on input line 114.
+Package hyperref Info: Anchor `cite.0@Primulando:2015lfa' on input line 114.
+Package hyperref Info: Anchor `cite.0@Bai:2015nfa' on input line 114.
+Package hyperref Info: Anchor `cite.0@Izaguirre:2015zva' on input line 114.
+Package hyperref Info: Anchor `cite.0@Minkowski:1977sc' on input line 114.
+Package hyperref Info: Anchor `cite.0@Yanagida:1979as' on input line 114.
+Package hyperref Info: Anchor `cite.0@Mohapatra:1979ia' on input line 114.
+Package hyperref Info: Anchor `cite.0@Mohapatra:1986bd' on input line 114.
+Package hyperref Info: Anchor `cite.0@Basso:2008iv' on input line 114.
+Package hyperref Info: Anchor `cite.0@Perez:2009mu' on input line 114.
+ 
+AED: lastpage setting LastPage
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-Package hyperref Info: Anchor `page.43' on input line 116.
-[43
+Package hyperref Info: Anchor `page.45' on input line 116.
+[45
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+Package hyperref Info: Anchor `page.46' on input line 116.
+ [46
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
@@ -2627,28 +2966,20 @@ tex/library.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: 25A0DEEB4BB23869898E7F31FB6F0AF3;7111.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                doc
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 01C8E0BF70E4D075B9990355D6036E1E;7101.
 Package logreq Info: Writing requests to 'doc.run.xml'.
 \openout1 = `doc.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 22507 strings out of 493014
- 343579 string characters out of 6133351
- 847821 words of memory out of 5000000
- 25402 multiletter control sequences out of 15000+600000
- 93425 words of font info for 151 fonts, out of 8000000 for 9000
+ 22662 strings out of 493014
+ 348532 string characters out of 6133351
+ 846822 words of memory out of 5000000
+ 25507 multiletter control sequences out of 15000+600000
+ 95695 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,92p,2933b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,18n,92p,2933b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
@@ -2664,10 +2995,10 @@ elvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on doc.pdf (43 pages, 524681 bytes).
+Output written on doc.pdf (46 pages, 597173 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 428 compressed objects within 5 object streams
- 105 named destinations out of 1000 (max. 500000)
+ 694 PDF objects out of 1000 (max. 8388607)
+ 596 compressed objects within 6 object streams
+ 155 named destinations out of 1000 (max. 500000)
  1257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
