@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 SEP 2017 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 SEP 2017 23:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1832,6 +1832,8 @@ Package hyperref Info: bookmark on input line 133:
 (hyperref)             type {toc}.
 Package hyperref Info: Anchor `page.12' on input line 153.
 [12]
+Package hyperref Info: Reference (cite) `cite.0@Fan:2011yu' on input line 179.
+
 
 Package Fancyhdr Warning: \headheight is too small (14.0pt): 
  Make it at least 17.0pt.
@@ -1839,7 +1841,10 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package hyperref Info: Anchor `page.13' on input line 209.
-[13]
+[13
+Package `hyperref' Info: End of reference (cite) `cite.0@Fan:2011yu', line 179.
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 237--255
  
  []
@@ -2741,6 +2746,7 @@ Package hyperref Info: Anchor `cite.0@Mohapatra:1979ia' on input line 114.
 Package hyperref Info: Anchor `cite.0@Mohapatra:1986bd' on input line 114.
 Package hyperref Info: Anchor `cite.0@Basso:2008iv' on input line 114.
 Package hyperref Info: Anchor `cite.0@Perez:2009mu' on input line 114.
+Package hyperref Info: Anchor `cite.0@Fan:2011yu' on input line 114.
  
 AED: lastpage setting LastPage
 
@@ -2751,6 +2757,8 @@ Package Fancyhdr Warning: \headheight is too small (14.0pt):
 
 Package hyperref Info: Anchor `page.45' on input line 116.
 [45
+Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
+16.
 Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
 16.
 Package `hyperref' Info: End of reference (link) `subsubsection.C.0.1.1', line 
@@ -2973,10 +2981,10 @@ Package logreq Info: Writing requests to 'doc.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
  ) 
 Here is how much of TeX's memory you used:
- 22662 strings out of 493014
- 348532 string characters out of 6133351
+ 22665 strings out of 493014
+ 348621 string characters out of 6133351
  846822 words of memory out of 5000000
- 25507 multiletter control sequences out of 15000+600000
+ 25509 multiletter control sequences out of 15000+600000
  95695 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,92p,2933b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2995,10 +3003,10 @@ elvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8
 a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on doc.pdf (46 pages, 597173 bytes).
+Output written on doc.pdf (46 pages, 598801 bytes).
 PDF statistics:
- 694 PDF objects out of 1000 (max. 8388607)
- 596 compressed objects within 6 object streams
- 155 named destinations out of 1000 (max. 500000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 156 named destinations out of 1000 (max. 500000)
  1257 words of extra memory for PDF output out of 10000 (max. 10000000)
 
