@@ -1,0 +1,81 @@
+\documentclass[a4paper,debug,notitlepage,nobib]{tufte-book}
+%\documentclass[a4paper,debug,notitlepage,nobib]{article}
+\input{docheader}
+
+\def\JS#1{{\bf \textcolor{blue}{[JS: {#1}]}}}
+\def\BS#1{{\bf \textcolor{red}{[BS: {#1}]}}}
+
+\makeatletter
+\title{Simplified Models for Long-Lived Particle Searches at the Large \\ 
+\smallskip \noindent Hadron Collider}
+\author{LHC LLP Community}
+\date{\today}
+\usepackage{titling}
+\usepackage{notoccite}
+\usepackage{diagbox}
+
+
+\makeatletter
+\renewenvironment{figure}[1][htbp]{%
+  \@tufte@orig@float{fig ure}[#1]%
+}{%
+  \@tufte@orig@endfloat
+}
+\renewenvironment{table}[1][htbp]{%
+  \@tufte@orig@float{table}[#1]%
+}{%
+  \@tufte@orig@endfloat
+}
+
+
+
+% consistent symbols throughout document
+\input symbols.tex
+
+\input{docheader2}
+
+\addbibresource{doc.bib}
+
+\begin{document}
+
+%\morefloats
+\setcounter{secnumdepth}{3} % turn on section numbering, for now (3=subsubsection)
+
+\input{frontmatter.tex}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+ 
+%\pagebreak
+
+\chapter{Simplified Models for Long-Lived Particles}
+\input{tex/SimplifiedModel}
+
+\appendix
+
+
+
+\chapter{Appendix:~Details of Simplified Model Library}
+\label{sec:library_more}
+\input{tex/library.tex}
+
+%\chapter{Appendix:~Planned Detector Upgrades}
+%\label{app:Upgrade_Appendix}
+%\input{tex/Upgrade_Appendix.tex}
+
+%\chapter{Appendix:~Explicit Example of Recommendations for Search Results}
+%\label{app:ExampleRec_Appendix}
+%\input{tex/ExampleRec_Appendix.tex}
+
+%\chapter{Bibliography}
+% \label{thebibliography}
+%\bibliographystyle{unsrt}
+% \bibliographystyle{dmf}
+%\bibliographystyle{hep}
+%\bibliographystyle{alpha}
+%\bibliographystyle{JHEP}
+%\bibliography{doc}
+%\addbibresource{doc.bib}
+\printbibliography
+
+\end{document}

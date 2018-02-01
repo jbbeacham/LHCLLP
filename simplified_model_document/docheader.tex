@@ -1,0 +1,81 @@
+%%%%%%%%%%%%%
+%Compilation options
+%%%%%%%%%%%%%
+
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage{hyperref}
+%\usepackage{lineno}
+\usepackage{epstopdf}
+% \usepackage{appendix}
+\usepackage{xspace} %for single top
+\usepackage{longtable} %for ttbar 
+\usepackage{slashed}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+%%\usepackage{fontspec}
+\usepackage{amsmath,amssymb}
+\usepackage{slashed}
+%%\usepackage{feynmp}
+% begin feynman diagram setup
+\usepackage{feynmp-auto}
+% before setting default graphics include widths, save the default to properly scale feynman diagrams with their labels
+\makeatletter
+\let\ginnatwidth\Gin@nat@width
+\let\ginnatheight\Gin@nat@height
+\makeatother
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+%if you don't use the feynmandiagram environment for feynmf/mp figures, and you've changed the Gin keys above, then you need to manually adjust the unit length for feynman diagrams to get ratio of tex labels to graphics right. \unitlength = 1.21mm for tufte \linewidth and \textheight
+\DeclareGraphicsRule{*}{mps}{*}{}
+\newenvironment{feynmandiagram}[1][]{\setkeys{Gin}{width=\ginnatwidth,totalheight=\ginnatheight}\begin{fmffile}{#1}
+\begin{fmfgraph*}(100,70)\fmfpen{thick}}{\end{fmfgraph*}\end{fmffile}\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}}
+% end feynman diagram setup
+\usepackage{subfig}
+\DeclareGraphicsRule{*}{mps}{*}{}
+
+\usepackage{xhfill}% http://ctan.org/pkg/xhfill
+%\newcommand{\ditto}[1][.4pt]{\xrfill{#1}~''~\xrfill{#1}}
+\newcommand{\ditto}{~''~}
+
+
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\usepackage{mathtools} % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units}    % non-stacked fractions and better unit spacing
+\usepackage{multicol} % multiple column layout facilities
+\usepackage{fancyvrb} % extended verbatim environments
+\usepackage{fancyhdr}
+\usepackage{refcount}
+\usepackage{calc}
+\usepackage{lastpage}
+%\usepackage{natbib} % for \citep
+% create a dummy file (shell command "touch moderntex") to turn on some features that don't work on lxplus
+\IfFileExists{moderntex}{
+  \usepackage[protrusion=true,expansion=true,tracking=true,kerning=true,spacing=true]{microtype}
+}{}
+\fvset{fontsize=\normalsize} % default font size for fancy-verbatim environments
+
+\usepackage[marginpar]{todo} % for todo list
+\let\nominalTodo\Todo
+\renewcommand\Todo[1]{\nominalTodo{\normalfont\footnotesize\sffamily\bf #1}}
+
+
+%%%Nice tables
+\usepackage{booktabs,colortbl, array}
+\usepackage{rotating}
+%%End nice tables
+
+% Prints an asterisk that takes up no horizontal space.
+% Useful in tabular environments.
+\newcommand{\hangstar}{\makebox[0pt][l]{*}}
+\newcommand{\openepigraph}[2]{%
+  %\sffamily\fontsize{14}{16}\selectfont
+  \begin{fullwidth}
+  \sffamily\large
+  \begin{doublespace}
+  \noindent\allcaps{#1}\\% epigraph
+  \noindent\allcaps{#2}% author
+  \end{doublespace}
+  \end{fullwidth}
+}
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}

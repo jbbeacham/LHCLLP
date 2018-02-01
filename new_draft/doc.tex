@@ -1,22 +1,18 @@
 \documentclass[a4paper,debug,notitlepage,nobib]{tufte-book}
-%\documentclass[a4paper,debug,notitlepage,nobib]{article}
 \input{docheader}
 
-\def\JS#1{{\bf \textcolor{blue}{[JS: {#1}]}}}
-\def\BS#1{{\bf \textcolor{red}{[BS: {#1}]}}}
-
 \makeatletter
-\title{Searches for long-lived particles at the Large Hadron Collider \\ \smallskip \noindent at CERN}
+\title{Reinterpretation and Recommendations for the Presentation of Search Results}
 \author{LHC LLP Community}
 \date{\today}
 \usepackage{titling}
+\usepackage{soul} 
 \usepackage{notoccite}
 \usepackage{diagbox}
 
-
 \makeatletter
 \renewenvironment{figure}[1][htbp]{%
-  \@tufte@orig@float{fig ure}[#1]%
+  \@tufte@orig@float{figure}[#1]%
 }{%
   \@tufte@orig@endfloat
 }
@@ -26,12 +22,9 @@
   \@tufte@orig@endfloat
 }
 
-
-
 % consistent symbols throughout document
 \input symbols.tex
 
-\input{docheader2}
 
 \addbibresource{doc.bib}
 
@@ -47,70 +40,23 @@
  
 %\pagebreak
 
-\chapter{Introduction}
-\label{sec:Introduction}
-\input{tex/Introduction}
-
-\chapter{Simplified Model Framework}
-\label{sec:simplifiedmodel}
+\chapter{Simplified Models for Long-Lived Particles}
 \input{tex/SimplifiedModel}
 
-\chapter{Experimental Coverage \& Recommendations for New Searches}
-\label{sec:experimentcoverage}
+\chapter{Experimental Coverage}
 \input{tex/ExperimentCoverage}
 
-\chapter{Trigger and Detector Upgrades}
-\label{sec:triggers}
-\input{tex/triggers}
+\chapter{Reinterpretation and Recommendations for the Presentation of Search Results}
 
-\chapter{Recommendations for the Presentation of Search Results}
-\label{sec:recommendations}
-\input{tex/Recommendations}
-
-\chapter{The Next Frontiers:~Dark Showers and Quirky Signatures}
-\label{sec:showers}
-\input{tex/Showers}
-
-
-\chapter{Conclusions}
-\label{sec:conclusions}
-\input{tex/Conclusions.tex}
+\include{tex/ch5-introduction}
+\include{tex/ch5-sms_reinterpretations}
+\include{tex/ch5-recasting_examples}
+\include{tex/ch5-recasting_delphes}
+\include{tex/ch5-recasting_inside_experiments} 
+\include{tex/ch5-recasting_prompt}
+\include{tex/ch5-recommendations}
  
-
-\appendix
-
-
-
-
-\chapter{Appendix:~Summary of Backgrounds for LLP Searches}
-\label{sec:backgrounds}
-\input{tex/backgrounds.tex}
-
-\chapter{Appendix:~Overview of Current Experimental Searches}
-\label{sec:experimental_searches}
-\input{tex/experimental_searches.tex}
-
-\chapter{Appendix:~Details of Simplified Model Library}
-\label{sec:library_more}
-\input{tex/library.tex}
-
-%\chapter{Appendix:~Planned Detector Upgrades}
-%\label{app:Upgrade_Appendix}
-%\input{tex/Upgrade_Appendix.tex}
-
-%\chapter{Appendix:~Explicit Example of Recommendations for Search Results}
-%\label{app:ExampleRec_Appendix}
-%\input{tex/ExampleRec_Appendix.tex}
-
-%\chapter{Bibliography}
-% \label{thebibliography}
-%\bibliographystyle{unsrt}
-% \bibliographystyle{dmf}
-%\bibliographystyle{hep}
-%\bibliographystyle{alpha}
-%\bibliographystyle{JHEP}
-%\bibliography{doc}
-%\addbibresource{doc.bib}
 \printbibliography
 
 \end{document}
+
