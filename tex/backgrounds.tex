@@ -1,10 +1,13 @@
 % 2-3 page summary of the findings of the Backgrounds WG
-%\label{app:background}
+\label{app:background}
 % editors: Juliette Alimena, Martino Borsato, Sascha Mehlhase
+% largely based on https://goo.gl/fw95iR
 
 % -----------------------------------------------------------------------------------
-\section{Introduction} % all
+\section{Introduction} % Sascha, all
 % -----------------------------------------------------------------------------------
+
+For many searches for long-lived particles, the (main) background is not stemming from SM processes, but arises from \textit{external sources} or is even instrumental and/or of algorithmic nature. This section gives an overview on common \textit{non-physics} background and means to estimate or control these types of background.
 
 % -----------------------------------------------------------------------------------
 \section{Known long-lived particles} % Martino
@@ -23,8 +26,18 @@ Backgrounds from heavy flavours are typically more abundant in the forward regio
 % -----------------------------------------------------------------------------------
 Interactions of particles produced in the $pp$ collision with nuclei of the detector material can give displaced vertices and fake a LLP signal. Vertices from these interactions will be positioned in the detector material volume and are therefore effectively vetoed by using detailed material maps. 
 
-LHC detectors have developed tools internal to the collaborations to define a material volume to be vetoed. Maps from ATLAS and CMS obtained with data collected in 2010 can be found in ~\cite{Aaboud:2016poq} and \cite{CMS:2010nua} and are valid for the Run 1 configuration.
-More recent maps for the Run 2 detectors configurations can be found in ~\cite{Aaboud:2017iio} and ~\cite{CMSmaterial} for ATLAS and CMS, respectively.
+LHC detectors have developed tools internal to the collaborations to define a material volume to be vetoed. Maps from ATLAS and CMS obtained with data collected in 2010 can be found in ~\cite{Aaboud:2016poq} and \cite{CMS:2010nua} and are valid for the Run 1 configuration. More recent maps, for the Run 2 detectors configurations can be found in ~\cite{Aaboud:2017iio} (see also Figure~\ref{fig:materialmaps}) and \cite{CMSmaterial} for ATLAS and CMS, respectively.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/atlasmaterial.png}
+%   \hfill
+%   \includegraphics[width=0.48\textwidth]{figures/cmsmaterial.png}
+  \caption{Examples of material maps for ATLAS~\cite{Aaboud:2017iio}
+  % and CMS~\cite{CMSmaterial}}
+  }
+  \label{fig:materialmaps}
+\end{figure}
 
 LHCb recently developed a precise material map of the Vertex Locator (VELL) using beam-gas collisions. This type of collisions is mostly free from long-lived heavy flavour background and allows to cover precisely the whole VELO geometry, not only the region close to the interaction point. This map was used to veto photon conversions to dimuons, which is the main background affecting displaced dark photon searches at low mass~\cite{Aaij:2017rft}. As a rule of thumb, LHCb material interaction background is dominant for vertices at a distance from the beam axis larger than 6 mm (where the VELO material begins). Below 6 mm the background is dominated by heavy flavour decays~\cite{Ilten:2016tkc}.
 
@@ -56,24 +69,21 @@ If the cosmic-ray muon background is significant for an analysis, it can be esti
 \subsection{Beam halo} % Juliette
 % -----------------------------------------------------------------------------------
 
-Another type of real particle generated outside the detector that could be a significant source of background for LLP searches is beam halo. Beam halo is produced when protons from the LHC beam scatter off the LHC collimators and produce debris, which can appear in the detector. Beam halo can create energy deposits in the calorimeters or hits in the muon system, both of which would be largely in the beam direction. These energy deposits or muon system hits would appear earlier than if they had been made from particles coming from the collision (see FIXME: %Fig.\,\ref{fig:beamHaloSketch}
-). Beam halo is usually not modelled in MC simulation, since it is highly dependent on the beam parameters.
+Another type of real particle generated outside the detector that could be a significant source of background for LLP searches is beam halo. Beam halo is produced when protons from the LHC beam scatter off the LHC collimators and produce debris, which can appear in the detector. Beam halo can create energy deposits in the calorimeters or hits in the muon system, both of which would be largely in the beam direction. These energy deposits or muon system hits would appear earlier than if they had been made from particles coming from the collision (see Figure~\ref{fig:beamHaloSketch}). Beam halo is usually not modelled in MC simulation, since it is highly dependent on the beam parameters.
 
-%\begin{figure}
-%\begin{centering}
-%\includegraphics[scale=1]{figures/beamHaloSketch}
-%\par\end{centering}
-%\centering{}\caption{\label{fig:beamHaloSketch}
-%A sketch illustrating the timing differences between beam halo and particles from collisons.}
-%\end{figure}
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{figures/beamHaloSketch.png}
+  \caption{A sketch illustrating the timing differences between beam halo and particles from collisions.}
+  \label{fig:beamHaloSketch}
+  % sketched by Sascha in https://goo.gl/fw95iR
+\end{figure}
 
 Beam halo is most relevant for searches for displaced signatures without tracks in the inner tracker and for searches for decays in non-collision bunches (stopped particles)~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. 
 
 The contribution from beam halo can often be reduced by requiring high-momentum or high-energy reconstructed objects. One can also decrease the number of beam halo events by requiring central objects or vetoing forward muon system activity, since beam halo is usually in the very forward direction~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. For inner tracker-based signatures, events from beam halo are rejected by requiring a minimum number of early hits.
 
-Beam halo background can be estimated by using data control regions near $\phi=0$ and $\pi$. 
-One could also identify cells with a low number or zero tracks that are assigned an early time. %where are the cells - calo? Do we have an example banana plot to show?
-
+Beam halo background can be estimated by using data control regions near $\phi=0$ and $\pi$. One could also identify cells with a low number or zero tracks that are assigned an early time. %where are the cells - calo? Do we have an example banana plot to show?
 
 % -----------------------------------------------------------------------------------
 \subsection{Cavern radiation} % Juliette
@@ -85,14 +95,14 @@ Cavern radiation is usually not modelled in MC simulation.
 Cavern radiation is most relevant for searches looking in non-collision data, that is, stopped-particle searches, and for searches using muon system information to form tracks and vertices. 
 
 Cavern radiation can be estimated from data by collecting events triggered by random triggers when there are no collisions. It can also be estimated by overlaying a cavern radiation simulation with minimum-bias events from data.
- 
+
 
 % -----------------------------------------------------------------------------------
 \section{Fake particle signatures} % Juliette
 % -----------------------------------------------------------------------------------
 
 Another type of background for LLP searches is that from signatures that mimic real particles in the detector, but are in fact fake. By this, we mean the contribution from spurious detector noise. Noise appears differently depending on the detector, but in general, it is characterized by a single and concentrated energy deposit or hit that does not correspond in time or space to any other energy deposits or hits in the detector. Noise is usually difficult to model with MC simulation.
-%SM - general question: do we wanna use personal terms like ``we do ...'' or avoid it?
+%SM - general question: do we wanna use personal terms like "we do ..." or avoid it?
 %JA - Yeah, maybe not, but I think this is a style question that would be good to have consistent across all sections of the white paper, so I suggest we leave it for when the sections get combined again.
 
 Calorimeter detector noise is most relevant for searches looking in non-collision bunches and low-energy collisions~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. Muon system noise is most relevant for searches that are also highly affected by cosmic-ray muons. 
@@ -111,7 +121,15 @@ For searches that aim to reconstruct the decay vertex of a long-lived particle, 
 \subsection{Random/merged vertices} % Sascha
 % -----------------------------------------------------------------------------------
 
-This type of background is especially important in the high-track-density environment close to the interaction region and arises from two main sources: two or more individual tracks crossing each other and getting reconstructed as a displaced vertex as well as two close-by low-mass vertices reconstructed as one high-mass displaced vertex (such a final merging/cleaning step is often part of vertexing algorithms to reduce fakes in standard vertexing).
+This type of background, illustrated in Figure~\ref{fig:mergedvertices} is especially important in the high-track-density environment close to the interaction region and arises from two main sources: two or more individual tracks crossing each other and getting reconstructed as a displaced vertex as well as two close-by low-mass vertices reconstructed as one high-mass displaced vertex (such a final merging/cleaning step is often part of vertexing algorithms to reduce fakes in standard vertexing).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/mergedvertices.png}
+  \caption{Illustration of two close-by low-mass vertices being reconstructed as one high-mass vertex.}
+  \label{fig:mergedvertices}
+  % sketched by Sascha in https://goo.gl/fw95iR
+\end{figure}
 
 The former source is mostly suppressed by requirements originally targeting the removal of meta-stable SM particles: a minimum $|d_0|$ for tracks and a minimum distance between primary and a given displaced vertex. 
 
@@ -121,7 +139,15 @@ The latter source is obviously harder to suppress, though can be estimated by ra
 \subsection{Randomly crossing tracks} % Sascha
 % -----------------------------------------------------------------------------------
 
-Typically of more relevance than merged vertices is the background stemming from low-mass vertices crossed by unrelated tracks, resulting in the reconstruction of a high-mass vertex. The mass of the reconstructed displaced vertex is especially increased when the random track crosses the vertex in a direction that is perpendicular to the distance vector pointing from the primary vertex to the displaced one.
+Typically of more relevance than merged vertices is the background stemming from low-mass vertices crossed by unrelated tracks, resulting in the reconstruction of a high-mass vertex, as illustrated in Figure~\ref{fig:randomcrossing}. The mass of the reconstructed displaced vertex is especially increased when the random track crosses the vertex in a direction that is perpendicular to the distance vector pointing from the primary vertex to the displaced one.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/randomcrossing.png}
+  \caption{Illustration of a low-mass vertex crossed by an unrelated track and being reconstructed as a high-mass vertex instead.}
+  \label{fig:randomcrossing}
+  % sketched by Sascha in https://goo.gl/fw95iR
+\end{figure}
 
 As demonstrated in detail in Ref.~\cite{Aaboud:2017iio}, this background can be estimated by constructing vertices (n-track) from lower-multiplicity ones (n--1-track) by adding pseudo-tracks, drawn randomly from data-driven track templates derived for various radial detector regions. The normalisation of the prediction is performed by comparing the n--1-track-based constructed vertices with the actual n-track vertices in all radial detector regions.
 
