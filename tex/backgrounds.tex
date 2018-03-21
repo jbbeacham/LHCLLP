@@ -24,7 +24,7 @@ Backgrounds from heavy flavours are typically more abundant in the forward regio
 % -----------------------------------------------------------------------------------
 %\subsection{Nuclear interactions} % I think maps for nuclear interactions are the same that are used for for photon interactions.
 % -----------------------------------------------------------------------------------
-Interactions of particles produced in the $pp$ collision with nuclei of the detector material can give displaced vertices and fake a LLP signal. Vertices from these interactions will be positioned in the detector material volume and are therefore effectively vetoed by using detailed material maps. 
+Interactions of particles produced in the $pp$ collision with nuclei of the detector material can give displaced vertices and fake a LLP signal. Vertices from these interactions will be positioned in the detector material volume and are therefore effectively vetoed by using detailed material maps.
 
 LHC detectors have developed tools internal to the collaborations to define a material volume to be vetoed. Maps from ATLAS and CMS obtained with data collected in 2010 can be found in ~\cite{Aaboud:2016poq} and \cite{CMS:2010nua} and are valid for the Run 1 configuration. More recent maps, for the Run 2 detectors configurations can be found in ~\cite{Aaboud:2017iio} (see also Figure~\ref{fig:materialmaps}) and \cite{CMSmaterial} for ATLAS and CMS, respectively.
 
@@ -44,14 +44,14 @@ LHCb recently developed a precise material map of the Vertex Locator (VELO) usin
 The LLP community is interested in using public tools for material maps of LHC experiments to improve the reliability of sensitivity studies to signatures with displaced vertices. The availability of such tools in fast parametric simulations such as Delphes~\cite{deFavereau:2013fsa} could be very interesting.
 
 %ATLAS 7 TeV \cite{Aaboud:2016poq} (QUESTION: is it valid for Run 2?)
-%CMS 7 TeV \cite{CMS:2010nua} 
-%CMS 13 TeV \cite{CMS-DP-2016-073,CMSmaterial} (there is no paper, am I right?) JA: We have a public detector performance note (CMS-DP-2016-073) and a newer public twiki than the original one you cited (I updated the reference). The the paper is about to enter CWR, so not public yet. 
+%CMS 7 TeV \cite{CMS:2010nua}
+%CMS 13 TeV \cite{CMS-DP-2016-073,CMSmaterial} (there is no paper, am I right?) JA: We have a public detector performance note (CMS-DP-2016-073) and a newer public twiki than the original one you cited (I updated the reference). The the paper is about to enter CWR, so not public yet.
 
 % -----------------------------------------------------------------------------------
 \section{Real particles generated outside the detector} % Juliette
 % -----------------------------------------------------------------------------------
 
-There are several types of real particles generated outside the detector that could be sources of background in a LLP search. 
+There are several types of real particles generated outside the detector that could be sources of background in a LLP search.
 
 % -----------------------------------------------------------------------------------
 \subsection{Cosmic muons} % Juliette
@@ -59,7 +59,7 @@ There are several types of real particles generated outside the detector that co
 
 For example, cosmic rays from the atmosphere could enter the detector as cosmic-ray muons. These cosmic-ray muons could be reconstructed as displaced muons in the muon system or as displaced jets in the calorimeters. If cosmic-ray muons are reconstructed in the muon systems, they will typically appear as two back-to-back muons with $\phi$ values near $\pm\pi/2$. The rate of cosmic muons in the detector is about 500~Hz at L1, but depending on the HLT path and the offline selection used, the rate of cosmic-ray muons entering a given LLP analysis is generally much less.
 
-Cosmic-ray muons are typically an important background source to consider for displaced signatures, especially those with large displacements~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf, Aad:2012zn,Aad:2013gva}. Cosmic-ray muons are generally only an issue for CMS and ATLAS analyses, but not for LHCb analyses, since LHCb has only forward coverage. 
+Cosmic-ray muons are typically an important background source to consider for displaced signatures, especially those with large displacements~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf, Aad:2012zn,Aad:2013gva}. Cosmic-ray muons are generally only an issue for CMS and ATLAS analyses, but not for LHCb analyses, since LHCb has only forward coverage.
 
 For many analyses, cosmic-ray muons can be rejected with a simple veto on back-to-back dimuons. However, in some analyses, this veto is not optimal for the signal acceptance or it is insufficient. Another often-used way to minimize the contribution from cosmic-ray muons is requiring high-momentum muons and/or high-energy jets, since cosmic-ray muons have a falling $p_{T}$ spectrum. In addition, if a search primarily looks for inner-tracker or calorimeter objects, cosmic-ray-muon events can be rejected by requiring little muon system activity~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}.
 
@@ -79,7 +79,7 @@ Another type of real particle generated outside the detector that could be a sig
   % sketched by Sascha in https://goo.gl/fw95iR
 \end{figure}
 
-Beam halo is most relevant for searches for displaced signatures without tracks in the inner tracker and for searches for decays in non-collision bunches (stopped particles)~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. 
+Beam halo is most relevant for searches for displaced signatures without tracks in the inner tracker and for searches for decays in non-collision bunches (stopped particles)~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}.
 
 The contribution from beam halo can often be reduced by requiring high-momentum or high-energy reconstructed objects. One can also decrease the number of beam halo events by requiring central objects or vetoing forward muon system activity, since beam halo is usually in the very forward direction~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. For inner tracker-based signatures, events from beam halo are rejected by requiring a minimum number of early hits.
 
@@ -92,7 +92,7 @@ Beam halo background can be estimated by using data control regions near $\phi=0
 There could also be radiation from the cavern walls, which might be a significant background in a LLP search. %more details about what this looks like in the detector are needed
 Cavern radiation is usually not modelled in MC simulation.
 
-Cavern radiation is most relevant for searches looking in non-collision data, that is, stopped-particle searches, and for searches using muon system information to form tracks and vertices. 
+Cavern radiation is most relevant for searches looking in non-collision data, that is, stopped-particle searches, and for searches using muon system information to form tracks and vertices.
 
 Cavern radiation can be estimated from data by collecting events triggered by random triggers when there are no collisions. It can also be estimated by overlaying a cavern radiation simulation with minimum-bias events from data.
 
@@ -105,17 +105,17 @@ Another type of background for LLP searches is that from signatures that mimic r
 %SM - general question: do we wanna use personal terms like "we do ..." or avoid it?
 %JA - Yeah, maybe not, but I think this is a style question that would be good to have consistent across all sections of the white paper, so I suggest we leave it for when the sections get combined again.
 
-Calorimeter detector noise is most relevant for searches looking in non-collision bunches and low-energy collisions~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. Muon system noise is most relevant for searches that are also highly affected by cosmic-ray muons. 
+Calorimeter detector noise is most relevant for searches looking in non-collision bunches and low-energy collisions~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. Muon system noise is most relevant for searches that are also highly affected by cosmic-ray muons.
 
-Calorimeter noise can be rejected by vetoing single and concentrated energy deposits~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. Muon system noise can be rejected by requiring high-quality muon tracks. 
+Calorimeter noise can be rejected by vetoing single and concentrated energy deposits~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. Muon system noise can be rejected by requiring high-quality muon tracks.
 
-Noise in both the calorimeters and the muon systems could be estimated by looking at dedicated cosmic data-taking runs and then applying some selection criteria to reject cosmic-ray muons. The remaining events would most likely be noise. 
+Noise in both the calorimeters and the muon systems could be estimated by looking at dedicated cosmic data-taking runs and then applying some selection criteria to reject cosmic-ray muons. The remaining events would most likely be noise.
 
 % -----------------------------------------------------------------------------------
 \section{Algorithmically induced fakes} % Sascha
 % -----------------------------------------------------------------------------------
 
-For searches that aim to reconstruct the decay vertex of a long-lived particle, and especially for long-lived particles decaying in the proximity of the interaction region, algorithmically induced fakes and/or instrumental backgrounds can be of importance. 
+For searches that aim to reconstruct the decay vertex of a long-lived particle, and especially for long-lived particles decaying in the proximity of the interaction region, algorithmically induced fakes and/or instrumental backgrounds can be of importance.
 
 % -----------------------------------------------------------------------------------
 \subsection{Random/merged vertices} % Sascha
@@ -131,7 +131,7 @@ This type of background, illustrated in Figure~\ref{fig:mergedvertices} is espec
   % sketched by Sascha in https://goo.gl/fw95iR
 \end{figure}
 
-The former source is mostly suppressed by requirements originally targeting the removal of meta-stable SM particles: a minimum $|d_0|$ for tracks and a minimum distance between primary and a given displaced vertex. 
+The former source is mostly suppressed by requirements originally targeting the removal of meta-stable SM particles: a minimum $|d_0|$ for tracks and a minimum distance between primary and a given displaced vertex.
 
 The latter source is obviously harder to suppress, though can be estimated by randomly merging vertices from distinct events. By studying number of reconstructed 'merged' high-mass vertices as a function of distance between the two low-multiplicity low-mass vertices that got 'merged' both with vertices from the same event as well as from different events and scaling them accordingly, an estimate for this background can be derived. This method has been successfully used the a recent ATLAS analysis searching for displaced vertices~\cite{Aaboud:2017iio}.
 
@@ -155,5 +155,5 @@ As demonstrated in detail in Ref.~\cite{Aaboud:2017iio}, this background can be 
 \section{Summary} % all
 % -----------------------------------------------------------------------------------
 
-\textcolor{red}{To be added.}
+\textcolor{red}{To be added ...}
 % We recommend that analyses provide separate background estimates for each source of background considered, rather than providing an estimate for one or more groups of different background sources.
