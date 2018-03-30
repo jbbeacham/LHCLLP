@@ -175,18 +175,36 @@ SM quark-antiquark pairs from the decay of a low mass particle can often hadroni
 \end{figure}
 
 \subsection{After Phase-I upgrade: Phase-II and more}
-TO BE FILLED WITH SOME PROSPECTS AND NEW IDEAS
 \label{sec:ulhcbphaseii}
-\begin{itemize}
-\item downstream triggers for displacements larger than 20 cm
-\item removal of RF foil to reduce VELO material interaction background
-\item dedicated ASICs for downstream tracking embedded in DAQ
-\item Tracking chambers inside the magnet for low momentum particles (useful for soft pion from ``disappearing'' chargino track?)
-\end{itemize}
+
+The LHCb detector will go through its Phase-II upgrade during LS4 (foreseen for 2030-2031), preparing it for a data-taking period with even more challenging conditions than during previous runs: ten times higher multiplicity, pile-up and radiation damage with respect to Phase-I conditions, are expected. The LHCb experiment expects to collect up to 300 fb$^{-1}$ by the end of Phase-II runs. The LHC will start operating under high-luminosity conditions immediately after LS3, but the LHCb experiment will continue taking data at the same luminosity (thanks to a luminosity scaling at IP8) as that of Run 3. However, minor upgrades to some of the sub-detector systems are foreseen during LS3 (hereafter referred to as ``LHCb consolidation'') \cite{Aaij:2244311}. Major improvements to the LHCb detector during LS3 and LS4 and affecting LLP searches will be described in the following paragraphs, as well as some naive projections of Run 1 results to a collected luminosity of 300 fb$^{-1}$. 
+
+\paragraph{Triggers on downstream tracks}
+Most of the LLP searches at the LHCb experiment use the so-called ``long tracks'' to reconstruct the candidates, which are tracks where inputs from both the VELO and the tracking stations are considered. These tracks have an excellent spatial and momentum resolution, and correspond to LLP decaying within the VELO region. This is the reason why most the LLP searches done by LHCb correspond to long-lived candidates with displacements typically up to $\mathcal{O}$(10) cm, being the VELO tracking algorithm optimised for displacements up to 20 cm. However, for long-lived candidates with displacements larger than 20 cm, a different type of track which considers information only from the tracking stations, ``downstream tracks'', has to be used instead of the ``long track'' type. Unfortunately, these tracks have worse vertex and momentum resolution, limiting the capabilities of LHCb for this displacement range. In order to improve the detector sensitivity in the displacement ranges between 20 and 200 cm, a proposal to develop new trigger lines to select ``downstream tracks'' is being studied \cite{Aaij:2244312}. An interesting idea which can help to achieve this tasks and to significantly reduce the CPU computing time, is the implementation of a system of specialised processors used to find rapidly the downstream tracks through look-up tables, and present these tracks to the software trigger in parallel with all the raw detector information in the event. This system, named ``retina'', is being studied and has its own R\&D programme \cite{retina}. 
+
+\paragraph{Magnet Stations}
+Among with the ''long'' and ''downstream'' track types, ``upstream'' tracks are also considered useful for LLP searches. These tracks correspond to soft charged particles bending out of the detector acceptance, produced from LLP candidates which decay within the VELO region. Aside from the installation of a new tracker during LS2, the UT, a proposal to add Magnet Stations (MS) inside the LHCb magnet to improve low momentum resolution is considered \cite{Aaij:2244311}. These MS have been proposed to be installed during the LS3, and are foreseen to highly improve the tracking of low momentum particles produced from certain kind of LLP candidates, such as for example soft pions from ``disappearing'' chargino tracks.
+
+\paragraph{Material interactions}
+The presence of a VELO envelope at approximately 5 mm from the beam line in order to separate the VELO and the LHC vacuums, named ``RF-foil'', strongly affects the background composition of LLP searches in the LHCb experiment. Namely, for LLP candidates decaying below 5 mm from the beam line, the main source of background is due to heavy flavour decays; while material interactions with the RF-foil compose the main background contribution for those LLP decaying above 5 mm from the beam line. While the former is purely due to QCD processes and hence not reducible, the latter is kept under control by the use of a very detailed veto map (see Ref.~\cite{Aaij:2017rft}). However, the ideal case would be to completely remove the RF-foil during the Phase-II upgrade \cite{Aaij:2244311}, which would result in a huge reduction of the background component due to material interactions. A removal of the RF-foil in addition with the  improvements foreseen to the Phase-II VELO (probably based on an improved version of the Phase-I VELO), will allow to access to shorter lifetimes, better PV and IP resolution (see Fig.~\ref{fig:veloip_hllhc}), and achieve a real-time alignment. Unfortunately, the removal of the RF-foil is not foreseen as a solid option, therefore improving as much as possible the material veto maps by accurately modelling the material interactions would be desirable as a more realistic option for the HL-LHC era. 
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.45\textwidth]{figures/velo_ph21.png}
+\includegraphics[width=0.45\textwidth]{figures/velo_ph22.png}
+}
+  \caption{IP resolution estimations from simulation using the Phase-I VELO model: a comparison if considering Phase-I or Phase-II conditions is shown on the left plot, while the effect of the RF-foil removal under Phase-II conditions is presented on the right plot.}
+  \label{fig:veloip_hllhc}
+\end{figure}
+
+\paragraph{Naive projections of Run 1 results to the HL-LHC era}
+
+By taking the published Run 1 results from single displaced dijet~\cite{Aaij:2017mic} and from single displaced vertex with a high$-\pt$ muon~\cite{Aaij:2016xmb} searches by LHCb, extrapolations to the integrated luminosity foreseen to be recorded by LHCb at the end of Phase-II, 300 fb$^{-1}$, are presented in Fig.~\ref{fig:dvsearches_hllhc}. These numbers have been obtained by simply scaling signal and background and taking into account the increase of cross-sections. Very conservative assumptions are considered regarding jet reconstruction efficiencies, trigger efficiencies and material interactions (namely the same numbers as those from Run 1 are taken): aside from sensible improvements regarding trigger and material interactions (already discussed in previous paragraphs), jet reconstruction techniques are foreseen to improve for lower masses due to the implementation of novel tools for disentangling jet substructure. Regarding pile-up effects, considered assumptions are very optimistic (no pile-up effects are considered at all for these extrapolations), however, the impact of pile-up has to be studied in much detail (especially for those searches involving jets in the final state). On this regard, there are some ideas under the scope, for example, the removal of neutral tracks (more pile-up dependent than charged tracks) from jet reconstruction; or the use of machine-learning techniques to seize pile-up contributions. Despite there are already studies on-going on the topic, at the end further studies will be needed. 
+%% Martino: maybe add somewhere that we are open to new interesting topics? Soft bombs, Rare Z decays to hidden sector, etc.
 
 \begin{figure}[h]
 \centerline{\includegraphics[width=0.95\textwidth]{figures/p2lhcb_dvsearches.pdf}}
   \caption{Naive projections of Run 1 results from searches of displaced jets at LHCb to the expected luminosity to be collected with the Phase-II upgraded detector. On the left is the projection of the search for a single displaced dijet~\cite{Aaij:2017mic} while on the right is the one for a single displaced vertex with a high$-\pt$ muon~\cite{Aaij:2016xmb}.}
-  \label{fig:ulhcb_trigger}
+  \label{fig:dvsearches_hllhc}
 \end{figure}
 
