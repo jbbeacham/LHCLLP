@@ -72,16 +72,17 @@ However, the average percentage of radiation length before the first measured po
 
 \subsubsection{Upgraded trigger}
 
-The online event selection in the LHCb experiment during the 2010-2018 running period is performed by a trigger composed of a hardware level (L0), and two software levels, High Level Trigger 1 (HLT1) and the High Level Trigger 2 (HLT2). The L0 reduces the rate from 30 MHz to 1 MHz, using information from the calorimeter and muon systems. Typical thresholds at the L0 are $\pt>1.4\gevc$ for muons and $E>2.5\gev$ for electrons. The software trigger performs a partial event reconstruction at HLT1, reconstructing tracks and primary vertexes for any particle down to $\pt=500\mevc$, followed by complete event reconstruction at HLT2, reducing further the rate to 12.5 kHz (in Run 2).
+The online event selection in the LHCb experiment during the 2010-2018 running period is performed by a trigger composed of a hardware level (L0), and two software levels, High Level Trigger 1 (HLT1) and the High Level Trigger 2 (HLT2). The L0 reduces the rate from 40 MHz (the LHC bunch-crossing rate) to 1 MHz, using information from the calorimeter and muon systems. Typical requirements in the L0 are $\pt>1.4\gevc$ for muons and $E>2.5\gev$ for electrons. The software trigger performs a partial
+event reconstruction at HLT1, reconstructing tracks and primary vertices for any particle down to $\pt=500\mevc$, followed by a complete event reconstruction at HLT2, reducing further the rate to 12.5 kHz (in LHC Run 2).
 
-Given the higher istantenoeus luminosity foreseen after the Phase 1 upgrade, a new trigger system, able to fully exploit the LHC potentiality, has been designed.
-
-The upgraded LHCb trigger consists of two paradigms, a triggerless readout and full software trigger. 
+In the Phase-I upgrade LHCb foresees to run at a luminosity of $20\times 10^32 {\rm cm}^{-2}{\rm s}^{-1}$, about a factor of 5 larger than the one that it run at during LHC Run 2.
+For this reason, a new trigger system, able to fully exploit the LHC potential, has been designed.
+The upgraded LHCb trigger consists of two paradigms, a triggerless readout and a full software trigger. 
 In addition, as already tested in Run 2, a real-time alignment and calibration will allow to achieve offline-quality reconstruction level already in the trigger and a higher signal purity of interesting decay channels. Figure~\ref{fig:ulhcb_trigger} shows the current and the upgrade trigger scheme. 
 
 \paragraph{Triggerless redout and full software trigger}
-With the LHCb trigger upgrade the 1 MHz readout limitation will be removed, allowing the full event rate to be processed in software. This will increase the efficiency for several final states which, already in Run 2, cannot benefit from the higher luminosity because of the L0 bottleneck. Figure~\ref{fig:triggervsLumi} shows the saturation for not muonic final state with increasing luminosity.
-Moreover, a purely software trigger will not necessitate the tight $\pt$ requirements currently applied at the hardware trigger level. Thanks to this, several physics program involving low-$\pt$ particle, currently prevented because of the low L0 efficiency, will be possible.
+With the LHCb trigger upgrade the 1 MHz readout limitation will be removed, allowing the full event rate to be processed in software. This will increase the efficiency for several channels which otherwise would not benefit from the higher luminosity because of the L0 bottleneck. Figure~\ref{fig:triggervsLumi} shows how the rate for non-muonic $B$ decays saturates with increasing luminosity. Most of these channels saturate the L0 trigger already at the Run 2 luminosity ($4\times 10^32 {\rm cm}^{-2}{\rm s}^{-1}$).
+Moreover, a purely software trigger will not require the $\pt$ requirements currently applied at the hardware trigger level. Thanks to this, several physics program involving low-$\pt$ particle, currently prevented because of the low L0 efficiency, will be possible.
 
 \paragraph{Turbo stream}
 Starting from Run 2, offline-quality aligment and calibration is applied between the HLT1 and the Hlt2 level. This made possible the design of a new dedicated
