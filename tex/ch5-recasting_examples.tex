@@ -3,7 +3,7 @@
 
 Here we provide examples of recasting specific experimental
 searches for several LLP signatures: heavy stable charge particles, displaced
-leptons, displaced jets, displaced lepton-jets, non-pointing photons, disappearing tracks and displaced vertices.
+leptons, displaced jets, displaced lepton-jets, non-pointing photons and displaced vertices.
 These recasting attempts have been made outside the experimental collaborations,
 making use of the public information provided by the experimental note or
 publication. The aim here is to point out the challenges faced when recasting
@@ -21,7 +21,7 @@ recasting.
 Searches for heavy stable charge particles (HSCPs) are based on the signature
 of highly ionizing tracks
 and/or an anomalous time-of-flight between the particle's production at the interaction point and its arrival in the
-muon detector~\cite{Fairbairn:2006gg}.
+muon detector~\cite{Fairbairn:2006gg} (see Sec.~\ref{subsec:ExpHSCP} for more details).
 Both signatures are sensitive to the particle's velocity an exploit the
 production of HSCPs in the non-ultrarelativistic regime,
 allowing for a powerful discrimination against the Standard Model background.
@@ -55,9 +55,8 @@ which the corresponding efficiencies have not been provided by CMS\@.
 
 \subsubsection{Recasting using signature efficiencies}\label{sec:signatureeff}
 
-
-In Ref.~\cite{Khachatryan:2015lla} efficiencies for the reconstruction
-and selection of HSCP candidates are provided in the form of on- and
+Reference~\cite{Khachatryan:2015lla} provides efficiencies for the reconstruction 
+and selection of HSCP candidates with $|Q|=1$ in the form of on- and
 off-line probabilities, $P_\text{on}(\vec{k})$ and $P_\text{off}(\vec{k})$.
 These are given as a function of the truth-level kinematics 
 velocity ($\beta$), pseudo-rapidity ($\eta$) and 
@@ -200,7 +199,7 @@ Therefore a straightforward recasting of the run 2 search is not possible.
 Nonetheless, since the 8\,TeV CMS search has proven to be extremely useful
 in constraining models with long-lived charged particles,
 it would be desirable to recast the 13\,TeV analysis as well.
-In the following we discuss an attempt~\cite{inprep2017} 
+In the following we discuss an attempt~\cite{LesHouches2017}
 to obtain a similar recasting for the respective HSCP search at 13\,TeV.
 Our aim is to extrapolate the public 8\,TeV efficiencies for the 13\,TeV run by
 introducing a correction function $F$ that accounts for the differences between both runs:
@@ -270,8 +269,6 @@ efficiencies ($F=1$), as shown by the forth column in Table~\ref{tab:eff}.
 
 \begin{table}[h]
 \footnotesize
- % \renewcommand{\arraystretch}{1.2}
- \renewcommand{\arraystretch}{0.5}
  \begin{center}
 \begin{tabular}{c|ccc}
  & \multicolumn{3}{c}{direct production } \\
@@ -326,9 +323,7 @@ additional information from the experimental collaboration.
 
 \begin{table}[h]
 \footnotesize
- % \renewcommand{\arraystretch}{1.2}
- \renewcommand{\arraystretch}{0.5}
- \begin{center}
+\begin{center}
 \begin{tabular}{c|ccc}
  & \multicolumn{3}{c}{ GMSB } \\
 $m_\text{HSCP}$ [{\rm GeV}] & \,$\epsilon(\text{CMS})$ & $\epsilon(F_\text{best-fit})$& $\epsilon(F=1)$ \\
@@ -347,6 +342,7 @@ points reported by CMS (second column)
 and obtained through recasting using $F_\text{best-fit}$ and without the inclusion of the correction function ($F=1$).}
 \label{tab:effGMSB}
 \end{table}
+
 
 \vskip 0.1in
 \noindent {\bf Lessons learned}
@@ -534,7 +530,7 @@ ones they considered. The details can be found in Ref.~\cite{Cui:2014twa}.
 
 To validate this approach, truth-level quantities for the models constrained in
 Ref.~\cite{CMS-PAS-EXO-12-038} were computed and compared to the numbers and
-distributions reported in Ref.~\cite{CMS-PAS-EXO-12-038} [\textcolor{red}{These are the same reference.}]. For example,
+distributions reported. For example,
 comparisons of the distributions of the observables going into the multivariate
 discriminant, as well as the output of the multivariate discriminant could be
 performed. While the truth-level distributions disagreed with those of CMS for
@@ -561,7 +557,59 @@ In addition, with a larger and more diverse set of signal benchmarks available, 
 
 \subsection{Displaced Lepton-Jets}
 
-\red{GC: Will include recast later, Michael agreed to contribute to this, awaiting for input.}
+A variety of scenarios predict the existence of LLP's decaying to a pair of highly collimated leptons, or lepton jets (LJs). These scenarios include models with heavy right handed neutrinos, exotic Higgs decays, and dark gauge bosons. The relevant signature is one or more LJ's emerging from a displaced vertex (DV). In many cases, there can also be associated prompt objects, such as a prompt lepton produced in conjunction with the right handed neutrino. 
+
+{\bf Existing searches}. To date, searches for DV LJ's have been performed by the ATLAS collaboration using 20.3 fb$^{-1}$ of integrated luminosity at $\sqrt{s}=8$ TeV \cite{Aad:2014yea} and 3.4 fb$^{-2}$ at  $\sqrt{s}=13$ TeV~\cite{ATLAS:2016jza}. The search was interpreted in the framework of the Falkowski-Ruderman-Volanksy-Zupan (FRVZ) model~\cite{Falkowski:2010cm} for the Higgs boson interacting with a hidden sector containing a massive dark photon ($\gamma_d$), massive neutralinos, and three hidden scalars. DVLJ's are produced at the end of Higgs cascade decay that also yields two hidden light stable particles (HLSPs). Depending on the hidden sector spectrum, the cascade decay may yield two or more $\gamma_d$s that decay to pairs of Standard Model charged particles via kinetic mixing with the hyper charge gauge boson. The $\gamma_d$ decay products will be highly collimated. For $m_{\gamma_d} < 500$ MeV, LJs will be the dominant decay mode, while for larger dark photon masses, the DV hadronic jets can be significant.
+
+The ATLAS Collaboration correspondingly classified LJ into three categories, depending on the number of muons observed in the muon spectrometer (MS) and the presence/absence of additional objects within a cone defining the LJ: (a) Type0, with a cluster of two muons and no jets within the cone; (b) Type1, with at least two muons and exactly one jet in the cone; and (c) Type2, with no muons but with jets having EM fraction less than 0.4 within the cone. The latter class would include $\gamma_d$ decaying to an electron/pion pair. For Type0 and Type1 LJ,  the ATLAS MS triggers were used, while for Type2, jet trigger information is required. Since most of the MS triggers require matching between the MS track and the ID track, the Type0 and Type1 events required an unprescaled multi-muon trigger. The available trigger required at least three muons in the in the MS with $p_T> 6$ GeV (the 3mu6 trigger). Consequently, at least one of the decaying $\gamma_d$ must produce two regions of interest, making the trigger efficiency dependent on $\Delta R$. The corresponding efficiency is of order 30\% except at very low $\gamma_d$ $p_T$. For the Type2 LJ, the calorimetric trigger efficiency was of order 30-40\% except at low $\gamma_d$ $p_T$.
+
+Signal selection was optimized using a set of Monte Carlo LJ \lq\lq gun" samples. A cone size $\Delta R$ was identified in order to contain nearly all $\gamma_d$ decay products around the LJ line of flight. For Types 0 and 1 events, $\Delta R=0.5$ was found to be adequate. For Type 2 events, the low EM fraction requirement was imposed. All non-prompt LJ's were required to be isolated in the ID, while a minimum $\Delta\phi$ between two LJ's was imposed in order to reduce backgrounds. 
+
+Primary backgrounds for Types~0 and 1 LJs include cosmic ray muons, while for Type 2 it is Standard Model multi-jet production. To reduce the former, cuts were placed on the transverse and longitudinal MS tracks at the primary vertex. In addition, the requirement that there be no matched ID track removed 80\% of the non-prompt and quasi-prompt muons. For Type2 events, the requirement on EM fraction and jet width were optimized by studying the corresponding signal significance. 
+
+The reconstruction efficiency for the Type0 LJ was generally between 5 and ten percent, but falls dramatically for $\gamma_d$ $p_T$ below 30 GeV. 
+%
+Results were presented as limits on $\sigma\times \mathrm{BR}(H\to n\gamma_d+X)$ ($n=2$, 4) as a function of the $\gamma_d$ $c\tau$. The strongest limits  from the 8 TeV data set are obtained when Type2 events are excluded. For $n=2$, a $\sigma\times \mathrm{BR}(H\to 2\gamma_d+X)$ of larger than about one pico barn is excluded for $c\tau\sim 50$ mm. 
+
+{\bf Recast: Dark Photon with Non-Abelian Kinetic Mixing}. The FRVZ model on which the ATLAS analysis was based implies the presence of at least two DV LJ's in the final state as well as two additional unobserved HLSP's that corresponding to missing energy. The ATLAS analysis did not impose any MET cuts. The presence of the two HLSP's affects the kinematics and topology of the signal event but does not enter the event selection or reconstruction explicitly. Thus, one should be able to reinterpret the ATLAS analysis in terms of any other model containing two or more DV LJ's plus additional unobserved objects. 
+
+Models containing heavy RH neutrinos can yield events with one DV LJ, MET and a prompt lepton -- a topology that is not easily matched to the ATLAS DV LJ analysis. As an alternate, we consider a scenario for a dark photon $X_\mu$ that mixes with the neutral Standard Model SU(2$)_L$ gauge boson $W_\mu^3$ via a higher dimensional operator. Two possibilities have recently been considered: a dimension six operator involving the SM Higgs doublet, the SU(2$)_L$ field strength $W_{\mu\nu}^a$ and the corresponding U(1$)^\prime$ field strength $X_{\mu\nu}$~\cite{Barello:2015bhq}; and a dimension five operator involving $W_{\mu\nu}^a$, $X_{\mu\nu}$, and a real scalar triplet $\Sigma\sim (1,3,0)$~\cite{Arguelles:2016ney}. We consider the latter since it can yield an event topology similar to that of the FRVZ model and since it is the leading operator that may generate non-abelian kinetic mixing (NAKM) of the U(1$)^\prime$ gauge boson with the SM. We will henceforth refer to this model as the NAKM5 scenario.
+%
+The corresponding operator is
+\begin{equation}
+\label{eq:ch5-dimensionfive}
+\mathcal{O}_{WX}^{(5)} = 
+-\frac{\beta}{\Lambda}\,\text{Tr}\left(W_{\mu\nu}\Sigma\right) X^{\mu\nu}
+\end{equation}
+where $\Lambda$ is the associated effective field theory mass scale and $\beta$ is a dimensionless coupling that is nominally $\mathcal{O}(1)$. When the neutral component of the $\Sigma$ obtains a vacuum expectation value (vev) $v_\Sigma$, one has the ratio of the dark photon and SM photon couplings 
+\begin{equation}
+\label{eq:ch5-dimfiveeps}
+\epsilon = {\beta\sin\theta_W}\, \left(\frac{v_\Sigma}{\Lambda}\right)\ \ \  .
+\end{equation}
+Note that the $\rho$-parameter constrains $v_\Sigma$ to be smaller than about \mbox{4~GeV}. Consequently, for $\Lambda$ of order one TeV, $\epsilon$ is small (and consistent with present experimental constraints) without requiring the presence of a suppressed coupling in the Lagrangian. This feature distinguishes the dimension-five non-abelian kinetic mixing from the dimension four kinetic mixing between $X_\mu$ and the SM hyper charge gauge boson. 
+
+The final state with two $\gamma_d$ (resulting from the $X_\mu$-$W_\mu^3$ mixing) can be produced in one of two ways: (a) electroweak Drell-Yan pair production of  triplet scalars that subsequently decay to a $\gamma_d$ and SM gauge boson via the operator (\ref{eq:ch5-dimensionfive}) (b) production of the $\gamma_d$ and a triplet scalar via $\mathcal{O}_{WX}^{(5)}$ with a subsequent decay of the triplet to a second $\gamma_d$ plus a SM gauge boson via the same operator. In each case, one would expect the presence of two $\gamma_d$ plus one or more unobserved massive prompt bosons in the final state. The ATLAS DV plus LJ analysis can be recast in a straightforward way for these event topologies, as no information about the unobserved prompt object has been used. It is worth emphasizing that both the production processes as well as the $\Sigma$ decay rate are independent of the triplet vev, $v_\Sigma$. The latter only enters $\epsilon$ and, thus, only affects the dark photon $c\tau$. 
+
+\begin{figure}[!t]\centering
+\includegraphics[width=0.48\textwidth,angle=0]{ch5-figures/dvlj_atlas_recast_0.pdf}\hspace*{2mm}\includegraphics[width=0.48\textwidth,angle=0]{ch5-figures/dvlj_atlas_recast.pdf}
+\caption{Constrains on the NAKM5 scenario, recast from the ATLAS search reported Ref.~\cite{Aad:2014yea}. The left panel gives the exclusion in the ($c\tau$, $\sigma\times\text{BR}$) plane, where the region above the parabola is excluded. The diagonal lines indicate the dependence of $\sigma\times\text{BR}$ on $c\tau$ for different representative choices of $v_\Sigma$. The right panel gives the exclusion region in the($v_\Sigma$, $\Lambda/\beta$) plane for $m_X=0.4$ GeV (red region) and $m_X=1.5$ GeV (yellow region).} % {\color{magenta} need PLB reprint permission statement}} 
+\label{fig:ch5-ATLASbounds}
+\end{figure}
+
+The corresponding implications of the ATLAS 8 TeV results are indicated in Fig.~\ref{fig:ch5-ATLASbounds}. The first panel shows the limits on the $\sigma\times\mathrm{Br}$ as a function of $c\tau$. The corresponding model sensitivity is shown for different choices of $v_\Sigma$ by the diagonal lines. Note that for fixed $v_\Sigma$ both the $\sigma\times\mathrm{Br}$ and $c\tau$ depend on the operator coefficient $\beta/\Lambda$, leading to a non-trivial relationship between the two experimental quantities. This situation differs from the FRVZ model, where $\sigma\times\mathrm{Br}$ is independent of $c\tau$ since the mixing parameter $\epsilon$ does not depend on the parameters governing production of the hidden sector particles or their cascade decays. The intersections of the model lines with the ATLAS limits can then be translated into bounds on $\Lambda/\beta$ as a function of $v_\Sigma$ for different choices of the dark photon mass (denoted here as $m_X$), as shown in the second panel of Fig.~\ref{fig:ch5-ATLASbounds}. For a 1.5~GeV dark photon, the excluded region reaches \mbox{600~GeV} for $v_\Sigma = 1 $ MeV.
+
+The aforementioned recast does not require detailed information on event topology, other than the dark photon decay length. Consequently, the 13~TeV limits  \cite{ATLAS:2016jza} translate rather straightforwardly into stronger bounds on the model parameter space, reaching to somewhat larger $\Lambda/\beta$. 
+
+\vskip 0.1in
+\noindent {\bf Lessons learned}
+\vskip 0.1in
+
+The triggering requirements used in the ATLAS analysis thus far limit the reach of DV LJ searches. For models having a signal with only the DV LJ and no other observable objects, such as the FRVZ model, triggering solely on MS tracks not associated with ID tracks is appropriate, though even here the 3mu6 trigger may not be sufficiently inclusive, as it requires at least three ROI in the MS. Events with LJ pairs for which neither LJ can be resolved into two separate ROIs will be missed. 
+
+It is clear that triggering on associated prompt objects, such as the lepton from one of the final state vector bosons in the NAKM5 scenario or from initial the $W$ boson in heavy RH neutrino models, could significantly enhance the triggering efficiency and extend the reach of DV LJ searches to a wider class of models and to a broader range of model parameter space. Inclusion of an associated prompt object in triggering may also enhance background rejection and relax the requirement on $\Delta\phi$ between LJs.
+
+In addition, the implications of the mass scale of the intermediate BSM particles and the number of finial state prompt objects remains to be investigated. The ATLAS 8 TeV search assumed the hidden sector particles are light compared to the mass of the SM Higgs boson, whose decay chain leads to the final states involving multiple $\gamma_d$ and HLSPs. For the NAKM5 scenario and models with heavy RH neutrinos, these assumptions about mass hierarchy may not apply. It is also not clear what impact the DV LJ isolation requirements have when there is an associated prompt lepton in the signal event.
+
 
 
 \subsection{Non-pointing Photons}
@@ -638,15 +686,14 @@ The ATLAS paper gives detailed descriptions of the cuts and background analysis,
 
 The background analysis in Ref.~\cite{Aad:2014gfa} is based on a data-driven study, for which events passing the diphoton selection with $\slashed E_T<20$ GeV are used as control region sample. It is challenging for theorists to simulate the background for different energy cuts. Especially for the $\slashed E_T$ cut that plays a vital role in the DM and Hidden Valley searches.
 
-In order to obtain a more precise result it would be useful if the ATLAS collaboration could provide the reconstruction efficiency of non-pointing photons as function of $\Delta z_{\gamma}$, or of the angle between the photon and the surface of the ECAL, a variable that may be relevant to the efficiency. The paper does provide a table of signal acceptance times efficiency for the GMSB SPS8 model, but it is not easy to apply those results to different new physics models.
+In order to obtain a more precise result it would be useful if the ATLAS collaboration could provide the reconstruction efficiency of non-pointing photons as function of $\Delta z_{\gamma}$, or of the angle between the photon and the surface of the ECAL, a variable that may be relevant to the efficiency. The paper does provide a table of signal acceptance times efficiency for the GMSB SPS8 model. However, the numbers depend on details of the SPS8 model, and it is hard to extract the efficiency that is associated to the non-pointing photon reconstruction. Therefore, when estimating the signal efficiency, we only consider efficiency from the selection cuts and do not include possible suppressions from photon reconstruction. 
 
 It would also be very useful to have a table of background events for different cuts on $\slashed E_T$. For instance, for the Dark Penguin the typical $\slashed E_T$ from the decay of $\chi_h\bar{\chi}_h$ with electroweak-scale $m_{\chi_h}$ can easily be higher than $100$ GeV. By contrast, in the dark shower scenario where soft hidden pions decay to two SM photons, the $\slashed E_T$ originating from additional late-decaying pions can be much lower than the $75$ GeV cut used in the ATLAS analysis. Knowing the background and systematic uncertainty for different $\slashed E_T$ cuts would be very important to constrain different models.
 
 
-\subsection{Disappearing Tracks}
-\label{sec:ch5-disappearingTracks}
-
-{\color{red}{ZL: Awaiting input from Rakhi Mahbubani}}
+% \subsection{Disappearing Tracks}
+% \label{sec:ch5-disappearingTracks}
+% NOT PROVIDED
 
 \subsection{Displaced Vertices}
 \label{sec:ch5-displacedVertices}
@@ -722,7 +769,9 @@ Before parametrized efficiencies applicable for truth-level displaced vertices w
 {  DV fiducial}         & DV within $4$ mm $<r_{DV}<300$ mm and $|z_{DV}|<300$ mm
 \\  
  & \\
-{ DV material}$^*$         & No DV in regions near beampipe or within pixel layers. Discard tracks with $r_{DV}/\mathrm{mm} \in \{[25,38], [45,60], [85,95], [120,130]\}$.\\ 
+{ DV material}$^*$         & No DV in regions near beampipe or within pixel layers. Discard tracks with 
+
+$r_{DV}/\mathrm{mm} \in \{[25,38], [45,60], [85,95], [120,130]\}$.\\ 
                     & \\
                     & \\
  $N_{\rm trk}$       & DV track multiplicity $\geq 5$ \\
@@ -738,11 +787,13 @@ Before parametrized efficiencies applicable for truth-level displaced vertices w
 A tracking efficiency of the form
 
 \begin{equation}
-\scriptsize
-\varepsilon_\mathrm{trk} = 0.5\times \left(1-\exp\left(\frac{-p_{T}}{4.0\mathrm{~GeV}}\right)\right)  \times\exp\left(\frac{-z_\mathrm{DV}}{270\mathrm{~mm}}\right)  \times \mathrm{max}(-0.0022\times{\frac{r_\mathrm{DV}}{\mathrm{1\mathrm{~mm}}}}+0.8,0),
+\begin{aligned}
+\footnotesize
+\varepsilon_\mathrm{trk} = & 0.5\times \left(1-\exp\left(\frac{-p_{T}}{4.0\mathrm{~GeV}}\right)\right)  \times\exp\left(\frac{-z_\mathrm{DV}}{270\mathrm{~mm}}\right) \\ 
+& \times \mathrm{max}(-0.0022\times{\frac{r_\mathrm{DV}}{\mathrm{1\mathrm{~mm}}}}+0.8,0),
 \label{eqn:trkeff}
+\end{aligned}
 \end{equation}
-
 
 is used, where $r_\mathrm{DV}$ and $z_\mathrm{DV}$ are the transverse and longitudinal distance of the track's production vertex (same as displaced vertex origin when using truth-level generator information).  This functional form is designed to take into account the size of the detector (linear dependence on $r_\mathrm{DV}$, exponential on $z_\mathrm{DV}$), as well as a turn-on like feature dependent on the $p_{T}$ of the track. It reproduces the overall behavior of efficiency falling off with vertex displacement. The parameters were determined by fitting the efficiency curve (with lifetime dependence), for three benchmarks in the analyses.  We find that fitting only one benchmark does not correctly reproduce the efficiency curve for any of the others.  This is most likely due to insufficient dimensionality of the efficiency map.  We expect that a full tracking efficiency parametrisation depends not only on $r_\mathrm{DV}$, $z_\mathrm{DV}$ and $p_T$, but also transverse and longitudinal impact parameters ($d_0$,$z_0$), and on charge and pseudorapidity of the track. Furthermore, we expect a vertex efficiency that depends on the topology of the event and the nature of the particles forming the vertex. The fit for the event efficiencies from this tracking function can be seen in Figure~\ref{fig:trkeff}.
 
