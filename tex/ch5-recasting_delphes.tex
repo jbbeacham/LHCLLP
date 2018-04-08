@@ -79,9 +79,8 @@ included in the collection of stable particles stored in the output \ROOT\ file.
 They can in this way be used for an offline, more correct, treatment.
 
 Moreover, several modules that are not used in the default ATLAS and CMS cards
-could serve for a better simulation of the long-lived particles in \DEL\ . For
-instance,
-the \verb+TrackSmearing+ module allows the user to smear the track momentum
+could serve for a better simulation of the long-lived particles in \DEL . For
+instance, the \verb+TrackSmearing+ module allows the user to smear the track momentum
 according to the impact parameter in the transverse plane ({\it i.e.}, the $d_0$
 parameter) and in the longitudinal plane ({\it i.e.}, the $d_z$ parameter).
 
@@ -93,14 +92,14 @@ calorimeters if its lifetime is large enough.
 In this case, if the long-lived particle decays inside the tracker, its
 trajectory is properly propagated to the calorimeters and the displaced vertex
 is correctly accounted for. However, if the long-lived particle decays outside
-the tracker, its decay products are ignored in \DEL\ , unless the \verb+RadiusMax+
+the tracker, its decay products are ignored in \DEL, unless the \verb+RadiusMax+
 parameter has been specified to be larger than the tracker \verb+Radius+
 parameter. In this case the decay products can be found in the
 \verb+Delphes/stableParticles+ output collection and
 treated with adequate smearing functions and efficiency directly from the \DEL\
 output.
 
-Finally, disappearing tracks are simply treated as missing energy in \DEL\. Emerging tracks or tracks containing kinks are not treated appropriately, in the sense that the parameterizations required for a proper description of such signatures has not been implemented yet. Also, \DEL\ does not include any trigger simulation, and the latter is in general complex in the case of long-lived particles.
+Finally, disappearing tracks are simply treated as missing energy in \DEL. Emerging tracks or tracks containing kinks are not treated appropriately, in the sense that the parameterizations required for a proper description of such signatures has not been implemented yet. Also, \DEL\ does not include any trigger simulation, and the latter is in general complex in the case of long-lived particles.
 
 \subsection{Displaced tracks with the \MA\ tune of \DEL}
 
@@ -109,8 +108,7 @@ The so-called \DEL-LLP package can be installed from the version v1.6 of
 specific to long-lived particles. It
 consequently opens the door for phenomenological investigations of long-lived
 particles and the recasting of related LHC analyses. More information is
-available on the web page:\\ \hspace*{0.5cm} \url{
-https://madanalysis.irmp.ucl.ac.be/wiki/MA5LongLivedParticle}
+available on the web page:\\ \hspace*{0.5cm} \url{https://madanalysis.irmp.ucl.ac.be/wiki/MA5LongLivedParticle}
 
 This new package was designed to handle neutral long-lived particles that decay
 into leptons within the tracker volume. Realistic efficiencies are applied to
@@ -197,7 +195,7 @@ Our event generation has been preformed with {\sc Pythia} 8~\cite{Sjostrand:2007
 and for the benchmark
 scenario SPS 1a.
 We observe that a good agreement is obtained, except in the case of a long stop
-lifetimes, $c\tau \gtrsim 1m$. 
+lifetimes, $c\tau \gtrsim 1$~m. 
 This is however the region in which no public information on
 the CMS reconstruction efficiencies is available.
 
