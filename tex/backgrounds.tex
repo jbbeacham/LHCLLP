@@ -7,14 +7,14 @@
 \section{Introduction} % Sascha, all
 % -----------------------------------------------------------------------------------
 
-For many searches for long-lived particles, the (main) background is not stemming from SM processes, but arises from \textit{external sources} or is even instrumental and/or of algorithmic nature. This section gives an overview on common \textit{non-physics} background and means to estimate or control these types of background.
+For many searches for long-lived particles, the main background is not stemming from SM processes, but arises from \textit{external sources} or is even instrumental and/or of algorithmic nature. This chapter gives an overview of common LLP search backgrounds and the means to estimate or control these types of background.
 
 % -----------------------------------------------------------------------------------
 \section{Known long-lived particles} % Martino
 % -----------------------------------------------------------------------------------
 Weak decays of SM particles normally have displaced vertices at the boosts typically encountered the LHC. The searches for signature at low enough LLP mass and lifetime suffer from large backgrounds due to displaced SM decays. One simple example is found in the search for long-lived dark photons~\cite{Aaij:2017rft} decaying to $\mu^+ \mu^-$, which drastically looses sensitivity when getting too close to the $K_{\rm S}\rightarrow\pi^+\pi^-$ invariant mass despite the very low $\pi\rightarrow\mu$ mis-ID.
 
-Decays of b-hadrons give displacements of few millimetres and can be indistinguishable from a LLP with mass few tents of GeV decaying to a pair of jets. Requiring a large track multiplicity of the displaced vertex and performing a mass fit to the dijet invariant mass can help to significantly reduce the effect of this background (see for example~\cite{CMS:2014wda, Aaij:2017mic}.
+Decays of \textit{b}-hadrons give displacements of few millimetres and can be indistinguishable from a LLP with mass few tens of GeV decaying to a pair of jets. Requiring a large track multiplicity of the displaced vertex and performing a mass fit to the dijet invariant mass can help to significantly reduce the effect of this background (see for example~\cite{CMS:2014wda, Aaij:2017mic}.
 Backgrounds from heavy flavours are typically more abundant in the forward region (e.g. if the signature searched is a LLP from a SM Higgs decay). However, the LHCb forward detector, being designed to study these SM decays, typically is also capable of rejecting them more effectively.
 
 % -----------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ LHC detectors have developed tools internal to the collaborations to define a ma
   \label{fig:materialmaps}
 \end{figure}
 
-LHCb recently developed a precise material map of the Vertex Locator (VELO) using beam-gas collisions~\cite{Alexander:2018png}. As shown in Figure~\ref{fig:lhcbmaterialmap}, this type of collisions is mostly free from long-lived heavy flavour background and allows to cover precisely the whole VELO geometry, not only the region close to the interaction point. This map was used to veto photon conversions to dimuons, which is the main background affecting displaced dark photon searches at low mass~\cite{Aaij:2017rft}. 
+LHCb recently developed a precise material map of the Vertex Locator (VELO) using beam-gas collisions~\cite{Alexander:2018png}. As shown in Figure~\ref{fig:lhcbmaterialmap}, this type of collisions is mostly free from long-lived heavy flavour background and allows to cover precisely the whole VELO geometry, not only the region close to the interaction point. This map was used to veto photon conversions to dimuons, which is the main background affecting displaced dark photon searches at low mass~\cite{Aaij:2017rft}.
 In particular, this material map, along with properties of a reconstructed secondary vertex and its constituent tracks, is used to construct a p-value that is assigned to the hypothesis that the secondary vertex originates from a material interaction. As a rule of thumb, LHCb material interaction background is dominant for vertices at a distance from the beam axis larger than 6~mm (where the VELO material begins). Below 6~mm the background is dominated by heavy flavour decays~\cite{Ilten:2016tkc}.
 
 \begin{figure}[h]
@@ -84,7 +84,7 @@ Another type of real particle generated outside the detector that could be a sig
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{figures/beamHaloSketch.png}
-  \caption{A sketch illustrating the timing differences between beam halo and particles from collisions.}
+  \caption{A sketch illustrating the timing differences between beam halo and particles from collisions. The path of particles to a given hit in the calorimeter is shown, for a beam-halo muon and for a particle from a collision. The beam-halo muon is detected earlier than the particle from the collision.}
   \label{fig:beamHaloSketch}
   % sketched by Sascha in https://goo.gl/fw95iR
 \end{figure}
@@ -104,7 +104,7 @@ Cavern radiation is usually not modelled in MC simulation.
 
 Cavern radiation is most relevant for searches looking in non-collision data, that is, stopped-particle searches, and for searches using muon system information to form tracks and vertices.
 
-Cavern radiation can be estimated from data by collecting events triggered by random triggers when there are no collisions. It can also be estimated by overlaying a cavern radiation simulation with minimum-bias events from data.
+Cavern radiation can be estimated from data by collecting events triggered by random triggers when there are no collisions. (Note that these triggers are unlike those used to collect the search data for stopped-particle searches, which instead select events with physics objects during empty bunch crossings.) Cavern radiation can also be estimated by overlaying a cavern radiation simulation with minimum-bias events from data.
 
 
 % -----------------------------------------------------------------------------------
@@ -122,10 +122,10 @@ Calorimeter noise can be rejected by vetoing single and concentrated energy depo
 Noise in both the calorimeters and the muon systems could be estimated by looking at dedicated cosmic data-taking runs and then applying some selection criteria to reject cosmic-ray muons. The remaining events would most likely be noise.
 
 % -----------------------------------------------------------------------------------
-\section{Algorithmically induced fakes} % Sascha
+\section{Algorithmically-induced fakes} % Sascha
 % -----------------------------------------------------------------------------------
 
-For searches that aim to reconstruct the decay vertex of a long-lived particle, and especially for long-lived particles decaying in the proximity of the interaction region, algorithmically induced fakes and/or instrumental backgrounds can be of importance.
+For searches that aim to reconstruct the decay vertex of a long-lived particle, and especially for long-lived particles decaying in the proximity of the interaction region, algorithmically-induced fakes and/or instrumental backgrounds can be of importance. Algorithmic fakes could still be a significant background to LLP searches, even if the detector was noise-free.
 
 % -----------------------------------------------------------------------------------
 \subsection{Random/merged vertices} % Sascha
