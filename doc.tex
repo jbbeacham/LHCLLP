@@ -1,4 +1,5 @@
-\documentclass[a4paper,debug,notitlepage,nobib]{tufte-book}
+%\documentclass[a4paper,notitlepage,nobib,debug]{tufte-book}
+\documentclass[a4paper,notitlepage,nobib]{tufte-book}
 \input{docheader}
 \usepackage{lineno}
 \linenumbers
@@ -33,6 +34,14 @@
 \addbibresource{UpgradeLiterature.bib}
 \addbibresource{triggers_LHCb.bib}
 
+%\makeatletter
+%\fancypagestyle{mystyle}{%
+%\fancyhf{}%
+%\fancyhead[LE]{\thepage\quad\smallcaps{LHC LLP Community}}% 
+%\fancyhead[RO]{\smallcaps{Searches for Long-Lived Particles Beyond the SM at the LHC}\quad\thepage}%
+%}
+%\makeatother
+
 \begin{document}
 
 %\morefloats
@@ -44,6 +53,10 @@
 \tableofcontents
  
 %\pagebreak
+
+
+
+%\pagestyle{mystyle}
 
 \chapter{Introduction}
 \label{sec:Introduction}
