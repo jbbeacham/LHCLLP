@@ -179,9 +179,9 @@ a widely applicable and highly reliable way to reinterpret the HSCP search for a
 models containing detector-stable HSCPs. Accordingly it has been used
 in a variety of phenomenological studies. For instance, 
 it has been used for reinterpretations in
-supersymmetric models~\cite{Evans:2016zau,Bagnaschi:2016afc,Heisig:2017lik} and
+supersymmetric models~\cite{Evans:2016zau,Bagnaschi:2016afc,Heisig:2017lik,Liu:2015bma} and
 non-supersymmetric models of very weakly interacting dark matter~\cite{Hessler:2016kwm, Garny:2017rxs}.
-In~\cite{Garny:2017rxs} the recasting has been used to reinterpret the HSCP search
+In~\cite{Garny:2017rxs,Liu:2015bma} the recasting has been used to reinterpret the HSCP search
 for finite lifetimes by convoluting the signature efficiency with the fraction of HSCPs 
 that decay after traversing the relevant parts of the detector.
 The recasting has also been used for a reinterpretation
@@ -445,7 +445,10 @@ or SR3.  All selection requirements are summarized in Table~\ref{tab:cuts}.
 In Figure~\ref{fig:DTval}, we present the validation of the CMS displaced $e\mu$
 search~\cite{Khachatryan:2014mea} from the study performed
 in~\cite{Evans:2016zau}.  For this search, we show the recommended 25\% modeling
-uncertainty. The recast agrees very well with the results from the CMS displaced
+uncertainty~\footnote{A similar validation was done in Ref.~\cite{Liu:2015bma} with details 
+provided in its Appendix D. After a flat $80\%$ efficiency for the constructive, a $20\%$ modeling uncertainty 
+is found to be appropriate, as shown in Fig.14 of the reference}. The recast agrees 
+very well with the results from the CMS displaced
 $e\mu$ search  in the region of highest sensitivity, 300 $\mu$m $\lesssim c\tau
 \lesssim 50$ cm, but exhibits a moderate deviation on the tails.   As this
 extremely low efficiency region is overly sensitive to the tails of the
@@ -504,16 +507,16 @@ was shown to be inadequate.
 
 Searches for displaced jets are less straightforward to reinterpret than
 displaced leptons. Interest in accurate reinterpretation is increasing, as many
-new physics models are sensitive to this particular signature. The work
-in~\cite{Cui:2014twa} explores long-lived particle (LLP) signatures for certain
-weak-scale models of baryogenesis~\cite{Cui:2012jh,Cui:2013bta,Cui:2014twa},
-where the CMS search for displaced dijets~\cite{CMS-PAS-EXO-12-038} was
-reinterpreted.
+new physics models are sensitive to this particular signature. The CMS search for 
+displaced dijets~\cite{CMS-PAS-EXO-12-038} was reinterpreted in Ref.~\cite{Cui:2014twa} to explore 
+long-lived particle signatures for certain weak-scale models of 
+baryogenesis~\cite{Cui:2012jh,Cui:2013bta,Cui:2014twa}, and a study~\cite{Liu:2015bma} to 
+understand current limits on long-lived signatures in supersymmetry.
 
 This search uses a multivariate discriminant composed of observables that are
 challenging to model in Monte Carlo (MC), such as the track vertex multiplicity
 and the root-mean-square of a cluster track multiplicity variable. The
-reinterpretation approach in Ref.~\cite{Cui:2014twa} was to construct track
+reinterpretation approach in Refs.~\cite{Cui:2014twa,Liu:2015bma} was to construct track
 information at truth level based on the output of a parton shower program (such
 as {\sc{Pythia 8}}), and then use the truth-level information to construct the
 various vertex, cluster, and track-level observables for each event. As it is
@@ -526,7 +529,8 @@ description of kinematics but \emph{not} track and vertex reconstruction, and so
 computed a ratio of truth-level efficiencies to those reported by CMS. Then we
 use these efficiency ratios to re-scale the truth-level results of other models,
 leading to a reinterpretation of the CMS search for different models beyond the
-ones they considered. The details can be found in Ref.~\cite{Cui:2014twa}.
+ones they considered. The details can be found in Ref.~\cite{Cui:2014twa} and in 
+Section II B and Appendix B of Ref.~\cite{Liu:2015bma}.
 
 To validate this approach, truth-level quantities for the models constrained in
 Ref.~\cite{CMS-PAS-EXO-12-038} were computed and compared to the numbers and
@@ -551,7 +555,7 @@ In addition, with a larger and more diverse set of signal benchmarks available, 
 %
 \begin{itemize}
 \item Increasing the number of presented signal models by the collaboration allows for more cross-checks between MC and the results in data. This allows for more sophisticated tuning of models;
-\item Having a more diverse set of benchmark signal models means that it is easier to dis-entangle various kinematic effects on the efficiency (such as the LLP mass, boost, etc.) and find a signal benchmark that most closely matches the model for which one wants to derive a limit.
+\item Having a more diverse set of benchmark signal models means that it is easier to disentangle various kinematic effects on the efficiency (such as the LLP mass, boost, etc.) and find a signal benchmark that most closely matches the model for which one wants to derive a limit.
 \end{itemize}
 %
 
@@ -559,7 +563,7 @@ In addition, with a larger and more diverse set of signal benchmarks available, 
 
 A variety of scenarios predict the existence of LLP's decaying to a pair of highly collimated leptons, or lepton jets (LJs). These scenarios include models with heavy right handed neutrinos, exotic Higgs decays, and dark gauge bosons. The relevant signature is one or more LJ's emerging from a displaced vertex (DV). In many cases, there can also be associated prompt objects, such as a prompt lepton produced in conjunction with the right handed neutrino. 
 
-{\bf Existing searches}. To date, searches for DV LJ's have been performed by the ATLAS collaboration using 20.3 fb$^{-1}$ of integrated luminosity at $\sqrt{s}=8$ TeV \cite{Aad:2014yea} and 3.4 fb$^{-2}$ at  $\sqrt{s}=13$ TeV~\cite{ATLAS:2016jza}. The search was interpreted in the framework of the Falkowski-Ruderman-Volanksy-Zupan (FRVZ) model~\cite{Falkowski:2010cm} for the Higgs boson interacting with a hidden sector containing a massive dark photon ($\gamma_d$), massive neutralinos, and three hidden scalars. DVLJ's are produced at the end of Higgs cascade decay that also yields two hidden light stable particles (HLSPs). Depending on the hidden sector spectrum, the cascade decay may yield two or more $\gamma_d$s that decay to pairs of Standard Model charged particles via kinetic mixing with the hyper charge gauge boson. The $\gamma_d$ decay products will be highly collimated. For $m_{\gamma_d} < 500$ MeV, LJs will be the dominant decay mode, while for larger dark photon masses, the DV hadronic jets can be significant.
+\paragraph {Existing searches} To date, searches for DV LJ's have been performed by the ATLAS collaboration using 20.3 fb$^{-1}$ of integrated luminosity at $\sqrt{s}=8$ TeV \cite{Aad:2014yea} and 3.4 fb$^{-2}$ at  $\sqrt{s}=13$ TeV~\cite{ATLAS:2016jza}. The search was interpreted in the framework of the Falkowski-Ruderman-Volanksy-Zupan (FRVZ) model~\cite{Falkowski:2010cm} for the Higgs boson interacting with a hidden sector containing a massive dark photon ($\gamma_d$), massive neutralinos, and three hidden scalars. DVLJ's are produced at the end of Higgs cascade decay that also yields two hidden light stable particles (HLSPs). Depending on the hidden sector spectrum, the cascade decay may yield two or more $\gamma_d$s that decay to pairs of Standard Model charged particles via kinetic mixing with the hyper charge gauge boson. The $\gamma_d$ decay products will be highly collimated. For $m_{\gamma_d} < 500$ MeV, LJs will be the dominant decay mode, while for larger dark photon masses, the DV hadronic jets can be significant.
 
 The ATLAS Collaboration correspondingly classified LJ into three categories, depending on the number of muons observed in the muon spectrometer (MS) and the presence/absence of additional objects within a cone defining the LJ: (a) Type0, with a cluster of two muons and no jets within the cone; (b) Type1, with at least two muons and exactly one jet in the cone; and (c) Type2, with no muons but with jets having EM fraction less than 0.4 within the cone. The latter class would include $\gamma_d$ decaying to an electron/pion pair. For Type0 and Type1 LJ,  the ATLAS MS triggers were used, while for Type2, jet trigger information is required. Since most of the MS triggers require matching between the MS track and the ID track, the Type0 and Type1 events required an unprescaled multi-muon trigger. The available trigger required at least three muons in the in the MS with $p_T> 6$ GeV (the 3mu6 trigger). Consequently, at least one of the decaying $\gamma_d$ must produce two regions of interest, making the trigger efficiency dependent on $\Delta R$. The corresponding efficiency is of order 30\% except at very low $\gamma_d$ $p_T$. For the Type2 LJ, the calorimetric trigger efficiency was of order 30-40\% except at low $\gamma_d$ $p_T$.
 
@@ -571,7 +575,7 @@ The reconstruction efficiency for the Type0 LJ was generally between 5 and ten p
 %
 Results were presented as limits on $\sigma\times \mathrm{BR}(H\to n\gamma_d+X)$ ($n=2$, 4) as a function of the $\gamma_d$ $c\tau$. The strongest limits  from the 8 TeV data set are obtained when Type2 events are excluded. For $n=2$, a $\sigma\times \mathrm{BR}(H\to 2\gamma_d+X)$ of larger than about one pico barn is excluded for $c\tau\sim 50$ mm. 
 
-{\bf Recast: Dark Photon with Non-Abelian Kinetic Mixing}. The FRVZ model on which the ATLAS analysis was based implies the presence of at least two DV LJ's in the final state as well as two additional unobserved HLSP's that corresponding to missing energy. The ATLAS analysis did not impose any MET cuts. The presence of the two HLSP's affects the kinematics and topology of the signal event but does not enter the event selection or reconstruction explicitly. Thus, one should be able to reinterpret the ATLAS analysis in terms of any other model containing two or more DV LJ's plus additional unobserved objects. 
+\paragraph {Recast: Dark Photon with Non-Abelian Kinetic Mixing} The FRVZ model on which the ATLAS analysis was based implies the presence of at least two DV LJ's in the final state as well as two additional unobserved HLSP's that corresponding to missing energy. The ATLAS analysis did not impose any MET cuts. The presence of the two HLSP's affects the kinematics and topology of the signal event but does not enter the event selection or reconstruction explicitly. Thus, one should be able to reinterpret the ATLAS analysis in terms of any other model containing two or more DV LJ's plus additional unobserved objects. 
 
 Models containing heavy RH neutrinos can yield events with one DV LJ, MET and a prompt lepton -- a topology that is not easily matched to the ATLAS DV LJ analysis. As an alternate, we consider a scenario for a dark photon $X_\mu$ that mixes with the neutral Standard Model SU(2$)_L$ gauge boson $W_\mu^3$ via a higher dimensional operator. Two possibilities have recently been considered: a dimension six operator involving the SM Higgs doublet, the SU(2$)_L$ field strength $W_{\mu\nu}^a$ and the corresponding U(1$)^\prime$ field strength $X_{\mu\nu}$~\cite{Barello:2015bhq}; and a dimension five operator involving $W_{\mu\nu}^a$, $X_{\mu\nu}$, and a real scalar triplet $\Sigma\sim (1,3,0)$~\cite{Arguelles:2016ney}. We consider the latter since it can yield an event topology similar to that of the FRVZ model and since it is the leading operator that may generate non-abelian kinetic mixing (NAKM) of the U(1$)^\prime$ gauge boson with the SM. We will henceforth refer to this model as the NAKM5 scenario.
 %
@@ -699,9 +703,9 @@ It would also be very useful to have a table of background events for different 
 \label{sec:ch5-displacedVertices}
 
 Displaced vertex searches differ from displaced jets and displaced leptons ones in the fact that actual reconstruction of a secondary vertex using track information is made. The lifetime of the LLP should allow it to decay either in the inner trackers or
-muon spectrometer of the LHC detectors, where vertexing is possible~\cite{Aaboud:2017iio,Aad:2015rba,Aad:2015uaa,CMS:2014wda,CMS:2014hka,Aaij:2016xmb,Aaij:2017mic}. These searches have an extremely low background, as there are no irreducible contributions from the SM, making them sensitive to very small signals of new physics.
+muon spectrometer of the LHC detectors, where vertexing is possible~\cite{Aaboud:2017iio,Aad:2015rba,Aad:2015uaa,CMS:2014wda,CMS:2014hka,Aaij:2016xmb,Aaij:2017mic}. These searches have an extremely low background, as there are no irreducible contributions from the SM, making them sensitive to very small signals of new physics. Moreover, the identification of displaced decays can be used to extract kinematical information in a decay, such as (invisible) particle masses~\cite{Cottin:2018hyf,Park:2011vw}.
 
-In this section we make the distinction when reinterpretation of displaced searches makes use of truth information to identify displaced decays and where an attempt to reconstruct them from displaced tracks is performed (with an approximate detector response).
+In this section we review some reinterpretations of displaced vertex searches, making the distinction when the reinterpretation makes use of truth information to identify displaced decays and where an attempt to reconstruct them from displaced tracks is performed (with an approximate detector response).
 
 \subsubsection{Truth Level Displaced Vertices}
 
@@ -724,8 +728,8 @@ The selection of events used for the signal region requires:
 In addition, events must have at least one displaced vertex with:
 
 \begin{itemize}
-\item{transverse distance detween the IP and the decay position $>4$ mm.}
-\item{the decay position must lie in the fidutial region $r_{DV}<300$ mm and $|z_{DV}|<300$ mm.}
+\item{transverse distance between the IP and the decay position $>4$ mm.}
+\item{the decay position must lie in the fiducial region $r_{DV}<300$ mm and $|z_{DV}|<300$ mm.}
 \item{the number of selected decay products must be at least 5, where selected decay products are charged and stable, with $p_{T}>1$ GeV and $|d_{0}|>2$ mm.}
 \item{the invariant mass of the truth vertex must be larger than 10 GeV, and is constructed assuming all decay products have the mass of the pion.}
 \end{itemize}
@@ -740,7 +744,9 @@ curves in Figure~\ref{fig:DVsigmaLimits} show our recasting results compared to
 ATLAS. The level of agreement is very good, within 20\% for most of the
 lifetime values. We also point out that the recasting limits agree well
 even for regions where the efficiency is very low ($\tau > 10$~ns
-and $\tau < 10^{-2}$~ns).
+and $\tau < 10^{-2}$~ns). 
+This 13 TeV ATLAS multitrack analysis~\cite{Aaboud:2017iio} has also been reinterpreted in the
+context of long-lived sterile neutrinos in a left-right symmetric model~\cite{Cottin:2018kmq}.
 
 \begin{figure}[t]
 \begin{center}
