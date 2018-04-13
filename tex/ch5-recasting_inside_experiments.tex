@@ -20,7 +20,7 @@ These services are being developed in close collaboration with the CERN Analysis
 
 \subsection{Analysis Preservation as a driver for re-interpretation}
 
-Within the LHC experiments, the ability to re-interpret analyses is, perhaps unintuitively, mostly limited by the internal availability of the analysis routines for a given to the wider collaboration as opposed to e.g. availability of computing resource constraints. The large number of measurements and searches, the heterogeneity and complexity of the analysis software, as well the size of the collaboration lead to a situation in which oftentimes only a small number of analyzers of the original analysis team is able to execute any given analysis. Furthermore, due to the collaborative development model, analyzers typically are responsible for only a subset of the analysis resulting in knowledge fragmentation. Therefore both ATLAS and CMS are now designing interface to store analysis-relevant information CERN Analysis Preservation Portal~\cite{CAP} to mitigate this problem. In the context of RECAST the software and analysis-workflow preservation aspects of this effort are most relevant. The former is mainly implemented through archiving of source code repositories and the archival Linux Containers, which now enjoy wide-spread industry support, while internal structure of the analysis workflow is archived in CAP in the form of declarative workflow specifications such as yadage~\cite{Cranmer:2017frf}, which has been developed for RECAST, and the Common Workflow Language (CWL)\cite{CWL}. It is planned that CAP and RECAST will utilize a common computing backend in order to re-execute the analyses that have been preserved in the portal. As the preservation is enabled by recent technological advances and the process of archival is increasingly streamlined, it is expected that a higher number of  experiment-internal analysis codes will be available for RECAST.
+Within the LHC experiments, the ability to re-interpret analyses is, perhaps unintuitively, mostly limited by the internal availability of the analysis routines for a given to the wider collaboration as opposed to e.g. availability of computing resource constraints. The large number of measurements and searches, the heterogeneity and complexity of the analysis software, as well the size of the collaboration lead to a situation in which oftentimes only a small number of analyzers of the original analysis team is able to execute any given analysis. Furthermore, due to the collaborative development model, analyzers typically are responsible for only a subset of the analysis resulting in knowledge fragmentation. Therefore both ATLAS and CMS are now designing interface to store analysis-relevant information CERN Analysis Preservation Portal~\cite{CAP} to mitigate this problem. In the context of RECAST the software and analysis-workflow preservation aspects of this effort are most relevant. The former is mainly implemented through archiving of source code repositories and the archival Linux Containers, which now enjoy wide-spread industry support, while internal structure of the analysis workflow is archived in CAP in the form of declarative workflow specifications such as yadage~\cite{Cranmer:2017frf}, which has been developed for RECAST, and the Common Workflow Language (CWL)~\cite{CWL}. It is planned that CAP and RECAST will utilize a common computing backend in order to re-execute the analyses that have been preserved in the portal. As the preservation is enabled by recent technological advances and the process of archival is increasingly streamlined, it is expected that a higher number of  experiment-internal analysis codes will be available for RECAST.
 
 \begin{figure}[h]
 \begin{center}
@@ -35,7 +35,7 @@ Right: An experiment-internal reinterpretation executing on the distributed infr
 
 \subsection{RECAST Examples}
 
-\subsubsection{ATLAS-internal Analysis Examples and Results}
+\paragraph{ATLAS-internal Analysis Examples and Results :}
 
 A number of re-interpretation publications have been supported by the backend underpinning RECAST. After Run-1, ATLAS has conducted a thorough re-interpretation of the SUSY landscape in the context of the phenomenological pMSSM~\cite{Aad:2015baa}, a study involving 20 SUSY analyses and 50,000 fully simulated pMSSM parameter points. While at that time, most analyses had to be re-interpreted manually, the 2L electroweak analysis~\cite{Aad:2014vma} included in that paper served as a protootype analysis and provided results using the highly automated RECAST backends.
 
@@ -53,16 +53,16 @@ Right: Follow-up dark-matter re-interpretation. Exclusions presented in chargino
 \label{fig:recast-cc}
 \end{figure}
 
-[We have a nother reinterpretation of a multi-bjet Run-2 analysis in the pipline for Moriond. Depending on timelines, I would love to include this]
+% [We have a nother reinterpretation of a multi-bjet Run-2 analysis in the pipline for Moriond. Depending on timelines, I would love to include this]
 
 Currently, a number of additional Run-2 analyses are in the process of being re-interpreted with results expected to appear soon.
 
-\subsubsection{Third-Party Tool Integration}
+\paragraph{Third-Party Tool Integration :}
 
-Both the CheckMate and the Rivet analysis catalogues have been implemented in the analysis execution framework. Both are configured to analyze events that are provided in the HepMC format. Due to the modular approach of the analysis backend, a number of Monte Carlo generation workflows, such as Herwig, SHERPA or Madgraph, can be used depending on their ability to correctly model the desired signal.
+Both the CheckMate~\cite{Drees:2013wra,Dercks:2016npn} and the Rivet~\cite{Buckley:2010ar} analysis catalogues have been implemented in the analysis execution framework. Both are configured to analyze events that are provided in the HepMC format. Due to the modular approach of the analysis backend, a number of Monte Carlo generation workflows, such as Herwig~\cite{Marchesini:1991ch}, SHERPA~\cite{Gleisberg:2008ta} or MadGraph~\cite{Alwall:2011uj}, can be used depending on their ability to correctly model the desired signal.
 
-For analyses, where multiple implementation exists: e.g. from multiple third-party tools such as Rivet BSM, CheckMate or MadAnalysis as well as from multiple experiment-internal configurations (fast Simulation, full simulation), RECAST will allow the community to compare and contrast of reinterpretation results.
+For analyses, where multiple implementation exists: e.g. from multiple third-party tools such as Rivet BSM, CheckMate or MadAnalysis~\cite{Conte:2014zja,Dumont:2014tja} as well as from multiple experiment-internal configurations (fast Simulation, full simulation), RECAST will allow the community to compare and contrast of reinterpretation results.
 
-\subsubsection{Outlook}
+\subsection{Outlook}
 
 Thanks to industry-backed technological advances, a realistic technical solution to the Analysis Preservation problem for the LHC experiments and the original RECAST proposal has come into view. The initial use of such infrastructure for the reinterpretation for prompt SUSY searches is generalized easily for long-lived particle searches as the tools used for both signal simulation and analysis preservaton and execution do not make simplifying assumption on the nature of the BSM signal or analysis structure.  As such, RECAST may cover reinterpretation use-cases, where either third-party reinterpretations are impossible due to missing public information or limitations of third-party tools or accurate, experiment-approved results are desired.
