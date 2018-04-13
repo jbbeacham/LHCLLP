@@ -8,8 +8,6 @@ before_install:
 # Initialize some directories before installing packages
 - sudo mkdir /home/travis/texmf
 - sudo tlmgr init-usertree
-- sudo tlmgr install stmaryrd # Test installing a package not included by default
-
 
 
 script:
