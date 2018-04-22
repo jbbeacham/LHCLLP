@@ -3,6 +3,8 @@ This is the central repo for the white paper for the LHC LLP Community initiativ
 
 Here, the master branch is the main branch, and all changes should be made by you, a chapter editor or core contributor, by branching from master and then pushing those changes back to master, where they will show up as a pull request (a "merge request" for those familiar with, for example, gitlab) which will then be reviewed and merged into master.  Since it's unlikely that two people will be working on the same file at the same time (and you are encouraged to communicate among your chapter's editors to reduce conflicts), merge conflicts should be rare.
 
+[Note that you should feel free to fork and push from there, if you'd like, instead.]
+
 So a standard workflow for us would be the following:
 
 # Setup a directory where you'll do your git stuff
