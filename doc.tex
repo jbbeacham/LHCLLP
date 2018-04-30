@@ -1,4 +1,5 @@
-\documentclass[a4paper,debug,notitlepage,nobib]{tufte-book}
+%\documentclass[a4paper,notitlepage,nobib,debug]{tufte-book}
+\documentclass[a4paper,notitlepage,nobib]{tufte-book}
 \input{docheader}
 \usepackage{lineno}
 \linenumbers
@@ -9,8 +10,9 @@
 % \\ \smallskip \noindent at CERN}
 \author{LHC LLP Community}
 \date{\today}
+\usepackage{marginfix}
 \usepackage{titling}
-\usepackage{soul} 
+\usepackage{soul}
 \usepackage{notoccite}
 \usepackage{diagbox}
 
@@ -33,6 +35,14 @@
 \addbibresource{UpgradeLiterature.bib}
 \addbibresource{triggers_LHCb.bib}
 
+%\makeatletter
+%\fancypagestyle{mystyle}{%
+%\fancyhf{}%
+%\fancyhead[LE]{\thepage\quad\smallcaps{LHC LLP Community}}% 
+%\fancyhead[RO]{\smallcaps{Searches for Long-Lived Particles Beyond the SM at the LHC}\quad\thepage}%
+%}
+%\makeatother
+
 \begin{document}
 
 %\morefloats
@@ -42,8 +52,12 @@
 
 \setcounter{tocdepth}{1}
 \tableofcontents
- 
+
 %\pagebreak
+
+
+
+%\pagestyle{mystyle}
 
 \chapter{Introduction}
 \label{sec:Introduction}
@@ -57,7 +71,7 @@
 \label{sec:experimentcoverage}
 \input{tex/ExperimentCoverage}
 
-\chapter{Some Sources of Backgrounds for LLP Searches}
+\chapter{Common Sources of Backgrounds for LLP Searches}
 \label{sec:backgrounds}
 \input{tex/backgrounds.tex}
 
@@ -72,7 +86,7 @@
 \input{tex/ch5-sms_reinterpretations}
 \input{tex/ch5-recasting_examples}
 \input{tex/ch5-recasting_delphes}
-\input{tex/ch5-recasting_inside_experiments} 
+\input{tex/ch5-recasting_inside_experiments}
 \input{tex/ch5-recasting_prompt}
 \input{tex/ch5-recommendations}
 
