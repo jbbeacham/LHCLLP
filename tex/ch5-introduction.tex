@@ -30,7 +30,10 @@ the activities of the ``Forum on the Interpretation of the LHC Results for BSM s
 
 The re-interpretation can generically be done in two ways, either applying
 appropriate simplified-model results, or reproducing the experimental analysis in a Monte Carlo simulation. Clearly,  the former is easier and faster, 
-while the latter is more general but more difficult and much more time consuming. 
+while the latter is more general but more difficult and much more time consuming~\footnote{When no new backgrounds 
+need to be considered and the hypothesised signal does not affect control regions, one can simply determine the 
+event counts in the signal regions and compare them to the $95\%$ C.L observed limits, or take the numbers of observed events and expected backgrounds to compute a likelihood.}. 
+
 In the context of searches for prompt signatures with \MET, the use of simplified models has been shown to be a fruitful approach for both the experimental and theoretical communities~\cite{hep-ph/0703088, 0810.3921, 1105.2838, Okawa:2011xg,1301.2175,Boveia:2016mrp}. 
 Dedicated tools~\cite{Kraml:2013mwa,Ambrogi:2017neo,Papucci:2014rja} are publicly 
 available and allow the user to re-interpret SUSY simplified-model results within the context of a full model.
@@ -53,9 +56,7 @@ For the latter, \textsc{CheckMATE} and \textsc{MadAnalysis5} rely on \textsc{Del
 in some cases supplemented with appropriate tuning, 
 while \textsc{Rivet} and \textsc{ColliderBit} employ object smearing and analysis-specific reconstruction efficiencies. 
 The ATLAS and CMS collaborations are helping these recasting efforts by providing more and more 
-detailed information about their analyses and results; recently, in the case of the CMS SUSY group, 
-even covariance matrices for the background correlation across signal regions in the 
-framework of simplified likelihoods~\cite{CMS-NOTE-2017-001}.
+detailed information about their analyses and results. As an example, covariance matrices for the background correlations in the framework of simplified likelihoods were provided for the analysis of Ref~\cite{CMS-NOTE-2017-001}.
 
 The situation is --so far-- quite different for LLP searches. 
 First, the presentation of results in terms of simplified models 
@@ -66,10 +67,12 @@ for LLP searches always have at least one additional degree of freedom --the lif
 Second, general purpose recasting tools are not yet available.
 Recasting LLP searches outside the experimental collaborations is  a
 difficult task, since they are very sensitive to the detector response, which in most cases 
-cannot be easily emulated by a fast detector simulation.
+cannot be easily emulated (or not even described, as for the backgrounds presented in 
+Chapter~\ref{sec:backgrounds}) by a fast detector simulation.
 As a result, none of the available (public) tools can currently recast
 LLP searches, thus rendering the applicability of the experimental
 results extremely limited. 
+
 
 In order to allow for a more extensive re-interpretation or recasting of 
 the experimental analyses, detailed information concerning the detector
