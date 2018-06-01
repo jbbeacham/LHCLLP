@@ -31,12 +31,30 @@ which will extend its $|\eta|$ coverage from the current value of $2.4$ with thr
 The CMS outer tracker is composed of six cylindrical barrel layers in the central region, covering the region of$|z| < 1200$~mm, complemented on each side by five endcap double-disks, in
 the region of $1200 < |z| < 2700$~mm. Modules are installed between $r\sim21$~cm and $r\sim112$ cm. Three sub-detectors are distinguished: the Tracker Barrel with pixel-strip modules, TBPS; the Tracker Barrel with strip-strip modules, TB2S; and the Tracker Endcap
 Double-Disks, TEDD. The inner rings of the TEDD disks use pixel-strip modules up to $r\sim 60$ cm, and the rest use strip-strip modules.
-The outer tracker modules, called $p_T$ modules, are composed of two single-sided closely-spaced ($1$ to $4$~mm separation) small pitch sensors read out by a common set of front-end ASICs that correlate the signals in the two sensors and select the hit pairs (referred to as ``stubs") compatible with particles above the chosen $p_T$ threshold. A $p_T$ threshold of $2$~GeV corresponds to a data volume reduction of roughly one order of magnitude, which is sufficient to enable transmission of the stubs at 40 MHz.
+The outer tracker modules, called $p_T$ modules, are composed of two single-sided closely-spaced ($1$ to $4$~mm separation) small pitch sensors read out by a common set of front-end ASICs that correlate the signals in the two sensors and select the hit pairs (referred to as ``stubs”) compatible with particles above the chosen $p_T$ threshold. A $p_T$ threshold of $2$~GeV corresponds to a data volume reduction of roughly one order of magnitude, which is sufficient to enable transmission of the stubs at 40 MHz.
 The ``stubs'' are used as input to the hardware trigger at Level-1 (L1), which enables track finding at L1 for all tracks with a $p_T$ of $2$~GeV or above. 
 To improve the ``stub'' finding efficiency and also to reduce material, the inner three outer tracker barrel layers, the TBPS, are made with flat modules in the center and tilted modules in the regions with larger z. 
 
 \paragraph{ATLAS Upgrade}
+The increased luminosity of HL-LHC, along with the associated data rate and accumulated radiation damage requires in ATLAS a new inner tracker. 
+The ATLAS collaboration decided that it will replace the Inner Detector with a new all-silicon tracker to maintain tracking performance in
+this high-occupancy environment and to cope with the increase of approximately a factor
+of ten in the integrated radiation dose.
 
+The new tracker will consist of a greatly enlarged
+Pixel system extending to roughly twice the radius and four times the length of the current
+pixel array, coupled with a much more segmented strip detector requiring over three
+times the silicon area of the current detector to cover the full radius of the solenoid inner.
+
+The new system will consist of silicon barrel layers and disks (Strips) or rings
+(Pixels) with the possibility of inclined pixel modules to better cover the transition from
+the barrel to the end-cap regions.
+In detail, the Strip Detector has four barrel layers and six end-cap petal-design disks, both having double modules each with a small stereo angle.
+The Strip Detector, covering $|\eta|< 2.7$,
+is complemented by a 5 layer Pixel Detector extending the coverage to $|\eta |< 4$. The Pixel
+and Strip Detector volumes are separated by a Pixel Support Tube (PST).
+The combined Strip plus Pixel Detectors provide a total of 13 hits for $|\eta| < 2.6$, with
+the exception of the barrel/end-cap transition of the Strip Detector, where the hit count is 11 hits.
 
 \subsubsection{Calorimetry} \label{sec:upgradecalo}
 
@@ -51,6 +69,20 @@ The HGCAL, with fine granularity both lateral and longitudinal, enables 3D imagi
 The intrinsic high-precision timing capabilities of the silicon sensors will add an extra dimension to event reconstruction. The HGCAL is expected to provide timing resolution of few tens of ps for high energy particles with $p_T$ of tens of GeV. 
 
 \paragraph{ATLAS Upgrade}
+
+The ATLAS LAr calorimeter will be improved in Phase-II with an electronics upgrade that will
+provide optimised super cells and full granularity data to the trigger system by means of a
+new pre-processor (LAr Signal Processor (LASP)). A similar upgrade of the ATLAS Tile calorimeter
+readout will use on-detector digitisation and a new backend pre-processor (Tile PreProcessor
+System (TPPr)). Both the LAr and Tile calorimeters expect to implement a 40 MHz
+readout system for Phase-II. 
+The transmission of high-granularity calorimeter data (all cells above a transverse energy
+threshold of |$E_T$| > 2$\sigma$) drives the bandwidth requirement for the upgraded TDAQ system.
+
+
+In addition, the outermost Tile calorimeter layer can be used to identify muons in
+the range $|\eta| < 1.3$ by better identifying particle energy depositions above the Minimum
+Ionising Particle (MIP) threshold.
 
 
 \subsubsection{Muon System} \label{sec:upgrademuon}
@@ -67,6 +99,33 @@ The additional hits in the new endcap muon stations, combined with improved algo
 
 \paragraph{ATLAS Upgrade}
 
+Most of the front-end and detector readout including the trigger electronics for the Resistive Plate Chambers (RPC), Thin Gap Chambers (TGC),
+and Monitored Drift Tube (MDT) chambers will be replaced to face
+the higher trigger rates and longer latencies necessary for the new level-0 trigger requested by HL-LHC setup. 
+The MDT chambers will be integrated into the level-0 trigger in order to sharpen the momentum threshold. Some of the MDT chambers in the inner barrel layer will be replaced with new small-diameter MDTs. 
+Additional RPC chambers will be installed in the inner barrel layer to increase the
+acceptance and robustness of the trigger, and some chambers in high-rate regions will be
+refurbished. 
+New TGC triplet chambers in the barrel?endcap transition region will replace the current TGC doublets to suppress the high trigger rate from random
+coincidences in this region. 
+The electronics of all the sub-detectors will need to be replaced due to obsolescence, ageing, and radiation
+damage. 
+In the previous Phase-I upgrade the New Small Wheel (NSW) chambers will replace the Cathode Strip Chambers (CSC) and
+the MDT chambers of the innermost endcap wheel by Micromegas and small-strip TGCs.
+The replacement of the MDT front-end readout will address the trigger rate
+and latency requirements of the TDAQ system in Phase-II and allow the use of MDT hit
+information to improve the muon $p_T$ resolution in the Level-0 trigger.
+Some LLP models as Hidden Valley models predict muon-jets  as final state  resulting in close-by muons that are not identified with high efficiency by the current triggers.
+Figure~\ref{fig:ATLAS_Trigger}, shows the opening angle between muons in a Hidden Valley model which
+is much smaller than the current system can resolve (approximately 0.2 in $\Delta\phi(\mu,\mu)$). In
+the no-upgrade scenario, these can only be recorded by the single muon trigger. In the upgraded scenario,
+a dedicated trigger is under development for a dimuon trigger with a $p_T$
+threshold of $\approx$ 10 GeV. The near-by muon conditions would be implemented in the new muon system
+Sector Logic, NSW Trigger Processor, and MDT trigger processor.
+
+
+
+
 \subsubsection{Timing Detector} \label{sec:upgradetiming}
 
 Precision timing can be provided by the aforementioned calorimetry upgrades. 
@@ -81,6 +140,15 @@ The MTD is designed to provide timing resolution of a few tens of ps for charged
 The performance projection in Sec.~\ref{sec:upgradesearch} is evaluated with a 30 ps resolution for a $p_T$ threshold of 0.7 GeV in the barrel and a p threshold of 0.7 GeV in the endcap, and covering the expected MTD fiducial region of $|\eta| < 3$.
 
 \paragraph{ATLAS Upgrade}
+In ATLAS  there is the plan to have a High-Granularity Timing Detector (HGTD),
+a detector intended to distinguish between collisions occurring very close in space but
+well-separated in time. Currently there is not yet a TDR for this project.
+The current proposed detector design is based on low-gain avalanche
+detector technology that will cover the pseudorapidity region between 2.4 and 4.0,
+with a timing resolution of 30 ps for minimum-ionising particles. High-precision timing
+will improve the track-to-vertex association in the forward region, impacting jet and lepton
+reconstruction, as well as offering unique capabilities for online and offline luminosity determination.
+
 
 \subsubsection{Trigger} \label{sec:upgradetrigger}
 
@@ -90,11 +158,23 @@ The ATLAS and CMS experiments adopt a two-level trigger system, the hardware-bas
 For the CMS experiment, its L1 trigger currently only uses calorimeter and muon information. At HL-LHC, with the aforementioned tracker upgrade of $p_T$ modules and stub finding capabilities, tracker information will be included at L1(Ref.~\cite{Lourenco:2283192}). 
 The L1 track trigger uses pattern recognition on stub information to achieve track finding at an output rate of $750$kHz. 
 The L1 tracking capability will be further complimented by the calorimeter and muon upgrades which provide more precise position and momentum resolution, calorimeter shower shape, and number of tracker and muon hits.
-The L1 Global Trigger (GT) will be upgraded with more sophisticated and effective topologically--based global trigger calculations, 
+The L1 Global Trigger (GT) will be upgraded with more sophisticated and effective topologically-based global trigger calculations,
 plus an additional intermediate Correlator Trigger (CT) to fully exploit the increased information in the trigger objects, such as matching tracking info with fine grain calo info, or fitting muon and track data together.
-The upgraded detector readout and DAQ systems will allow $12.5 \mu s$ latency and L1 rate of 750 KHz, the latter may be substantially reduced by adding L1 tracking information matched to improved L1 Calo and Muon trigger objects. 
+The upgraded etector readout and DAQ systems will allow $12.5 \mu s$ latency and L1 rate of 750 KHz, the latter may be substantially reduced by adding L1 tracking information matched to improved L1 Calo and Muon trigger objects.
 
 \paragraph{ATLAS Upgrade}
+The ATLAS Trigger and the Data Acquisition system  fully exploit the physics potential of the HL-LHC.
+A baseline architecture, based on a single-level hardware trigger with a
+maximum rate of 1 MHz and 10 $\mu$s latency, is proposed and documented. With
+the help of a hardware-based tracking sub-system as co-processor, software=based
+reconstruction follows to achieve further rejection. Up to 10 kHz event
+data are sent into storage.
+
+The upgraded trigger system will take advantage of increased granularity provided by the
+calorimeters, will improve efficiency for muon-based triggers and perform hardware-based
+tracking profiting from the extended coverage of the planned Inner Tracker (ITk). 
+
+
 
 \subsection{Upgrade Performance: Physics Objects} \label{sec:upgradeobject}
 
@@ -281,7 +361,7 @@ Strip ASICs of the pixel-strip (PS) modules of the Outer Tracker, and a dedicate
 hit is above this second threshold.  
 
 Searches for HSCPs can thus be performed by measuring the energy loss in the inner pixel detector and by
-discriminating HSCPs from minimum ionizing particles based on the ``HIP flag" in the Outer
+discriminating HSCPs from minimum ionizing particles based on the ``HIP flag'' in the Outer
 Tracker. The threshold of the minimum ionization needed to set the HIP flag is an adjustable
 parameter in the PS modules. A threshold corresponding to the charge per unit length of 1.4
 MIPs, resulting from preliminary optimization studies, is used in the simulation, and the gain
@@ -297,8 +377,8 @@ tracks in HSCP signal events and slow moving protons and kaons in minimum bias e
 Figure~\ref{fig:cmsupgrade_hscp} (right) shows the performance of the discriminator by evaluating the signal versus background
 efficiency curves to identify tracks from signal events and reject those originating from backgrounds. The performance curves are evaluated for two different strategies for
 the discriminator: the dE/dx discriminator, which relies solely on the inner pixel modules
-(``$dE/dx$-only"), ignoring the HIP flags, and a recomputed discriminator which includes the
-HIP flags from the Outer Tracker PS modules (``$dE/dx$+HIP flag"). The signal versus background
+(``$dE/dx$-only''), ignoring the HIP flags, and a recomputed discriminator which includes the
+HIP flags from the Outer Tracker PS modules (“$dE/dx$+HIP flag”). The signal versus background
 efficiency performance curves demonstrate that for a background efficiency
 of $10^{-6}$, analogous to the current analysis performance, the $dE/dx+$HIP-based discriminator
 leads to an expected signal efficiency of $40\%$, around 4 to 8 times better than the $dE/dx$-only
@@ -343,7 +423,7 @@ The time delay $\Delta t$ is related to the speed $v$ of an HSCP via the followi
 \Delta t = d\left(\frac{1}{v}-\frac{1}{c}\right),
 \end{equation}
 
-\noindent Here $d$ is the distance between the IP and the point where an HSCP crosses an RPC. 
+where $d$ is the distance between the IP and the point where an HSCP crosses an RPC. 
 For RE4/1 chambers and $\beta = v/c = 0.2$, the delay time is $>6$ BXs $= 150 \, \mathrm{ns}$.
 
 \begin{figure}[h!tbp]
@@ -500,8 +580,8 @@ At the CMS experiment, with the scintillating crystal design of the ECAL that pr
 background in displaced photon searches. 
 
 One benchmark model for displaced photon search at collider is the GMSB model 
-where the lightest neutralino ($\tilde{\chi}_0^1$) is the next-to-lightest supersymmetric particle, can be long-lived and decays to a photon and a gravitino ($\tilde{G}$), which is the LSP, as illustrated in Figure~\ref{fig:cmsupgrade_photon} (left).
-For a long-lived neutralino, the photon from the $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ decay is produced at the $\tilde{\chi}_0^1$
+where the lightest neutralino ($\tilde{\chi}_0^1$) is the next–to–lightest supersymmetric particle, can be long–lived and decays to a photon and a gravitino ($\tilde{G}$), which is the LSP, as illustrated in Figure~\ref{fig:cmsupgrade_photon} (left).
+For a long–lived neutralino, the photon from the $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ decay is produced at the $\tilde{\chi}_0^1$
 decay vertex, at some distance from the beam line, and reaches the detector at a later time than
 the prompt, relativistic particles produced at the interaction point. 
 The time of arrival of the photon at the detector can be used to discriminate the signal from the background.
@@ -514,10 +594,10 @@ In order to be sensitive to short neutralino lifetimes of order 1 cm, the perfor
 Therefore, the excellent resolution of the MTD apparatus can be exploited to determine with high accuracy the time of flight of the neutralino, and similarly the photon, also in case of a short lifetime.
 
 An analysis has been performed at generator level in order to evaluate the sensitivity power of a
-search for displaced photons at CMS in the scenario where a 30 ps timing resolution is available from the MTD. The events were generated with Pythia8, exploring neutralino lifetimes ($c\tau$) explored in the range 0.1-300 cm. 
-The values of the $\Lambda$ scale parameter were considered in the range 100-500 TeV, which is relevant for this model to be consistent with the observation of a 125 GeV Higgs boson. 
-After requiring the neutralino decaying within the CMS ECAL acceptance and the photon energy being above a ``trigger-like" threshold, the generator-level photon time of flight was smeared according to the expected experimental resolutions. A cut
-off at a photon time greater than 3s of the time resolution is applied and the ``signal region" is assumed to be background free. The signal efficiency of such a requirement is computed and translated, assuming the theoretical cross sections provided in Ref~\cite{ref:GMSB}, to an upper limit at 95% CL on the production cross section of the $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ process. 
+search for displaced photons at CMS in the scenario where a 30 ps timing resolution is available from the MTD. The events were generated with Pythia8, exploring neutralino lifetimes ($c\tau$) explored in the range 0.1–300 cm.
+The values of the $\Lambda$ scale parameter were considered in the range 100–500 TeV, which is relevant for this model to be consistent with the observation of a 125 GeV Higgs boson.
+After requiring the neutralino decaying within the CMS ECAL acceptance and the photon energy being above a ”trigger–like” threshold, the generator-level photon time of flight was smeared according to the expected experimental resolutions. A cut
+off at a photon time greater than 3s of the time resolution is applied and the “signal region” is assumed to be background free. The signal efficiency of such a requirement is computed and translated, assuming the theoretical cross sections provided in Ref~\cite{ref:GMSB}, to an upper limit at 95% CL on the production cross section of the $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ process.
 
 Figure~\ref{fig:cmsupgrade_photon}(right) shows the analysis sensitivity in terms of the L scale (and therefore of the neutralino mass) and lifetime for three different assumptions on the timing resolution. 
 The 300 ps resolution is representative of the time-of-flight resolution (TOF) for these events with current CMS detector performance]. 
@@ -539,6 +619,87 @@ detector, the HL-LHC detector with photon timing without MTD and with MTD, respe
 \end{figure}
 
 
+\subsubsection{Displaced Jets}
+
+Several physics scenarios suggest models with displaced jets in the final state.  In particular, the existence of neutral long-lived particles (LLPs) decaying into jets represent a possible indicator of hidden sector (HS) models. In HS models a new set of particles and forces is proposed that is weakly coupled to the SM via a communicator particle. The HS is otherwise invisible to the SM sector, but its particles (some of which can be long-lived) may decay to SM particles via the communicator. The lifetimes of these LLPs are typically unconstrained and could be long enough for the LLPs to decay inside the ATLAS detector volume.
+Such particles produce unique signatures, which may have been overlooked by more traditional searches for new physics.
+The present analysis focuses LLP which decay in the ATLAS hadronic calorimeter (HCal) and consequently deposit most of their energy there and very little or none in the electromagnetic calorimeter, and also have few or no charged tracks pointing at the hadronic energy deposits. A signature-driven trigger that optimizes the acceptance for this class of events is required for the online selection. 
+
+In term of ATLAS upgrade, the standard analysis could be improved by using  HCal information splitting the B-C layers to identify the scalar decay position.
+The spitted BC layer will help to gain more information on the longitudinal shower profile, see~Figure~\ref{fig:Coloratio}.
+This analysis uses a HS benchmark model and considers the decay of a heavy boson to two long-lived neutral scalars. The heavy bosons have masses ranging from 125 GeV to 1000 GeV and the neutral scalars have masses ranging between 5 GeV and 400 GeV.
+Background processes, dominated by QCD dijet production, are suppressed in this analysis by requiring both scalars to decay both in the calorimeter.
+
+\begin{figure}[hbtp]
+\begin{center}
+\includegraphics[width=0.47\textwidth]{figures/caloratio1.png}
+\includegraphics[width=0.47\textwidth]{figures/caloratio2.png}\\
+\includegraphics[width=0.47\textwidth]{figures/caloratio3.png}
+\includegraphics[width=0.47\textwidth]{figures/caloratio4.png}\\
+\caption{ }
+\label{fig:Caloratio}
+\end{center}
+\end{figure}
+
+
+
+\subsubsection{Disappearing Tracks} 
+
+In the ATLAS experiment the ITk implementation can be exploited to search for particles with a disappearing track.
+
+These particles are predicted by many supersymmetric models, for example anomaly-mediated SUSY breaking scenarios, where the supersymmetric partners of the Standard Model W bosons, the wino fermions, are the lightest SUSY state. In such models, the lightest neutralino and chargino can be nearly mass-degenerate with a mass splitting around 160 MeV. When produced in a high-energy collider, the chargino can acquire a relatively long lifetime, and leave
+multiple hits in the traversed tracking layers before decaying. 
+Events are required to contain at least one short track, hereafter called a tracklet. 
+The detector response is parametrised by using response functions based on studies performed with Geant4 simulations of
+the upgraded detector in high luminosity pile-up conditions.
+
+The tracklet reconstruction efficiency for signal charginos as a function of the decay radius inside the detector is shown in Figure~\ref{fig:ATLAS_DT1}.
+A 30\% systematic uncertainty on the background yields was assumed, as observed for the Run 2 analysis. The expected background is largely dominated by fake tracklets.
+\begin{figure}[hbtp]\begin{center}
+\includegraphics[width=0.47\textwidth]{figures/ch03_fig_039.png}
+\caption{ }
+\label{fig:ATLAS_DT1}
+\end{center}
+\end{figure}
+
+
+Expected limits at 95\% CL are shown in Figure~\ref{fig:ATLAS_DT2} as a function of the chargino mass and lifetime
+for a pure wino and a pure higgsino LSP scenario. For comparison
+the current Run 2 limit for 36.1 ${\rm fb}^{-1}$  in the wino LSP scenario is also shown.
+The HL-LHC dataset of 3000 ${\rm fb}^{-1}$  extends the sensitivity of neutrinos and charginos up to 250 GeV, assuming a pure higgsino scenario.
+
+\begin{figure}[hbtp]\begin{center}
+\includegraphics[width=0.47\textwidth]{figures/ch03_fig_040a.png}
+\includegraphics[width=0.47\textwidth]{figures/ch03_fig_040b.png}
+\caption{ }
+\label{fig:ATLAS_DT2}
+\end{center}
+\end{figure}
+
+
+\subsubsection{Displaced Verteces} 
+
+Massive and long-lived particles with lifetimes of the order of O(10) ps to O(10) ns can decay inside
+the inner tracker into charged and stable particles. 
+The products of these decays are reconstructed as tracks with measurably distant impact parameters with respect to the prime vertex.
+The reconstruction of these displaced tracks is very challenging compared to the track reconstruction of prompt particles, due to fewer hits along the track and
+a larger parameter phase space for track finding.
+
+Several physics models predict the existence of long-lived massive particles, one example is the SUSY consisting of a gluino with a mass of 2 TeV and a
+lifetime of 1 ns. The long-lived gluino hadronises into an R-hadron, which decays into a
+100 GeV neutralino and hadrons model consisting of a gluino with a mass of 2 TeV and a
+lifetime of 1 ns. The long-lived gluino hadronises into an R-hadron, which decays into a
+100 GeV neutralino and hadrons.
+
+ In ATLAS this topology has been investigated in Run 2 by using dedicated reconstruction algorithm.
+The performance achieved by ITk for this signal has been tested  with
+a simplified simulation which has a description of the ITk active sensors and a modelling
+of the magnetic field. 
+The kinematics and location of the decay products of the R-hadron
+are injected into the simulation and their trajectories are extrapolated through the detector model. 
+The probability of producing at least seven silicon hits in the ITk geometry is tested. 
+
+
 \subsubsection{LLP searches with precision timing}
 
 The MTD provides new, powerful information in searches for long-lived particles. 
@@ -555,7 +716,7 @@ $\tilde{t}\to t+\tilde{\chi}_0^1$, $\tilde{\chi}_0^1 \to Z+\tilde{G}$, $Z\to ee$
 
 Studies are performanced to estimate the sensitivity of the search with the MTD.
 The events were generated with Pythia8. The masses of the top-squark and neutralino were set to 1000 GeV and 700 GeV, respectively. 
-Generator-level quantities were smeared according to the expected experimental resolutions. 
+Generator–level quantities were smeared according to the expected experimental resolutions. 
 A position resolution of 12 mm in each of the three spatial directions was assumed for the primary vertex.
  The secondary vertex position for the electron-positron pair was reconstructed assuming 30 mm track resolution in the transverse direction. 
 The momentum resolution for electrons was assumed to be $2\%$. 
@@ -577,7 +738,7 @@ mass of $\tilde{\chi}_0^1=700$~GeV, considering events with a separation of prim
 \end{center}
 \end{figure}
 
-A similar study is done with another SUSY scenario where the two lightest neutralinos and light chargino are higgsino-like. The light charginos and neutralinos are nearly mass degenerate and
+A similar study is done with another SUSY scenario where the two lightest neutralinos and light chargino are higgsino–like. The light charginos and neutralinos are nearly mass degenerate and
 may become long-lived as a consequence of the heavy higgsinos. 
 In both studies, the additional timing information from the MTD facilitates the reconstruction of the LLP mass, the resolution and efficiency of which are further improved with the excellent timing resolution of the MTD.
 
@@ -647,7 +808,6 @@ The rare SM Higgs decays considered above is challenging, because of the small t
 While Higgs-like signals may be accessible in associated production, some new physics signals may not, such as dark matter models where the mass splitting between $chi_1$ and $chi_2$ is small. 
 Those will benefit a lot from the displaced track trigger.
 
-%\subsection{New Ideas for Future Studies} \label{sec:upgradeideas}
 \subsection{Highest priority open questions and opportunities for upgrade studies that need to be done} \label{sec:upgradeideas}
 
 \textbf{TBA}: coordinate with ATLAS \& theory
