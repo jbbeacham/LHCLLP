@@ -3,98 +3,82 @@
 
 Here we summarize the recommendations for the presentation of long-lived
 particles search results. These recommendations follow from the detailed
-examples presented in Sections~\ref{sec:ch5-smsReinterpretations} 
+examples presented in Sections~\ref{sec:ch5-smsReinterpretations}
 and~\ref{sec:ch5-recastExamples}.
 
 Our primary recommendation is that the experiments provide as detailed
-information as possible to make a generic recasting possible. 
-We therefore encourage the experiments to: 
+information as possible to make a general recasting possible.
+We therefore encourage the experiments to:
 \begin{description*}
-  \item[A.1.] Provide LLP reconstruction and selection efficiencies
-  at the signature or object level. Although the parametrization
-  of efficiencies is strongly analysis dependent,
-  it is of advantage if they are given as a function of model independent 
-  variables (such as function of displaced vertex $p_T$, $\eta$, etc.), so 
+  \item[A.1.] Provide LLP reconstruction and selection efficiencies at the signature or object level. Although the parametrization of efficiencies is strongly analysis dependent, it is of advantage if they are given as a function of model-independent variables (such as functions of displaced vertex $d_0$, $p_T$, $\eta$, etc.), so
   they do not rely on a specific LLP decay or production mode;
   \item[A.2.] Present results for at least two distinct benchmark
-  models, with distinct event topologies, since it greatly helps 
-  validating the recasting. For clarity, the input cards for the benchmark 
-  points should also be provided;  
+  models, with different event topologies, since it greatly helps to validate the recasting. For clarity, the input cards for the benchmark points should also be provided;
   \item[A.3.] Present cut-flow tables, for both the signal
     benchmarks and the background, since these are  very useful for
     validating the recasting;
-  \item[A.4.]  When an analysis is superseded, differences and commonalities with previous
-   versions of the same analysis should be made clear, especially if the amount of information 
-   presented in both analysis differs. The understanding to which extent 
-   the information presented in an old version can be used directly in a later version greatly 
+  \item[A.4.]  When an analysis is superseded, differences and commonalities with previous versions of the same analysis should be made clear, especially if the amount of information presented in both analyses differs. The understanding to which extent
+   the information presented in an old version can be used directly in a later version greatly
    helps the recasting procedure;
-  \item[A.5.] Provide all this material in numerical form, preferably on HEPdata, or on the 
-  collaboration wiki page.
+  \item[A.5.] Provide all this material in numerical form, preferably on HEPdata, or on the collaboration wiki page. A very useful resource we also highly encourage is a truth code snippet illustrating the event and object selections, such as the one from the ATLAS disappearing track
+  search~\cite{Aaboud:2017mpt} provided in HEPdata under ``Common Resources".
 \end{description*}
 
-\noindent 
-We realize that the above requires an enormous amount of time and effort by 
-the collaborations and may not be always feasible to full extent. 
+\noindent
+We realize that the above requires an enormous amount of time and effort by
+the collaborations and may not be always feasible to the full extent.
 However, good examples of presentations are already available, such as
 the parametrized efficiencies provided by the ATLAS 13 TeV displaced
 vertex~\cite{Aaboud:2017iio} (see auxiliary material on~\cite{SUSY-2016-08}) and the CMS 8 TeV heavy stable
 charged particle~\cite{Khachatryan:2015lla} analyses.
 
-When object- or signature-level efficiency maps are not feasible, providing
-efficiencies for a large, diverse array of simplified models can be 
-useful for re-interpretation. 
-With respect to simplified-model results we recommend that the experiments: 
+When the object- or signature-level efficiency maps are not feasible, providing efficiencies for an extensive, diverse array of simplified models can be
+useful for re-interpretation.
+Concerning simplified-model results, we recommend that the experiments:
 \begin{description*}
-  \item[B.1.] Provide signal efficiencies  (acceptance times efficiency) for 
-  simplified models and not only upper limits or exclusion curves;
-  \item[B.2.] Present efficiency maps as a function of the relevant simplified model
-  parameters, such as the LLP mass and lifetime, with  
-  sufficient coverage of the simplified model parameter space. While for 
-  direct production of LLPs the parameter space is 2-dimensional
-  (LLP mass and lifetime), simplified models with cascade decays have
-  a higher dimensional parameter space. In these cases we strongly recommend
+  \item[B.1.] Provide signal efficiencies  (acceptance times efficiency) for
+  simplified models and not only upper limits or exclusion curves.
+ % Note that to be useful for reinterpretation, efficiencies
+  %for all signal regions, not only the best one, are needed;
+  Note that efficiencies for all signal regions, not only the best one, are always beneficial for reinterpretation;
+  \item[B.2.] Present efficiency maps as a function of the relevant simplified model parameters, such as the LLP mass and lifetime, with sufficient coverage of the simplified model parameter space. While for direct production of LLPs the parameter space is 2-dimensional
+  (LLP mass and lifetime), simplified models with cascade decays have a higher dimensional parameter space. In these cases we strongly recommend
   efficiencies to be provided for a significant range of {\it all} the
-  parameters; 
-  \item[B.3.] Release the efficiencies in digital format (on HEPdata or on the 
-  collaboration wiki page), going 
-  beyond the 2-dimensional parameterization suitable for paper plots whenever necessary;
-  \item[B.4.] Consider a range of simplified models which aim to encompass:
+  parameters;
+  \item[B.3.] Release the efficiencies in digital format (on HEPdata or the collaboration wiki page), going beyond the 2-dimensional parameterization suitable for paper plots whenever necessary. In particular, for auxiliary material, we recommend multidimensional data tables instead of a proliferation of 2-dimensional projections
+  of the parameter space;
+  \item[B.4.] In each analysis considers a range of simplified models which aim to encompass:
 %  \begin{enumerate}
 \begin{description*}
-    \item[(a)] Different multiplicities of final-state particles, to allow ready
-        re-interpretation of the limits for both 2-body and 3-body decays, which
-        are qualitatively different;
-    \item[(b)] Different LLP boosts (for example, provide efficiencies and limits 
+    \item[(a)] Different decay modes, including distinct final-state particles and multiplicities;
+    \item[(b)] Different LLP boosts (for example, provide efficiencies and limits
         for distinct parent particle masses, which decay to the LLP);
-% \end{enumerate}  
+% \end{enumerate}
 \end{description*}
 \end{description*}
 
-\noindent 
+\noindent
 Although extensive, the above recommendations for the choice of simplified
 models allow for a thorough comparison between the range of validity of
 the LLP analyses and a detailed test of recasting methods.
 Furthermore, when a Monte Carlo based recasting is not available, one
-can use the ``nearest'' simplified model or a combination of them to 
+can use the ``nearest'' simplified model or a combination of them to
 estimate the constraints on the theory of interest.
-Finally, if a large enough spectrum of simplified models is covered, this can 
-be useful for fast testing of complex models which feature a large variety of signatures, 
-and quickly finding the interesting region in a model scan before going to more precise but 
-computationally more expensive Monte Carlo simulation. 
+Finally, if a broad enough spectrum of simplified models are covered, this can
+be useful for fast testing of complex models which feature a large variety of signatures,
+and quickly finding the interesting region in a model scan before going to more precise but
+computationally more expensive Monte Carlo simulation.
 
-We hope that our recommendations, in particular points A.1--A.5, will serve as a
-guide for best practice and help establish a reliable and robust re-interpretation of LLP searches.   
-The added value for the experiments, and the whole HEP community, will be a fast 
-and more precise feedback on the implications of the LLP results for a broad range of
-theoretical scenarios.  
+We hope that our recommendations, in particular, points A.1--A.5, will serve as a guide for best practice and help establish a reliable and robust re-interpretation of LLP searches.
+The added value for the experiments and the whole HEP community will be fast and more precise feedback on the implications of the LLP results for a broad range of theoretical scenarios.
 
 
 %This can help simplify the comparison between the reported efficiencies.
-% 
+%
 % Finally, we also comment on how the presentation on the information publicly
 % available by the experimental collaborations can be improved for a more
 % straightforward reinterpretation. Specifically;
-% 
+%
 % \begin{itemize}
 % \item When an analysis is superseded by a conference note, often the older
 % analysis has more information for recasting.  It would be useful to know if this
@@ -105,8 +89,8 @@ theoretical scenarios.
 % supplemental information beyond what is provided in the main document, links to
 % this additional material should still be provided within the text.
 % \end{itemize}
-% 
+%
 % It is our hope that, with these recommendations, experimental analysis at the
 % LHC can present their long-lived particles search results in an optimal way, so
 % they can be re-used. This will ensure a long-term impact of the LHC legacy.
-% 
+%
