@@ -96,16 +96,18 @@ The contribution from beam halo can often be reduced by requiring high-momentum 
 Beam halo background can be estimated by using data control regions near $\phi=0$ and $\pi$. One could also identify cells with a low number or zero tracks that are assigned an early time. %where are the cells - calo? Do we have an example banana plot to show?
 
 % -----------------------------------------------------------------------------------
-\subsection{Cavern radiation} % Juliette
+\subsection{Cavern radiation} % Juliette/Sascha
 % -----------------------------------------------------------------------------------
 
-There could also be radiation from the cavern walls, which might be a significant background in a LLP search. %more details about what this looks like in the detector are needed
-Cavern radiation is usually not modelled in MC simulation.
+There could also be diffuse background from proton--proton collisions filling the LHC caverns, consisting mostly of neutral, low-energy and long-lived SM particles. This so-called ``cavern background'' or ``cavern radiation'' could be a significant background in a LLP search. As simulations are resource-intensive, it is usually not at all modelled in MC simulation samples.
 
-Cavern radiation is most relevant for searches looking in non-collision data, that is, stopped-particle searches, and for searches using muon system information to form tracks and vertices.
+Cavern radiation is most relevant for searches looking in non-collision data, that is, stopped-particle searches, and for searches using muon system information to form tracks and vertices. It can be estimated from data by collecting events triggered by random triggers when there are no collisions, as was done in Ref.~\cite{Aad:2013gva}.\footnote{Note that these triggers are unlike those used to collect the search data for stopped-particle searches, which instead select events with physics objects during empty bunch crossings.} Cavern radiation can also be estimated by overlaying a cavern radiation simulation with minimum-bias events from data.
 
-Cavern radiation can be estimated from data by collecting events triggered by random triggers when there are no collisions, as was done in Ref.~\cite{Aad:2013gva}. (Note that these triggers are unlike those used to collect the search data for stopped-particle searches, which instead select events with physics objects during empty bunch crossings.) Cavern radiation can also be estimated by overlaying a cavern radiation simulation with minimum-bias events from data.
-
+% some in depth studies of radiation background in ATLAS http://cdsweb.cern.ch/record/814823/files/gen-2005-001.pdf % Sascha
+% RPC cavern background in ATLAS http://cdsweb.cern.ch/record/1457509/files/ATL-MUON-PROC-2012-005.pdf % Sascha
+% MC cavern background in ATLAS http://inspirehep.net/record/1409861/files/507_510.pdf % Sascha
+% MS studies in ATLAS https://indico.cern.ch/event/279530/contributions/634992/attachments/511921/706530/ATLAS-MS-CavernBackground.pdf % Sascha
+% Geant4 studies in ATLAS http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/MUON/PublicPlots/2014/ATL-COM-MUON-2014-018/ % Sascha
 
 % -----------------------------------------------------------------------------------
 \section{Fake particle signatures} % Juliette
