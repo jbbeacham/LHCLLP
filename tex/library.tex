@@ -1,7 +1,7 @@
-\noindent {\bf Section Editors:}~Brian Shuve \\
-\text{ \; }\\
-\noindent {\bf Contributors:}~James Beacham, Alessandro Davoli, Andrea De Simone, Jared Evans, Thomas Jacques, Zhen Liu, Jessie Shelton
-\text{ \; }\\
+%\noindent {\bf Section Editors:}~Brian Shuve \\
+%\text{ \; }\\
+%\noindent {\bf Contributors:}~James Beacham, Alessandro Davoli, Andrea De Simone, Jared Evans, Thomas Jacques, Zhen Liu, Jessie Shelton
+%\text{ \; }\\
 
 \section{Instructions for the Simplified Model Library}
 
@@ -20,7 +20,7 @@ There are essentially two possible pipelines to simulate LLP events with the lib
 In the final version of the library, we aim to provide example cards to direct the production and decay of LLPs in both pipelines. Note that in all of the simplified model proposals below, any particles \emph{not} present in the production or decay chain should have their masses set to a very large value ($M\gtrsim5$ TeV) to ensure they are sufficiently decoupled from direct production at the LHC.
 
 
-Currently, we only provide simplified model libraries for neutral LLPs including the LLP decay. The simplified models for charged and colored LLPs are equally compelling, but their simulation is more subtle. In particular, the simulation of the propagation and decay of the LLPs are more challenging if the LLP carries a SM gauge charge. Such effects can be included in detector simulations using GEANT4 \cite{Agostinelli:2002hh}, but decay processes typically need to be hard-coded into GEANT or otherwise interfaced with other MC programs. This is an important issue for the community to address, as discussed in Sections \ref{sec:EMcharge}-\ref{sec:coloredLLPs} and \ref{???} {\bf [NEED TO ADD APPENDIX OR SECTION FOR DISCUSSION]}
+Currently, we only provide simplified model libraries for neutral LLPs including the LLP decay. The simplified models for charged and colored LLPs are equally compelling, but their simulation is more subtle. In particular, the simulation of the propagation and decay of the LLPs are more challenging if the LLP carries a SM gauge charge. Such effects can be included in detector simulations using GEANT4 \cite{Agostinelli:2002hh}, but decay processes typically need to be hard-coded into GEANT or otherwise interfaced with other MC programs. This is an important issue for the community to address, as discussed in Sections \ref{sec:EMcharge}-\ref{sec:coloredLLPs}. 
 
 \subsection{Neutral LLPs}
 
@@ -321,11 +321,11 @@ $X\rightarrow jj$+inv. & LRSM. LLP is the right-handed neutrino  ($\nu_{\rm R}$)
 & Then,   $\nu_{\rm R}\rightarrow q\bar{q}\nu$ via an off-shell $Z$. For massive invisible state, it may be possible   \\
 &  to use a cascade $\nu_{\rm R2}\rightarrow q\bar{q}\nu_{\rm R1}$ treating the lightest right-handed neutrino as stable. \\
 \hline
-$X\rightarrow jj\ell^\pm$& LR. LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.  \\
+$X\rightarrow jj\ell^\pm$& LRSM. LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.  \\
 & Then,   $\nu_{\rm R}\rightarrow q\bar{q}'\ell^\pm$ via an off-shell $W$. Alternately, production and \\
 & decay can be mediated by $W_{\rm R}$.\\
 \hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & LR.LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.  \\
+$X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & LRSM. LLP is the right-handed neutrino  ($\nu_{\rm R}$)   produced via $pp\rightarrow W^\pm$, $W^\pm\rightarrow \ell^\pm \nu_{\rm R}$.  \\
 or $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv.  & Then,   $\nu_{\rm R}\rightarrow \ell_\alpha^+\ell_\alpha^-\nu_\beta$ or $\nu_{\rm R}\rightarrow \ell_\alpha^+\ell_\beta^-\nu_\alpha$ via an off-shell $W/Z$.\\
 
 \hline

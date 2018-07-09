@@ -49,6 +49,258 @@ For our second benchmark, we consider a dark boson, $\gd$, produced through the 
 	\label{fig:HXX}
 \end{figure}
 
+\subsection{The ForwArd Search ExpeRiment (FASER)}
+\label{sec:FASER}
+
+\noindent {\bf Contributors:}~Jonathan L.~Feng, Iftah Galon, Felix Kling, Sebastian Trojanowski\\
+
+\subsubsection{Introduction}
+\label{sec:FASERintroduction}
+
+
+If new long-lived particles are light compared to the weak scale and very weakly coupled, the focus at the LHC on searches for new particles at high $p_T$ may be completely misguided.  In contrast to TeV-scale particles, which are produced more or less isotropically, light particles with masses in the MeV-GeV range are dominantly produced at low $p_T$.  In addition, because the new particles are extremely weakly coupled, very large standard model event rates are required to discover the rare new physics events.  These rates are not available at high $p_T$, but they are available at low $p_T$: at the 13 TeV LHC, the total inelastic $pp$ scattering cross section is $\sigma_{\text{inel}}(13~\text{TeV}) \approx 75~\text{mb}$~\cite{Aaboud:2016mmw, VanHaevermaet:2016gnh}, with most of it in the very forward direction. This implies
+\begin{equation}
+N_{\text{inel}} \approx 2.3 \times 10^{16} \ (2.3 \times 10^{17})
+\label{eq:ppcollisions}
+\end{equation}
+inelastic $pp$ scattering events for an integrated luminosity of $300~\text{fb}^{-1}$ at the LHC ($3~\text{ab}^{-1}$ at the HL-LHC).  Even extremely weakly-coupled new particles may therefore be produced in sufficient numbers in the very forward region.  Due to their weak coupling to the SM, such particles are typically long lived and travel a macroscopic distance before decaying back into SM particles.  Moreover, such particles may be highly collimated.  For example, new particles that are produced in pion ($B$-meson) decays are typically produced within angles of $\theta \sim \Lambda_{\text{QCD}} / E$ ($m_B / E$) of the beam-collision axis, where $E$ is the energy of the particle.  For $E \sim \text{TeV}$, this implies that even $\sim 500~\text{m}$ downstream, such particles have only spread out $\sim 10~\text{cm} - 1~\text{m}$ in the transverse plane.  A small and inexpensive detector placed in the very forward region may therefore be capable of extremely sensitive searches to LLPs, provided a suitable location can be found and the signal can be differentiated from the SM background. 
+
+FASER~\cite{Feng:2017uoz,Feng:2017vli,Kling:2018wct}, the ForwArd Search ExpeRiment, is an experiment designed to take advantage of this opportunity.  It is a small detector, with volume $\sim 1~\text{m}^3$, that is proposed to be placed along the beam-collision axis, several hundreds of meters downstream from the ATLAS or CMS interaction point (IP). In the following, we present a promising location of FASER in Sec.~\ref{sec:FASERlocation}, discuss the properties of the signal and the required detector design in Sec.~\ref{sec:FASERDetector}, and present the new physics reach for representative models in Sec.~\ref{sec:FASERReach}. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Location                           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Location}
+\label{sec:FASERlocation}
+
+As shown in Fig.~\ref{fig:Infrastructure}, FASER will be placed along the beam collision axis, several hundreds of meters downstream from the ATLAS or CMS IP after the LHC tunnel starts to curve. A particularly promising location is a few meters outside the main LHC tunnel, 480 m downstream from the ATLAS IP, in service tunnel TI18, as shown in the bottom panels of Fig.~\ref{fig:Infrastructure}. (A symmetric location on the other side of ATLAS in tunnel TI12 is also possible.) This tunnel was formerly used to connect the SPS to the LEP tunnel, but is currently empty and unused. As shown on the tunnel map in the lower left panel of Fig.~\ref{fig:Infrastructure}, the beam collision axis passes through TI18 close to where it merges with the main LHC tunnel. A more detailed study of the intersection between the beam collision axis and TI18 verifies that there exists space for FASER in the tunnel, as shown in the lower-right panel of Fig.~\ref{fig:Infrastructure}. 
+
+In this location, FASER harnesses the enormous, previously ``wasted,'' cross section for very forward physics ($\sigma \sim \text{100 mb}$), which implies that even very weakly coupled new particles can be produced in large numbers at the LHC.  In addition, the production of LLPs at high center-of-mass energy results in long average propagation distances ($\bar{d} \sim  {\cal O}(100)~\text{m}$) and decays that are far beyond the main LHC infrastructure in regions where the backgrounds are expected to be negligible. 
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.99\textwidth]{figures/faser/Infrastructure.pdf} 
+\caption{Proposed location for FASER.  Top panel: A schematic drawing of the LHC and the very forward infrastructure downstream from the ATLAS and CMS interaction points; FASER is to be located 480 m from the IP, after the LHC ring starts to curve. Bottom panels: a map of the tunnel including the beam collision axis (left), a photo of this location (center), and a diagram showing the intersection of the beam collision axis with tunnel TI18 (right). We thank Francesco Cerutti, Paolo Fessia, Mike Lamont, and their groups for providing the photo and diagrams. 
+} 
+\label{fig:Infrastructure}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Detector                           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Signals, Detector Design and Backgrounds}
+\label{sec:FASERDetector}
+
+FASER will search for LLPs that are produced at or close to the IP, move along the beam collision axis, and decay within the volume of FASER into visible decay products
+\begin{equation}
+  p p  \to \text{LLP} +X, \quad  \text{LLP travels} \ \sim 480~\text{m}, \quad \text{LLP} \to \text{charged tracks} + X .
+\end{equation}
+LLPs produced in the very forward region of the beam collision axis typically have very high energies $E~\sim~\text{TeV}$. Although the identity of the LLP decay products depends on the mass of the LLP and the concrete new-physics model, a characteristic LLP decay signature is expected of two or more stable charged particles, such as electrons, muons or pions. This leads to a striking signature at FASER: two oppositely charged tracks with very high energy that emanate from a vertex inside the detector and which have a combined momentum that points back to the IP. A measurement of individual tracks with sufficient resolution and an identification of their charges is therefore imperative if the apparatus is to make use of kinematic features to distinguish signal from background. A tracking-based technology, supplemented by a magnet and possibly a calorimeter to allow for  energy measurements, will be the key components of FASER. 
+
+The natural (rock) and LHC infrastructure (magnets and absorbers) shielding eliminates most potential background processes. The remaining backgrounds are expected to be mostly induced by infrastructure, mainly from collisions of the beam halo with the beam pipe near the detector and subsequent showers. Such backgrounds can be distinguished from the signal based on their different kinematic features, such as energy, direction, and track multiplicity. A further background reduction can be achieved by a scintillating veto layer that would surround the detector. Additional backgrounds from neutrino interactions within the detector are small and generally have different kinematics from signal.
+
+A realistic background estimation for FASER poses a challenge and can best be performed with dedicated simulations, or better yet, from the experimental data themselves. A thorough such analysis using FLUKA, taking into account the exact layout of the LHC tunnels and models of radiation-matter interactions, is currently underway. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Reach                           
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{New Physics Discovery Potential}
+\label{sec:FASERReach}
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.32\textwidth]{figures/faser/Reach_DarkPhoton.pdf} 
+\includegraphics[width=0.32\textwidth]{figures/faser/Reach_DarkHiggs.pdf} 
+\includegraphics[width=0.32\textwidth]{figures/faser/Reach_HNL.pdf} 
+\caption{
+Projected FASER exclusion reach for dark photons (left), dark Higgs bosons (center), and HNLs (right) parameter space in the corresponding coupling vs. mass plane. The gray shaded regions are excluded by current experimental bounds, and the colored contours represent projected future sensitivities of other proposed experiments that search for LLPs~\cite{Alekhin:2015byh, Gardner:2015wea, Ilten:2015hya, Ilten:2016tkc, Moreno:2013mja, Chou:2016lxi, Evans:2017lvd, Gligorov:2017nwh, Adams:2013qkq, Drewes:2018gkc, Izaguirre:2015pga}.
+}
+\label{fig:Reach}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%
+
+In previous work, we studied FASER's potential to detect dark photons~\cite{Feng:2017uoz}, dark Higgs bosons~\cite{Feng:2017vli}, and heavy neutral leptons (HNLs)~\cite{Kling:2018wct}. Combined, these studies established the significant potential for FASER to extend the LHC's discovery reach in models with renormalizable portals, where the new physics couples to the SM through dimension-4 interactions:
+\begin{eqnarray}
+\mathcal{L} &\subset& \epsilon F^{\mu\nu} F_{\mu\nu}^{'} \ \ \text{(dark photon)},\\
+\mathcal{L} &\subset& \theta |H|^2 \phi^2  \ \ \text{(dark Higgs)},\\
+\mathcal{L} &\subset& y L H N  \ \ \text{(HNL)}  \ .
+\end{eqnarray}
+The physics reach at FASER for these models is shown in Fig.~\ref{fig:Reach}. Here we assume that backgrounds can be reduced to negligible levels. The gray-shaded regions of parameter space have already been excluded by previous experiments. For comparison we also show the projected reaches of other proposed experiments that search for long-lived particles. 
+
+Dark photons (left) are mainly produced in the decay of light mesons or via dark bremsstrahlung and are therefore very collimated around the beam collision axis. Already a very small detector with radius $R=20~\text{cm}$ and length $\Delta=3~\text{m}$ is able to probe large and unconstrained regions of parameter space, making dark photons an ideal short-term goal for FASER. In contrast, dark Higgs bosons and HNLs define a good long-term physics goal. They are both mainly produced in heavy-meson decays, leading to a larger spread around the beam collision axis. A larger, but still relatively small, detector with $R\sim 1~\text{m}$ is then required to exploit the full potential of FASER. 
+
+Note that FASER's physics potential is not restricted to the models mentioned above. It has been shown that FASER can probe flavor-specific scalar mediators~\cite{Batell:2017kty}, neutralinos~\cite{Helo:2018qej}, and $U(1)_{B-L}$-gauge bosons~\cite{Bauer:2018onh}. Additionally, a study for FASER's potential to discover axion-like particles has recently been completed~\cite{Feng:2018pew}, while studies for inelastic dark matter and strongly interacting massive particles~\cite{Berlin:inprep} are underway. 
+
+
+\subsection{The MATHUSLA Experiment}
+\label{sec:MATHUSLA}
+
+\noindent {\bf Contributors:}~Cristiano Alpigiani, David Curtin, Henry Lubatti, Charlie Young \\
+
+The basic motivation for the MATHUSLA (MAssive Timing Hodoscope for Ultra-Stable neutraL pArticles) detector~\cite{Chou:2016lxi} is the search for LLPs with lifetimes much greater than the size of the LHC main detectors, $c \tau \gg 100$ m.
+%
+Any detector that can be reasonably constructed could only catch a small fraction of such LLPs decaying inside of its volume.
+%
+Even with potentially large LLP production rates at the LHC, suppression of backgrounds is  therefore crucial for discovery. 
+
+For LLP searches with high-energy or lepton-containing final states, the spectacular  nature of displaced-vertex (DV) signals leads to very low backgrounds in searches at LHC detectors such as ATLAS or CMS.
+%
+Any other class of LLP signature suffers from backgrounds and triggering limitations that can be  significant. This greatly curtails the main detectors' ability to discover LLPs with very long lifetimes. 
+
+To address this broad blind spot of existing detectors, 
+MATHUSLA is proposed to be a large, relatively simple surface detector that can robustly reconstruct DVs with good timing resolution. 
+%
+This gives MATHUSLA a similar geometric acceptance to LLP decays in the long-lifetime limit as the main detectors, while providing shielding from QCD backgrounds and sufficient tracking to reject ubiquitous cosmic rays (CRs). 
+%
+As a result, MATHUSLA is able to detect LLPs produced with $\sim1$ pb cross sections at the HL-LHC with lifetimes near lifetimes of $\sim 0.1$ s, which is generally the limit imposed by Big-Bang Nucleosynthesis (BBN).
+
+
+The simplified detector design for MATHUSLA is shown in Fig.~\ref{f.mathuslalayout}.
+%
+The main component of the detector is a tracker array situated above an air-filled decay volume that is 20 m tall and $200\,\,\mathrm{m} \times 200\,\,\mathrm{m}$ in area. The tracker should have on the order of 5 planes to provide robust tracking with $\sim$ ns, cm timing and spatial resolution, respectively.
+%
+The current MATHUSLA design employs proven and relatively cheap technologies to allow for MATHUSLA's construction in time for the HL-LHC upgrade. Therefore, the trackers are envisioned to be implemented with Resistive Plate Chambers (RPCs), which have been used for very large area experiments in the past~\cite{Aielli:2006cj, Iuppa:2015hna}, while plastic scintillators provide the surrounding veto.  
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{figures/mathusla/3_mathusla.pdf}
+\end{center}
+\caption{
+Simplified MATHUSLA detector layout showing the position of the $200\,\,\mathrm{m} \times 200\,\,\mathrm{m} \times 20\,\,\mathrm{m}$ LLP decay volume.
+}
+\label{f.mathuslalayout}
+\end{figure}
+
+
+This minimal design has been shown to be capable of measuring the LLP boost  on an event-by-event basis~\cite{Curtin:2017izq} using  the geometry of the LLP visible decay products. Final-state multiplicity provides a straightforward discriminant between hadronic and electromagnetic decays. Additional particle identification capability, as well as detection of final-state photons, might be possible by inserting an additional material layer between tracking layers to induce an electromagnetic shower that can be used to distinguish electrons, photons and muons.
+
+%%%%%%%%%%%%%%%%%%%%
+
+As argued in Ref.~\cite{Chou:2016lxi}, MATHUSLA could search for LLPs decaying into  charged particles with little or no backgrounds. 
+%
+Fig.~\ref{f.mathuslalayout} schematically shows the two main MATHUSLA signals, LLPs decaying into at least two charged leptons, or into jets that contain $\mathcal{O}(10)$ charged hadrons~\cite{Curtin:2017izq}. 
+% summary of signal requirements
+In 50-90\% of leptonic decays and practically 100\% of hadronic decays~\cite{Curtin:2017izq}, 2 or more charged partices hit the ceiling due to the LLP boost and are recorded by the tracker. The charged particle trajectories can be fitted to reconstruct a DV.
+%
+Unlike most analyses in the main detectors, these DVs must satisfy the additional stringent requirement that all trajectories coincide in time at the DV. 
+%
+The scintillator is used as a veto to ensure that the charged particles originate at the DV:~there can be no hits along the line between the vertex and the LHC main interaction point (IP), nor along the lines obtained by extrapolating the individual charged particle trajectories backwards.
+%
+These exhaustive geometric and timing requirements make it extremely difficult for backgrounds to fake the LLP signal.
+%
+Cosmic rays can be rejected since they travel in the wrong direction (as well as occurring mostly in cosmic ray showers with extremely highly correlated particle multiplicity in the detector).  
+%
+Muons from the LHC collision do not satisfy the DV signal requirement. The rare occasions in which muons scatter inside the decay volume can be vetoed with the scintillators. 
+%
+Finally, neutrinos from cosmic rays and LHC collisions can scatter in the decay volume and produce displaced vertices, but those can also be rejected with geometric and timing requirements. 
+We refer the reader to Ref.~\cite{Chou:2016lxi} for more details. 
+%
+More comprehensive studies of these backgrounds and their rejection strategies, including full simulations, are currently in progress. 
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/mathusla/limitlegend_14TeV}
+\\
+\includegraphics[width=0.8\textwidth]{figures/mathusla/LLPlimits_14TeV_forpaper}
+\end{center}
+\caption{
+Sensitivity of MATHUSLA to hadronically decaying LLPs produced in exotic Higgs decays (solid lines correspond to 4 decays in the detector)~\cite{Chou:2016lxi}. The dotted lines are the most optimistic ATLAS projection, using a very inclusive search for a single DV in the muon chamber~\cite{Coccaro:2016lnz}.
+}
+\label{f.mathuslahiggs}
+\end{figure}
+
+An important general class of signals are LLPs with masses $\lesssim 100 \gev$ that decay hadronically and are produced without other highly visible signals like high MET or high-energy leptons. 
+%
+MATHULSLA can improve the sensitivity to these LLP production cross sections by a factor of $\sim 10^3$ compared to searches with the main detectors alone. 
+%
+This is illustrated in Fig.~\ref{f.mathuslahiggs}, which shows MATHUSLA's sensitivity to hadronically decaying LLPs produced in exotic Higgs decays~\cite{Chou:2016lxi} compared to an optimistic  projection for searches for a single DV in the ATLAS muon spectrometer~\cite{Coccaro:2016lnz}. 
+%
+For branching ratios of $\sim 10\%$, the BBN lifetime limit~\cite{Fradette:2017sdd} can be probed. 
+
+
+Apart from reaching the BBN ``ceiling'' of LLP parameter space, MATHUSLA extends the power of other LHC measurements. 
+If a $\sim 10\%$ invisible branching ratio for the Higgs was detected via coupling measurements at the HL-LHC, the absence of a MATHUSLA signal would lend strong support to the interpretation that the Higgs decayed to a stable component of dark matter. 
+
+
+% sensitivity from higgs decays
+% mass threshold: boost
+Beyond LLPs produced in rare Higgs decays, MATHUSLA is a general-purpose LLP detector sensitivity to a wide range of other models. Its reach for other BSM scenarios has been explored in~\cite{Co:2016fln, Dev:2016vle, Dev:2017dui, Caputo:2017pit, Evans:2017lvd, Evans:2017kti, Helo:2018qej, DAgnolo:2018wcn, Deppisch:2018eth, Jana:2018rdf}. The general physics case for MATHUSLA's construction is  made systematically in the recently released whitepaper~\cite{Curtin:2018mvb}.
+
+
+It is important to point out that MATHUSLA is a very flexible detector concept that is completely scalable. 
+%
+The sensitivity of MATHUSLA is roughly proportional to the decay volume (which scales with surface area) and roughly independent of the precise geometry or location of the detector, as long as it is $\mathcal{O}(100 \,\,\mathrm{m})$ horizontally displaced from the IP. 
+%
+Therefore, a detector with smaller or larger volume than the benchmark in Fig.~\ref{f.mathuslalayout} may be implemented, depending on available space and budget. 
+%
+Furthermore, the detector volume can be divided into smaller, independent modules (which cooperate for triggering purposes). These can be mass-produced economically and arranged according to the requirements of the experimental site. 
+%
+Such a modular construction also makes it natural to upgrade (say) only one or a few modules with additional capabilities, such as higher tracking resolution for reconstruction of very low-mass LLPs below 10 MeV, or an additional material layer between the trackers for particle ID.
+
+
+The MATHUSLA collaboration is currently studying such a modular design with the aim of producing a Letter-of-Intent in 2018. Crucial to this endeavor is the data from the MATHUSLA test stand, a $\sim 3 \times 3 \times 5$ m MATHUSLA-type detector that took a few days of data in the ATLAS instrument hall in 2017 and will take data for a few months in 2018. This allows local cosmic ray backgrounds to be measured, background rejection and signal reconstruction strategies to be tested, and simulation frameworks to be calibrated. 
+
+
+In conclusion, the MATHUSLA detector concept calls for a dedicated LLP surface detector above ATLAS or CMS. 
+%
+A detector volume of $\sim 10^6\,\,\mathrm{m}^3$ gives sensitivity to LLPs near the BBN lifetime limit if they are produced with $\sim$ pb cross section. This improves LLP sensitivity, compared to the main detectors alone, by several orders of magnitude for many LLP scenarios.
+%
+ The detector is simple and relies on proven technology, making its construction in time for the HL-LHC upgrade feasible. Once constructed, MATHUSLA could function without modification as a detector for the HE-LHC (with increased sensitivity).
+ %
+ A small-scale test stand detector is already taking data at CERN, and studies are underway to finalize a detailed design for the full-scale detector.
+
+\subsection{The MilliQan Experiment}
+\label{sec:milliQan}
+
+\noindent {\bf Contributor:}~Christopher Hill \\
+
+MilliQan is a dedicated experiment at the LHC to search for milli-charged particles (mCP)~\cite{Ball:2016zrp, Haas:2014dda}. The MilliQan experiment is part of a general program to search for hidden sectors~\cite{Izaguirre:2015eya} and other BSM scenarios~\cite{Sher:2017wya}. As an illustrative example, we show the sensitivity of MilliQan to an extra abelian gauge field coupled to a massive Dirac fermion (``dark QED") that mixes with hypercharge through the kinetic term~\cite{Holdom:1985ag}. The result is that the new matter field is charged under hypercharge with a fractional electric charge of $\epsilon$, where $\epsilon \ll 1$. The milliQan experiment targets an unexplored part of the parameter space, namely mCP masses $0.1 \lsim \MQ \lsim 100 \gev$, for charges $Q$ at the $10^{-3}~e -10^{-1}~e$ level. 
+
+The  experimental apparatus  is one or more scintillator detector layers of roughly 1 m$^3$ each, positioned near one of the high-luminosity interaction points of the LHC. The experimental signature consists of a few photo-electrons (PE) arising from the small ionization produced by the mCPs that travel unimpeded through material after escaping the LHC detectors.
+
+ The milliQan experiment is planned to be sited in the PX56 Observation and Drainage gallery above the CMS underground experimental cavern. The proposed gallery is limited in space. The detector will be located in this tunnel at an optimized location that is 33~m from the CMS  interaction point (IP), behind 17~m of rock, and at an angle of 43.1 degrees from the horizontal plane. The selected location in a 3D model is shown in Figure~\ref{fig:site}. 
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=0.6\linewidth]{figures/milliqan/site_selection_image.png}
+\caption{3D model showing optimal position of milliQan within the PX56 Drainage and Observation gallery located above CMS UXC.\label{fig:site}}
+\end{figure}
+
+ The milliQan detector is a~$1~\mathrm{m}\times1~\mathrm{m}\times3~\mathrm{m}$ plastic scintillator array. The array will be oriented such that the long axis points at the nominal CMS IP. The array is subdivided into 3 sections each containing 400~$5~\mathrm{cm}\times5~\mathrm{cm}\times80~\mathrm{cm}$ scintillator bars optically coupled to high-gain photomultiplier tubes (PMTs).  The detector will be shielded from other background sources such as activity in the scintillator and environmental radiation. With an estimated detection efficiency of about 10\%, milliQan expects an average of $\mathcal{O}(1)$ PE from each attached phototube for each mCP with $Q=\mathcal{O}(10^{-3})~e$ that traverses 80~cm of plastic scintillator. The signal is a longitudinal triple-incidence of hits with one or more PEs; a triple-incidence within a 15 ns time window along longitudinally contiguous bars in each of the 3 sections is required to reduce the background from dark-current noise. Requiring triple-incidence is expected to control background to $\mathcal{O}(10)$ events per year with $N_{\rm PE}\ge 1$. The milliQan detector will self-trigger to a dedicated readout with no dead time from readout, up to rates of $\sim1$~kHz. Energy calibration will be done in situ using an $^{241}$Am source. 
+ 
+  The dominant background is expected to come from dark-current pulses in the PMTs. Pulses from background radiation, including cosmic muons, will consist of 1000 of PEs that can be easily vetoed offline. Assuming a total background rate per PMT of $\nu_B = $500 Hz, with a time window of $(\Delta t)_{\mathrm{online}} =100$~ns, milliQan expects a double coincident trigger rate per board of 1.5~Hz. The entire detector will be read out if one board triggers and there will be 50 such boards in total. Therefore, the full background trigger rate is expected to be 75~Hz. Offline, the time window will be tightened to $(\Delta t)_{\mathrm{offline}} =15$~ns, yielding an offline background rate for a triple coincidence of $2.8\times10^{-8}$~Hz. Since there are 400 such sets, the total offline background rate is estimated to be $1.1\times10^{-5}$~Hz. With these background rates, milliQan  estimates a total of 165 (330) background events in 300 (3000)~fb$^{-1}$ of integrated luminosity. 
+
+ The milliQan collaboration performed a full simulation of the experiment to evaluate the projected sensitivity of the experiment for various mCP electric charges and masses. The simulation was performed in two stages. In the first, they simulated the production of mCP particles via Drell-Yan, J/$\Psi$, $\Upsilon$(1S), $\Upsilon$(2S), and $\Upsilon$(3S) channels at 14 TeV center-of-mass energy. Particles produced at the IP were propagated  to the proposed experimental site described above using a map of the CMS magnetic field. The effects of multiple scattering and energy loss were included using a simplified model of the CMS detector material budget and a region of rock spanning 17~m between the CMS experimental cavern and the proposed experimental site. The number of expected mCP particles per fb$^{-1}$ of integrated luminosity incident at the detector was computed as a function of the mass of the milli-charged particle. In the second stage, milliQan calculates the signal efficiency by running the kinematic distributions of the particles at the proposed experimental site through a full {\sc Geant4} simulation of the detector; this is necessary because the small charge regime is sensitive to details such as the reflectivity, the light attenuation length, and the shape of the scintillator. These details, as well as the quantum efficiency, light-emission spectrum and the fast-time constants were modeled in {\sc Geant4} using the specifications provided by the manufacturers for the scintillator and PMTs. Combining the estimated background rates discussed above with the cross-sections, acceptances and efficiencies calculated for all masses and electric charges, the sensitivity projections of the milliQan experiment for LHC and HL-LHC are shown in Figure~\ref{fig:abc}.
+
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=0.6\linewidth]{figures/milliqan/exclusionplots_5b5.pdf}
+   \caption{Expected sensitivity for different LHC luminosity scenarios. The black line shows the expected 95\% C.L. exclusion (solid) and $3\sigma$ sensitivity (dashed),
+assuming $300~\text{fb}^{-1}$ of integrated luminosity. In blue we show the corresponding expectations for $3000~\text{fb}^{-1}$.
+\label{fig:abc}}
+\end{figure}
+
+ 
+ A 1/100th scale ``demonstrator'' of milliQan to validate the detector concept was installed in the PX56 location at CERN in technical stop 2 of 2017 and was upgraded during the 2017--2018 year-end technical stop. This demonstrator, shown in Figure~\ref{fig:demo}, has been recording data since its installation, and expects to have first results later this year. If funding is secured, construction of the full milliQan apparatus is planned for 2019, with installation in the tunnel in 2020. 
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=0.5\linewidth]{figures/milliqan/RIMG0141.jpg}
+   \caption{ 1/100th scale ``demonstrator'' of milliQan installed in the PX56 drainage gallery 33 m from the CMS IP.
+\label{fig:demo}}
+\end{figure}
+
+
 \subsection{MoEDAL experiment and future developments}
 \label{sec:MoEDAL}
 
@@ -133,3 +385,4 @@ The first apparatus specifically designed to detect mini-charged particles was t
 The possibility of analysing decommissioned parts of the LHC beam-pipe system at the ATLAS, CMS and LHCb/MoEDAL sites with a SQUID to search for trapped magnetic monopoles has been proposed~\cite{beampipe-proposal}. In this context the MoEDAL experiment may serve as a formal platform for coordinating machining, scanning and analysis work, in collaboration with interested ATLAS, CMS and LHCb members. 
 
 The induction technique has been successfully employed at the LHC with the dedicated MoEDAL trapping detector. Additional searches for trapped monopoles in beam-pipe material would access wide windows of magnetic charges and production cross sections to which other LHC experiments are insensitive. The decommissioned central beryllium beam-pipe sections of ATLAS and CMS, with a $4\pi$ coverage and exposure to the highest rates of 7 and 8~TeV $pp$ collisions, are by far the most attractive samples to be analysed.
+
