@@ -38,14 +38,14 @@ modules. More precisely, tracking is simulated through efficiency and smearing
 functions that are applied to the properties of the electrically-charged stable
 particles. The particles are then propagated to the calorimeters and dedicated
 modules simulate the energy deposits in the electromagnetic and hadronic
-calorimeters. The output of such step consists in a list of calorimetric towers.
+calorimeters. The output of such a step consists in a list of calorimetric towers.
 Moreover, \DEL\ includes a particle-flow like
 algorithm that combines tracking and calorimetric data in order to
 improve the identification of the final-state objects and the resolution on
 their reconstructed momenta.
 
 Jet clustering is performed via an internal call to the \FJ\
-package~\cite{Cacciari:2011ma} which takes as input the
+package~\cite{Cacciari:2011ma}, which takes as input the
 list of calorimeter towers or, alternatively, the particle-flow candidates and
 outputs jet objects. Lepton and photon isolation is then handled through a
 specific isolation module. Finally, \DEL\ takes care of removing the
@@ -54,7 +54,8 @@ different collections. The final output is stored in a \ROOT\ file.
 
 In addition, \DEL\ allows for the simulation of pile-up effects by
 superimposing minimum-bias events attached to displaced interaction vertices
-to the hard scattering event. Procedures mimicking pileup
+along the beam direction
+to the hard scattering event. Procedures mimicking pile-up
 removal can then be configured in the input card. The subtraction of the charged
 particles belonging to pile-up vertices is performed at the tracker level.
 Neutral particles are removed by applying the jet area
@@ -65,7 +66,7 @@ performance originating from pile-up, in particular relative to the isolation, i
 automatically accounted for.
 
 The official \DEL\ package (version 3.4.1) with the default detector cards needs
-to be adapted for the proper handling of long-lived particles (LLP).
+to be adapted for the proper handling of LLPs.
 By default, the decay products of a long-lived particle enter the
 simulation as if the corresponding decay would have occurred within the
 tracker volume. However, the user has the possibility to define a volume in
@@ -85,7 +86,7 @@ according to the impact parameter in the transverse plane ({\it i.e.}, the $d_0$
 parameter) and in the longitudinal plane ({\it i.e.}, the $d_z$ parameter).
 
 By default, the detector simulation in \DEL\ totally ignores the presence of any
-long-lived particle. While this is convenient for neutral particles like a
+LLP. While this is convenient for neutral particles like a
 neutralino which could be considered as invisible from the detector standpoint,
 a charged particle leaves tracks in the tracker and would interact with the
 calorimeters if its lifetime is large enough.
@@ -99,29 +100,29 @@ parameter. In this case the decay products can be found in the
 treated with adequate smearing functions and efficiency directly from the \DEL\
 output.
 
-Finally, disappearing tracks are simply treated as missing energy in \DEL. Emerging tracks or tracks containing kinks are not treated appropriately, in the sense that the parameterizations required for a proper description of such signatures has not been implemented yet. Also, \DEL\ does not include any trigger simulation, and the latter is in general complex in the case of long-lived particles.
+Finally, disappearing tracks are simply treated as missing energy in \DEL. Emerging tracks or tracks containing kinks are not treated appropriately, in the sense that the parameterizations required for a proper description of such signatures has not been implemented yet. Also, \DEL\ does not include any trigger simulation, and the latter is in general complex in the case of LLPs.
 
 \subsection{Displaced tracks with the \MA\ tune of \DEL}
 
 The so-called \DEL-LLP package can be installed from the version v1.6 of
 \MA~\cite{Conte:2012fm,Conte:2014zja} and contains improvements of \DEL\
-specific to long-lived particles. It
-consequently opens the door for phenomenological investigations of long-lived
+specific to LLPs. It
+leads to new possibilities for phenomenological investigations of long-lived
 particles and the recasting of related LHC analyses. More information is
-available on the web page:\\ \hspace*{0.5cm} \url{https://madanalysis.irmp.ucl.ac.be/wiki/MA5LongLivedParticle}
+available on the web page:\\ \hspace*{0.25cm} \url{https://madanalysis.irmp.ucl.ac.be/wiki/MA5LongLivedParticle}
 
-This new package was designed to handle neutral long-lived particles that decay
+This new package was designed to handle neutral LLPs that decay
 into leptons within the tracker volume. Realistic efficiencies are applied to
-the displaced tracks and several parameters specific to this kind of analyses
+the displaced tracks and several parameters specific to this kind of analysis
 have been made available within \MA. An extension to the case of neutral
-long-lived particles decaying into muons outside the tracker volume can be easily
+LLPs decaying into muons outside the tracker volume can be easily
 implemented, the muons being thus reconstructed only through their hits in the
 muon chambers. The simulation of the displaced leptons is performed through efficiencies and resolution functions to be specified by the user. Furthermore, another
-extension allowing to handle long-lived charged particles that decay into
+extension allowing the user to handle long-lived charged particles that decay into
 leptons could be implemented.
 
 The \DEL-LLP package contains a new module called \verb+MA5EfficiencyD0+ that
-allows for the definition of a track reconstruction efficiency parameterized as a function of the $d_0$ and $d_z$ parameters (named \verb+d0+ and \verb+dz+ in the \DEL\ input
+allows for the definition of a track reconstruction efficiency parameterized as a function of the $|d_0|$ and $d_z$ parameters (named \verb+d0+ and \verb+dz+ in the \DEL\ input
 card). The default efficiency function, specified via a \verb+DelphesFormula+ is taken from the
 8~TeV tracking performance of CMS~\cite{Khachatryan:2014mea},\\
 \hspace*{0.5cm}\url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/DisplacedSusyParametrisationStudyForUser},\\
@@ -133,7 +134,7 @@ card). The default efficiency function, specified via a \verb+DelphesFormula+ is
  }
 \end{verbatim}
 In addition, the data-format of \DEL\ has been extended so that the \verb+Muon+ and
-\verb+Electron+ classes now include the transverse ($d_0$) and longitudinal ($d_z$) impact parameters relative to the closest approach point (encoded
+\verb+Electron+ classes now include the transverse ($|d_0|$) and longitudinal ($d_z$) impact parameters relative to the closest approach point (encoded
 in the \verb+d0+ and \verb+dz+ variables), the coordinates of the closest
 approach point $(x_d, y_d, z_d)$ (encoded in the \verb+xd+, \verb+yd+ and
 \verb+zd+ variables) and the four-vector of the vertex from which the lepton is
@@ -143,7 +144,7 @@ evaluated from Monte Carlo information.
 
 %\renewcommand{\arraystretch}{1.2}
 %\setlength{\tabcolsep}{12pt}
-\begin{table}
+\begin{table}[t]
 \begin{center}
   \begin{tabular}{l || l | c  c | c }
   \label{tab:cms_exo}
@@ -162,8 +163,8 @@ evaluated from Monte Carlo information.
                              & 10  & 4.45   & 5.8  & 25\\
                              & 100 & 0.497  & 0.27 & 85\\
   \end{tabular}
-  \caption{Number of events populating the three signal regions (SR-1, SR-2 and SR-3) of the
-    CMS-EXO-16-022 analysis for different stop decay lengths ($c\tau_{\tilde t}$).
+  \caption{Number of events populating the three signal regions (SR-1, SR-2 and SR-3) of Ref.~\cite{CMS:2016isf}
+   for different stop decay lengths ($c\tau_{\tilde t}$).
     We compare the CMS and \MA~(MA5) results in the second
     and third column of the table, respectively, and the difference taken relatively to CMS is
     shown in the last column.}
@@ -174,7 +175,7 @@ evaluated from Monte Carlo information.
 
 Consequently, the data-format of \MA\ has been extended, so that the \verb+Muon+ and
 \verb+Electron+ classes now contains the \verb+d0()+ and \verb+dz()+ methods allowing to
-access the value of the $d_0$ and $d_z$ parameters, the \verb+closestPoint()+
+access the value of the $|d_0|$ and $d_z$ parameters, the \verb+closestPoint()+
 method that returns the coordinates of the closest approach point (through the
 \verb+X()+, \verb+Y()+ and \verb+Z()+ daughter methods) and the
 \verb+vertexProd()+ method that returns coordinates of the displaced vertex from
@@ -182,8 +183,7 @@ which the lepton originates from (through the \verb+X()+, \verb+Y()+ and
 \verb+Z()+ daughter methods). An analysis example can be found in the public analysis database of \MA,\\
 \hspace*{0.5cm}%
   \url{http://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase}\\
-where information about the re-implementation in \MA\ of the
-CMS-EXO-16-022~\cite{CMS:2016isf}
+\noindent where information about the re-implementation in \MA\ of Ref.~\cite{CMS:2016isf}
 analysis of 2.6~fb$^{-1}$ of 13~TeV LHC data is available. This is a search for long-lived particles decaying into electrons and muons, where signal
 events are selected by requiring the presence of either an electron or a muon
 whose transverse impact parameter lies between 200~$\mu$m and 10~cm. For a given
@@ -214,11 +214,11 @@ handling of LLP signatures.
 \subsubsection{Displaced jets}
 \label{sec:dispjets}
 
-Displaced jets are jets that are reconstructed either from standalone calorimeter
+Displaced jets are jets that are reconstructed either from stand-alone calorimeter
 information, or from the particle-flow input with a minimum requirement on the
 multiplicity of tracks with high transverse displacement (see
 Ref.~\cite{CMS:2014wda}). Conceptually, such jets can be handled in \DEL\
-provided that the displaced tracks are properly parameterized. As described
+provided that the displaced tracks are properly parametrized. As described
 above, a module designed to smear the full set of track properties, including
 their transverse and longitudinal displacement, exists ({\it i.e.}, the
 \verb+TrackSmearing+ module). In addition, efficiencies based on displacement
@@ -247,15 +247,15 @@ algorithm can be implemented in \DEL.
 \subsubsection{Discussion: \DEL\ versus a specific parametric simulation}
 
 In a fully parametric simulation of the detector, the detector effects are encoded in
-terms of efficiencies and resolution functions. Such type of simulation is
+terms of efficiencies and resolution functions. Such a simulation is
 typically very fast, but is likely to suffer from a lack of accuracy in the
 modeling of complex observables such as jet properties and missing energy. The
 \DEL\ simulation is an admixture of such a parametric simulation, and of an
 algorithmic one. This is slower, but has the clear advantage of correctly
 treating in particular the reconstruction of the jets and the missing energy.
 
-In order to be able to answer whether \DEL\ should be used, instead of a fully
-parametric simulation, to perform the recasting of long-lived particle analyses,
+In order to be able to answer whether \DEL\ should be used in place of a fully
+parametric simulation in recasting  LLP analyses,
 further studies are needed. In the meantime, the following guidelines could be
 used. If the signal selection is based only on displaced tracks, a simple
 parametric simulation should in principle be sufficient. This simulation could encapsulate the
@@ -266,6 +266,7 @@ calorimetric information ({\it i.e}, jets or missing energy), \DEL\ should be
 preferred to a fully parametric framework. However, a precise
 quantification of these effects cannot be assessed without detailed comparative
 studies between the two approaches. Finally, it should be pointed out that
-neither of these techniques can be used to correctly simulate the instrumental background.
+neither of these techniques can be used to correctly simulate the instrumental background,
+which is challenging to simulate and is discussed in Chapter \ref{sec:backgrounds}.
 
 
