@@ -16,17 +16,10 @@ Weak decays of SM particles can naturally give rise to displaced vertices at the
 
 Moreover, \textit{b}-hadrons can decay at displacements of a few mm and can be challenging to distinguish from LLPs with masses of a few tens of GeV that decay to a pair of jets. Requiring a large track multiplicity of the displaced vertex and performing a mass fit to the dijet invariant mass can help to significantly reduce the effect of this background (see, for example, Ref.~\cite{CMS:2014wda, Aaij:2017mic}). Backgrounds from heavy flavors are typically more abundant in the forward region, as arises, for example, if the signature under study is an LLP from the decay of a SM-like Higgs boson. However, the LHCb forward detector, which was designed to study these SM decays, is, in most cases, capable of rejecting heavy flavor backgrounds more effectively than can be done in ATLAS or CMS. Furthermore, displaced tracks from \textit{b}-mesons, which usually have impact parameters ($d0$) of less than 2 mm, can be rejected by using a larger criterion for the minimum track $d0$.
 
-\subsection{Punch-Through Jets}
-
-{\bf \textcolor{red}{JB: This is a major background source for, e.g., the ATLAS MS vertices search.  Can a discussion be added?  Perhaps we could ask Cristiano Alpigiani or Andy Hass to contribute.}}
-
 % -----------------------------------------------------------------------------------
-\section{Real Particles Produced via Interactions with the Detector} % Martino
+\section{Real Particles Produced via Interactions with the Detector} % Martino, Sascha
 % -----------------------------------------------------------------------------------
 
-% -----------------------------------------------------------------------------------
-%\subsection{Nuclear interactions} % I think maps for nuclear interactions are the same that are used for for photon interactions.
-% -----------------------------------------------------------------------------------
 Particles produced in the $pp$ collision can interact with nuclei of the detector material, giving rise to displaced vertices, and can mimic LLP signals. Vertices from these interactions will be positioned in regions of the detector containing high densities of detector material and are therefore effectively vetoed by using detailed material maps.
 
 The LHC detectors have developed tools internal to the collaborations to define a material volume to be vetoed. As the detector configurations changed slightly from Run 1 to Run 2, material maps have been determined separately for each data-taking period for both the ATLAS and CMS collaborations, using collision data. Maps can be found for ATLAS for Run 1 in Ref.~\cite{Aaboud:2016poq}, CMS for Run 1 in Ref.~\cite{CMS:2010nua}, ATLAS for Run 2 in Ref.~\cite{Aaboud:2017iio}, and CMS for Run 2 in Ref.~\cite{Sirunyan:2018icq}. Additionally, the Run 2 maps for both are shown here in Figures~\ref{fig:materialmapATLAS} and \ref{fig:materialmapCMS} for ATLAS and CMS, respectively.
@@ -63,6 +56,14 @@ The LLP community is interested in using public tools for material maps of LHC e
 %ATLAS 7 TeV \cite{Aaboud:2016poq} (QUESTION: is it valid for Run 2?)
 %CMS 7 TeV \cite{CMS:2010nua}
 %CMS 13 TeV \cite{CMS-DP-2016-073,CMSmaterial} (there is no paper, am I right?) JA: We have a public detector performance note (CMS-DP-2016-073) and a newer public twiki than the original one you cited (I updated the reference). The the paper is about to enter CWR, so not public yet.
+
+Another important background, mainly for analyses trying to reconstruct decay vertices of long-lived particles reaching the muon systems is hadronic or electromagnetic showers not contained in the calorimeter volume, so-called punch-through jets~\cite{}. These punch-through jets occur especially in regions of reduced total interaction length in the calorimeters (e.g.\ transition regions between barrel and end-caps) and can be suppressed by either rejection these $|\eta|$ regions or requiring a minimal number of hits in the muon system, isolating the displaced vertex from calorimeter jets as well as high-energy tracks and significant track activity in the inner tracking system. In order to not reject true vertices from displaced decays that occur near the end of the calorimeters, the calorimeter-jets veto should only consider jets with a minimum total energy deposit and e.g.\ a minimum electromagnetic fraction of the total energy. The track isolation requirement aims at regions with a poor calorimeter measurement (again transition regions in the calorimeters), where a single high-energy track or the sum of the track activity in a small cone around the displaced vertex could indicate a (punch-through) jet.
+On the other hand, punch-through jets, given their similarity to signal signatures, can also be used to evaluate systematic uncertainties due to imperfect modeling in the muon-system simulation.
+
+% https://arxiv.org/abs/1504.03634
+% https://cds.cern.ch/record/2256102 (ATLAS)
+% https://arxiv.org/abs/1703.09665
+% https://cds.cern.ch/record/2636535 (ATLAS, to come out soonish)
 
 % -----------------------------------------------------------------------------------
 \section{Real Particles Originating from Outside the Detector} % Juliette
