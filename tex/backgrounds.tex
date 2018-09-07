@@ -29,17 +29,23 @@ Moreover, \textit{b}-hadrons can decay at displacements of a few mm and can be c
 % -----------------------------------------------------------------------------------
 Particles produced in the $pp$ collision can interact with nuclei of the detector material, giving rise to displaced vertices, and can mimic LLP signals. Vertices from these interactions will be positioned in regions of the detector containing high densities of detector material and are therefore effectively vetoed by using detailed material maps.
 
-The LHC detectors have developed tools internal to the collaborations to define a material volume to be vetoed. As the detector configurations changed slightly from Run 1 to Run 2, material maps have been determined separately for each data-taking period for both the ATLAS and CMS collaborations, using collision data. Maps can be found for ATLAS for Run 1 in Ref.~\cite{Aaboud:2016poq}, CMS for Run 1 in Ref.~\cite{CMS:2010nua}, and ATLAS for Run 2 in Ref.~\cite{Aaboud:2017iio}. Additionally, the Run 2 maps for both are shown here in Figures~\ref{fig:materialmaps} and \cite{CMSmaterial} for ATLAS and CMS, respectively {\bf \textcolor{red}{JB: Do we have the Run 2 CMS material map to include?}}.
+The LHC detectors have developed tools internal to the collaborations to define a material volume to be vetoed. As the detector configurations changed slightly from Run 1 to Run 2, material maps have been determined separately for each data-taking period for both the ATLAS and CMS collaborations, using collision data. Maps can be found for ATLAS for Run 1 in Ref.~\cite{Aaboud:2016poq}, CMS for Run 1 in Ref.~\cite{CMS:2010nua}, ATLAS for Run 2 in Ref.~\cite{Aaboud:2017iio}, and CMS for Run 2 in Ref.~\cite{Sirunyan:2018icq}. Additionally, the Run 2 maps for both are shown here in Figures~\ref{fig:materialmapATLAS} and \ref{fig:materialmapCMS} for ATLAS and CMS, respectively.
 %
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/atlasmaterial.png}
-%   \hfill
-%   \includegraphics[width=0.48\textwidth]{figures/cmsmaterial.png}
-  \caption{An example of a material map from ATLAS~\cite{Aaboud:2017iio}
-  % and CMS~\cite{CMSmaterial}}
+  \caption{An example of a material map from ATLAS~\cite{Aaboud:2017iio}.
   }
-  \label{fig:materialmaps}
+  \label{fig:materialmapATLAS}
+\end{figure}
+
+%
+\begin{figure}[t]
+  \centering
+   \includegraphics[width=0.48\textwidth]{figures/cmsmaterial.png}
+  \caption{An example of a material map from CMS~\cite{Sirunyan:2018icq}.
+  }
+  \label{fig:materialmapCMS}
 \end{figure}
 
 LHCb recently developed a precise material map of the VErtex LOcator (VELO) using beam-gas collisions~\cite{Alexander:2018png}, shown in Figure~\ref{fig:lhcbmaterialmap}. Beam-gas collisions can be distinguished from long-lived heavy flavor backgrounds and their utilization allows the map to cover precisely the whole VELO geometry, not only the region close to the interaction point. This map was used to veto photon conversions to di-muons, which is the main background affecting displaced dark-photon searches at low mass~\cite{Aaij:2017rft}. In analyses, this material map, together with properties of a reconstructed secondary vertex and its constituent tracks, is used to construct a $p$-value that is assigned to the hypothesis that the secondary vertex originates from a material interaction. As a rule of thumb, LHCb material interaction background is dominant for vertices at a distance from the beam axis larger than 6~mm (where the VELO material begins). Below 6~mm the background is dominated by heavy flavor decays~\cite{Ilten:2016tkc}.
