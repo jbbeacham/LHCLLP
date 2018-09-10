@@ -40,7 +40,7 @@ The CMS endcap calorimeter, including both the electromagnetic (EE) and the hadr
 
 \paragraph{ATLAS Upgrade}
 
-The ATLAS Liquid Argon (LAr) calorimeter will be improved in Phase-II with an electronics upgrade that will provide optimized super cells and full-granularity data to the trigger system by means of a new pre-processor, the LAr Signal Processor (LASP). A similar upgrade of the ATLAS Tile calorimeter readout will use on-detector digitization and a new backend pre-processor, the Tile PreProcessor System (TPPr). Both the LAr and Tile calorimeters expect to implement a 40~MHz readout system for Phase-II. The transmission of high-granularity calorimeter data (all cells above a transverse energy threshold of $|E_T| > 2\sigma$ {\bf \textcolor{red}{[JB: What does this mean? Energy in units of sigma?]}}) drives the bandwidth requirement for the upgraded trigger and data acquisition (TDAQ) system.
+The ATLAS Liquid Argon (LAr) calorimeter will be improved in Phase-2 with an electronics upgrade that will provide optimized super cells and full-granularity data to the trigger system by means of a new pre-processor, the LAr Signal Processor (LASP). A similar upgrade of the ATLAS Tile calorimeter readout will use on-detector digitization and a new backend pre-processor, the Tile PreProcessor System (TPPr). Both the LAr and Tile calorimeters expect to implement a 40~MHz readout system for Phase-2. The transmission of high-granularity calorimeter data (all cells above a transverse energy threshold of $|E_T| > 2\sigma$ {\bf \textcolor{red}{[JB: What does this mean? Energy in units of sigma?]}}) drives the bandwidth requirement for the upgraded trigger and data acquisition (TDAQ) system.
 
 In addition, the outermost Tile calorimeter layer can be used to identify muons in the range $|\eta| < 1.3$ by better identifying particle energy depositions above the Minimum Ionizing Particle (MIP) threshold.
 
@@ -54,7 +54,7 @@ For the CMS detector, its current muon system consists of three different types 
 
 \paragraph{ATLAS Upgrade}
 
-Most of the front-end and detector readout of the ATLAS muon system, including the trigger electronics for the Resistive Plate Chambers (RPC), Thin Gap Chambers (TGC), and Monitored Drift Tube (MDT) chambers, will be replaced to face the higher trigger rates and longer latencies necessary for the new Level-0 (L0) trigger required by the HL-LHC conditions. The MDT chambers will be integrated into the L0 trigger in order to sharpen the momentum threshold. Some of the MDT chambers in the inner barrel layer will be replaced with new, small-diameter MDTs. Additional RPC chambers will be installed in the inner barrel layer to increase the acceptance and robustness of the trigger, and some chambers in high-rate regions will be refurbished. New TGC triplet chambers in the barrel--endcap transition region will replace the current TGC doublets to suppress the high trigger rate from random coincidences in this region. The electronics of all the sub-detectors will need to be replaced due to obsolescence, aging, and radiation damage. During the Phase-I upgrade (to take place from 2019 to 2021) the New Small Wheel (NSW) chambers will replace the Cathode Strip Chambers (CSC) and the MDT chambers of the innermost endcap wheel by Micromegas and small-strip TGCs. The replacement of the MDT front-end readout will address the trigger rate and latency requirements of the TDAQ system in Phase-II and allow the use of MDT hit information to improve the muon $p_T$ resolution in the L0 trigger.
+Most of the front-end and detector readout of the ATLAS muon system, including the trigger electronics for the Resistive Plate Chambers (RPC), Thin Gap Chambers (TGC), and Monitored Drift Tube (MDT) chambers, will be replaced to face the higher trigger rates and longer latencies necessary for the new Level-0 (L0) trigger required by the HL-LHC conditions. The MDT chambers will be integrated into the L0 trigger in order to sharpen the momentum threshold. Some of the MDT chambers in the inner barrel layer will be replaced with new, small-diameter MDTs. Additional RPC chambers will be installed in the inner barrel layer to increase the acceptance and robustness of the trigger, and some chambers in high-rate regions will be refurbished. New TGC triplet chambers in the barrel--endcap transition region will replace the current TGC doublets to suppress the high trigger rate from random coincidences in this region. The electronics of all the sub-detectors will need to be replaced due to obsolescence, aging, and radiation damage. During the Phase-1 upgrade (to take place from 2019 to 2021) the New Small Wheel (NSW) chambers will replace the Cathode Strip Chambers (CSC) and the MDT chambers of the innermost endcap wheel by Micromegas and small-strip TGCs. The replacement of the MDT front-end readout will address the trigger rate and latency requirements of the TDAQ system in Phase-2 and allow the use of MDT hit information to improve the muon $p_T$ resolution in the L0 trigger.
 
 Some LLP scenarios (e.g., Hidden Valley models~\cite{Strassler:2006im}) predict muon-jet final states, which result in collimated muons that are not identified with high efficiency by the current triggers (see Sec.~\ref{subsec:dleptons}). In Figure~\ref{fig:ATLAS_Trigger}, the opening angle between muons in a Hidden Valley model is shown, for a particular combination of particle masses and parameters. The di-muon separation is much smaller than the current system can resolve (approximately 0.2 in $\Delta\phi(\mu,\mu)$). In the no-upgrade scenario, these can only be recorded by the single muon trigger. In the upgraded scenario, a dedicated trigger is under development for a dimuon trigger with a $p_T$ threshold of $\approx$ 10 GeV. The near-by muon condition would be implemented in the new muon system Sector Logic, NSW Trigger Processor, and MDT trigger processor.
 
@@ -73,7 +73,7 @@ with a timing resolution of 30~ps for MIPs. High-precision timing will improve t
 
 \subsubsection{Trigger} \label{sec:upgradetrigger}
 
-The ATLAS and CMS experiments adopt a two-level trigger system:~the hardware-based Level-1 trigger (L1) and the software-based high-level trigger (HLT). {\bf \textcolor{red}{[JB: Do you mean that they each currently use a two-level trigger system and that this will continue for the Phase-II upgrade? Above, in the section on muon systems, it's mentioned that ATLAS will have some kind of Level-0 trigger?  Can this be expanded a bit to give some context about triggering in ATLAS and CMS and how it's going to change?]}}
+The ATLAS and CMS experiments adopt a two-level trigger system:~the hardware-based Level-1 trigger (L1) and the software-based high-level trigger (HLT). {\bf \textcolor{red}{[JB: Do you mean that they each currently use a two-level trigger system and that this will continue for the Phase-2 upgrade? Above, in the section on muon systems, it's mentioned that ATLAS will have some kind of Level-0 trigger?  Can this be expanded a bit to give some context about triggering in ATLAS and CMS and how it's going to change?]}}
 
 \paragraph{CMS Upgrade}
 
@@ -223,16 +223,16 @@ The principles of the proposed HSCP trigger algorithm are illustrated in Fig.~\r
 \Delta t = d\left(\frac{1}{v}-\frac{1}{c}\right),
 \end{equation}
 %
-Here $d$ is the distance between the IP and the point where an HSCP crosses an RPC. For RE4/1 chambers and $\beta = v/c = 0.2$, the delay time is $>6$ bunch crossings (BXs), comparable to $150 \, \mathrm{ns}$.
+Here $d$ is the distance between the interaction point (IP) and the point where an HSCP crosses an RPC. For RE4/1 chambers and $\beta = v/c = 0.2$, the delay time is $>6$ bunch crossings, comparable to $150 \, \mathrm{ns}$.
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=0.6\textwidth]{figures/HSCP/diagram.pdf}
-  \caption{Diagram showing times measured at different RPC stations for particles originating at different BXs and with different velocities in CMS. The $x$-axis represents the distances from IP to RPC detectors, while the $y$-axis corresponds to time. The clock at each RPC station is tuned so that particles moving with the speed of light are registered with the exact same ``local'' times. Hence, relativistic particles are represented by horizontal lines on this diagram.}
+  \caption{Diagram showing times measured at different RPC stations for particles originating at different bunch crossings and with different velocities in CMS. The $x$-axis represents the distances from IP to RPC detectors, while the $y$-axis corresponds to time. The clock at each RPC station is tuned so that particles moving with the speed of light are registered with the exact same ``local'' times. Hence, relativistic particles are represented by horizontal lines on this diagram.}
   \label{fig:HSCP_diagram}
 \end{figure}
 
-A penetrating charged particle leaves a trail of hits in RPC chambers along its trajectory. The time of flight can be computed in each RPC station with respect to a number of BX hypotheses. Should there be a common velocity solution, derived from Eq.~(\ref{eq:HSCP_delay}), with $\beta < 0.6$, a trigger is formed. For $\beta >0.6$, the delays are small and can be handled by the Phase-1 trigger. The performance of this algorithm has been studied with the CMS full simulation. All the detector effects (e.g., electronics jitter, signal time propagation along strips) are taken into account. A particle-speed measurement resolution is shown in Fig.~\ref{fig:HCP_Trigger} (right) for the case of 25~ns signal sampling time (Phase-1) and 1.56~ns sampling time provided with the upgraded RPC Link Board System.
+A penetrating charged particle leaves a trail of hits in RPC chambers along its trajectory. The time of flight can be computed in each RPC station with respect to a number of bunch crossing hypotheses. Should there be a common velocity solution, derived from Eq.~(\ref{eq:HSCP_delay}), with $\beta < 0.6$, a trigger is formed. For $\beta >0.6$, the delays are small and can be handled by the Phase-1 trigger. The performance of this algorithm has been studied with the CMS full simulation. All the detector effects (e.g., electronics jitter, signal time propagation along strips) are taken into account. A particle-speed measurement resolution is shown in Fig.~\ref{fig:HCP_Trigger} (right) for the case of 25~ns signal sampling time (Phase-1) and 1.56~ns sampling time provided with the upgraded RPC Link Board System.
 
 \begin{figure}[t]
 \begin{center}
@@ -244,63 +244,41 @@ A penetrating charged particle leaves a trail of hits in RPC chambers along its 
 \end{figure}
 
 The efficiency of the RPC-HSCP algorithm as a function of $\beta$ is studied and compared with the standard L1 muon trigger. The results are shown in Fig.~\ref{fig:HCP_Trigger} (right). The current CMS-HSCP Phase-1 trigger performs well down to $\beta \approx 0.75$. The upgraded RPC Link Board System will allow for the triggering, at the
-correct BX, on possible HSCPs with velocities as low as $\beta \sim 0.25$.
+correct bunch crossing, on possible HSCPs with velocities as low as $\beta \sim 0.25$.
 
 Possible improvements for this trigger proposal in the $\beta$ measurement could be achieved by matching tracks in the track trigger to the HSCP muon trigger. The uncertainty coming from the propagation time along RPC strips can be reduced if the hit position is known along the local $y$ coordinate, or the global $\eta$. This correction is not needed for the RPCs thanks to the two-end strip readout for these new detectors.
 
 \subsubsection{Displaced Muons in CMS} 
 
-Many BSM theories predict particle decays with displaced muon or muon pairs in its final state, such as dark SUSY and GMSB with smuons. 
-Tracks from displaced muons have different properties depending on how much the muons are boosted. 
-In case of a sufficiently boosted muon, the corresponding track is roughly pointing back to the primary interaction leading to a transverse impact parameter which is small(er) but the decay may still occur at the outer edge of the tracker or even well outside the tracker volume.
-If the muon is not highly boosted, the corresponding track is not pointing back to the primary interaction vertex and we might even get a large impact parameter for a decay not far away from the primary interaction.
-For LLPs of a few hundred GeV in mass, the $|d_0|$ can
-reach up to approximately one meter (or longer) for sufficiently large
-lifetimes as shown in Fig.~\ref{fig:perfDisplaced} (left).
+{\bf \textcolor{red}{[JB: Can this section be expanded and clarified?  For example, are we talking about single displaced muons here, or pairs of muons coming from a neutral LLP?  When a ``boosted muon'' is discussed here, what does that mean?  Typically boost is important when a parent particle is highly boosted since its decay products can be highly collimated, as in the case of low-mass dark photons, for example.  Here, is the point that the muon from, say, a smuon decay, has high-pT and thus its displaced track is very straight?  Or is there some other meaning?]}}
+
+Many BSM theories predict particle decays with displaced muon or muon pairs in its final state, such as dark SUSY and GMSB with smuons. Tracks from displaced muons that could result from BSM LLP decays have different properties depending upon particle boost. In the case of a sufficiently boosted muon, the corresponding track roughly points back to the primary interaction, leading to a transverse impact parameter which is smaller than that from typical muons from promptly decaying particles or background processes, but the decay may still occur at the outer edge of the tracker or even well outside the tracker volume. If the muon is not highly boosted, the corresponding track does not point back to the primary interaction vertex and we might even get a large impact parameter for a decay not far away from the primary interaction. For LLPs of a few hundred GeV in mass, the $|d_0|$ can reach up to approximately one meter (or longer) for sufficiently large lifetimes as shown in Fig.~\ref{fig:perfDisplaced} (left).
 
 \begin{figure}[t]\begin{center}
 \includegraphics[width=0.47\textwidth]{figures/Stage0h1_0_d0_smuon_daughter}
 \includegraphics[width=0.47\textwidth]{figures/MuonHitsEndcap}
 \caption{
-Left: The transverse imparameter, $|d_{0}|$, for several simulated decay lengths, $c\tau$, before reconstruction.
-Right: Distribution of the minimum number of valid hits in the muon system for a SUSY $\widetilde{\mu}$ (M = 500\,GeV and $\tau$ = 1000\,mm) for Run 2 (blue) and Phase-2 (red) detectors. 
+Left: The transverse impact parameter, $|d_{0}|$ {\bf \textcolor{red}{[JB: Impact parameter of what?  What are in these plots?  Which experiment is this?]}}, for several simulated decay lengths, $c\tau$, before reconstruction.
+Right: Distribution of the minimum number of valid hits in the muon system for a SUSY $\widetilde{\mu}$ with $m_{\widetilde{\mu}}$ = 500~GeV and $\tau$ = 1000~mm) for Run 2 (blue) and Phase-2 (red) detectors. 
 }
 \label{fig:perfDisplaced}
 \end{center}
 \end{figure}
 
-Standard triggers and reconstruction algorithms that use the position of the primary vertex will not efficiently reconstruct tracks with large impact parameters.
-Consequently, triggering on and reconstructing muons produced far  from the IP is challenging and requires dedicated trigger paths and reconstruction algorithms. 
-The upgrades to the muon system in CMS, as well as the L1 tracking capabilities, significantly improve the experiment's ability to search for displaced muons at HL-LHC. 
+Standard triggers and reconstruction algorithms that use the position of the primary vertex will not efficiently reconstruct tracks with large impact parameters. Consequently, triggering on and reconstructing muons produced far  from the IP is challenging and requires dedicated triggers and reconstruction algorithms. The upgrades to the muon system in CMS, as well as the L1 tracking capabilities, significantly improve the experiment's ability to search for displaced muons at the HL-LHC. 
 
 \paragraph{Triggering on Displaced Muons}
 
-The momentum resolution of the L1 muon trigger for muons coming from the primary vertex
-will be greatly improved by adding information from the L1 track trigger. 
-The L1 track trigger can also be directly combined with trigger primitives at the first stage of the muon
-track finder electronics; this would mirror the offline reconstruction of ``Tracker Muons'' which
-improve the efficiency for very low $p_T$ muons, especially in the barrel region.
+The momentum resolution of the L1 muon trigger for muons coming from the primary vertex will be greatly improved by adding information from the L1 track trigger, discussed previously. The L1 track trigger can also be directly combined with trigger primitives at the first stage of the muon track-finder electronics; this would mirror the offline reconstruction of ``Tracker Muons'' which improve the efficiency for very low-$p_T$ muons, especially in the barrel region.
 
-
-To trigger on both prompt and non-prompt muons effectively at L1, a standalone L1Muon generates two $p_T$ measurements for each muon, prompt and
-non-prompt, which are matched with L1 tracks. 
-If the track match is successful, the L1 track trigger $p_T$ is used and a
-prompt candidate is formed. 
-If the match is unsuccessful and the muon is not vetoed by L1 tracks, the
-non-prompt L1Mu $p_T$ is used to form a displaced muon candidate.
-Figure~\ref{fig:cmsL1mu} shows good performance for displaced muons with this method:~there is a reasonably high efficiency and a
-trigger rate for single muon trigger around 10 kHz at HL-LHC conditions. Further improvements to the algorithm are underway to accommodate high pile-up conditions. 
-The upgrade of the RPC system will allow slowly moving particles to pass the trigger and be identified  by measuring their time of flight to each RPC station with a resolution of $\mathcal{O}(1)$~ns. 
-The speed of muon-like particles and the time (bunch crossing) of their
-origin will be computed with a fast algorithm to be implemented in the L1 trigger for HL-LHC.
-
+To trigger on both prompt and non-prompt muons effectively at L1, a standalone L1 muon generates two $p_T$ measurements for each muon, prompt and non-prompt, which are matched with L1 tracks. If the track match is successful, the L1 track trigger $p_T$ is used and a prompt candidate is formed. If the match is unsuccessful and the muon is not vetoed by L1 tracks, the non-prompt L1 muon $p_T$ is used to form a displaced muon candidate. In Figure~\ref{fig:cmsL1mu} is shown good performance for displaced muons with this method, i.e., there is a reasonably high efficiency and a trigger rate for a single muon trigger of around 10~kHz under HL-LHC conditions. Further improvements to the algorithm are underway to accommodate high pile-up conditions. The upgrade of the RPC system will allow slowly-moving particles to pass the trigger and be identified by measuring their time of flight to each RPC station with a resolution of $\mathcal{O}(1)$~ns. The speed of muon-like particles and the time (bunch crossing) of their
+origin will be computed with a fast algorithm to be implemented in the L1 trigger for the HL-LHC.
 
 \begin{figure}[t]
 \begin{center}
   \includegraphics[width=0.47\textwidth]{figures/cmsupgrade/TDR-17-003_fig_7_11_a_Prompt_L1Mu_trigger_rate_pt__L1Mu__L1Mu2st__DisplacedL1MuDirectionBased_MB1_MB2_MB3_MB4_combined_eta0to0p9.pdf} \hfill
   \includegraphics[width=0.47\textwidth]{figures/cmsupgrade/TDR-17-003_fig_7_11_b_L1MuonTDR2017Displaced_L1MuPt20_SimMuPt_DT1_DT2_DT3_DT4_combined_eta0to0p9_dxy5to50_looseVeto.pdf}
-  \caption{ L1 Muon trigger rate (left) and efficiency (right) versus muon $p_T$ threshold for the barrel displaced muon algorithm. 
- }
+  \caption{L1 Muon trigger rate (left) and efficiency (right) {\bf \textcolor{red}{[JB: Trigger efficiency of what?  Defined how?]}} versus muon $p_T$ threshold for the barrel displaced muon algorithm.}
   \label{fig:cmsL1mu}
 \end{center}
 \end{figure}
@@ -308,49 +286,22 @@ origin will be computed with a fast algorithm to be implemented in the L1 trigge
 
 \paragraph{Reconstruction}
 
-A dedicated muon reconstruction algorithm was designed for non prompt muons that leave hits only in the muon system. 
-This displaced stand-alone (DSA) algorithm is seeded by groups of track segments in the muon chambers. For each seed, a muon track is reconstructed with the same Kalman-filter technique as for the standard stand-alone (SA) muon reconstruction algorithm, 
-but without constraining the interaction point.
-Figure~\ref{fig:perfDisplaced} (right) shows the distribution of the number of hits in the Run 2 and HL-LHC detectors for displaced muons. The impact of the new stations is clearly visible. 
-The charge mis-identification probability is expected to further decrease with the additional hits.
-
-
+A dedicated muon reconstruction algorithm was designed for non-prompt muons that leave hits only in the muon system. This displaced stand-alone (DSA) algorithm is seeded by groups of track segments in the muon chambers. For each seed, a muon track is reconstructed with the same Kalman-filter technique as for the standard stand-alone (SA) muon reconstruction algorithm, but without constraining the interaction point. Figure~\ref{fig:perfDisplaced} (right) shows the distribution of the number of hits in the Run 2 and HL-LHC detectors for displaced muons. The impact of the new stations is clearly visible. The charge mis-identification probability is expected to further decrease with the additional hits.
 
 \paragraph{Sensitivity Projection}
 
-To study the impact on physics sensitivity, a particular gauge-mediated SUSY breaking (GMSB) model is selected where
-the displaced signature consists of a dimuon final state plus gravitinos, which are escaping detection, emerging from the decay of heavy long-lived sparticles (smuons). This maps to the direct pair production simplified model with neutral LLP decays to muon + invisible in Sec.~\ref{sec:proposal}
-This signal can serve as a proxy for other models with two LLPs decaying into muons.
-The final-state signature is then given by two displaced, oppositely charged muons 
-and significant \met.
-Example long-loved particles with $c\tau=10, 100, 1000$~mm\,and several mass hypotheses (0.2, 0.5, 1~TeV) are simulated.
+To study the impact on physics sensitivity, a particular gauge-mediated SUSY breaking (GMSB) model is selected where the displaced signature consists of a dimuon final state plus gravitinos, emerging from the decay of heavy long-lived sparticles (smuons), where the gravitinos escape detection. This maps to the direct pair production simplified model with neutral LLP decays to muon + invisible in Sec.~\ref{sec:proposal}. This signal can serve as a proxy for other models with two LLPs decaying into muons. The final-state signature is then given by two displaced, oppositely-charged muons and significant \met. Example long-lived particles with $c\tau=10, 100, 1000$~mm\,and several mass hypotheses (0.2, 0.5, 1~TeV) are simulated.
 
-The main background for this search comes from multi-jet production (QCD), \ttbar~production, 
-and Z/DY $\to\ell\ell$ events  where large impact parameters are (mis)reconstructed. 
-Cosmic-ray muons have been studied in Run 2 and are independent of the instantaneous luminosity.
-In the barrel they are efficiently rejected by the timing of the hits in the upper leg. Cosmic-ray muons do not originate at the vertex and therefore pass the upper-barrel sectors in reverse 
-direction from outside in. The fraction of cosmic-ray muons in the endcaps is negligible. 
+The main background for this search comes from multi-jet production (QCD), \ttbar~production, and Z/DY $\to\ell\ell$ events where large impact parameters are (mis)reconstructed. Cosmic-ray muons have been studied in Run 2 and are independent of the instantaneous luminosity. {\bf \textcolor{red}{[JB: Isn't this trivially true?]}} In the barrel they are efficiently rejected by the timing of the hits in the upper leg. Cosmic-ray muons do not originate at the vertex and therefore pass the upper-barrel sectors in reverse direction from outside in. The fraction of cosmic-ray muons in the endcaps is negligible.
 
+Given the very low cross section of the signal process, it is essential to reduce the background efficiently. The best background discriminator is the impact parameter significance $d_0 / \sigma (d_0) \geq 5$. Given the signal kinematics, the muons from a signal process are expected to move in roughly opposite directions and \met can be expected to be larger than $50$~GeV. After this selection the signal efficiency is about 4--5\% for $c\tau \approx 1000$~mm, nearly independent of the smuon mass, and $10^{-5}$ -- $10^{-4}$ for QCD, \ttbar, and DY backgrounds.
 
-Given the very low cross section of the signal process, 
-it is essential to reduce the background efficiently. The best background discriminator 
-is the impact parameter significance $d_0 / \sigma (d_0) \geq 5$.
-Given the signal kinematics, the muons should move in roughly opposite directions
-and MET should be larger than $50$~GeV. 
-After this selection the signal efficiency is about 4--5\% for $c\tau$~ = $1000$~mm, 
-nearly independent of the smuon mass, 
-and $10^{-5}$ -- $10^{-4}$ for QCD, \ttbar, and DY backgrounds.
-
-Figure~\ref{fig:displResults} shows expected exclusion limits for the GMSB model with the smuon being a (co-)NLSP for the predicted cross section as well as for a factor 100 larger cross section. The exclusion limits are shown as functions of smuon mass in  Fig.~\ref{fig:displResults} (left) and decay length in Fig.~\ref{fig:displResults} (right).
+In Figure~\ref{fig:displResults} is shown the expected exclusion limits for the GMSB model with the smuon being a (co-)next-to-lightest supersymmetric particle (NLSP, where ``LSP'' indicates the lightest supersymmetric particle) for the predicted cross section as well as for a factor 100 larger cross section. The exclusion limits are shown as functions of smuon mass in Figure~\ref{fig:displResults} (left) and decay length in Figure~\ref{fig:displResults} (right).
 
 \begin{figure}[t]\begin{center}
 \includegraphics[width=0.49\textwidth]{figures/LimitComparison_withStandAloneEff.pdf}
 \includegraphics[width=0.49\textwidth]{figures/LimitComparison_asfuncofCtau.pdf}
-\caption{The 95\% CL projected upper limits at CMS for  $q \bar q \to \widetilde{\mu} \widetilde{\mu}, \widetilde{\mu}\rightarrow \mu\widetilde{G}$ 
-for various mass hypotheses for c$\tau$ = 1\,m (left), and as a function of the decay length for M = 200\,GeV\,(right).
-In both panels, the theoretical cross section for the specific model is represented by the blue solid line.
-For different SUSY breaking scales, tan $\beta$ or otherwise modified parameters, the cross sections may be  100 times larger, reflected by the blue dash-dotted line.
-Green (yellow) shaded bands show the one (two) sigma range of variation of the expected 95\% CL limits. Phase-2 results with an average 200 pile-up events and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three.
+\caption{The 95\% CL projected upper limits at CMS for $q \bar q \to \widetilde{\mu} \widetilde{\mu}, \widetilde{\mu}\rightarrow \mu\widetilde{G}$ for various mass hypotheses for $c\tau$ = 1~m (left), and as a function of the decay length for $m_{\widetilde{\mu}}$ = 200~GeV (right). In both panels, the theoretical cross section for the specific model is represented by the blue solid line. For different SUSY breaking scales, tan~$\beta$ or otherwise modified parameters, the cross sections may be 100 times larger, reflected by the blue dash-dotted line. Green (yellow) shaded bands show the one (two) sigma range of variation of the expected 95\% CL limits. Phase-2 results with an average of 200 pile-up collisions per bunch crossing and an integrated luminosity of $300$\fbinv are compared to results obtained with $300$\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three.
 %%% Drop discovery significance?
 %c) Discovery sensitivity for various mass hypotheses. WORKING ON IT.
  }
@@ -358,23 +309,14 @@ Green (yellow) shaded bands show the one (two) sigma range of variation of the e
 \end{center}
 \end{figure}
 
-The sensitivity depends on $c\tau$ because shorter decay lengths shift the signal closer to background. Figure~\ref{fig:displResults} (right) shows the resulting physics sensitivities in terms of production cross section for HL-LHC, normalized to 3000\fbinv, for the dedicated reconstruction of displaced muons and for the standard reconstruction. Also shown is the expected sensitivity at the end of Phase-1.
-Systematic uncertainties for the Phase-1 scenario are taken from current Run 2 analyses: 
-for HL-LHC they are guided by the assumptions of reduced systematics from Ref.~\cite{FTR-16-005}.
-Clearly, only the HL-LHC will allow this process to be studied. 
-The expected
-exclusion limit is around 200~GeV for $c\tau = 1000$~mm with 3000\fbinv.
-This also illustrates the importance
-of keeping lepton trigger thresholds at several tens of GeV, even in the environment of 200 pile-up interactions.   
+The sensitivity depends on $c\tau$ because shorter decay lengths shift the signal closer to background. In Figure~\ref{fig:displResults} (right) is shown the resulting physics sensitivities in terms of production cross section for the HL-LHC, normalized to $3000$\fbinv, for the dedicated reconstruction of displaced muons and for the standard reconstruction. Also shown is the expected sensitivity at the end of Phase-1. Systematic uncertainties for the Phase-1 scenario are taken from current Run 2 analyses and adapted for expected HL-LHC conditions based on the assumptions of reduced systematics described in Ref.~\cite{FTR-16-005}. Clearly, only the HL-LHC will allow this process to be studied. The expected exclusion limit is around 200~GeV for $c\tau = 1000$~mm with 3000\fbinv. This also illustrates the importance of keeping lepton trigger thresholds at several tens of GeV, even in the environment of 200 pile-up interactions per bunch crossing.
 
-In order to evaluate the discovery sensitivity of a search for the GMSB model the same input is used as in the limit calculation, now with the assumption that one would have such a signal in the data. The discovery sensitivity is shown as a function of smuon mass in Fig.~\ref{fig:displResultsSensitiviy} (left) and decay length in Fig.~\ref{fig:displResultsSensitiviy} (right). The dependence of the discovery sensitivity on  signal parameters is similar to the limit calculation. Analogous to the limit calculation, also the sensitivities are shown for the end of HL-LHC, normalized to 3000\fbinv, for the dedicated reconstruction of displaced muons and for the standard reconstruction. Also shown is the expected sensitivity at the end of Phase-1. 
-One can conclude that only the HL-LHC is sensitive to the discovery of a long-lived particle such as the smuon with a mass higher than $200$~GeV. Another observation is the difference in discovery sensitivity for standard standalone reconstruction and dedicated displaced standalone reconstruction ranging from 1~$\sigma$ to 4~$\sigma$.
+In order to evaluate the discovery sensitivity of a search for the GMSB model the same input is used as in the limit calculation, now with the assumption that one would have such a signal in the data. The discovery sensitivity is shown as a function of smuon mass in Figure~\ref{fig:displResultsSensitiviy} (left) and decay length in Figure~\ref{fig:displResultsSensitiviy} (right). The dependence of the discovery sensitivity on signal parameters is similar to the limit calculation. Similarly to the limit calculation, the sensitivities are also shown for the end of the HL-LHC, normalized to 3000\fbinv, for the dedicated reconstruction of displaced muons and for the standard reconstruction. For comparison, the expected sensitivity at the end of Phase-1 is also shown. One can conclude that only the HL-LHC is sensitive to the discovery of a long-lived particle such as the smuon with a mass higher than $200$~GeV. Another prominent difference is seen in the discovery sensitivity for standard standalone reconstruction and dedicated displaced standalone reconstruction ranging from 1~$\sigma$ to 4~$\sigma$.
 
 \begin{figure}[t]\begin{center}
 \includegraphics[width=0.49\textwidth]{figures/SignificanceComp.pdf}
 \includegraphics[width=0.49\textwidth]{figures/SignificanceComp_asfuncofCtau.pdf}
-\caption{The projected discovery sensitivity at CMS for  $q \bar q \to \widetilde{\mu} \widetilde{\mu}, \widetilde{\mu}\rightarrow \mu\widetilde{G}$ 
-for various mass hypotheses and c$\tau$ = 1\,m (left) and as a function of the decay length for M = 200\,GeV (right). Together with the discovery sensitivity the corresponding p-Value is shown. Phase-2 results with an average 200 pile-up events and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three. NOT APPROVED!!!
+\caption{The projected discovery sensitivity at CMS for  $q \bar q \to \widetilde{\mu} \widetilde{\mu}, \widetilde{\mu}\rightarrow \mu\widetilde{G}$ for various mass hypotheses and $c\tau$ = 1~m (left) and as a function of the decay length for $m_{\widetilde{\mu}}$ = 200~GeV (right). Together with the discovery sensitivity the corresponding $p$-value is shown. Phase-2 results with an average of 200 pile-up interactions per bunch crossing and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three. NOT APPROVED!!! {\bf \textcolor{red}{[JB: It seems that the possibility of this plot being able to be shown publicly needs to be clarified.  Can our CMS colleagues look into it?]}}
 %~ In both panels, the theoretical cross section for the specific model is represented by the blue solid line.
 %~ For different SUSY breaking scales, tan $\beta$ or otherwise modified parameters, the cross sections may be  100 times larger, reflected by the blue dash-dotted line.
 %~ Green (yellow) shaded bands show the one (two) sigma range of variation of the expected 95\% CL limits. Phase-2 results with an average 200 pile-up events and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three.
@@ -385,52 +327,27 @@ for various mass hypotheses and c$\tau$ = 1\,m (left) and as a function of the d
 \end{center}
 \end{figure}
 
-
 \subsubsection{Displaced Photons at CMS}
 
-A number of new physics scenarios predict  models with displaced photons in the final state (see Sec.~\ref{sec:proposal} and Sec.~\ref{subsec:dphotons}). 
-At the CMS experiment, with the scintillating crystal design of the ECAL that provides excellent resolution but lacks pointing function, the photon arrival time in ECAL is the main observable used to distinguish signal from
-background in displaced photon searches. 
+A number of new physics scenarios predict new particles that, upon decay, result in displaced photons in the final state (see Sec.~\ref{sec:proposal} and Sec.~\ref{subsec:dphotons}). At the CMS experiment, with the scintillating crystal design of the ECAL that provides excellent resolution but lacks pointing function, the photon arrival time in the ECAL is the main observable used to distinguish signal from background in displaced photon searches. 
 
-One benchmark model for displaced photon searches is the GMSB model 
-where the lightest neutralino ($\tilde{\chi}_0^1$) is the next-to-lightest supersymmetric particle, can be long-lived, and decays to a photon and a gravitino ($\tilde{G}$), which is the LSP, as illustrated in Fig.~\ref{fig:cmsupgrade_photon} (left).
-For a long-lived neutralino, the photon from the $\tilde{\chi}_0^1\to\tilde{G}+\gamma$ decay is produced at the $\tilde{\chi}_0^1$
-decay vertex, at some distance from the beam line, and reaches the detector at a later time than
-the prompt, relativistic particles produced at the interaction point. 
-The time of arrival of the photon at the detector can be used to discriminate the signal from the background.
-The aforementioned upgrade to ECAL electronics in the barrel region, and the HGCAL upgrade in the endcaps, will improve photon timing resolution at HL-LHC by an order of magnitude to as little as $\sim30$~ps for photons with $p_T$ of tens of GeV or above, hence significantly improve the experimental reach of displaced photon searches. 
+One benchmark model for displaced photon searches is the GMSB model where the lightest neutralino ($\tilde{\chi}_0^1$) is the next-to-lightest supersymmetric particle, can be long-lived, and decays to a photon and a gravitino ($\tilde{G}$), which is the LSP, as illustrated in Fig.~\ref{fig:cmsupgrade_photon} (left). For a long-lived neutralino, the photon from the $\tilde{\chi}_0^1\to\tilde{G}+\gamma$ decay is produced at the $\tilde{\chi}_0^1$ decay vertex, at some distance from the beam line, and reaches the detector at a time later than that of prompt, relativistic particles produced at the interaction point. The time of arrival of the photon at the detector can be used to discriminate the signal from the background. The aforementioned upgrade to the ECAL electronics in the barrel region, and the HGCAL upgrade in the endcaps, will improve photon timing resolution at HL-LHC by an order of magnitude to as little as $\sim30$~ps for photons with $p_T$ of tens of GeV or above, hence significantly improve the experimental reach of displaced photon searches. 
 
-Moreover, the proposed MIP Timing Detector (MTD) will be able to provide another dimension of information to reconstruct LLP decays. 
-The time of flight of the photon inside the detector is the sum of the time of flight of the neutralino before its decay and the time of flight of the photon itself, until it reaches the detector.
-Since the neutralino is a massive particle the latter is clearly negligible with respect to the former. 
-In order to be sensitive to short neutralino lifetimes of order 1 cm, the performance of the measurement of the photon time of flight is a crucial ingredient of the analysis. 
-Therefore, the excellent resolution of the MTD apparatus can be exploited to determine with high accuracy the time of flight of the neutralino, and similarly the photon, also in case of a short lifetime.
+Moreover, the proposed MIP Timing Detector (MTD) will be able to provide another dimension of information to reconstruct LLP decays. The time of flight of the photon inside the detector is the sum of the time of flight of the neutralino before its decay and the time of flight of the photon itself, until it reaches the detector. Since the neutralino is a massive particle the latter is clearly negligible with respect to the former. In order to be sensitive to short neutralino lifetimes of order 1~cm, the performance of the measurement of the photon time of flight is a crucial ingredient of the analysis. Therefore, the excellent resolution of the MTD apparatus can be exploited to determine with high accuracy the time of flight of the neutralino, and similarly the photon, also in case of a short lifetime.
 
-An analysis has been performed at generator level in order to evaluate the sensitivity power of a
-search for displaced photons at CMS in the scenario where a 30 ps timing resolution is available from the MTD. The events were generated with Pythia 8, exploring neutralino lifetimes ($c\tau$) in the range 0.1--300 cm.
-The values of the $\Lambda$ scale parameter, which controls the  were considered in the range 100--500 TeV, which is relevant for this model to be consistent with the observation of a 125 GeV Higgs boson.
-After requiring the neutralino to decay within the CMS ECAL acceptance and the photon energy being above a ``trigger-like'' threshold, the generator-level photon time of flight was smeared according to the expected experimental resolutions. A cut
-off at a photon time greater than 3$\sigma$ of the timing resolution is applied and the ``signal region'' is assumed to be background free to estimate the sensitivity. The signal efficiency of such a requirement is computed and translated, assuming the theoretical cross sections provided in Ref~\cite{ref:GMSB}, to an upper limit at 95\% CL on the production cross section of the $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ process.
+An analysis has been performed at generator level in order to evaluate the sensitivity power of a search for displaced photons at CMS in the scenario where a 30~ps timing resolution is available from the MTD. The events were generated with Pythia 8, exploring neutralino lifetimes ($c\tau$) in the range 0.1--300~cm. The values of the $\Lambda$ scale parameter, which controls the {\bf \textcolor{red}{[JB: Word missing.]}} were considered in the range 100--500 TeV, which is relevant for this model to be consistent with the observation of a 125~GeV Higgs boson. After requiring the neutralino to decay within the CMS ECAL acceptance and the photon energy being above a ``trigger-like'' threshold, the generator-level photon time of flight was smeared according to the expected experimental resolutions. A cutoff at a photon time greater than 3$\sigma$ of the timing resolution is applied and the ``signal region'' is assumed to be background free to estimate the sensitivity. The signal efficiency of such a requirement is computed and translated, assuming the theoretical cross sections provided in Ref.~\cite{ref:GMSB}, to an upper limit, at 95\% CL, on the production cross section of the $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ process.
 
-Figure~\ref{fig:cmsupgrade_photon} (right) shows the analysis sensitivity in terms of the $\Lambda$ scale (and therefore of the neutralino mass) and lifetime for three different assumptions on the timing resolution. 
-The 300 ps resolution is representative of the time-of-flight resolution (TOF) consistent with current CMS detector performance. 
-The 180 ps resolution is representative of the TOF resolution of the upgraded CMS detector without the MTD, in which case the TOF measurement will be dominated by the time spread of the luminous region. 
-The vertex timing provided by the MTD detector will bring the TOF resolution to about 30 ps. 
-As visible in the figure, a full scope upgrade of the CMS detector with photon and track timing will provide a dramatic increase in sensitivity at short lifetimes and high masses, already after the first $300\,\,\mathrm{fb}^{-1}$ of integrated luminosity.
+In Figure~\ref{fig:cmsupgrade_photon} (right) is shown the analysis sensitivity in terms of the $\Lambda$ scale (and therefore of the neutralino mass) and lifetime for three different assumptions on the timing resolution. The 300~ps resolution is representative of the time-of-flight resolution (TOF) consistent with current CMS detector performance. The 180~ps resolution is representative of the TOF resolution of the upgraded CMS detector without the MTD, in which case the TOF measurement will be dominated by the time spread of the luminous region. The vertex timing provided by the MTD detector will bring the TOF resolution to about 30~ps. As visible in the figure, a full-scope upgrade of the CMS detector with photon and track timing will provide a dramatic increase in sensitivity at short lifetimes and high masses, even with the first $300\,\,\mathrm{fb}^{-1}$ of integrated luminosity.
 
 \begin{figure}[t]\begin{center}
 \includegraphics[width=0.47\textwidth]{figures/MTD/diagram.png}
 \includegraphics[width=0.47\textwidth]{figures/MTD/Limits_excl_2D_ComparingRes.png}
 \caption{ 
-Left: Diagrams for a SUSY process that results in a diphoton final state through gluino production at the LHC. 
-Right: Sensitivity to GMSB $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ signals expressed in
-terms of neutralino lifetimes for 300, 180 and 30 ps resolution, corresponding to the current
-detector, the HL-LHC detector with photon timing without MTD and with MTD, respectively.
+Left: Diagrams for a SUSY process that results in a diphoton final state through gluino production at the LHC. Right: Sensitivity to GMSB $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ signals expressed in terms of neutralino lifetimes for 300, 180 and 30~ps resolution, corresponding to the current detector, the HL-LHC detector with photon timing without MTD and with MTD, respectively.
 }
 \label{fig:cmsupgrade_photon}
 \end{center}
 \end{figure}
-
 
 \subsubsection{Displaced Jets in ATLAS}
 
