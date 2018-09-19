@@ -26,7 +26,7 @@ new approaches to the hierarchy problem or dark matter.
 It is therefore of great interest to our community to be able to 
 re-interpret the LLP experimental results 
 for new models which may be developed in the future\footnote{In this context we refer the reader also to 
-the activities of the ``Forum on the Interpretation of the LHC Results for BSM studies''~\cite{reinterpretationForum}, which brings together more than 100 theorists and experimentalists around this topic.}.
+the activities of the ``Forum on the Interpretation of the LHC Results for BSM studies''~\cite{reinterpretationForum}.}.
 
 The re-interpretation of experimental results can generically be done in two ways:~by applying
 appropriate simplified-model results to more complete models, or by reproducing the experimental analysis in a Monte Carlo (MC) simulation. 
@@ -36,15 +36,15 @@ need to be considered and the hypothesized signal does not affect control region
 event counts in the signal regions and compare them to the $95\%$ C.L observed limits, or take the numbers of observed events and expected backgrounds to compute a likelihood.}. 
 
 In the context of searches for prompt signatures with \MET, the use of simplified models has been shown to be a fruitful approach for both the experimental and theoretical communities~\cite{ArkaniHamed:2007fw, Alwall:2008ag, Alves:2011wf, Okawa:2011xg,Chatrchyan:2013sza,Abercrombie:2015wmb,Boveia:2016mrp}. 
-Dedicated tools~\cite{Kraml:2013mwa,Ambrogi:2017neo,Papucci:2014rja} are publicly 
-available and allow the user to re-interpret SUSY simplified-model results within the context of a full model.
+Dedicated tools, notably \textsc{SModelS}~\cite{Kraml:2013mwa,Ambrogi:2017neo} and \textsc{Fastlim}~\cite{Papucci:2014rja}, 
+are publicly available and allow the user to re-interpret SUSY simplified-model results within the context of a full model.
 The coverage of a full model can, however, be severely limited by the kind of simplified-model results available, 
 as discussed recently in Ref.~\cite{Ambrogi:2017lov} for the case of the phenomenological MSSM.
 Indeed, for some models the large number of relevant simplified-model topologies and their complexity
 can make the simplified-model approach inexpedient. 
-%Limitations also arise when the signal acceptance depends on the details of the model 
-%(e.g., the spin- and coupling structure, the assumed production modes, etc.).  
-%In both these cases, insufficient coverage by available simplified models and model dependence of the signal acceptance, 
+%%Limitations also arise when the signal acceptance depends on the details of the model 
+%%(e.g., the spin- and coupling structure, the assumed production modes, etc.).  
+%%In both these cases, insufficient coverage by available simplified models and model dependence of the signal acceptance, 
 In this case, a more complete and robust recasting procedure is necessary. 
 
 Again, for prompt signatures, a general recasting approach is available through several public 
@@ -53,7 +53,7 @@ tools, notably \textsc{CheckMATE}~\cite{Drees:2013wra,Dercks:2016npn}, \textsc{M
 These tools allow the user to reproduce experimental analyses by means of MC event simulation coupled to 
 an approximate emulation of detector effects.\footnote{For completeness it should be noted that, while all of these tools include a more-or-less 
 extensive set of SUSY searches, many of the searches for other, ``exotic'' types of new physics cannot yet be reproduced outside the experimental collaborations. This concerns in particular searches relying on multivariate techniques such as Boosted Decision Trees.} 
-For the latter, \textsc{CheckMATE} and \textsc{MadAnalysis5} rely on \textsc{Delphes3}~\cite{deFavereau:2013fsa}, 
+For the latter, \textsc{CheckMATE} and \textsc{MadAnalysis5} rely on \textsc{Delphes}~\cite{deFavereau:2013fsa}, 
 in some cases supplemented with appropriate tuning, 
 while \textsc{Rivet} and \textsc{ColliderBit} employ object smearing and analysis-specific reconstruction efficiencies. 
 The ATLAS and CMS collaborations are helping these recasting efforts by providing more and more 
@@ -65,14 +65,16 @@ is still limited to a few topologies and does not always include all of the
 parameters required for a general purpose re-interpretation. 
 It is worth noting that, compared with simplified models for prompt searches, simplified models 
 for LLP searches always have at least one additional free model parameter:~the lifetime of the LLP. 
-Second, general purpose recasting tools are not yet available.
-Recasting LLP searches outside of the experimental collaborations is  a
+Second, %general purpose recasting tools are not yet available.
+recasting LLP searches outside of the experimental collaborations is  a
 difficult task since the searches are very sensitive to the detector response, which in most cases 
 cannot be easily emulated  by a fast detector simulation (many backgrounds are also challenging to simulate; see 
-Chapter~\ref{sec:backgrounds}).
-As a result, none of the available (public) tools can currently recast
-LLP searches, thus limiting the applicability of the experimental
-results. 
+Chapter~\ref{sec:backgrounds}). 
+As a result, %none of the available (public) tools can currently recast
+%LLP searches, thus limiting the applicability of the experimental results. 
+while first steps towards the treatment of LLPs where achieved in \textsc{SModelS}~\cite{Heisig:2018kfq} and 
+\textsc{MadAnalysis5}~\cite{MA5:longlivedleptons}, the implementation of LLP searches in public recasting tools is 
+still in its infancy, thus limiting the applicability of the experimental results. 
 
 
 In order to allow for a more extensive re-interpretation or recasting of 
