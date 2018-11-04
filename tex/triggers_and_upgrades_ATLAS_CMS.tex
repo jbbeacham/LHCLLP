@@ -179,8 +179,8 @@ detector and projections for after the HL-LHC upgrade.
 
 \begin{figure}[h!tbp]
 \begin{center}
-  \includegraphics[width=0.47\textwidth]{figures/ch03_fig_006e.png}
-  \includegraphics[width=0.47\textwidth]{figures/ch03_fig_006b.png}
+  \includegraphics[width=0.47\textwidth]{figures/ch03_fig_006e.pdf}
+  \includegraphics[width=0.47\textwidth]{figures/ch03_fig_006b.pdf}
   \caption{Relative resolution of the transverse momentum (left) and longitudinal impact parameter (right) as a function of the pseudorapidity for the current (solid line) and the upgraded (points) ATLAS tracker.}
   \label{fig:atlastrackres}
 \end{center}
@@ -382,8 +382,8 @@ were considered in the range 100--500 TeV, which is relevant for this model to b
 In Figure~\ref{fig:cmsupgrade_photon} (right) is shown the analysis sensitivity in terms of the $\Lambda$ scale (and therefore of the neutralino mass) and lifetime for three different assumptions on the timing resolution. The 300~ps resolution is representative of the time-of-flight resolution (TOF) consistent with current CMS detector performance. The 180~ps resolution is representative of the TOF resolution of the upgraded CMS detector without the MTD, in which case the TOF measurement will be dominated by the time spread of the luminous region. The vertex timing provided by the MTD detector will bring the TOF resolution to about 30~ps. As visible in the figure, a full-scope upgrade of the CMS detector with photon and track timing will provide a dramatic increase in sensitivity at short lifetimes and high masses, even with the first $300\,\,\mathrm{fb}^{-1}$ of integrated luminosity.
 
 \begin{figure}[t]\begin{center}
-\includegraphics[width=0.47\textwidth]{figures/MTD/diagram.png}
-\includegraphics[width=0.47\textwidth]{figures/MTD/Limits_excl_2D_ComparingRes.png}
+\includegraphics[width=0.47\textwidth]{figures/MTD/diagram.pdf}
+\includegraphics[width=0.47\textwidth]{figures/MTD/Limits_excl_2D_ComparingRes.pdf}
 \caption{
 Left: Diagrams for a SUSY process that results in a diphoton final state through gluino production at the LHC. Right: Sensitivity to GMSB $\tilde{\chi}_0^1 \to \tilde{G} + \gamma$ signals expressed in terms of neutralino lifetimes for 300, 180 and 30~ps resolution, corresponding to the current detector, the HL-LHC detector with photon timing without MTD and with MTD, respectively.
 }
@@ -513,11 +513,11 @@ A new trigger strategy for a delayed jet can be realized by comparing the prompt
 
 % The SV background for such signals mainly comes from SM multi-jet processes. At least one prompt jet is required to reconstruct the PV4d and provide the timestamp, while another trackless jet from the same hard collision can then mimic a long-lived signal decay. At 13~TeV, with integrated luminosity $\mathcal{L}_{\rm int} = 3~\text{ab}^{-1}$, the total number of such background events can be estimated as
 % \begin{align}
-% N_{\rm bkg}^{\rm SV} = \sigma_{\rm multi-jet} \mathcal{L}_{\rm int} {\epsilon_{\rm trig}{\epsilon_{\rm j, fake}}}  
-% \approx 5.6 \times 10^{9}  \nonumber 
+% N_{\rm bkg}^{\rm SV} = \sigma_{\rm multi-jet} \mathcal{L}_{\rm int} {\epsilon_{\rm trig}{\epsilon_{\rm j, fake}}}
+% \approx 5.6 \times 10^{9}  \nonumber
 % \label{eq:bkgQCDforHC}
 % \end{align}
-% where $\sigma_{\rm j} \approx 3.7 \times 10^6$~pb is the multi-jet cross-section with $p_{T,j} > 30$~GeV, and $\epsilon_{\rm trig}$ and $ \epsilon_{\rm j, fake}$ are the efficiencies for the background to fake the signal in both triggering and signature {\bf \textcolor{red}{[JB: What does it mean for the background to fake the signal ``in signature''?]}} {\it without} timing information. 
+% where $\sigma_{\rm j} \approx 3.7 \times 10^6$~pb is the multi-jet cross-section with $p_{T,j} > 30$~GeV, and $\epsilon_{\rm trig}$ and $ \epsilon_{\rm j, fake}$ are the efficiencies for the background to fake the signal in both triggering and signature {\bf \textcolor{red}{[JB: What does it mean for the background to fake the signal ``in signature''?]}} {\it without} timing information.
 
 The fake jet has an intrinsic time delay $\Delta t=0$. However, due to the limited timing resolution in reconstructing the PV4d, it could have a time spread. The background differential distribution with respect to apparent delay time ($\Delta t$) can be estimated as
 \beq
@@ -536,11 +536,11 @@ The background from the pile-up requires the coincidence of a triggered hard eve
 {\mathcal P}(\Delta t;\delta_t^{\rm PU}).
 \label{eq:bkgPU}
 \eeq
-The key difference between the background from the pile-up and the background from the same hard collision is that the typical time spread is determined by the beam property for the former, and by the timing resolution for the latter. They typically differ by a factor of a few, e.g., 190~ps versus 30~ps for CMS with the current upgrade plan. 
+The key difference between the background from the pile-up and the background from the same hard collision is that the typical time spread is determined by the beam property for the former, and by the timing resolution for the latter. They typically differ by a factor of a few, e.g., 190~ps versus 30~ps for CMS with the current upgrade plan.
 %If we apply the requirement $\Delta t > 0.8$~ns, the total estimated number of events from SM background including SV and PU is minimal at a calculated value of 0.33 {\bf \textcolor{red}{[JB: This is for what luminosity?  This number is to be compared to what other number?]}}.
 %Zhen: I don't think we need to discuss such details here we can just refer back to the original paper.
 
-Using this estimation, a sensitivity projection is presented with an example signal of a Higgs decaying to an LLP with the subsequent decay of the LLP into $b \bar b$ pairs, with only mimimal requirements of one low-$p_T$ ISR jet, with $p_{T,j} > 30$~GeV and $|\eta_j| < 2.5$, and at least one LLP decay inside the detector. Timing information is used to suppress background. The $95\%$ C.L. sensitivity is shown in Figure~\ref{fig:ctaulimitHiggs}. The decay branching ratio of the LLP $X \to j j$ is assumed to be $100\%$. The projection with $30$~ps timing resolution of the CMS MTD (labeled EC), is plotted with thick dashed lines. Compared to other 13 TeV HL-LHC projections (with $3 ~\text{ab}^{-1}$ of integrated luminosity) without the timing information (shown in thinner, dotted and dashed lines), it is seen that the addition of a timing cut greatly reduces background and improves sensitivity. The significant improvement from the theory work Ref.~\cite{Liu:2018wte} using timing upgrades inspires many experimental and phenomenological studies to fully realize the physics potential in LLP searches using precision timing information at the HL-LHC. 
+Using this estimation, a sensitivity projection is presented with an example signal of a Higgs decaying to an LLP with the subsequent decay of the LLP into $b \bar b$ pairs, with only mimimal requirements of one low-$p_T$ ISR jet, with $p_{T,j} > 30$~GeV and $|\eta_j| < 2.5$, and at least one LLP decay inside the detector. Timing information is used to suppress background. The $95\%$ C.L. sensitivity is shown in Figure~\ref{fig:ctaulimitHiggs}. The decay branching ratio of the LLP $X \to j j$ is assumed to be $100\%$. The projection with $30$~ps timing resolution of the CMS MTD (labeled EC), is plotted with thick dashed lines. Compared to other 13 TeV HL-LHC projections (with $3 ~\text{ab}^{-1}$ of integrated luminosity) without the timing information (shown in thinner, dotted and dashed lines), it is seen that the addition of a timing cut greatly reduces background and improves sensitivity. The significant improvement from the theory work Ref.~\cite{Liu:2018wte} using timing upgrades inspires many experimental and phenomenological studies to fully realize the physics potential in LLP searches using precision timing information at the HL-LHC.
 
 %\noindent {\bf \textcolor{red}{[BS: This is a theorist projection. Too optimistic? Maybe include at the end and clarify that this is simply a theory interpretation of a possibility. Or maybe we leave it out?]}}
 %Zhen: added a sentence above to stress it is a theoretical work. Since this is a chapter about upgrades, I think it is fully justified to show our projections.
@@ -573,8 +573,8 @@ In Figure~\ref{fig:tracktrigger_toy} (right) is shown the expected event yields 
 While the tight tracks offer a substantial increase in sensitivity compared to $Wh$, a trigger based on loose tracks yields more than a factor of five more signal for $c\tau$ of a few mm. Trackless jets, even with very optimistic 70~GeV threshold only become competitive at lifetimes of 50~cm or more.
 
 \begin{figure}[t]\begin{center}
-\includegraphics[width=0.47\textwidth]{figures/L1TT/geom.png}
-\includegraphics[width=0.47\textwidth]{figures/L1TT/final_h125.png}
+\includegraphics[width=0.47\textwidth]{figures/L1TT/geom.pdf}
+\includegraphics[width=0.47\textwidth]{figures/L1TT/final_h125.pdf}
 \caption{Left: Sketch of the toy stub formation in a doublet layer in the context of a possible CMS track trigger for the HL-LHC. Four tracks pass through the same point in the inner layer. Only the tracks hitting the outer layer between the two green points would produce a L1 stub. The dashed track does, and the dotted does not. Right: Event yields for $Br[h\rightarrow\phi\phi\rightarrow 4q]=10^{-5}$ as a function of $\phi$ proper lifetime. Red curves correspond to a trigger that requires at least four loose track jets and blue to a trigger that requires at least four tight track jets. Open circles indicate track jets with $p_T$ above 20~GeV and filled circles to displaced track jets above 10~GeV. The teal curve corresponds to the no-track, 70~GeV di-jet trigger. The purple line shows the expected yield from $Wh$ production triggered by a lepton from the $W$ decay.}
 \label{fig:tracktrigger_toy}
 \end{center}
@@ -635,9 +635,9 @@ Major technical advances will need to happen to achieve such an implementation, 
 
 As discussed in Sec.~\ref{sec:upgradesearch}, by using a prompt object, such as an ISR jet, to ``timestamp'' an event, and cutting on the timing delay from the LLP, the new timing layer (MTD) at CMS can help significantly reduce the background and improve LLP search sensitivity. The CMS MTD is located between the tracker and the ECAL with a distance to the beamline of about $1.2\,\,\mathrm{m}$. If one imagines a fast timing layer outside the ATLAS muon system (MS) with a distance of approximately $10\,\,\mathrm{m}$~\cite{Liu:2018wte}, timing information at such distances could provide additional discriminating power for particles with longer lifetimes. In Figure~\ref{fig:ctaulimitHiggs}, the projection with a $30$~ps timing resolution of such a hypothetical detector outside the ATLAS muon system, is plotted in a thick solid line. A less-precise timing resolution ($150$~ps) has been also considered with a cut $\Delta t > 1$~ns to suppress background. The LLP efficiency is largely unaffected by this change, while low-mass LLPs lose sensitivity by a factor of a few.
 
-The CMS MTD timing upgrade for the HL-LHC already provides significant improvement~\cite{Liu:2018wte}. The timing detector outside the ATLAS muon system has the notable benefits of lower background, a larger volume for the LLP to decay and more substantial time delay for the LLP signal due to longer travel distance. 
-%As an estimate of the best achievable sensitivity, given that the muon system is an ideal place to look for LLPs at the LHC, we have also considered a hypothetical timing layer outside of the ATLAS MS. We found robust enhanced sensitivity to LLPs at MS using the timing information. 
-Moreover, due to the extended time delay of the LLPs in the volume of muon system, less-precise timing can still achieve similar physics goals.  As a result, it can serve as an estimate of the best achievable sensitivity using timing information in LLP searches. 
+The CMS MTD timing upgrade for the HL-LHC already provides significant improvement~\cite{Liu:2018wte}. The timing detector outside the ATLAS muon system has the notable benefits of lower background, a larger volume for the LLP to decay and more substantial time delay for the LLP signal due to longer travel distance.
+%As an estimate of the best achievable sensitivity, given that the muon system is an ideal place to look for LLPs at the LHC, we have also considered a hypothetical timing layer outside of the ATLAS MS. We found robust enhanced sensitivity to LLPs at MS using the timing information.
+Moreover, due to the extended time delay of the LLPs in the volume of muon system, less-precise timing can still achieve similar physics goals.  As a result, it can serve as an estimate of the best achievable sensitivity using timing information in LLP searches.
 
 \item \textbf{New double-sided tracking layer very close to the beamline}
 

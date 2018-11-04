@@ -17,7 +17,7 @@ The RECAST Framework~\cite{Cranmer2011} is a developing platform for experiments
 
 \begin{figure}[t]
 \begin{center}
-\includegraphics[width=0.5\textwidth,angle=0]{ch5-figures/requestview.png}\includegraphics[width=0.5\textwidth,angle=0]{ch5-figures/monitor.png}
+\includegraphics[width=0.5\textwidth,angle=0]{ch5-figures/requestview.pdf}\includegraphics[width=0.5\textwidth,angle=0]{ch5-figures/monitor.pdf}
 
 \end{center}
 \caption{
@@ -58,7 +58,7 @@ Right: Follow-up dark-matter re-interpretation. Exclusions presented in chargino
 
 % Currently, a number of additional Run-2 analyses are in the process of being re-interpreted with results expected to appear soon.
 
-Recently ATLAS has reinterpreted 10 analyses~\cite{ATLAS:2018yey} in terms of models of supersymmetry with non-vanishing baryon-number violating coupling strength $\lambda''$ partly through the use of the new analysis preservation infrastructure. In such models the lighest neutralino it unstable with a decay length of 
+Recently ATLAS has reinterpreted 10 analyses~\cite{ATLAS:2018yey} in terms of models of supersymmetry with non-vanishing baryon-number violating coupling strength $\lambda''$ partly through the use of the new analysis preservation infrastructure. In such models the lighest neutralino it unstable with a decay length of
 
 \begin{equation}
   L(cm) = \frac{0.9\beta\gamma}{{\lambda''}^2} \left(\frac{m(\bar{q})}{100\mathrm{GeV}}\right)^4\left(\frac{1\mathrm{GeV}}{m(\tilde{\chi}_1^0)}\right)^5.
@@ -68,7 +68,7 @@ This reinterpretation required a joint re-execution of a mix of analyses origina
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.85\textwidth,angle=0]{ch5-figures/fig_04.png}
+\includegraphics[width=0.85\textwidth,angle=0]{ch5-figures/fig_04.pdf}
 \end{center}
 \caption{Exclusion limits as a function of $\lambda''_{323}$ and $m({\tilde{g}})$. Expected limits are shown with dashed lines, and observed as solid. Taken from Ref.~\cite{ATLAS:2018yey}.}
 \label{fig:rpvrpc}
@@ -78,7 +78,7 @@ This reinterpretation required a joint re-execution of a mix of analyses origina
 
 \paragraph{Third-Party Tool Integration }
 
-Both the CheckMate~\cite{Drees:2013wra,Dercks:2016npn} and the Rivet~\cite{Buckley:2010ar} analysis catalogues have been implemented in the analysis-execution framework. Both are configured to analyze events that are provided in the HepMC format 
+Both the CheckMate~\cite{Drees:2013wra,Dercks:2016npn} and the Rivet~\cite{Buckley:2010ar} analysis catalogues have been implemented in the analysis-execution framework. Both are configured to analyze events that are provided in the HepMC format
 \cite{Dobbs:2001ck}. Due to the modular approach of the analysis back-end, a number of MC generation workflows, such as Herwig~\cite{Marchesini:1991ch}, SHERPA~\cite{Gleisberg:2008ta} or MadGraph~\cite{Alwall:2011uj}, can be used depending on their ability to correctly model the desired signal.
 
 For analyses where multiple implementation exists, \emph{e.g.,} from multiple third-party tools such as Rivet BSM, CheckMate or MadAnalysis~\cite{Conte:2014zja,Dumont:2014tja} as well as from multiple experiment-internal configurations (fast Simulation, full simulation), RECAST will allow the community to compare and contrast reinterpretation results.

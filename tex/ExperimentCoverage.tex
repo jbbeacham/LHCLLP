@@ -34,7 +34,7 @@ For LLPs decaying in the HCAL or MS, dedicated \emph{CalRatio} and \emph{MuonRoI
 
 The CalRatio trigger selects events with at least one trackless jet that has a very low fraction of energy deposited in the ECAL~\footnote{The variable used to discriminate between CalRatio jets and standard jets is $\LogCalRatio$, where $E_{\rm HAD}$ and $E_{\rm EM}$ are the fractions of the measured energies of the jets appearing in the HCAL and ECAL, respectively. The trigger selects trackless jets with $\LogCalRatio > 1.2$, which corresponds to an electromagnetic fraction of 0.067.}. These CalRatio jets are characteristic of an LLP that decays within or just before the HCAL. The 13~TeV analysis~\cite{ATLAS-CONF-2016-103} requires two CalRatio jets, where the exact CalRatio criteria are determined using a boosted decision tree (BDT) to optimally discriminate the displaced decay signature from QCD jets. Using the simplified $\varPhi \rightarrow ss$ model with 400~GeV $< m_{\varPhi} <$ 1000~GeV and 50~GeV $< m_{s} <$ 400~GeV, good sensitivity is observed for $c\tau$ between 0.1 and 10~m. The 8~TeV result also requires two CalRatio jets, and shows sensitivity for 100~GeV $< m_{\varPhi} <$ 900~GeV and 10~GeV $< m_{s} <$ 150~GeV. Notably, SM Higgs boson ($\varPhi$ = 125~GeV) decays to LLP pairs are constrained below 10\% branching ratio in the most sensitive $c\tau$ ranges, with exact limits dependent on the LLP mass. See Figure~10 of~\cite{CalRatio8TeV} for details.
 
-The MuonRoI trigger selects events with clusters of L1 Regions of Interest (RoIs) in the MS that are isolated from activity in the ID and calorimeters. It is efficient for LLPs that decay between 3 -- 7~m transversely or 5 -- 13~m longitudinally from the PV, for LLP masses greater than 10~GeV. After trigger selection, the ATLAS analysis in question requires either two reconstructed DVs in the MS~\cite{ATLASMSVxReco} or one ID vertex and one MS vertex~\cite{Aad:2015uaa}. 
+The MuonRoI trigger selects events with clusters of L1 Regions of Interest (RoIs) in the MS that are isolated from activity in the ID and calorimeters. It is efficient for LLPs that decay between 3 -- 7~m transversely or 5 -- 13~m longitudinally from the PV, for LLP masses greater than 10~GeV. After trigger selection, the ATLAS analysis in question requires either two reconstructed DVs in the MS~\cite{ATLASMSVxReco} or one ID vertex and one MS vertex~\cite{Aad:2015uaa}.
 This ID--MS combination provides increased sensitivity to shorter lifetimes than an analysis only considering MS vertices, and shows good sensitivity to 100~GeV $< m_{\varPhi} <$ 900~GeV and 10~GeV $< m_{s} <$ 150~GeV. Decays of a SM-like Higgs boson to LLP pairs are constrained below 1\% in the most sensitive $c\tau$ regions (with cross section limits as low as 50~fb). The efficiency degrades for benchmarks with higher LLP boosts or very low mass LLPs, as fewer tracks are reconstructed.
 
 With the exception of Refs.~\cite{Aad:2015rba} and \cite{Aaboud:2017iio}, which require prompt activity in addition to the DV and have comparatively high trigger thresholds, the ATLAS all-hadronic analyses require two DVs, and thus are insensitive to models that produce a single DV inside the detector~\footnote{This may be the result of a signal that produces two DVs, but the lifetime is sufficiently long that only one DV appears inside the detector.}.
@@ -149,7 +149,7 @@ One of the major gaps in semi-leptonic LLP searches is at the smallest LLP masse
 
 \begin{figure}[th]
 \centering
-\includegraphics[width=0.99\linewidth]{plots/BigPicture.png}
+\includegraphics[width=0.99\linewidth]{plots/BigPicture.pdf}
 \caption{Summary of projected experimental sensitivities to HNLs in various experiments, in the coupling strength ($U^2$ for dominant mixing to $\nu_\mu$) vs. mass plane. The projections labelled ``LHC run-3'' and ``HL-LHC'' are for HNLs in $W$ decays in general-purpose experiments, and the one labelled ``Mathusla'' assumes the full HL-LHC MATHUSLA dataset. We also show the recent CMS result for the prompt tri-lepton signature~\cite{Sirunyan:2018mtv}. Prospects at proton beam-dump experiments are also shown for an already existing experiment, NA62~\cite{Lanfranchi2017}, and for the planned experiment SHiP~\cite{SHiP2015}. Direct~\cite{Bernardi1988,CHARM1986,NuTeV1999,Delphi1997,CMS2015b} and indirect~\cite{MEG2013,Antusch2015} limits are indicated as dashed green and brown lines respectively. The lines labelled ``Seesaw'' and ``BBN'' show lower theoretical constraints from the observed neutrino masses (assuming a normal hierarchy) and primordial nucleosynthesis, respectively~\cite{Canetti2013b}. The lines labelled ``BAU'' are upper theoretical constraints from two different models accounting for baryon asymmetry in the universe: model 1 requires the lightest HNL to be a dark matter~\cite{Canetti2013b} candidate, while model 2 allows for all three HNLs to participate in leptogenesis~\cite{Canetti2014}. In particular models, it may be possible to obtain an asymmetry in the entire parameter space up to the CMS Prompt limit {\bf (cite Marco?)}. }
 \label{fig:HNLsensitivity}
 \end{figure}
@@ -227,9 +227,9 @@ The coverage in LHC Run-2 of magnetic monopoles in the $g_D-\sigma$ plane is dis
 
 \subsection{Tracks with Anomalous Geometry}
 
-In this category we group searches where the tracks have an anomalous geometry, namely they disappear (track $\to$ nothing), or follow non-standard trajectories (such as quirks). There are additional anomalous track signatures that we do not cover such as kinked tracks, where a charged LLP decays to another charged particle that travels at a non-zero angle with respect to the LLP direction~\cite{Dimopoulos:1996vz,Hamaguchi:2004df,Asai:2011wy,Jung:2015boa}; however, there are currently no dedicated searches for such signatures. 
+In this category we group searches where the tracks have an anomalous geometry, namely they disappear (track $\to$ nothing), or follow non-standard trajectories (such as quirks). There are additional anomalous track signatures that we do not cover such as kinked tracks, where a charged LLP decays to another charged particle that travels at a non-zero angle with respect to the LLP direction~\cite{Dimopoulos:1996vz,Hamaguchi:2004df,Asai:2011wy,Jung:2015boa}; however, there are currently no dedicated searches for such signatures.
 
-Within this category we also have the emerging jets signature that has been recently studied by CMS~\cite{CMS-PAS-EXO-18-001}. Since emerging jets arise dark sector radiation, they are described in detail in Chapter~\ref{sec:showers} in conjunction with the theoretical and phenomenological aspects of dark showers.
+Within this category we also have the emerging jets signature that has been recently studied by CMS~\cite{Sirunyan:2018njd}. Since emerging jets arise from dark sector radiation, they are described in detail in Chapter~\ref{sec:showers} in conjunction with the theoretical and phenomenological aspects of dark showers.
 
 \subsubsection*{Disappearing tracks (DT)}
 
@@ -239,7 +239,7 @@ Before 2017, both ATLAS~\cite{Aad:2013yna} and CMS~\cite{CMS:2014gxa} required a
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.44\textwidth]{plots/ATLAS_SUSY_LLPChargino.png}
+\includegraphics[width=0.44\textwidth]{plots/ATLAS_SUSY_LLPChargino.pdf}
 \includegraphics[width=0.54\textwidth]{plots/Higgsino_Significance14}
 \caption{Summary of ATLAS disappearing-track searches as applied to a Wino (electroweak triplet) benchmark scenario (left panel)~\cite{ATLAS:summary}; HL-LHC projected constraints on the Higgsino scenario (right)~\cite{Mahbubani:2017gjh}.}
   \label{fig:ewkinosearches}
@@ -319,7 +319,7 @@ In the preceding sections (\ref{subsec:djets}--\ref{sec:outoftime}), we have exa
 \item Semi-Leptonic
 	\begin{itemize}
 	\item Searches do not exist and need to be done for  masses below or about 30 GeV, theoretically well motivated by Majorana neutrinos.
-%	({\bf \textcolor{red}{JB: Low-mass whats?  Let's just make it explicit.}}) 
+%	({\bf \textcolor{red}{JB: Low-mass whats?  Let's just make it explicit.}})
 %	($<$~30~GeV, motivated by Majorana neutrinos)
 	\item Searches need to be performed for all flavor combinations (for example, one CMS search only covers $e^\pm\mu^\mp$), as well as same-sign vs. opposite-sign leptons
 	\item Currently unknown improvements need to be made to relax or modify isolation criteria wherever possible to recover sensitivity to boosted semi-leptonic decays
@@ -344,6 +344,5 @@ In the preceding sections (\ref{subsec:djets}--\ref{sec:outoftime}), we have exa
 
 %{\bf \textcolor{red}{JA: It seems that the CMS search for displaced vertices~\cite{Sirunyan:2018pwn} is not covered. Can we include this nice search?}}.
 %{\bf \textcolor{red}{JA: In addition, CMS has a newer displaced dijets search (EXO-18-007) than the paper mentioned above}.}
-
 
 % and an emerging jets search (EXO-18-001). Both of these are just PASes for now, but they are both in final reading and will be submitted very soon. Can we cover these two important searches as well? Emerging jets are a particularly hot topic, so I'm surprised to find they are not already covered here.}}
