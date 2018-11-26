@@ -611,33 +611,80 @@ Using this estimation, a sensitivity projection is presented with an example sig
 
 \subsubsection{LLP searches with a Level-1 track trigger in CMS}
 
-%{\bf \textcolor{red}{[BS: Missing citation to CMS TOY upgrade tracker geometry.]}}
-
 As discussed in Section~\ref{sec:upgrademachine}, a central feature of the CMS upgrade at the HL-LHC will be a new silicon outer tracker which allows track reconstruction for every LHC bunch crossing (at a rate of 40~MHz). The $p_T$ selection for stubs (hit pairs in the $p_T$ modules of the outer tracker) to be read out is determined by the bandwidth from the detector to the back end electronics, and is fixed at about 2~GeV. On the other hand, the choice of track finding algorithm and hardware is still being finalized, and there could be significant benefits to extending the L1 track trigger capabilities to trigger on off-pointing tracks.
 
-To illustrate the case, a simple toy simulation to study rare Higgs boson decays into new particles with lifetimes of order of a few mm has been performed~\cite{Gershtein:2017tsv}. This study considers all-hadronic final states with low $H_T$, taking SM Higgs boson decays into four jets as an example. Theoretical motivation to look for such decays is very strong; see Section~\ref{sec:motivated_theories} for a detailed discussion. The goal is to probe very small branching fractions of the Higgs boson, so for these studies $BR[h\rightarrow\phi\phi\rightarrow 4q] = 10^{-5}$ is assumed. For prompt decays, the background is overwhelming, but if the $\phi$ has $c\tau$ of a few mm, the offline analysis has very low backgrounds. The problem is getting such events on tape, in particular through L1. This toy study estimates how an off-pointing track reconstruction at L1 can help. To estimate the efficacy of the approach, the resulting projections are compared with the best alternatives in the absence of an off-pointing track trigger, by using associated Higgs boson production with a $W$ boson that decays leptonically to pass a lepton trigger, or considering L1 calorimeter jets with no associated prompt tracks.
+To illustrate the case, a simple toy simulation to study rare Higgs boson decays into new particles with lifetimes of order of a few mm has been performed~\cite{Gershtein:2017tsv}. This study considers all-hadronic final states with low $H_T$, taking SM Higgs boson decays into four jets as an example. Theoretical motivation to look for such decays is very strong; see Section~\ref{sec:motivated_theories} for a detailed discussion. In particular, there is currently
+a blind spot for lifetimes of order 1 cm in searches for new long-lived scalars
+in Higgs decays, i.e. \ensuremath{\PH \to \phi\phi}\xspace. The goal is to probe very small branching fractions of the Higgs boson, so for this study, $BR[h\rightarrow\phi\phi\rightarrow 4q] = 10^{-5}$ is assumed. For prompt decays, the background is overwhelming, but if the $\phi$ has $c\tau$ of a few mm, the offline analysis has very low backgrounds. The problem is getting such events on tape, in particular through L1. This toy study estimates how an off-pointing track reconstruction at L1 can help. To estimate the efficacy of the approach, the resulting projections are compared with the best alternatives in the absence of an off-pointing track trigger, by using associated Higgs boson production with a $W$ boson that decays leptonically to pass a lepton trigger, or considering L1 calorimeter jets with no associated prompt tracks.
 
-This study is performed by utilizing a simulation with a toy tracker which has six perfectly cylindrical double layers~\cite{geom} %{\bf \textcolor{red}{[JB: Reference missing.]}}
-covering $|\eta|<2.4$. For each layer, the allowed offset between the two measurements is below the one expected from 2~GeV prompt tracks. The sketch in Figure~\ref{fig:tracktrigger_toy} (left) shows four tracks traversing a double layer: positively and negatively charged
-prompt 2~GeV tracks, and two off-pointing tracks. The dashed track would make a L1 trigger stub, and the dotted one would not.
+%FTR-18-018
 
-Two extensions of the track finder are considered. {\it Loose} tracks are only required to have a minimal number of stubs. {\it Tight} tracks are obtained by fitting the stubs they produce to a circle constrained to the beam line. The number of stubs on a tight track is the number of stubs deviating from that circular fit by fewer than three strips (300 microns). This choice of definition of ``tight'' tracks is a generous approximation for an algorithm that assumes prompt production when building a track and allows for a non-zero impact parameter for the track fit. For loose tracks, both track building and fitting assumes a non-zero impact parameter. Only the transverse plane of the track-finding is considered since that is the plane in which the displacement is measured more precisely. It is also assumed that the hits on a track are additionally linked in $rz$, but this assumption is not relied upon for the calculation of displacement.
+Once these positive results were obtained, a more detailed study using the full
+Phase-II simulation of the CMS detector was performed~\cite{CMS:2018qgk}.
+The more mature exploration found that a plausible extension of
+the L1 track trigger to tracks with an impact parameter of a few centimeters results in
+dramatic gains in the trigger efficiency. The gains are even larger for additional heavy
+SM-like Higgs bosons with the same decay. These results are in agreement with the toy study described above.
+A few details of the mature study will be described below.
 
-The $h\rightarrow\phi\phi\rightarrow 4q$ events are generated using Pythia. The mass of the LLP, $\phi$, is taken to be 30~GeV, and $Br[h\rightarrow\phi\phi\rightarrow 4q]=10^{-5}$. A range of $\phi$ lifetimes is considered, from 1~mm to 5~m. Proper decay times are randomly generated for each $\phi$ and time dilation effects are included.
+The study focuses on small or moderate decay lengths of the new particles, 1--50~mm, and assumes
+that the offline selection can remove all SM backgrounds with only a moderate loss of efficiency.
+While this study focuses on the specific Higgs boson decay to light scalars,
+the results and the proposed triggers are relevant for a broad spectrum of new physics searches, with or without macroscopic decay lengths.
 
-In Figure~\ref{fig:tracktrigger_toy} (right), the expected event yields are shown for the different triggers described above. Jet reconstruction parameters are slightly varied to ensure there are no large variations in efficiency. For track jets, one (solid lines) or two (dashed lines) tracks with five or more hits are required. For trackless jets, one track (solid line) or two tracks with total $p_T$ below 10~GeV is/are allowed to point along the jet.
+The authors propose a simple jet clustering algorithm implementable in firmware, and compare it with anti-\ensuremath{k_t}\xspace jets~\cite{Cacciari:2008gp} with a size parameter of $R = 0.3$,
+as produced by \textsc{FastJet}\xspace~\cite{Cacciari:2011ma}. This simple algorithm produces a similar performance, in both L1 trigger efficiency and rate,
+to the full jet clustering using the anti-\ensuremath{k_t}\xspace algorithm.
 
-While the tight tracks offer a substantial increase in sensitivity compared to $Wh$, a trigger based on loose tracks yields more than a factor of five more signal for $c\tau$ of a few mm. Trackless jets, even with very optimistic 70~GeV threshold only become competitive at lifetimes of 50~cm or more.
 
-\begin{figure}[t]\begin{center}
-\includegraphics[width=0.47\textwidth]{figures/L1TT/geom.pdf}
-\includegraphics[width=0.47\textwidth]{figures/L1TT/final_h125.pdf}
-\caption{Left: Sketch of the toy stub formation in a doublet layer in the context of a possible CMS track trigger for the HL-LHC. Four tracks pass through the same point in the inner layer. Only the tracks hitting the outer layer between the two green points would produce a L1 stub. The dashed track does, and the dotted does not. Right: Event yields for $Br[h\rightarrow\phi\phi\rightarrow 4q]=10^{-5}$ as a function of $\phi$ proper lifetime. Red curves correspond to a trigger that requires at least four loose track jets and blue to a trigger that requires at least four tight track jets. Open circles indicate track jets with $p_T$ above 20~GeV and filled circles to displaced track jets above 10~GeV. The teal curve corresponds to the no-track, 70~GeV di-jet trigger. The purple line shows the expected yield from $Wh$ production triggered by a lepton from the $W$ decay.}
-\label{fig:tracktrigger_toy}
-\end{center}
+%Displaced track finding
+Then, the performance of an algorithm for reconstruction of tracks with non-zero impact parameter is presented. This approach extends the baseline CMS L1 Track Trigger design to
+handle tracks with non-zero impact parameter and to include the impact parameter in the track fit. This enhanced design is feasible without greatly altering the track finding approach, but will
+require more FPGA computational power than the current proposal, which only considers only prompt tracks. Tracks passing the selection are clustered using the same algorithm as described above,
+and clusters containing tracks with high impact parameters are flagged as displaced jets. Though the baseline design of the L1 Track Trigger currently is optimized to find prompt tracks, these
+studies show that an enhanced L1 Track Trigger can extend the L1 trigger acceptance to include new BSM physics signals.
+
+For now, the extended L1 track reconstruction is limited to the barrel region.
+In order to compare the results with prompt and extended track reconstruction, one needs to make a correction for
+the rapidity coverage: prompt tracks are found in $|\eta|<2.4$, while the extended track algorithm currently only
+reconstructs tracks in $|\eta|<1.0$. To scale the efficiency for finding track jets to the full
+$|\eta|<2.4$ range, a scale factor based on efficiency in the full $\eta$ range and the central $\eta$ range was used. The scale factor
+was comparable to the increase in L1 rate.
+
+%Results
+Figure \ref{fig:reff_dispextra} shows the expected trigger rate as a function of efficiency for the SM and the heavy SM-like Higgs bosons.
+
+\begin{figure}[hbtp]
+  \centering
+    \includegraphics{figures/CMS-PAS-FTR-18-018_Figure_008.pdf}
+    \caption{The rate of the track jet $H_T$ trigger as a function of signal efficiency using extended track finding for the SM Higgs (left)
+    and the heavy SM-like Higgs (right). The extended track finding performance is extrapolated to the full outer tracker acceptance as described in text.}
+    \label{fig:reff_dispextra}
 \end{figure}
 
-The rare SM Higgs boson decay considered above is challenging to probe at the LHC because of the small total $H_T$ in the event (see Sec.~\ref{sec:covgaps}). While Higgs boson-like signals may be accessible when produced in association with leptonically decaying vector bosons, some new physics signals may not. As an example, hidden sector models where LLPs are produced through particles other than the Higgs boson may not give rise to $VH$ production modes. These LLP signals will greatly benefit from the displaced track trigger studied here.
+The available bandwith for the triggers described above, if implemented, will be decided as a part of the full trigger menu optimization.
+Here, two cases are considered: 5 and 25~kHz. The expected event yield for triggers using extended and prompt tracking are shown in Fig.\,\ref{fig:money},
+assuming branching fraction $\mathcal{B}[\ensuremath{\PH \to \phi\phi}\xspace] = 10^{-5}$ for the SM Higgs boson.
+For the heavy Higgs boson, the expected number of produced signal events is set to be the same as for the SM Higgs by requiring
+$\sigma_{\pp\to \PH(250)} \mathcal{B}[\ensuremath{\Phi \to \phi \phi}\xspace] = 10^{-5} \sigma_{\pp\to \PH(125)}$.
+
+\begin{figure}[hbtp]
+  \centering
+    \includegraphics{figures/CMS-PAS-FTR-18-018_Figure_009.pdf}
+    \caption{This plot shows the number of triggered Higgs events (assuming ${\mathcal{B}[\ensuremath{\PH \to \phi\phi}\xspace] = 10^{-5}}$, corresponding to
+1700 events) as a function of \ctau for two choices for the trigger rates: 25~kHz (left), 5~kHz (right).
+Two triggers are compared: one based on prompt track finding (dotted lines) and another that is based on extended track finding
+with a displaced jet tag (solid lines). }
+    \label{fig:money}
+\end{figure}
+
+For the exotic Higgs decays considered, given the total Phase-2 dataset of 3 inverse attobarns and branching fraction of $10^{-5}$,
+CMS would collect $\mathcal{O}(10)$ events, which should be sufficient for discovery.
+A plausible extension of the L1 track finder was considered, to select tracks with impact parameters of a few cm.
+That approach improves the yield by more than an order of magnitude. The gains for the extended L1 track finding
+are even larger for the events with larger $H_T$, as demonstrated by the simulations of heavy Higgs boson decays.
+
+
 
 \subsection{Open Questions and New Ideas}\label{sec:upgradeideas}
 
