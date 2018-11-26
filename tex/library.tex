@@ -1,11 +1,11 @@
-%\noindent {\bf Section Editors:}~Brian Shuve \\
-%\text{ \; }\\
-%\noindent {\bf Contributors:}~James Beacham, Alessandro Davoli, Andrea De Simone, Jared Evans, Thomas Jacques, Zhen Liu, Jessie Shelton
-%\text{ \; }\\
+\noindent {\bf Chapter Editor:}~Brian Shuve \\
+\text{ \; }\\
+\noindent {\bf Contributors:}~Eshwen Bhal, Alessandro Davoli, Andrea De Simone, Jared Evans, Thomas Jacques, Hiaolin Li, Zhen Liu, Siddharth Mishra-Sharma, Michael Ramsey-Musolf, Jessie Shelton, Jiang-Hao Yu
+\text{ \; }\\
 
 \section{Instructions for the Simplified Model Library}
 
-We refer here extensively to the simplified models in Tables  \ref{tab:neutral_LLP}-\ref{tab:color_LLP}. Because it is already quite an extensive task to come up with simplified models for so many (production)$\times$(decay) modes, we for now restrict ourselves to the ``filled'' entries in Tables  \ref{tab:neutral_LLP}-\ref{tab:color_LLP}. If you are interested in performing an experimental search or developing a simplified model library entry for one of the ``unfilled'' entries, please contact the conveners of the simplified model library found at the library link:~{\bf [provide link]}.
+We refer here extensively to the simplified models in Tables  \ref{tab:neutral_LLP}-\ref{tab:color_LLP}. Because it is already quite an extensive task to come up with simplified models for so many (production)$\times$(decay) modes, we for now restrict ourselves predominantly to the ``filled'' entries in Tables  \ref{tab:neutral_LLP}-\ref{tab:color_LLP}. If you are interested in performing an experimental search or developing a simplified model library entry for one of the ``unfilled'' entries, please contact the chapter editor listed above.
 
 There are essentially two possible pipelines to simulate LLP events with the library:
 %
@@ -13,14 +13,16 @@ There are essentially two possible pipelines to simulate LLP events with the lib
 
 \item \emph{LLP decay as part of matrix-element calculation:}~Using UFO models in the library, it is possible to generate the production and decay of LLPs at the parton level using calculations of the matrix element for production and decay. As a concrete example, we provide cards that allow the production and decay of LLPs using \texttt{MadGraph5\_aMC@}\texttt{NLO} \cite{Alwall:2014hca} and the accompanying  \texttt{MadSpin} \cite{Artoisenet:2012st} package. This employs the narrow-width approximation, but otherwise gives rise to the correct angular distribution of LLP decay products. The downside is that if a particular decay is not allowed from the interactions in the UFO model file, the UFO must be modified to include the new coupling. The output of \texttt{MadGraph5\_aMC@}\texttt{NLO} is then fed into programs such as \texttt{Pythia 8} \cite{Sjostrand:2007gs,Sjostrand:2014zea} for showering, implementation of underlying event and other particle-level processes.
 
-\item \emph{Phenomenological LLP decays:}~Using UFO models in the library, it is possible to generate the production of LLPs, leaving them stable as outputs of the matrix-element-level calculation. The LLP can then be subsequently decayed in programs such as \texttt{Pythia 8}, which allows a particle to decay into any final state, albeit with a flat angular distribution. This could be convenient for models where the interactions leading to LLP decay are not included in the UFO, or where computational time is a concern and the angular distribution of LLP decays is irrelevant.
+\item \emph{Phenomenological LLP decays:}~Using UFO models in the library, it is possible to generate the production of LLPs, leaving them stable as outputs of the matrix-element-level calculation recorded in LHE format~\cite{Alwall:2006yp}. The LLP can then be subsequently decayed in programs such as \texttt{Pythia 8}, which allows a particle to decay into any final state, albeit without correctly modeling the angular distribution. This could be convenient for models where the interactions leading to LLP decay are not included in the UFO, or where computational time is a concern and the angular distribution of LLP decays is irrelevant. We provide detailed instructions in the library files for how to implement decays of LHE files via Pythia.
 
 \end{enumerate}
 %
 In the final version of the library, we aim to provide example cards to direct the production and decay of LLPs in both pipelines. Note that in all of the simplified model proposals below, any particles \emph{not} present in the production or decay chain should have their masses set to a very large value ($M\gtrsim5$ TeV) to ensure they are sufficiently decoupled from direct production at the LHC.
 
 
-Currently, we only provide simplified model libraries for neutral LLPs including the LLP decay. The simplified models for charged and colored LLPs are equally compelling, but their simulation is more subtle. In particular, the simulation of the propagation and decay of the LLPs are more challenging if the LLP carries a SM gauge charge. Such effects can be included in detector simulations using GEANT4 \cite{Agostinelli:2002hh}, but decay processes typically need to be hard-coded into GEANT or otherwise interfaced with other MC programs. This is an important issue for the community to address, as discussed in Sections \ref{sec:EMcharge}-\ref{sec:coloredLLPs}. 
+Currently, we only provide simplified model libraries for neutral LLPs. The simplified models for LLPs with electric or color charges are equally compelling, but their simulation is more subtle. In particular, the simulation of the propagation and decay of the LLPs are more challenging if the LLP carries a SM gauge charge. Such effects can be included in detector simulations using GEANT4 \cite{Agostinelli:2002hh}, but decay processes typically need to be hard-coded into GEANT or otherwise interfaced with other MC programs. This is an important issue for the community to address, as discussed in Sections \ref{sec:EMcharge}-\ref{sec:coloredLLPs}. Without implementing the decays, it is straightforward to use the SUSY model to simulate the production of any of the electrically or color charged LLPs.
+
+Finally, we note that there is not currently a set of minimal simplified models to cover dark showers. However, we are collecting models used in studies of dark showers that could potentially be helpful for experimentalists and theorists alike. The existing models are included in the library, along with a very brief description in Section~\ref{sec:darkshowerslibrary}.
 
 \subsection{Neutral LLPs}
 
@@ -150,29 +152,29 @@ $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv. & MSSM+RPV. LLP is bino ($\tilde \
  \hline
 Decay Mode & Simplified Model Library Process \\
 \hline\hline
-$X\rightarrow \gamma\gamma$ & HAHM. LLP is the singlet scalar Higgs ($h_{\rm D}$)   produced via $pp\rightarrow h$, $h\rightarrow h_{\rm D}h_{\rm D}$. Then,    \\
-&  $h_{\rm D}\rightarrow\gamma\gamma$ via mixing with the SM Higgs. \\
+$X\rightarrow \gamma\gamma$ & MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
+&  Then, $a\rightarrow\gamma\gamma$. \\
 \hline
 $X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.    \\
 &  Then,  $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
 \hline
-$X\rightarrow jj$& HAHM. LLP is singlet scalar Higgs $(h_{\rm D})$ produced via  $pp\rightarrow h$, $h\rightarrow h_{\rm D}h_{\rm D}$. Then,      \\
-&   $h_{\rm D}\rightarrow j j$ via mixing with the SM Higgs.\\
+$X\rightarrow jj$ & MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
+&  Then, $a\rightarrow jj$. \\
 \hline
-$X\rightarrow jj$+inv.& MSSM. LLP is wino $\tilde\chi_2^0$ that is produced via $pp\rightarrow h $, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.  Then, \\
-&  $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
+$X\rightarrow jj$+inv.& MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
+&  Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
 \hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & HAHM. LLP is hidden gauge boson ($Z_{\rm D}$) that is produced via $pp\rightarrow h$, $h\rightarrow Z_{\rm D}Z_{\rm D}$.  \\
-&  Then, $Z_{\rm D}\rightarrow \ell_\alpha^+\ell_\alpha^-$ via  mixing with the SM gauge bosons.\\
+$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
+&  Then, $a\rightarrow\ell_\alpha^+\ell_\alpha^-$. \\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM.  LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
 &  Then, $\tilde\chi_2^0\rightarrow\ell_\alpha^+\ell_\alpha^-\tilde\chi^0_1$ via  an off-shell slepton.\\
 \hline
-$X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv. & LRSM.  LLP is the RH neutrino $N$  produced via $pp\rightarrow h$, $h\rightarrow NN$.   \\
-&  Then, $N\rightarrow\ell_\alpha^+\ell_\beta^-\nu$ via  an on- or off-shell $W$.\\
+$X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv. & MSSM+RPV.  LLP is the second neutralino ($\tilde\chi_2^0$)  produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
+&  Then, $\tilde\chi_2^0\rightarrow\ell_\alpha^+\ell_\beta^-\nu$ via  an off-shell slepton and RPV couplings.\\
 \hline
-$X\rightarrow \ell_\alpha^+jj$ & LRSM.  LLP is the RH neutrino  ($N$)   produced via $pp\rightarrow h$, $h\rightarrow NN$.   \\
-&  Then, $N\rightarrow \ell_\alpha^+jj$ via  an on- or off-shell $W$ (or $W_{\rm R}$).\\
+$X\rightarrow \ell_\alpha^+jj$ & MSSM+RPV.  LLP is the second neutralino ($\tilde\chi_2^0$)  produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
+&  Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+jj$ via  an off-shell slepton and RPV couplings.\\
 \hline
 \end{tabular}
 \end{center}
@@ -333,3 +335,18 @@ or $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv.  & Then,   $\nu_{\rm R}\rightar
 \end{center}
 \caption{Simplified model library process proposals for charged current (CC) production mode, $W_{\rm SM}^\pm/{W'}^\pm\rightarrow X+\ell^\pm$; these can be simulated using left-right symmetric models using either the $W$ or $W'$ (for simplicity, in the table above we only state explicitly $W$). Right-handed neutrino lifetimes are most naturally long for sub-weak-scale masses. }\label{tab:CC_neutral_library}
 \end{table}
+
+\newpage
+
+
+\subsection{Dark Shower Models}\label{sec:darkshowerslibrary}
+
+In the repository, we also include two models of dark showers. These are not meant to be representative in the same way that the simplified models are; however, it does allow theorists and experimentalists to simulate these particular dark showers. The currently-included models are:
+%
+\begin{enumerate}
+
+\item \emph{Radiating lepton jets:}~This is a model where dark matter is charged under a dark $\mathrm{U}(1)'$ gauge interaction. The dark photon can be produced via final-state radiation from dark matter produced in a collider. Due to the collinear enhancement radiation of the dark photon, this can lead to a perturbative dark shower~\cite{Buschmann:2015awa}.
+
+\item \emph{Semi-visible jets:}~This is a model in which hidden-sector states are charged under a new confining gauge group, leading to QCD-like showers. The showers produce both stable, invisible dark matter, as well as unstable states that decay back to the SM. This produces ``semi-visible'' jets~\cite{Cohen:2015toa,Cohen:2017pzm}.
+
+\end{enumerate}
