@@ -325,7 +325,7 @@ versus muon $p_T$ threshold for the barrel displaced muon algorithm.}
 
 A dedicated muon reconstruction algorithm was designed for non-prompt muons that leave hits only in the muon system. This displaced stand-alone (DSA) algorithm is seeded by groups of track segments in the muon chambers. For each seed, a muon track is reconstructed with the same Kalman-filter technique as for the standard stand-alone (SA) muon reconstruction algorithm, but without constraining the interaction point. Figure~\ref{fig:perfDisplaced} (right) shows the distribution of the number of hits in the Run 2 and HL-LHC detectors for displaced muons. The impact of the new stations is clearly visible. The charge mis-identification probability is expected to further decrease with the additional hits.
 
-\paragraph{Sensitivity Projection}
+\paragraph{Sensitivity Projection with a GMSB Model}
 
 To study the impact on physics sensitivity, a particular gauge-mediated SUSY breaking (GMSB) model is selected where the displaced signature consists of a dimuon final state plus gravitinos, emerging from the decay of heavy long-lived sparticles (smuons), where the gravitinos escape detection. This maps to the direct pair production simplified model with neutral LLP decays to muon + invisible in Sec.~\ref{sec:proposal}. This signal can serve as a proxy for other models with two LLPs decaying into muons. The final-state signature is then given by two displaced, oppositely-charged muons and significant \met. Example long-lived particles with $c\tau=10, 100, 1000$~mm\,and several mass hypotheses (0.2, 0.5, 1~TeV) are simulated.
 
@@ -355,7 +355,7 @@ In order to evaluate the discovery sensitivity of a search for the GMSB model th
 \includegraphics[width=0.47\textwidth]{figures/SignificanceComp.pdf}
 \includegraphics[width=0.47\textwidth]{figures/SignificanceComp_asfuncofCtau.pdf}
 \caption{The projected discovery sensitivity at CMS for  $q \bar q \to \widetilde{\mu} \widetilde{\mu}, \widetilde{\mu}\rightarrow \mu\widetilde{G}$ for various mass hypotheses and $c\tau$ = 1~m (left) and as a function of the decay length for $m_{\widetilde{\mu}}$ = 200~GeV (right). Together with the discovery sensitivity the corresponding $p$-value is shown. Phase-2 results with an average of 200 pile-up interactions per bunch crossing and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three.
-%NOT APPROVED!!! {\bf \textcolor{red}{[JB: It seems that the possibility of this plot being able to be shown publicly needs to be clarified.  Can our CMS colleagues look into it?]}} {\bf \textcolor{red}{[JA: I believe a few plots were made public after the TDR in which the main results were shown, but I can't find an approved caption for them... If we wait just a week or two, a standalone PAS will be made public that performs this analysis with a different interpretation. I would prefer to include these new results, which have been better vetted.]}}
+%NOT APPROVED!!! {\bf \textcolor{red}{[JB: It seems that the possibility of this plot being able to be shown publicly needs to be clarified.  Can our CMS colleagues look into it?]}} {\bf \textcolor{red}{[JA: All of these plots should be fine now.]}}
 %~ In both panels, the theoretical cross section for the specific model is represented by the blue solid line.
 %~ For different SUSY breaking scales, tan $\beta$ or otherwise modified parameters, the cross sections may be  100 times larger, reflected by the blue dash-dotted line.
 %~ Green (yellow) shaded bands show the one (two) sigma range of variation of the expected 95\% CL limits. Phase-2 results with an average 200 pile-up events and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three.
@@ -365,6 +365,64 @@ In order to evaluate the discovery sensitivity of a search for the GMSB model th
 \label{fig:displResultsSensitiviy}
 \end{center}
 \end{figure}
+
+
+\paragraph{Sensitivity Projection with a Dark SUSY Model}
+The analysis presented above was reinterpreted using a Dark SUSY model (\cite{Baumgart:2009tn,Falkowski:2010cm}), in which an additional dark $U_D(1)$ symmetry is added as a supersymmetric SM extension. Breaking this symmetry gives rise to an additional massive boson, the so-called dark photon ($\gamma_D$), which couples to SM particles via a small kinetic mixing parameter $\epsilon$. If $\epsilon$ is very weak, the lifetime of the dark photon can range from a few millimeters up to several meters. The lower $\epsilon$, the longer is the dark photon lifetime which then decays displaced from the primary vertex. A golden channel for such searches is the decay to displaced muons.
+
+In the model studied here~\cite{CMS-PAS-FTR-18-002}, dark photons are produced in cascade decays of the SM Higgs boson that would first decay to a pair of MSSM-like lightest neutralinos ($n_1$), each of which can decay further to a dark sector neutralino ($n_D$) and the dark photon.
+
+For the branching fraction BR$(H \to 2\gamma_D + \mathrm{X})$, where X denotes the particles produced in the decay of the SM Higgs boson apart
+from the dark photons, $20\%$ is used. Neutralino masses $m(n_1) =
+50~\mathrm{GeV}$ and $m(n_D) = 1~\mathrm{GeV}$ are assumed. Final states with two
+and four muons are included in the analysis. In the former case, one dark photon decays to a pair of muons while the other dark photon decays
+to some other fermions (2-muon final state). In the latter case, both dark photons decay to muon pairs (4-muon final state).
+
+The main background for this search comes from multi-jet production (QCD), ttbar~production,
+and Z/DY $\to\ell\ell$ events  where large impact parameters are (mis)reconstructed. Cosmic ray muons can travel through the detector far away from the primary vertex and mimic the signature of displaced muons.
+However, thanks to their striking detector signature, muons from cosmic rays can be suppressed by rejecting back-to-back kinematics.
+
+For each event, at least two DSA muons are required. If more than two, the ones with the
+highest $p_T$ are chosen. The two muons must have opposite charge ($q_{\mu,1} \cdot q_{\mu,2} = -1$) and must be separated by $\Delta R = \sqrt{\Delta \phi^2 + \Delta
+\eta^2} > 0.05$. The three-dimensional angle between the two displaced muons is required to be less than $\pi - 0.05$ (not back-to-back) in order to suppress cosmic
+ray backgrounds. Additionally, $\ptmiss \geq 50~\mathrm{GeV}$ is imposed to account for the dark neutralinos escaping the detector without leaving any signal.
+
+In order to discriminate between background and signal, the three-dimensional distance from the primary vertex to the point of closest approach of the extrapolated
+displaced muon track, called $R_{\text{Muon}}$, is used.
+The event yield after full event selection of both selected muons as a function of $R_{\rm Muon-1}$ and $R_{\rm Muon-2}$ is used to search for the signal. Figure\ref{fig:DarkPhoton_Distr_Disc}-left shows $R_{\rm Muon-1}$ of the first selected muon for signal and background samples.
+
+\begin{figure}[hbtp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{tex/figures/cmsupgrade/FTR-18-002/DarkPhoton_Distribution}
+\includegraphics[width=0.45\textwidth]{tex/figures/cmsupgrade/FTR-18-002/Paramspace_merged.pdf}
+ \caption{Left: Distance of the closest approach of the displaced muon track with maximum $p_T$  to the primary interaction vertex, $R_{\rm Muon-1}$, for signal and background after the final event selection.
+Right:Parameter scan in the $\epsilon-m_{\gamma_D}$ plane. The grey lines indicate the regions of narrow hadronic resonances where the analysis does not claim any sensitivity.}
+\label{fig:DarkPhoton_Distr_Disc}
+\end{center}
+\end{figure}
+
+
+%%% Sensitivity in exclusion and discovery
+The search is performed using a simple counting experiment approach. In presence of the expected signal, significance of the corresponding event excess over the expected background is assessed using the likelihood method.
+In order to evaluate the discovery sensitivity the same input is used as in the limit calculation, now with the assumption that one would have such a signal in the data. The discovery sensitivity is shown in the two-dimensional $m_{\gamma_D}$-$c\tau$ plane
+in Fig.~\ref{fig:DarkPhoton_Distr_Disc}-right. This search is sensitive to large decay length of the dark photon.
+
+In absence of a signal, upper limits at $95\%$ confidence level (CL) are obtained on a signal
+event yield with respect to the one expected for the considered model. A Bayesian method with a uniform prior for the signal event rate is used and the nuisance
+parameters associated with the systematic uncertainties are modeled with log-normal distributions.
+The resulting limits for the Dark SUSY models are depicted in Fig. \ref{fig:NewCompLimit_DarkPhoton}. While the results shown in Fig.\ref{fig:NewCompLimit_DarkPhoton}-left are for a dark photon with a decay length of $1~\mathrm{m}$ as a function of the dark photon mass, Fig.\ref{fig:NewCompLimit_DarkPhoton}-right shows the results for a dark photon mass of $20~\mathrm{GeV}$ as a function of the decay length~\cite{CMS-PAS-FTR-18-002}.
+
+
+
+\begin{figure}[hbtp]
+\begin{center}
+\includegraphics[width=0.45\textwidth]{tex/figures/cmsupgrade/FTR-18-002/LimitComp_Ratio_DarkPhotons.pdf}
+\includegraphics[width=0.45\textwidth]{tex/figures/cmsupgrade/FTR-18-002/LimitComp_Ratio_asfuncofCtau_DarkPhotons.pdf}
+ \caption{Upper limits at $95\%$ CL on production cross section $\sigma / \sigma_{\text{theory}}$ for various dark photon mass hypotheses and a fixed decay length of $c\tau = 1000$~mm (a) and a fixed mass of $M_{\gamma_D} = 20$~GeV (b). Green and yellow shaded bands show the one and two sigma range of variation of the expected $95\%$ CL limits, respectively. The grey lines indicate the regions of narrow hadronic resonances where the analysis does not claim any sensitivity.}
+\label{fig:NewCompLimit_DarkPhoton}
+\end{center}
+\end{figure}
+
 
 \subsubsection{Displaced Photons at CMS}
 
