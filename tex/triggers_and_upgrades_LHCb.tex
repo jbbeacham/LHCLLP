@@ -1,5 +1,6 @@
 \section{LHCb Upgrade}\label{sec:LHCb_upgrade}
-\subsection{Introduction}
+
+\noindent {\bf Contributors:}~Xabier Cid Vidal, Elena Dall'Occo, Jessica Prisciandaro, Carlos V\'azquez Sierra \\
 
 The LHCb experiment is designed to detect decays of long-lived particles in the Standard Model, namely beauty (a.k.a., bottom) and charmed hadrons. As such, it is naturally suited for the search of BSM long-lived particles in a mass and lifetime range comparable to these hadrons. It is the only LHC experiment to be fully instrumented in the forward region $2<\eta<5$, where $b$- and $c$-hadrons are abundantly produced and their decay length is enhanced due to the large longitudinal boost. In this
 region, detector occupancy is extremely high and thus the LHCb experiment has been run at reduced luminosity compared to ATLAS and CMS during Runs 1 and 2. However, an upgrade of the detector is planned to allow running at a luminosity of $2\times 10^{33}\,\,\text{cm}^{-2}\text{s}^{-1}$ in LHC Run 3 (starting in 2020) while maintaining or improving the current physics performance~\cite{LHCbUpgradeTDR}. This is five times larger than the luminosity during Runs 1 and 2. This first upgrade phase (Phase-Ia) will entail a novel trigger paradigm where all sub-detectors are fast enough to be read out in real time and the first trigger decisions are done in software. This trigger scheme is flexible and offers a great opportunity for searches of striking signatures like those of BSM long-lived particles. This upgrade comes earlier than the planned ATLAS and CMS upgrades for the HL-LHC phase which are planned to be installed during LHC long shutdown 3 (by 2025). In this shutdown, LHCb plans to consolidate and modestly enhance the Phase-Ia upgrade detector (Phase-Ib), while a Phase-II upgrade to run at an even higher luminosity up to $\sim 2\times 10^{34}\text{cm}^{-2}\,\,\text{s}^{-1}$ is planned to be installed later, during long shutdown 4 (by 2030)~\cite{LHCbUpgradeIIPC}.
@@ -40,7 +41,7 @@ In upgrade conditions, the number of tracks and primary vertices will increase b
 
 \begin{figure}[t]
 \centerline{\includegraphics[width=\textwidth]{figures/lhcb_vertexres.pdf}}
-\caption{On the left panel is the impact parameter resolution (in the $x$ direction) as a function of the inverse $p_{\rm T}$ while on the right is the resolution on a vertex as a function of number of tracks. The current LHCb VELO performance is shown by black points while the one of the upgraded VELO by red points.}
+\caption{On the left panel is the impact parameter resolution (in the $x$ direction) as a function of the inverse $p_{\rm T}$ while on the right is the resolution on a vertex as a function of number of tracks. The current LHCb VELO performance is shown by black points while the one of the upgraded VELO by red points \cite{LHCb-TDR-013}.}
   \label{fig:ulhcb_pvres}
 \end{figure}
 
@@ -50,13 +51,13 @@ Another important metric of detector performance is impact parameter resolution,
 
 \begin{figure}[t]
   \centerline{\includegraphics[width=\textwidth]{figures/lhcb_veloperf.pdf}}
-  \caption{A comparison of the current and upgrade VELO $z-$layouts for LHCb is shown on the left. The top layout (black) is the current VELO while the bottom layout (red) is the upgrade VELO. On the right the track reconstruction efficiency is shown as a function of the origin in $z$ for the current (black) and upgrade (black) VELO in upgrade conditions.}
+  \caption{A comparison of the current and upgrade VELO $z-$layouts for LHCb is shown on the left. The top layout (black) is the current VELO while the bottom layout (red) is the upgrade VELO. On the right the track reconstruction efficiency is shown as a function of the origin in $z$ for the current (black) and upgrade (black) VELO in upgrade conditions \cite{LHCb-TDR-013}.}
   \label{fig:veloeff}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[t]
 \centerline{\includegraphics[width=\textwidth]{figures/lhcb_veloacceptance2.pdf}}
-  \caption{On the left is a display of the upgrade VELO geometry and a comparison with the LHCb spectrometer acceptance which is shaded in yellow. On the right the $\eta$ acceptance of the upgrade VELO geometry is given both for forward and backward tracks. The fraction of tracks crossing three and four modules is given in red and black, respectively.}
+  \caption{On the left is a display of the upgrade VELO geometry and a comparison with the LHCb spectrometer acceptance which is shaded in yellow. On the right the $\eta$ acceptance of the upgrade VELO geometry is given both for forward and backward tracks. The fraction of tracks crossing three and four modules is given in red and black, respectively \cite{LHCb-TDR-013}.}
   \label{fig:ulhcb_veloacc}
 \end{figure}
 
@@ -72,17 +73,17 @@ In the Phase-I upgrade, LHCb foresees to run at a luminosity of $2\times 10^{33}
 \centerline{
  \includegraphics[width=0.5\textwidth]{figures/Trigger2015.pdf}\\
  \includegraphics[width=0.5\textwidth]{figures/TriggerUpgrade.pdf}	}
-  \caption{Scheme of the current LHCb trigger (left), and of the upgraded trigger (right).}
+  \caption{Scheme of the current LHCb trigger (left), and of the upgraded trigger (right) \cite{LHCbtriggerscheme}.}
   \label{fig:ulhcb_trigger}
 \end{figure}
 
 \paragraph{Triggerless readout and full-software trigger}
 
-With the LHCb trigger upgrade, the 1~MHz readout limitation will be removed, allowing the full event rate to be processed in software. This will increase the efficiency for several channels which otherwise would not benefit from the higher luminosity because they would saturate the L$0$ trigger rate. In Figure~\ref{fig:triggervsLumi} is shown how the rate for non-muonic $B$ decays saturates the L$0$ trigger with increasing luminosity. Most of these channels saturate the L$0$ trigger already at the Run 2 luminosity ($4\times10^{32}\,\,{\rm cm}^{-2}{\rm s}^{-1}$). Moreover, a purely software trigger will not be subject to the $\pt$ requirements currently applied at the hardware trigger level. Several physics programs involving low-$\pt$ particles, currently prohibited by of the low L$0$ efficiency, will therefore become possible.
+With the LHCb trigger upgrade, the 1~MHz readout limitation will be removed, allowing the full event rate to be processed in software. This will increase the efficiency for several channels which otherwise would not benefit from the higher luminosity because they would saturate the L$0$ trigger rate. Figure~\ref{fig:triggervsLumi} shows how the rate for non-muonic $B$ decays saturates the L$0$ trigger with increasing luminosity. Most of these channels saturate the L$0$ trigger already at the Run 2 luminosity ($4\times10^{32}\,\,{\rm cm}^{-2}{\rm s}^{-1}$). Moreover, a purely software trigger will not be subject to the $\pt$ requirements currently applied at the hardware trigger level. Several physics programs involving low-$\pt$ particles, currently prohibited by of the low L$0$ efficiency, will therefore become possible.
 
 \begin{figure}[t]
 \centerline{\includegraphics[width=0.6\textwidth]{figures/L0vsLumi.pdf}}
-\caption{Trigger yields for ${B\to\pi^+\pi^-}$, ${B_s\to\phi(K^+K^-)\gamma}$, ${B_s\to J/\psi(\mu^+\mu^-)\phi(K^+K^-)}$ and ${B_s\to D_s^-(K^+K^-\pi^-)K^+}$ as a function of the luminosity with the current LHCb trigger scheme. For non-muonic channels, the saturation effect due to the L$0$ trigger can be observed.}
+\caption{Trigger yields for ${B\to\pi^+\pi^-}$, ${B_s\to\phi(K^+K^-)\gamma}$, ${B_s\to J/\psi(\mu^+\mu^-)\phi(K^+K^-)}$ and ${B_s\to D_s^-(K^+K^-\pi^-)K^+}$ as a function of the luminosity with the current LHCb trigger scheme. For non-muonic channels, the saturation effect due to the L$0$ trigger can be observed \cite{Albrecht:2014kba}.}
   \label{fig:triggervsLumi}
 \end{figure}
 
@@ -91,23 +92,18 @@ With the LHCb trigger upgrade, the 1~MHz readout limitation will be removed, all
 Starting from Run 2, offline-quality alignment and calibration has been applied between the HLT1 and the HLT2 levels. This was made possible by the design of a new dedicated trigger output called Turbo Stream. The event record is written directly from the trigger and processed so that it can be used for physics analysis without the need for offline reconstruction~\cite{Aaij:2016rxn}. Several variations of Turbo have been introduced in the last several
 years. For 2015 data taking, the first version of Turbo allowed only the triggered signal candidate objects to be saved, without keeping the rest of the event and thereby discarding all sub-detector information. While the event size was an order of magnitude smaller than for full stream data, any analysis relying on additional information from the surrounding event could not use Turbo Stream data.
 
-For this reason, full event reconstruction was implemented as Turbo++ in 2016. Finally, a new intermediate solution between Turbo and Turbo++ called Turbo SP (Selective Persistence) was implemented in 2017. With Turbo SP, both the trigger candidate objects and a subset of the other objects in the event are saved. This flexible solution allows the analyzer to choose which objects to save, minimizing the size of the stored event. A sketch of the evolution of Turbo is shown in
-Figure~\ref{fig:turbo}. Once the trigger is upgraded to run purely at the software level, the large majority of LHCb analyses will be moved to Turbo. The reduced event size allows the storage of particle candidates at a high rate, fully exploiting the reduction in \pt thresholds due to the removal of the L$0$ hardware trigger.
+For this reason, full event reconstruction was implemented as Turbo++ in 2016. Finally, a new intermediate solution between Turbo and Turbo++ called Turbo SP (Selective Persistence) was implemented in 2017. With Turbo SP, both the trigger candidate objects and a subset of the other objects in the event are saved. This flexible solution allows the analyzer to choose which objects to save, minimizing the size of the stored event. Once the trigger is upgraded to run purely at the software level, the large majority of LHCb analyses will be moved to Turbo. The reduced event size allows the storage of particle candidates at a high rate, fully exploiting the reduction in \pt thresholds due to the removal of the L$0$ hardware trigger.
 
-%\begin{figure}[t]
-%\centerline{\includegraphics[width=1.05\textwidth]{figures/Turbo.pdf}}
-  %\caption{Sketch of the evolution of Turbo at the LHCb experiment.}
-  %\label{fig:turbo}
-%\end{figure}
 
-%\subsection{LHCb Upgrade Phase-Ia Projections for LLP Signatures}
-%\label{sec:ulhcbphys}
 
 \paragraph{Triggers on downstream tracks}
 
 Most of the LLP searches at the LHCb experiment use so-called ``long tracks'' to reconstruct the candidates, which are tracks where inputs from both the VELO and the tracking stations are considered. These tracks have an excellent spatial and momentum resolution, and result from an LLP decaying within the VELO region. This is the reason why most of the LLP searches done by LHCb correspond to long-lived candidates with displacements typically up to $\mathcal{O}$(10)~cm, with the VELO tracking algorithm optimized for displacements of up to 20~cm. However, for long-lived candidates with displacements larger than 2~ cm, a different type of track which considers information only from the tracking stations, ``downstream tracks'', has to be used instead of the ``long track'' type. Unfortunately, these tracks have worse vertex and momentum resolution, limiting the capabilities of LHCb for this displacement range. In order to improve the detector sensitivity in the displacement ranges between 20 and 200~cm, a proposal to develop new trigger lines to select ``downstream tracks'' is being studied~\cite{Aaij:2244312}. An interesting idea which can help to achieve this task and to significantly reduce the CPU computing time is the implementation of a system of specialized processors used to rapidly find the downstream tracks through look-up tables, and present these tracks to the software trigger in parallel with all the raw detector information in the event. This system, named ``retina'', is being studied and has its own R\&D programme~\cite{Abba:2014iga}.
 
 The much higher luminosity and improved capabilities of the upgraded LHCb detector are expected to significantly improve the capabilities for LLP searches in LHC Run 3. In the following sections, the projected sensitivities to several benchmark LLP signatures are shown to illustrate the potential of the upgraded detector. However, the potential of the upgraded triggerless readout has not been completely explored yet and its great flexibility could be exploited in several ways beyond those shown here.
+
+\subsection{LHCb Upgrade Phase-Ia Projections for LLP Signatures}
+\label{sec:ulhcbphys}
 
 \subsubsection{Displaced di-leptons}
 
@@ -118,7 +114,7 @@ signature~\cite{Ilten:2015hya} exploits a tag of the radiative decay of the $D^{
 
 An inclusive search for dark photons has already been performed with LHCb data collected in 2016~\cite{Aaij:2017rft}. This was possible due to the high reconstruction and identification efficiency of soft di-muons at LHCb. These results demonstrated the unique sensitivity that can be reached at LHCb. The planned increase in luminosity and removal of the hardware-trigger stage in Run 3 should increase the number of expected $A'\to \mu\mu$ decays in the low-mass region by a factor of ${\cal O}(100-1000)$ compared to the 2016 data sample. The limits placed by the current data and the sensitivity expected with future LHC runs is shown in Figure~\ref{fig:lhcb_darkph}.
 
-\begin{figure}[th]
+\begin{figure}[t]
   \centerline{\includegraphics[width=\textwidth]{figures/lhcb_darkphoton_projections.pdf}}
   \caption{Current and expected limits in the dark photon parameter space mixing $\epsilon^2$ versus $A'$ mass~\cite{LHCbUpgradeIIPC}. The black line represents current LHCb limits from Ref.~\cite{Aaij:2017rft}, while grey-shaded regions are existing limits from other experiments. Expected limits from the proposed inclusive search with 50 and 300 \invfb are shown in shades of blue. The expected sensitivity of $D^{*0}\to D^{0}A'(ee)$ at low mass is shown in shades of green. The arrows indicate the available mass range from light meson decays into $e^+e^-\gamma$.}
   \label{fig:lhcb_darkph}
@@ -128,7 +124,7 @@ The exclusive search for $D^{*0}\to D^{0}A',\,A'\rightarrow e^+e^-$ is much more
 
 A displaced di-muon signature also appears in some Hidden Valley (HV) scenarios \cite{Strassler:2006im}, in which a hidden sector with strong dynamics showers and hadronizes into dark mesons that can have an appreciable decay rate to leptons. (For more information on dark showers, see Chapter~\ref{sec:showers}.) The upgraded LHCb prospects for this type of signature have been explored in Ref.~\cite{Pierce:2017taw} and are very promising. In the scenario explored therein, dark mesons are produced with large multiplicities of between 10 and 30. Selection criteria inspired by the proposed dark photon search~\cite{Ilten:2016tkc} in the region after the first VELO module are applied. The expected reach for the proposed searches using Run 3 data from LHCb (15 \invfb) and from ATLAS/CMS (300 \invfb) are shown in Fig.~\ref{fig:ulhcb_hv_dimuons}. The model studied involves a 200 \gev $U(1)'$ gauge boson $Z_p$ decaying to a HV quark pair; showering and hadronization in the dark sector leads to a large multiplicity of hidden hadrons $\omega_V$ (with $m_{\omega_V} =0.3\,\,\gevcc$) that can decay to di-muons. In this context, the upgraded LHCb detector could have better sensitivity than other proposed searches at ATLAS and CMS.
 
-\begin{figure}[th]
+\begin{figure}[t]
   \centering
   {\includegraphics[width=0.9\textwidth]{figures/ulhcb_darkmesons_dileptons.pdf}}
   \caption{Projected bounds from various ATLAS/CMS searches and the LHCb search for Hidden Valley-like models with a $Z_p$ decaying to a $q_{HV}q_{HV}$ pair which then undergo hadronization in the dark sector, eventually leading to dark meson decays to di-muon final states~\cite{Pierce:2017taw}.}
@@ -179,7 +175,7 @@ version of the Phase-I VELO), are expected to increase the sensitivity to shorte
 \includegraphics[width=0.48\textwidth]{figures/velo_ph21.pdf}
 \includegraphics[width=0.48\textwidth]{figures/velo_ph22.pdf}
 }
-  \caption{Impact parameter resolution estimations from simulation using the Phase-I VELO model for the LHCb experiment:~Left, a comparison if considering Phase-I or Phase-II conditions; right, the effect of the RF-foil removal under Phase-II conditions.}
+  \caption{Impact parameter resolution estimations from simulation using the Phase-I VELO model for the LHCb experiment:~Left, a comparison if considering Phase-I or Phase-II conditions; right, the effect of the RF-foil removal under Phase-II conditions \cite{Aaij:2244311}.}
   \label{fig:veloip_hllhc}
 \end{figure}
 
