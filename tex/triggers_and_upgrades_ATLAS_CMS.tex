@@ -2,7 +2,7 @@
 
 The planned upgrades to the ATLAS and CMS experiments for the HL-LHC will give the detectors increased coverage in the forward regions, better spatial and timing resolutions, and other new features including track triggers. The improved hardware capabilities, combined with software developments, give rise to exciting new prospects for future LLP searches. This section gives an overview of the upgrade scope (Section~\ref{sec:upgrademachine}), discusses their physics potential (Sections~\ref{sec:upgradeobject}-\ref{sec:upgradesearch}), and presents new ideas for detector upgrade and LLP searches (Section~\ref{sec:upgradeideas}).
 
-Unless specified otherwise, the subsequent CMS experimental results are from its Technical Design Reports for the different sub-detector upgrades at HL-LHC, namely tracker~\cite{Collaboration:2272264}, barrel calorimeter~\cite{Lourenco:2283187}, endcap calorimeter~\cite{Collaboration:2293646}, muon detectors~\cite{Lourenco:2283189}, timing detector (Technical Proposal, Ref.~\cite{MTD_TP}), and Level-1 Trigger (Interim Technical Design Report, Ref.~\cite{Lourenco:2283192}).
+Unless specified otherwise, the subsequent CMS experimental results are from its Technical Design Reports for the different sub-detector upgrades at HL-LHC, namely tracker~\cite{Collaboration:2272264}, barrel calorimeter~\cite{Lourenco:2283187}, endcap calorimeter~\cite{Collaboration:2293646}, muon detectors~\cite{Lourenco:2283189}, timing detector (Technical Proposal, Ref.~\cite{MTD_TP}), and Level-1 Trigger (Interim Technical Design Report, Ref.~\cite{Lourenco:2283192}). ATLAS results are from the Technical Design Reports for the inner tracker pixel detector \cite{Collaboration:2285585}, the TDAQ system \cite{Collaboration:2285584}, the tile calorimeter \cite{Collaboration:2285583}, LAr calorimeter \cite{Collaboration:2285582}, muon spectrometer \cite{Collaboration:2285580}, and inner tracker strip detector \cite{Collaboration:2257755}.
 
 \subsection{Detector and Trigger Upgrades for High-Luminosity LHC} \label{sec:upgrademachine}
 
@@ -20,7 +20,7 @@ By the start of the HL-LHC, the inner trackers of both experiments must be repla
 \paragraph{CMS Upgrade}
 The CMS tracker is composed of the inner pixel detector and the outer tracker. At the HL-LHC, the CMS inner pixel detector will include four cylindrical barrel layers covering the region of $|z| < 200$~mm, and forward extensions of up to twelve endcap disks on both sides (compared to the current configuration with three disks), which will extend its $|\eta|$ coverage from the current value of $2.4$ to approximately $4$. To maintain radiation hardness and reasonable occupancy, as well as to improve resolution, small, thin pixels will be used. For the studies in the CMS tracker TDR~\cite{Collaboration:2272264}, pixels with a thickness of $150\,\, \mu \mathrm{m}$ and $25\times100\,\,{\mu \mathrm{m}}^2$ in size are used in the simulation~\footnote{An alternative option being considered is that of $50\times50\,\,{\mu \mathrm{m}}^2$. Larger pixel sizes of $50\times200\,\,{\mu \mathrm{m}}^2$ or $100\times100\,\,{\mu \mathrm{m}}^2$ are being considered in outer barrel layers and outer rings of the endcap as a potential option to reduce power consumption.}. The first layer of the barrel inner pixel detector will be positioned at a radius of 28~mm.
 
-The CMS outer tracker is composed of six cylindrical barrel layers in the central region, covering the region of $|z| < 1200$~mm, complemented on each side by five endcap double-disks, in the region of $1200 < |z| < 2700$~mm. Modules are installed between $r\sim21$~cm and $r\sim112$~cm. Three sub-detectors are distinguished:~the Tracker Barrel with pixel-strip modules (TBPS), the Tracker Barrel with strip-strip modules (TB2S), and the Tracker Endcap Double-Disks (TEDD). The inner rings of the TEDD disks use pixel-strip modules up to $r\sim 60$~cm, and the rest use strip-strip modules. The outer tracker modules, called $p_T$ modules, are composed of two single-sided, closely-spaced ($1$ to $4$~mm separation) small pitch sensors read out by a set of front-end ASICs that correlate the signals in the two sensors and select the hit pairs (referred to as ``stubs'') compatible with particles above the chosen $p_T$ threshold (see Fig.~\ref{fig:tracktrigger_toy}). A $p_T$ threshold of $2$~GeV corresponds to a data volume reduction of roughly one order of magnitude, which is sufficient to enable transmission of the stubs at 40~MHz.
+The CMS outer tracker is composed of six cylindrical barrel layers in the central region, covering the region of $|z| < 1200$~mm, complemented on each side by five endcap double-disks, in the region of $1200 < |z| < 2700$~mm. Modules are installed between $r\sim21$~cm and $r\sim112$~cm. Three sub-detectors are distinguished:~the Tracker Barrel with pixel-strip modules (TBPS), the Tracker Barrel with strip-strip modules (TB2S), and the Tracker Endcap Double-Disks (TEDD). The inner rings of the TEDD disks use pixel-strip modules up to $r\sim 60$~cm, and the rest use strip-strip modules. The outer tracker modules, called $p_T$ modules, are composed of two single-sided, closely-spaced ($1$ to $4$~mm separation) small pitch sensors read out by a set of front-end ASICs that correlate the signals in the two sensors and select the hit pairs (referred to as ``stubs'') compatible with particles above the chosen $p_T$ threshold. A $p_T$ threshold of $2$~GeV corresponds to a data volume reduction of roughly one order of magnitude, which is sufficient to enable transmission of the stubs at 40~MHz.
 The ``stubs'' are used as input to the hardware trigger at Level-1 (L1), which enables track-finding at L1 for all tracks with a $p_T$ of $2$~GeV or above. To improve the ``stub''-finding efficiency and also to reduce material, the inner three outer tracker barrel layers, the TBPS, are made with flat modules in the center and tilted modules in the regions with larger $z$.
 
 \paragraph{ATLAS Upgrade}
@@ -56,11 +56,18 @@ For the CMS detector, its current muon system consists of three different types 
 
 \paragraph{ATLAS Upgrade}
 
-{\bf \textcolor{red}{[BS: We are missing the ATLAS Trigger figure (hidden valley) in the MS section.]}}
 
 Most of the front-end and detector readout of the ATLAS muon system, including the trigger electronics for the Resistive Plate Chambers (RPC), Thin Gap Chambers (TGC), and Monitored Drift Tube (MDT) chambers, will be replaced to face the higher trigger rates and longer latencies necessary for the new Level-0 (L0) trigger required by the HL-LHC conditions. The MDT chambers will be integrated into the L0 trigger in order to sharpen the momentum threshold. Some of the MDT chambers in the inner barrel layer will be replaced with new, small-diameter MDTs. Additional RPC chambers will be installed in the inner barrel layer to increase the acceptance and robustness of the trigger, and some chambers in high-rate regions will be refurbished. New TGC triplet chambers in the barrel--endcap transition region will replace the current TGC doublets to suppress the high trigger rate from random coincidences in this region. The electronics of all the sub-detectors will need to be replaced due to obsolescence, aging, and radiation damage. During the Phase-1 upgrade (to take place from 2019 to 2021) the New Small Wheel (NSW) chambers will replace the Cathode Strip Chambers (CSC) and the MDT chambers of the innermost endcap wheel by Micromegas and small-strip TGCs. The replacement of the MDT front-end readout will address the trigger rate and latency requirements of the TDAQ system in Phase-2 and allow the use of MDT hit information to improve the muon $p_T$ resolution in the L0 trigger.
 
-Some LLP scenarios (e.g., Hidden Valley models~\cite{Strassler:2006im}) predict muon-jet final states, which result in collimated muons that are not identified with high efficiency by the current triggers (see Sec.~\ref{subsec:dleptons}). In Figure~\ref{fig:ATLAS_Trigger}, the opening angle between muons in a Hidden Valley model is shown, for a particular combination of particle masses and parameters. The di-muon separation is much smaller than the current system can resolve (approximately 0.2 in $\Delta\phi(\mu,\mu)$). In the no-upgrade scenario, these can only be recorded by the single muon trigger. In the upgraded scenario, a dedicated trigger is under development for a dimuon trigger with a $p_T$ threshold of $\approx$ 10 GeV.
+Some LLP scenarios (e.g., Hidden Valley models~\cite{Strassler:2006im}) predict muon-jet final states, which result in collimated muons that are not identified with high efficiency by the current triggers (see Sec.~\ref{subsec:dleptons}). In Figure~\ref{fig:anglemuons}, the opening angle between muons in a Hidden Valley model is shown, for a particular combination of particle masses and parameters. The di-muon separation is much smaller than the current system can resolve (approximately 0.2 in $\Delta\phi(\mu,\mu)$). In the no-upgrade scenario, these can only be recorded by the single muon trigger. In the upgraded scenario, a dedicated trigger is under development for a dimuon trigger with a $p_T$ threshold of $\approx$ 10 GeV.
+
+\begin{figure}[t]
+\begin{center}
+  \includegraphics[width=0.7\textwidth]{figures/fig_016_anglemuons.png} 
+  \caption{ Opening angle between muons in a Hidden Valley model, where a sub-GeV-mass particle decays to $\mu^+\mu^-$. The opening angle is well below the resolution of the current system. }
+  \label{fig:anglemuons}
+\end{center}
+\end{figure}
 
 \subsubsection{Timing Detector} \label{sec:upgradetiming}
 
@@ -354,12 +361,6 @@ In order to evaluate the discovery sensitivity of a search for the GMSB model th
 \includegraphics[width=0.47\textwidth]{figures/SignificanceComp.pdf}
 \includegraphics[width=0.47\textwidth]{figures/SignificanceComp_asfuncofCtau.pdf}
 \caption{The projected discovery sensitivity at CMS for  $q \bar q \to \widetilde{\mu} \widetilde{\mu}, \widetilde{\mu}\rightarrow \mu\widetilde{G}$ for various mass hypotheses and $c\tau$ = 1~m (left) and as a function of the decay length for $m_{\widetilde{\mu}}$ = 200~GeV (right). Together with the discovery sensitivity the corresponding $p$-value is shown. Phase-2 results with an average of 200 pile-up interactions per bunch crossing and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three~\cite{henningkeller2018}.
-%NOT APPROVED!!! {\bf \textcolor{red}{[JB: It seems that the possibility of this plot being able to be shown publicly needs to be clarified.  Can our CMS colleagues look into it?]}} {\bf \textcolor{red}{[JA: All of these plots should be fine now.]}}
-%~ In both panels, the theoretical cross section for the specific model is represented by the blue solid line.
-%~ For different SUSY breaking scales, tan $\beta$ or otherwise modified parameters, the cross sections may be  100 times larger, reflected by the blue dash-dotted line.
-%~ Green (yellow) shaded bands show the one (two) sigma range of variation of the expected 95\% CL limits. Phase-2 results with an average 200 pile-up events and an integrated luminosity of 3000\fbinv are compared to results obtained with 300\fbinv. The black line shows the sensitivity without the DSA algorithm, which reduces the reconstruction efficiency by a factor three.
-%%% Drop discovery significance?
-%c) Discovery sensitivity for various mass hypotheses. WORKING ON IT.
  }
 \label{fig:displResultsSensitiviy}
 \end{center}
@@ -424,7 +425,6 @@ The resulting limits for the Dark SUSY models are depicted in Fig. \ref{fig:NewC
 
 \subsubsection{Displaced Photons at CMS}
 
-%{\bf \textcolor{red}{[BS: Is it possible to explain the Lambda parameter in the GMSB model more in CMS displaced pohton section?]}}
 
 A number of new physics scenarios predict new particles that, upon decay, result in displaced photons in the final state (see Sec.~\ref{sec:proposal} and Sec.~\ref{subsec:dphotons}). At the CMS experiment, with the scintillating crystal design of the ECAL that provides excellent resolution but lacks pointing capability, the photon arrival time in the ECAL is the main observable used to distinguish signal from background in displaced photon searches.
 
@@ -456,7 +456,7 @@ The existing ATLAS analysis described in Sec.~\ref{subsec:djets} can likely be i
 The splitting between B-C layers will provide more information on the longitudinal shower profile, see~Figure~\ref{fig:Caloratio}.
 
 This analysis uses a hidden sector benchmark model and considers the decay of a heavy boson to two long-lived neutral scalars; this maps to the simplified model with Higgs boson production of hadronically decaying LLPs in Sec.~\ref{sec:proposal}. The heavy scalar bosons decaying into LLPs have masses ranging from 125 GeV to 1000 GeV, and the LLP scalars have masses ranging between 5 GeV and 400 GeV.
-Background processes, dominated by QCD dijet production, are suppressed in this analysis by requiring both scalars to decay both in the calorimeter.
+Background processes, dominated by QCD dijet production, are suppressed in this analysis by requiring both scalars to decay  in the calorimeter. Final results of the analysis are pending.
 
 \begin{figure}[hbtp]
 \begin{center}
@@ -464,7 +464,7 @@ Background processes, dominated by QCD dijet production, are suppressed in this 
 \includegraphics[width=0.47\textwidth]{figures/caloratio2.pdf}\\
 \includegraphics[width=0.47\textwidth]{figures/caloratio3.pdf}
 \includegraphics[width=0.47\textwidth]{figures/caloratio4.pdf}\\
-\caption{Simulation projections of the sensitivity of the ATLAS experiment upgrade plans to neutral LLPs. Top: The fraction of the jet energy deposited in the A-layer (left) and BC-layers (right) of the ATLAS tile calorimeter as a function of the transverse decay position of the LLP in events with a 125~GeV Higgs-like boson decaying to two 25~GeV LLPs. Bottom: The same for events with a 600~GeV Higgs-like boson decaying to two 150~GeV LLPs.}
+\caption{Simulation projections of the sensitivity of the ATLAS experiment upgrade plans to neutral LLPs. Top: The fraction of the jet energy deposited in the A-layer (left) and BC-layers (right) of the ATLAS tile calorimeter as a function of the transverse decay position of the LLP in events with a 125~GeV Higgs-like boson decaying to two 40~GeV LLPs. Bottom: The same for events with a 600~GeV Higgs-like boson decaying to two 50~GeV LLPs.}
 \label{fig:Caloratio}
 \end{center}
 \end{figure}
@@ -551,7 +551,6 @@ Resolution for the reconstruction of the LLP mass in the Higgsino scenario outli
 
 %\noindent {\bf \textcolor{red}{[JB: Can we add a brief, unambiguous statement about whether the upgrade will provide improvement?]}}
 
-%\noindent {\bf \textcolor{red}{[BS: Are there any results for the Higgsino example? Should we just leave it out?]}}
 
 \paragraph{Possible improvement to LLPs searches in general using timing information}
 
