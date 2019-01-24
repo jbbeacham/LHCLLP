@@ -108,8 +108,8 @@ The so-called \DEL-LLP package can be installed from the version v1.6 of
 \MA~\cite{Conte:2012fm,Conte:2014zja} and contains improvements of \DEL\
 specific to LLPs. It
 leads to new possibilities for phenomenological investigations of long-lived
-particles and the recasting of related LHC analyses. More information is
-available on the web page:\\ \noindent \url{https://madanalysis.irmp.ucl.ac.be/wiki/MA5LongLivedParticle}
+particles and the recasting of related LHC analyses\footnote{More information is
+available on the web page:\\ \noindent \url{https://madanalysis.irmp.ucl.ac.be/wiki/MA5LongLivedParticle}}
 
 This new package was designed to handle neutral LLPs that decay
 into leptons within the tracker volume. Realistic efficiencies are applied to
@@ -124,8 +124,7 @@ leptons could be implemented.
 The \DEL-LLP package contains a new module called \verb+MA5EfficiencyD0+ that
 allows for the definition of a track reconstruction efficiency parameterized as a function of the $|d_0|$ and $d_z$ parameters (named \verb+d0+ and \verb+dz+ in the \DEL\ input
 card). The default efficiency function, specified via a \verb+DelphesFormula+ is taken from the
-8~TeV tracking performance of CMS~\cite{Khachatryan:2014mea},\\ 
-\noindent \url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/DisplacedSusyParametrisationStudyForUser},\\
+8~TeV tracking performance of CMS~\cite{Khachatryan:2014mea}~\footnote{\url{https://twiki.cern.ch/twiki/bin/view/CMSPublic/DisplacedSusyParametrisationStudyForUser}},\\
 \begin{verbatim}
  set EfficiencyFormula {
    (d0<=20) * (-5.06107e-7 * d0**6 + 0.0000272756 * d0**5 - 0.00049321 * d0**4
@@ -180,9 +179,8 @@ method that returns the coordinates of the closest approach point (through the
 \verb+X()+, \verb+Y()+ and \verb+Z()+ daughter methods) and the
 \verb+vertexProd()+ method that returns coordinates of the displaced vertex from
 which the lepton originates from (through the \verb+X()+, \verb+Y()+ and
-\verb+Z()+ daughter methods). An analysis example \cite{MA5:longlivedleptons} can be found in the public analysis database of \MA,\\
-\noindent \url{http://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase},\\
-\noindent where information about the re-implementation in \MA\ of Ref.~\cite{CMS-PAS-EXO-16-022}  
+\verb+Z()+ daughter methods). An analysis example \cite{MA5:longlivedleptons} can be found in the public analysis database of \MA~\footnote{ \url{http://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase}},
+where information about the re-implementation in \MA\ of Ref.~\cite{CMS-PAS-EXO-16-022}  
 analysis of 2.6~fb$^{-1}$ of 13~TeV LHC data is available. This is a search for long-lived particles decaying into electrons and muons, where signal
 events are selected by requiring the presence of either an electron or a muon
 whose transverse impact parameter lies between 200~$\mu$m and 10~cm. For a given
