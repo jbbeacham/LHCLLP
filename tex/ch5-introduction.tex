@@ -14,26 +14,26 @@ Models and scenarios with LLPs have seen an enormous rise in interest in recent 
 They include supersymmetric scenarios with almost mass-degenerate lightest states~\cite{Chen:1995yu,Feng:1999fu},
 highly split spectra~\cite{ArkaniHamed:2004fb,Giudice:2004tc}, very weakly interacting
 lightest supersymmetric particles (LSPs) like gravitinos or
-axinos \cite{Pagels:1981ke,Covi:1999ty} or $R$-parity violation~\cite{Barbier:2004ez},
+axinos~\cite{Pagels:1981ke,Covi:1999ty}, or $R$-parity violation~\cite{Barbier:2004ez},
 as well as equivalent scenarios in other SM extensions (e.g., extra-dimensional models) with new SM gauge-charged particles.
-More recent ideas include models with feebly interacting dark matter \cite{Hall:2009bx} (supersymmetric or not), asymmetric dark matter~\cite{Zurek:2013wia}, Hidden Valley~\cite{Strassler:2006im} and other dark-sector models---see the classification of existing well-motivated theories with LLPs in Chapter~\ref{sec:simplifiedmodel} of this document.
+More recent ideas include models with feebly interacting dark matter~\cite{Hall:2009bx} (supersymmetric or not), asymmetric dark matter~\cite{Zurek:2013wia}, Hidden Valley models~\cite{Strassler:2006im}, and other dark-sector models; for a comprehensive discussion, see the classification of existing well-motivated theories with LLPs in Chapter~\ref{sec:simplifiedmodel}.
 
-All of these models can feature a large variety of possible LLP signatures. In Hidden Valley models \cite{Strassler:2006im}, for instance,
+All of these models can feature a large variety of possible LLP signatures. In Hidden Valley models~\cite{Strassler:2006im}, for instance,
 new particles can either decay into invisible dark particles or back to the SM, thus possibly leading to a
 mix of long-lived and prompt signatures, with or without missing transverse energy (\MET).
 Furthermore, new theoretical frameworks are constantly emerging, often motivated by
 new approaches to the hierarchy problem or dark matter.
 It is therefore of great interest to our community to be able to
 re-interpret the LLP experimental results
-for new models which may be developed in the future\footnote{In this context we refer the reader also to
+for new models which may be developed in the future~\footnote{In this context we refer the reader also to
 the activities of the ``Forum on the Interpretation of the LHC Results for BSM studies''~\cite{reinterpretationForum}.}.
 
 The re-interpretation of experimental results can generically be done in two ways:~by applying
 appropriate simplified-model results to more complete models, or by reproducing the experimental analysis in a Monte Carlo (MC) simulation.
-Clearly,  the former is easier and faster,
-while the latter is more generally applicable but also more difficult and much more time consuming\footnote{When no new backgrounds
+Clearly, the former is easier and faster,
+while the latter is more generally applicable but also more difficult and much more time consuming~\footnote{When no new backgrounds
 need to be considered and the hypothesized signal does not affect control regions, one can simply determine the
-event counts in the signal regions and compare them to the $95\%$ C.L observed limits, or take the numbers of observed events and expected backgrounds to compute a likelihood.}.
+event counts in the signal regions and compare them to the $95\%$ C.L. observed limits, or take the numbers of observed events and expected backgrounds to compute a likelihood.}.
 
 In the context of searches for prompt signatures with \MET, the use of simplified models has been shown to be a fruitful approach for both the experimental and theoretical communities~\cite{ArkaniHamed:2007fw, Alwall:2008ag, Alves:2011wf, Okawa:2011xg,Chatrchyan:2013sza,Abercrombie:2015wmb,Boveia:2016mrp}.
 Dedicated tools, notably \textsc{SModelS}~\cite{Kraml:2013mwa,Ambrogi:2017neo,Ambrogi:2018ujg} and \textsc{Fastlim}~\cite{Papucci:2014rja},
@@ -51,7 +51,7 @@ Again, for prompt signatures, a general recasting approach is available through 
 tools, notably \textsc{CheckMATE}~\cite{Drees:2013wra,Dercks:2016npn}, \textsc{MadAnalysis5}~\cite{Conte:2014zja,Dumont:2014tja},
 \textsc{Rivet}~{\bf\cite{Buckley:2010ar}} (v2.5 onwards) and Gambit's \textsc{ColliderBit}~\cite{Balazs:2017moi}.
 These tools allow the user to reproduce experimental analyses by means of MC event simulation coupled to
-an approximate emulation of detector effects.\footnote{For completeness it should be noted that, while all of these tools include a more-or-less
+an approximate emulation of detector effects.~\footnote{For completeness it should be noted that, while all of these tools include a more-or-less
 extensive set of SUSY searches, many of the searches for other, ``exotic'' types of new physics cannot yet be reproduced outside the experimental collaborations. This concerns in particular searches relying on multivariate techniques such as Boosted Decision Trees.}
 For the latter, \textsc{CheckMATE} and \textsc{MadAnalysis5} rely on \textsc{Delphes}~\cite{deFavereau:2013fsa},
 in some cases supplemented with appropriate tuning,
@@ -66,23 +66,22 @@ parameters required for a general purpose re-interpretation.
 It is worth noting that, compared with simplified models for prompt searches, simplified models
 for LLP searches always have at least one additional free model parameter:~the lifetime of the LLP.
 Second, %general purpose recasting tools are not yet available.
-recasting LLP searches outside of the experimental collaborations is  a
+recasting LLP searches outside of the experimental collaborations is a
 difficult task since the searches are very sensitive to the detector response, which in most cases
-cannot be easily emulated  by a fast detector simulation (many backgrounds are also challenging to simulate; see
-Chapter~\ref{sec:backgrounds}).
+cannot be easily emulated by a fast detector simulation (and many backgrounds are also challenging to simulate due to their non-standard nature; see
+Chapter~\ref{sec:backgrounds} for a full discussion of backgrounds to LLP searches).
 As a result, %none of the available (public) tools can currently recast
 %LLP searches, thus limiting the applicability of the experimental results.
-while first steps towards the treatment of LLPs where achieved in \textsc{SModelS}~\cite{Heisig:2018kfq} and
+while first steps towards the treatment of LLPs were achieved in \textsc{SModelS}~\cite{Heisig:2018kfq} and
 \textsc{MadAnalysis5}~\cite{MA5:longlivedleptons}, the implementation of LLP searches in public recasting tools is
 still in its infancy, thus limiting the applicability of the experimental results.
-
 
 In order to allow for a more extensive re-interpretation or recasting of
 the experimental analyses, detailed information concerning the detector
 performance and object reconstruction is needed.
-These can in principle be provided in the format of efficiencies\footnote{We
+These can in principle be provided in the format of efficiencies~\footnote{We
 employ the term ``efficiency'' in a broad sense. It can refer to reconstruction
-efficiencies, selection efficiencies, overall signal efficiencies, etc. which will be further specified below.}
+efficiencies, selection efficiencies, overall signal efficiencies, etc., which will be further specified below.}
 for selection and reconstruction of relevant objects, as demonstrated
 already by some pioneering experimental publications~\cite{Khachatryan:2015lla,Aaboud:2017iio}.
 One difficulty in this respect is that the information needed for recasting LLP searches is clearly
@@ -94,27 +93,27 @@ on a case-by-case basis.
 \includegraphics[width=0.7\textwidth,angle=0]{ch5-figures/LLP_interpretationsB.pdf}
 \end{center}
 \caption{A qualitative overview of the possibilities
-for results presentation discussed in this chapter.
+for the presentation of results discussed in this chapter.
 The axes represent the complexity of information required by each
 format and the corresponding level of model independence.}
 \label{fig:ch5-complexity-vs-modelindependence}
 \end{figure}
 
-The objective of this chapter is to discuss the presentation of  LLP search results
+The objective of this chapter is to discuss the presentation of LLP search results
 with the aim that they can be re-used for interpretations beyond the models considered in the
 experimental publications.
 To this end, we first discuss in Section~\ref{sec:ch5-options} the various options
-for presenting the LLP results (for a summary, see Fig.~\ref{fig:ch5-complexity-vs-modelindependence}), and compare their advantages and
+for presenting the LLP results (and for a summary, see Fig.~\ref{fig:ch5-complexity-vs-modelindependence}), and compare their advantages and
 shortcomings.
 In Section~\ref{sec:ch5-smsReinterpretations}, we discuss in more details how the simplified models defined in Section~\ref{sec:simplifiedmodel} can be used to re-interpret LLP searches.
 In Section~\ref{sec:ch5-recastExamples}, we present several attempts at recasting LLP searches,
-according to the LLP signature: heavy stable charged particles and displaced objects. For each case,
+according to the LLP signature, focusing on heavy stable charged particles and various displaced objects. For each case,
 we elaborate on the lessons learned from the reinterpretation effort.
 Section~\ref{sec:ch5-recastingDelphes} presents a first attempt to
 extend the public detector simulator \textsc{Delphes} %and the recasting tool MadAnalysis5
 to deal with LLP searches, while
 Section~\ref{sec:ch5-recastingInsideExp} focuses on reinterpretations performed within the experiments themselves,
-including the RECAST framework \cite{Cranmer:2010hk}.
+including the RECAST framework~\cite{Cranmer:2010hk}.
 In Section~\ref{sec:ch5-recastingPrompt}, we discuss complementary constraints on LLPs from re-interpreting prompt searches.
 We conclude in Section~\ref{sec:ch5-rec_summary} with our %suggestions and
 recommendations for the presentation of LLP results.
@@ -136,7 +135,7 @@ As we can see, each possibility relies on distinct assumptions about
 the signal, resulting in different levels of model dependence.
 Below, we provide a brief discussion of the advantages and limitations of the
 various possibilities of presentation of LLP search results.
-We  gradually progress from the simplest case towards more complexity but
+We gradually progress from the simplest case towards more complexity but
 also better re-usability.
 
 \begin{figure}[t]
@@ -167,7 +166,7 @@ Simplified-model results can be presented at different levels of sophistication 
 \begin{itemize}
 \item exclusion curves in, e.g., a mass-vs-mass or mass-vs-lifetime plane, are highly model dependent and can
 rarely be used for re-interpretation without significant effort;
-\item cross-section upper limits\footnote{For the sake of re-usability, cross section upper limits in absolute terms are much preferred over limits on the signal strength.}
+\item cross-section upper limits~\footnote{For the sake of re-usability, cross section upper limits in absolute terms are much preferred over limits on the signal strength.}
 can be applied to a larger variety of models
 in which the same LLP production and decay mode occurs
 through a rescaling of the cross section times branching
@@ -192,7 +191,7 @@ In principle this can be overcome if efficiencies are provided for a
 sufficiently large number of simplified models (including cascade decays), as a
 function of the simplified-model parameters, which should include the LLP lifetime.
 These efficiencies can then be combined in order to compute the corresponding
-constraints to complex models, where multiple topologies are present\footnote{These points are illustrated by the re-interpretation of the CMS search
+constraints to complex models, where multiple topologies are present~\footnote{These points are illustrated by the re-interpretation of the CMS search
 for heavy stable charged particles~\cite{Khachatryan:2015lla}
 discussed in Section~\ref{sec:ch5-smsReinterpretations}:
 for the specific model considered in Ref.~\cite{Heisig:2015yla},
@@ -205,13 +204,7 @@ applicable to a broad class of models, the number of required simplified models
 and their complexity can easily become very large.
 For achieving a high level of model independence, it is therefore desirable
 that the experimental analysis can be recast with MC event simulation.
-Two ways of presenting results are useful to this end: {\it signature
-efficiencies} and {\it object efficiencies}.
-
-
-
-
-
+Two ways of presenting results are useful to this end: {\it signature efficiencies} and {\it object efficiencies}.
 
 \paragraph{Signature Efficiencies} Signature efficiencies are efficiencies for the reconstruction of the
 main LLP signature treated as a single ``object'' (single charged track, displaced vertex, disappearing
@@ -227,8 +220,8 @@ In many cases, however, the reconstruction efficiencies depend on multiple
 kinematic variables, such as the LLP $\pt$, its transverse decay position, impact
 parameter, etc.
 As illustrated in Sec.~\ref{sec:ch5-displacedVertices}, these efficiencies
-can be very useful for recasting LLP searches, but  they
-are not often provided by the experimental collaborations. Many recasting efforts consist in
+can be very useful for recasting LLP searches, but they
+are not often provided by the experimental collaborations. Many recasting efforts consist of
 extracting these efficiencies from the provided information, but
 this procedure can result in large uncertainties.
 
