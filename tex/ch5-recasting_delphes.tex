@@ -19,10 +19,10 @@
 %\def\bsp#1\esp{\begin{split}#1\end{split}}
 
 
-\section{Handling long-lived particles in \DEL-based detector simulations}
+\section{Handling Long-Lived Particles in \DEL-Based Detector Simulations}
 \label{sec:ch5-recastingDelphes}
 
-\subsection{Long-lived particle simulation in \DEL~3.4.1}
+\subsection{Long-Lived Particle Simulation in \DEL~3.4.1}
 
 The \DEL\ package~\cite{deFavereau:2013fsa} allows for the generic simulation of
 the response of a typical detector used in high-energy physics experiments. It
@@ -102,7 +102,7 @@ output.
 
 Finally, disappearing tracks are simply treated as missing energy in \DEL. Emerging tracks or tracks containing kinks are not treated appropriately, in the sense that the parameterizations required for a proper description of such signatures has not been implemented yet. Also, \DEL\ does not include any trigger simulation, and the latter is in general complex in the case of LLPs.
 
-\subsection{Displaced tracks with the \MA\ tune of \DEL}
+\subsection{Displaced Tracks With the \MA\ Tune of \DEL}
 
 The so-called \DEL-LLP package can be installed from the version v1.6 of
 \MA~\cite{Conte:2012fm,Conte:2014zja} and contains improvements of \DEL\
@@ -202,12 +202,12 @@ and resolution as a function of the number of missing hits in the (inner) outer
 layers of the tracker. There is to this date no public material on the tracking
 performance description related to track kinks.
 
-\subsection{What about other LLP signatures?}
+\subsection{What About Other LLP Signatures?}
 
 In this section, we briefly discuss how \DEL\ could be improved for a better
 handling of LLP signatures.
 
-\subsubsection{Displaced jets}
+\subsubsection{Displaced Jets}
 \label{sec:dispjets}
 
 Displaced jets are jets that are reconstructed either from stand-alone calorimeter
@@ -231,16 +231,16 @@ includes a vertex reconstruction efficiency and a module including a vertex
 position smearing could be implemented.
 
 
-\subsubsection{Displaced vertices}
+\subsubsection{Displaced Vertices}
 
 The missing modules described in Section~\ref{sec:dispjets} could perfectly
 serve the purpose of a displaced vertex analysis. Provided that tracking
 efficiencies and resolutions are available as a function of the full set of
-tracking parameters ($d_0$, $d_z$, $p_T$, $\phi$, and $\theta$ ) and,
+tracking parameters ($d_0$, $d_z$, $\pt$, $\phi$, and $\theta$ ) and,
 eventually, of the Monte Carlo truth vertex position, a simple vertexing
 algorithm can be implemented in \DEL.
 
-\subsubsection{Discussion: \DEL\ versus a specific parametric simulation}
+\subsubsection{Discussion: \DEL\ Versus a Specific Parametric Simulation}
 
 In a fully parametric simulation of the detector, the detector effects are encoded in
 terms of efficiencies and resolution functions. Such a simulation is

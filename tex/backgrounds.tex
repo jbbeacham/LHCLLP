@@ -71,19 +71,19 @@ Another important background, mainly for analyses targeting the reconstruction o
 There are several types of real particles generated outside the detector that could be sources of background in an LLP search.
 
 % -----------------------------------------------------------------------------------
-\subsection{Cosmic muons} % Juliette
+\subsection{Cosmic Muons} % Juliette
 % -----------------------------------------------------------------------------------
 
 Cosmic rays from the atmosphere can enter the detector as cosmic-ray muons. These cosmic-ray muons can be reconstructed as displaced muons in the muon system or as displaced jets in the calorimeters. If cosmic-ray muons are reconstructed in the muon systems, they will typically appear as two back-to-back muons with $\phi$ values near $\pm\pi/2$. The rate of cosmic muons in the detector is about 500~Hz at L1, but depending on the HLT path and the offline selection used, the rate of cosmic-ray muons entering a given LLP analysis is generally much less.
 
 Cosmic-ray muons are typically an important background source to consider for displaced signatures, especially those with large displacements~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf, Aad:2012zn,Aad:2013gva}. Cosmic-ray muons are generally only an issue for LLP analyses in CMS and ATLAS since LHCb has coverage only in the forward direction.
 
-For many analyses, cosmic-ray muons can be rejected with a simple veto on back-to-back dimuons. However, in some LLP analyses, this veto is not optimal for the signal acceptance or it is insufficient to suppress cosmic-ray backgrounds. Another often-used way to minimize the contribution from cosmic-ray muons is requiring high-momentum muons and/or high-energy jets, since cosmic-ray muons have a rapidly falling $p_{T}$ spectrum. In addition, if a search primarily looks for inner-tracker or calorimeter objects, cosmic-ray-muon events can be rejected by requiring little muon system activity~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}.
+For many analyses, cosmic-ray muons can be rejected with a simple veto on back-to-back dimuons. However, in some LLP analyses, this veto is not optimal for the signal acceptance or it is insufficient to suppress cosmic-ray backgrounds. Another often-used way to minimize the contribution from cosmic-ray muons is requiring high-momentum muons and/or high-energy jets, since cosmic-ray muons have a rapidly falling $\pt$ spectrum. In addition, if a search primarily looks for inner-tracker or calorimeter objects, cosmic-ray-muon events can be rejected by requiring little muon system activity~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}.
 
 If the cosmic-ray muon background is significant for an analysis, it can be estimated using data from dedicated cosmic data-taking runs or from empty bunches in $pp$ collision runs~\cite{Khachatryan:2015jha, Chatrchyan:2012dxa, Khachatryan:2010uf}. Cosmic ray muon simulations can be made, but in many LLP analyses, a data-driven approach is favoured if the simulation modeling is found to be insufficent. Timing information in the calorimeters or the muon systems can be used to discriminate the signal from cosmic-ray muons, sometimes in conjunction with impact parameter variables.
 
 % -----------------------------------------------------------------------------------
-\subsection{Beam halo} % Juliette
+\subsection{Beam Halo} % Juliette
 % -----------------------------------------------------------------------------------
 
 Another type of real particle generated outside the detector that could be a significant source of background for LLP searches is beam halo. Beam halo is produced when protons from the LHC beam scatter off the LHC collimators and produce debris, which can appear in the detector. Beam halo can create energy deposits in the calorimeters or hits in the muon system, both of which would be largely in the beam direction. These energy deposits or muon system hits would appear earlier than if they had been made from particles coming from the collision (see Figure~\ref{fig:beamHaloSketch}). Beam halo is usually not modelled in MC simulation, since it is highly dependent on the beam parameters.
@@ -103,7 +103,7 @@ The contribution from beam halo can often be reduced by requiring high-momentum 
 Beam halo background can be estimated using data control regions near $\phi=0$ and $\pi$. One could also identify cells with a low number of (or zero) tracks that are assigned an early time. %where are the cells - calo? Do we have an example banana plot to show?
 
 % -----------------------------------------------------------------------------------
-\subsection{Cavern radiation} % Juliette/Sascha
+\subsection{Cavern Radiation} % Juliette/Sascha
 % -----------------------------------------------------------------------------------
 
 Diffuse backgrounds can also arise from proton--proton collisions filling the LHC caverns, consisting mostly of neutral, low-energy, and long-lived SM particles (i.e., neutrons and photons), leading to an overall increase in occupancy, especially in the muon systems. This so-called ``cavern background'' or ``cavern radiation'' can constitute a significant background in a LLP search. As simulations are resource-intensive, it is usually not at all modelled in MC simulation samples.
