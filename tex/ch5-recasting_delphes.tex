@@ -38,18 +38,18 @@ modules. More precisely, tracking is simulated through efficiency and smearing
 functions that are applied to the properties of the electrically-charged stable
 particles. The particles are then propagated to the calorimeters and dedicated
 modules simulate the energy deposits in the electromagnetic and hadronic
-calorimeters. The output of such a step consists in a list of calorimetric towers.
-Moreover, \DEL\ includes a particle-flow like
+calorimeters. The output of such a step consists of a list of calorimetric towers.
+Moreover, \DEL\ includes a particle-flow-like
 algorithm that combines tracking and calorimetric data in order to
 improve the identification of the final-state objects and the resolution on
 their reconstructed momenta.
 
 Jet clustering is performed via an internal call to the \FJ\
 package~\cite{Cacciari:2011ma}, which takes as input the
-list of calorimeter towers or, alternatively, the particle-flow candidates and
+list of calorimeter towers or, alternatively, the particle-flow candidates, and
 outputs jet objects. Lepton and photon isolation is then handled through a
 specific isolation module. Finally, \DEL\ takes care of removing the
-double-counting of objects that could be simultaneously identified as element of
+double-counting of objects that could be simultaneously identified as elements of
 different collections. The final output is stored in a \ROOT\ file.
 
 In addition, \DEL\ allows for the simulation of pile-up effects by
@@ -75,15 +75,15 @@ practice by making use of the \verb+RadiusMax+ parameter of the
 \verb+ParticlePropagator+ module, that is by default set to the tracker radius
 stored in the \verb+Radius+ parameter. When setting the \verb+Radius+ and
 \verb+RadiusMax+ parameters to different values, the particles decaying outside
-the tracker volume, but inside the `decay volume' of radius \verb+RadiusMax+, are
+the tracker volume, but inside the ``decay volume'' of radius \verb+RadiusMax+, are
 included in the collection of stable particles stored in the output \ROOT\ file.
 They can in this way be used for an offline, more correct, treatment.
 
 Moreover, several modules that are not used in the default ATLAS and CMS cards
 could serve for a better simulation of the long-lived particles in \DEL . For
 instance, the \verb+TrackSmearing+ module allows the user to smear the track momentum
-according to the impact parameter in the transverse plane ({\it i.e.}, the $d_0$
-parameter) and in the longitudinal plane ({\it i.e.}, the $d_z$ parameter).
+according to the impact parameter in the transverse plane (i.e., the $d_0$
+parameter) and in the longitudinal plane (i.e., the $d_z$ parameter).
 
 By default, the detector simulation in \DEL\ totally ignores the presence of any
 LLP. While this is convenient for neutral particles like a
@@ -104,7 +104,7 @@ Finally, disappearing tracks are simply treated as missing energy in \DEL. Emerg
 
 \subsection{Displaced Tracks With the \MA\ Tune of \DEL}
 
-The so-called \DEL-LLP package can be installed from the version v1.6 of
+The \DEL-LLP package can be installed from the version v1.6 of
 \MA~\cite{Conte:2012fm,Conte:2014zja} and contains improvements of \DEL\
 specific to LLPs. It leads to new possibilities for phenomenological investigations of long-lived
 particles and the recasting of related LHC analyses~\footnote{More information is
@@ -135,7 +135,7 @@ In addition, the data-format of \DEL\ has been extended so that the \verb+Muon+ 
 \verb+Electron+ classes now include the transverse ($|d_0|$) and longitudinal ($d_z$) impact parameters relative to the closest approach point (encoded
 in the \verb+d0+ and \verb+dz+ variables), the coordinates of the closest
 approach point $(x_d, y_d, z_d)$ (encoded in the \verb+xd+, \verb+yd+ and
-\verb+zd+ variables) and the four-vector of the vertex from which the lepton is
+\verb+zd+ variables), and the four-vector of the vertex from which the lepton is
 originating from $(t_p, x_p, y_p, z_p)$ (encoded within the \verb+tp+,
 \verb+xp+, \verb+yp+ and \verb+zp+ variables), the latter quantity being
 evaluated from Monte Carlo information.
@@ -170,27 +170,26 @@ evaluated from Monte Carlo information.
 \end{table}
 \renewcommand{\arraystretch}{1}
 
-
 Consequently, the data-format of \MA\ has been extended, so that the \verb+Muon+ and
-\verb+Electron+ classes now contains the \verb+d0()+ and \verb+dz()+ methods allowing to
+\verb+Electron+ classes now contain the \verb+d0()+ and \verb+dz()+ methods allowing to
 access the value of the $|d_0|$ and $d_z$ parameters, the \verb+closestPoint()+
 method that returns the coordinates of the closest approach point (through the
 \verb+X()+, \verb+Y()+ and \verb+Z()+ daughter methods) and the
 \verb+vertexProd()+ method that returns coordinates of the displaced vertex from
-which the lepton originates from (through the \verb+X()+, \verb+Y()+ and
-\verb+Z()+ daughter methods). An analysis example \cite{MA5:longlivedleptons} can be found in the public analysis database of \MA~\footnote{ \url{http://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase}},
-where information about the re-implementation in \MA\ of Ref.~\cite{CMS-PAS-EXO-16-022}  
-analysis of 2.6~fb$^{-1}$ of 13~TeV LHC data is available. This is a search for long-lived particles decaying into electrons and muons, where signal
+which the lepton originates (through the \verb+X()+, \verb+Y()+ and
+\verb+Z()+ daughter methods). An analysis example~\cite{MA5:longlivedleptons} can be found in the public analysis database of \MA~\footnote{ \url{http://madanalysis.irmp.ucl.ac.be/wiki/PublicAnalysisDatabase}},
+where information about the re-implementation in \MA\ of Ref.~\cite{CMS-PAS-EXO-16-022}, an  
+analysis of 2.6~fb$^{-1}$ of 13~TeV LHC data, is available. This is a search for long-lived particles decaying into electrons and muons, where signal
 events are selected by requiring the presence of either an electron or a muon
 whose transverse impact parameter lies between 200~$\mu$m and 10~cm. For a given
-benchmark signal where a pair of long-lived stops is produced through usual QCD
+benchmark signal where a pair of long-lived stops is produced through QCD
 interactions and where each stop further decays into a displaced $b$-jet and a
 displaced lepton. In Table~\ref{tab:cms_exo}, we present the number of events
 surviving the selection of the three different signal regions of the CMS analysis.
-Our event generation has been preformed with {\sc Pythia} 8~\cite{Sjostrand:2007gs}
+Our event generation has been performed with {\sc Pythia} 8~\cite{Sjostrand:2007gs}
 and for the benchmark
 scenario SPS 1a.
-We observe that a good agreement is obtained, except in the case of a long stop
+We observe that a good agreement is obtained, except in the case of long stop
 lifetimes, $c\tau \gtrsim 1$~m. 
 This is however the region in which no public information on
 the CMS reconstruction efficiencies is available.
@@ -216,7 +215,7 @@ multiplicity of tracks with high transverse displacement (see
 Ref.~\cite{CMS:2014wda}). Conceptually, such jets can be handled in \DEL\
 provided that the displaced tracks are properly parametrized. As described
 above, a module designed to smear the full set of track properties, including
-their transverse and longitudinal displacement, exists ({\it i.e.}, the
+their transverse and longitudinal displacement, exists (i.e., the
 \verb+TrackSmearing+ module). In addition, efficiencies based on displacement
 parameters have already been implemented in \MA\ (see above) and a module that
 performs the matching of an existing jet collection with a track collection
@@ -224,12 +223,11 @@ based on track displacements is very similar to the already existing
 \verb+TrackCountingBTagging+ module. Minor modifications to this module are
 hence needed to be able to select tracks based on an absolute displacement
 instead of the impact parameter significance. Finally, in order to be able to
-perform a displaced jet selection, one would need a (not-yet existing) module
-that performs jet clustering on the basis of the secondary vertices based and
+perform a displaced jet selection, one would need a (not yet existing) module
+that performs jet clustering on the basis of the secondary vertices and
 the displaced tracks matched with these jets. Alternatively, a module that
 includes a vertex reconstruction efficiency and a module including a vertex
 position smearing could be implemented.
-
 
 \subsubsection{Displaced Vertices}
 
@@ -246,23 +244,23 @@ In a fully parametric simulation of the detector, the detector effects are encod
 terms of efficiencies and resolution functions. Such a simulation is
 typically very fast, but is likely to suffer from a lack of accuracy in the
 modeling of complex observables such as jet properties and missing energy. The
-\DEL\ simulation is an admixture of such a parametric simulation, and of an
+\DEL\ simulation is an admixture of such a parametric simulation and of an
 algorithmic one. This is slower, but has the clear advantage of correctly
 treating in particular the reconstruction of the jets and the missing energy.
 
 In order to be able to answer whether \DEL\ should be used in place of a fully
-parametric simulation in recasting  LLP analyses,
+parametric simulation in recasting LLP analyses,
 further studies are needed. In the meantime, the following guidelines could be
 used. If the signal selection is based only on displaced tracks, a simple
 parametric simulation should in principle be sufficient. This simulation could encapsulate the
 track reconstruction efficiency and resolution, including pile-up effects. \DEL\
 could then optionally be used to mix the resulting ``reconstructed" tracks with the additional tracks originating from the pile-up vertices.
 On the other hand, if the analysis under consideration additionally uses
-calorimetric information ({\it i.e}, jets or missing energy), \DEL\ should be
+calorimetric information (i.e., jets or missing energy), \DEL\ should be
 preferred to a fully parametric framework. However, a precise
 quantification of these effects cannot be assessed without detailed comparative
 studies between the two approaches. Finally, it should be pointed out that
 neither of these techniques can be used to correctly simulate the instrumental background,
-which is challenging to simulate and is discussed in Chapter \ref{sec:backgrounds}.
+which is challenging to simulate and is discussed in Chapter~\ref{sec:backgrounds}.
 
 
