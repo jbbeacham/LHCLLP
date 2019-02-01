@@ -98,16 +98,11 @@ The L1 Global Trigger (GT) will be upgraded with more sophisticated and effectiv
 
 \paragraph{ATLAS Upgrade}
 
-{\bf \textcolor{red}{[JB: Can this section be expanded?  It would be great to provide a bit more detail about all of the things mentioned, to allow for a clearer comparison to the CMS plans.]}}
+The ATLAS trigger and the data acquisition system are being planned with the intention of fully exploiting the physics potential of the HL-LHC. A baseline architecture has been proposed and documented in Ref.~\cite{Collaboration:2285584}. 
 
-\noindent {\bf \textcolor{red}{[BS: ATLAS L0 is mentioned earlier in the paper but it is not mentioned in the trigger section.]}}
+The hardware-based Level-0 Trigger system will be composed of separate calorimeter and muon triggers, as well as a Global Trigger and Central Trigger syb-systems.  The result of the Level-0 trigger decision is transmittd to the data acquisition system at 1~MHz, and is followed by an upgraded Event Filter system to achieve a maximum stored event rate of 10~kHz.
 
-\noindent {\bf \textcolor{red}{[BS: ATLAS FTK doesn't seem to be mentioned at all?]}}
-
-The ATLAS trigger and the data acquisition system are being planned with the intention of fully exploiting the physics potential of the HL-LHC. A baseline architecture, based on a single-level hardware trigger with a maximum rate of 1~MHz and 10~$\mu$s latency, is proposed and documented in Ref.~\cite{Collaboration:2285584}. 
-With the help of a hardware-based tracking sub-system as co-processor, software-based reconstruction follows to achieve further rejection. Up to 10~kHz event data are sent into storage.
-
-The upgraded trigger system will take advantage of increased granularity provided by the calorimeters, will improve efficiency for muon-based triggers and perform hardware-based tracking profiting from the extended coverage of the planned Inner Tracker (ITk).
+The upgraded trigger system will take advantage of increased granularity provided by the calorimeters, will improve efficiency for muon-based triggers and perform hardware-based tracking profiting from the extended coverage of the planned silicon Inner Tracker (ITk).  Options exist to further develop a hardware-based track trigger for quicker and less CPU-intensive rejection of the expected large increase in pile-up at the HL-LHC, to take full advantage of extended coverage provided by the ITk.  Such a hardware track trigger would be an evolution of the current ATLAS Fast TracK (FTK) reconstruction system and would use dedicated electronics optimized to apply fast algorithms combining hits on a reduced number of silicon layers.
 
 \subsection{Object Performance: Tracking and Vertexing} \label{sec:upgradeobject}
 
@@ -211,8 +206,6 @@ detector and projections for after the HL-LHC upgrade using digital clustering t
 \end{figure}
 
 \subsection{Upgrade Projection: LLP Searches} \label{sec:upgradesearch}
-
-{\bf \textcolor{red}{[BS: Should we organize performance studied better?]}}
 
 Searches for long-lived particles are well motivated by various classes of extensions of the Standard Model, discussed at length in Chapter~\ref{sec:motivated_theories}. Often, the production cross section for such processes is expected to be very small. The HL-LHC will allow for the collection of much larger data sets needed to reach better sensitivity to such BSM scenarios. The prospects are further strengthened with detector and trigger upgrades. This section discusses these potential improvements, and presents sensitivity projections on a number of benchmark LLP search channels with the aforementioned upgrades at the HL-LHC.
 
@@ -715,9 +708,6 @@ If the hidden sector has a QCD-like structure with dark quarks and hidden forces
 
 \end{itemize}
 
-{\bf \textcolor{red}{[BS: Removed last two bullet points. James, you can put them back in/expand if you want]}}
-
-
 \subsubsection{New Detectors at Future Collider}
 
 If we are only limited by our imagination, what new detectors may exist at a future collider that can open up new capabilities for LLP searches? Regardless of practical constraints, studies for such bold new proposals also help us understand our current experimental reach and optimize our search strategies.
@@ -740,8 +730,6 @@ Moreover, due to the extended time delay of the LLPs in the volume of the muon s
 \item \textbf{New double-sided tracking layer very close to the beamline}
 
 Inspired by the L1 track trigger design at CMS for the HL-LHC, a scenario may be imagined where an additional tracking layer close to the beamline is added, mechanics and radiation hardness permitting. This would allow a track veto close to the IP to be implemented, and extend the LLP sensitivity to even smaller displacements. Moreover, if such a layer can be designed with double-sided modules, similar to the CMS outer tracker approach for the HL-LHC, hit pairs (stubs) from this layer can be used in a L1 track trigger for displaced tracks or disappearing tracks. The feasibility of such an approach would depend on the ability to store and process data at a rate not allowed by current technology. On the other hand, it is helpful to consider more innovative data-scouting methods at trigger level to store and select information, or introduce additional discriminating factors to reduce the rate for particular data streams, for the potential of exploring such signatures.
-
-{\bf \textcolor{red}{[BS: Removed last two bullet points. James, you can put them back in if you want]}}
 
 %\item \textbf{Additional layer of lead between the ATLAS calorimetry and the muon system to veto punch-through jets}
 
