@@ -26,11 +26,9 @@ Finally, we note that there is not currently a set of minimal simplified models 
 
 \subsection{Neutral LLPs}
 
-The instructions for simulating the simplified model channels for neutral LLPs are given as follows:~Double Pair Production (DPP) in Table \ref{tab:DPP_neutral_library}, Heavy Parent (HP, QCD-charged parent) in Table \ref{tab:HP_QCD_neutral_library}.
+The instructions for simulating the simplified model channels for neutral LLPs are given below. Note that it is often true that the same simplified model production and decay channel can be simulated using several simplified models. However, the philosophy of the simplified model approach is that the UV model used to simulate the process is not important when sensitivity is expressed in terms of physical masses and cross sections. As a result, we typically  provide only one set of instructions for simulating each simplified model channel.
 
- We then proceed to the Higgs (HIG) production modes in Tables \ref{tab:Higgs_neutral_library}-\ref{tab:Higgs_single_neutral_library}.
-
-For the $Z'$ (ZP) production modes, we use a set of simplified models described in Tables \ref{tab:Zp_neutral_library}-\ref{tab:Zp_single_neutral_library}. 
+We begin by presenting the simplified model library instructions for Double Pair Production (DPP) in Table \ref{tab:DPP_neutral_library}, Heavy Parent (HP, QCD-charged parent) in Table \ref{tab:HP_QCD_neutral_library}. We then proceed to the Higgs (HIG) production modes in Tables \ref{tab:Higgs_neutral_library}-\ref{tab:Higgs_single_neutral_library}. For the $Z'$ (ZP) production modes, we use a set of simplified models described in Tables \ref{tab:Zp_neutral_library}-\ref{tab:Zp_single_neutral_library}. 
 A relatively simple model file is provided for each table. In addition, a more adjustable `advanced' model file is provided which includes all ZP production and decay modes, and allows for features such as individual couplings to each generation of quarks. This comes at the cost of a greatly increased set of parameters, and the possibility of including unwanted diagrams if the process is not carefully specified. A simple python script is provided to generate the processes and set unwanted parameters to zero for those users wishing to use the advanced model files.
 
 
@@ -63,13 +61,13 @@ $X\rightarrow jj \ell_\alpha$ & MSSM+RPV. LLP is wino LSP ($\tilde\chi^0$) that 
 &  $\tilde\chi^0\rightarrow \ell_\alpha q\bar q$ via an off-shell sfermion and $L_\alpha Qd^{\rm c}$ operator.\\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & MSSM+RPV. LLP is sneutrino $\tilde \nu_\beta$ of flavor $\beta$ that is pair-produced via weak  interactions. \\
-& $\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
+& $\tilde \nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$(+inv.) & MSSM. LLP is second neutralino $\tilde \chi_2^0$ that is pair-produced via weak  \\
 &  interactions. $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\ell_\alpha^+\ell_\alpha^-$ via an off-shell slepton.\\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\beta^-$(+inv.) & MSSM+RPV. LLP is sneutrino $\tilde \nu_\alpha$ of flavor $\alpha$ that is pair-produced via weak   interactions.  \\
-& $\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. An additional massless invisible final state can be  \\
+& $\tilde \nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. An additional massless invisible final state can be  \\
 &  obtained with a wino LLP decaying into $\ell_\alpha^+\ell_\beta^-\nu_\alpha$ through the same operator and an \\
 & off-shell slepton. The massive invisible case is less  motivated for $\alpha\neq\beta$.\\
 \hline
@@ -97,7 +95,7 @@ $X\rightarrow jj \ell_\alpha$ & MSSM+RPV. LLP is bino LSP ($\tilde\chi$) that is
 &   via an off-shell sfermion and $L_\alpha Qd^{\rm c}$ operator.\\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$ or $\ell_\alpha^+\ell_\beta^-$ & MSSM+RPV. LLP is sneutrino ($\tilde \nu$) that is produced via $pp\rightarrow \tilde{g}\tilde g$, $\tilde g\rightarrow jj \tilde\chi$, $\tilde\chi\rightarrow \tilde\nu \bar\nu$. \\
-&  Then, $\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ or $\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
+&  Then, $\tilde\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ or $\tilde\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv.& MSSM. LLP is second neutralino ($\tilde \chi_2^0$) that is produced via $pp\rightarrow \tilde{q}\tilde q^*$,   \\
  &  $\tilde q\rightarrow q\tilde\chi_2^0$. Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^- \tilde\chi_1^0$.  \\
@@ -132,7 +130,7 @@ $X\rightarrow jj \ell_\alpha$ & MSSM+RPV. LLP is bino LSP ($\tilde\chi^0$) that 
 &  Then, $\tilde\chi^0\rightarrow qq'\ell_\alpha$ via  an off-shell sfermion and the $Qd^{\rm c}L_\alpha$ operator.\\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$ or $\ell_\alpha^+\ell_\beta^-$ & MSSM+RPV. LLP is sneutrino ($\tilde \nu$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$, $\tilde\chi^+\rightarrow \ell^+\tilde \nu$. Then, \\
-& $\nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ or $\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
+& $\tilde \nu_\alpha\rightarrow \ell_\alpha^+\ell_\beta^-$ or $\tilde\nu_\beta\rightarrow \ell_\alpha^+\ell_\alpha^-$ via the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv.& MSSM. LLP is second neutralino ($\tilde \chi_2^0$) that is produced via $pp\rightarrow \tilde\chi^+\tilde\chi^-$,  \\
  & $\tilde \chi^+\rightarrow W^+\tilde\chi_2^0$. Then,  $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\alpha^- \tilde\chi_1^0$ via an off-shell slepton and the $L_\alpha L_\beta E_\alpha^{\rm c}$ operator. \\
@@ -151,19 +149,19 @@ $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv. & MSSM+RPV. LLP is bino ($\tilde \
  \hline
 Decay Mode & Simplified Model Library Process \\
 \hline\hline
-$X\rightarrow \gamma\gamma$ & MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
+$X\rightarrow \gamma\gamma$ & (N)MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
 &  Then, $a\rightarrow\gamma\gamma$. \\
 \hline
 $X\rightarrow \gamma\gamma$+inv. & MSSM. LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.    \\
 &  Then,  $\tilde\chi_2^0\rightarrow\tilde\chi_1^0\gamma\gamma$ via an off-shell SM Higgs. \\
 \hline
-$X\rightarrow jj$ & MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
+$X\rightarrow jj$ & (N)MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
 &  Then, $a\rightarrow jj$. \\
 \hline
 $X\rightarrow jj$+inv.& MSSM. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
 &  Then, $\tilde\chi_2^0\rightarrow jj\tilde\chi_1^0$  via an  off-shell  squark.\\
 \hline
-$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
+$X\rightarrow \ell_\alpha^+\ell_\alpha^-$ & (N)MSSM. LLP is the lightest pseudoscalar Higgs ($a$)   produced via $pp\rightarrow h$, $h\rightarrow aa$.    \\
 &  Then, $a\rightarrow\ell_\alpha^+\ell_\alpha^-$. \\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & MSSM.  LLP is the second neutralino  ($\tilde\chi_2^0$)   produced via $pp\rightarrow h$, $h\rightarrow \tilde\chi_2^0\tilde\chi_2^0$.   \\
@@ -231,7 +229,7 @@ $X\rightarrow \ell_\alpha^+jj$ & MSSM+RPV. LLP is the second neutralino ($\tilde
 
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\beta^-$+inv. & MSSM+RPV. LLP is the second neutralino ($\tilde\chi_2^0$) that is produced via $pp\rightarrow h $,  \\
-& $h\rightarrow \tilde\chi_2^0\tilde\chi_1^0$.  Then, $N\rightarrow \ell_\alpha^+\ell_\beta^-\nu_\sigma$  via the RPV operator $L_\beta  L_\sigma E^{\rm c}_\alpha$.\\
+& $h\rightarrow \tilde\chi_2^0\tilde\chi_1^0$.  Then, $\tilde\chi_2^0\rightarrow \ell_\alpha^+\ell_\beta^-\nu_\sigma$  via the RPV operator $L_\beta  L_\sigma E^{\rm c}_\alpha$.\\
 
 \hline
 \end{tabular}
@@ -258,11 +256,14 @@ $X\rightarrow \ell_\alpha^+\ell_\alpha^-$ &  DMSM. LLP is scalar $s_2$, produced
 & $s_2 \rightarrow \ell_\alpha^+\ell_\alpha^-$ couplings are proportional to SM Yukawa couplings.\\
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. &   DMSM. LLP is fermion $x_2$, produced via $p p \rightarrow Z' \rightarrow x_2 x_2$, then $x_2 \rightarrow \ell_\alpha^+\ell_\alpha^- x_1$.\\
+\hline
+$X\rightarrow \ell_\alpha^+jj$. &   LRSM. LLP is fermion $\nu_{\rm R}$, produced via $p p \rightarrow Z/Z'/h \rightarrow \nu_{\rm R}\nu_{\rm R}$, then $\nu_{\rm R} \rightarrow \ell_\alpha^+jj$\\
+&  via off-shell $W/W'$.\\
 
 \hline
 \end{tabular}
 \end{center}
-\caption{Simplified model library process proposals for $Z'$ (ZP) production mode where the $Z'$ decays to two LLPs. For this section, we use a DM simplified model, where fermion $x_2$ is the LLP for $X \rightarrow SM +$ inv modes and scalar $s_2$ is the LLP for $X \rightarrow SM$ modes. The same models can also be used for off-shell $Z'$ where $M_X > M_{Z'}/2$. The model file includes all processes in the table; the undesired couplings can be set to zero and energy scales to be very large. }\label{tab:Zp_neutral_library}
+\caption{Simplified model library process proposals for $Z'$ (ZP) production mode where the $Z'$ decays to two LLPs. For this section, we mostly use a DM simplified model, where fermion $x_2$ is the LLP for $X \rightarrow SM +$ inv modes and scalar $s_2$ is the LLP for $X \rightarrow SM$ modes. The same models can also be used for off-shell $Z'$ where $M_X > M_{Z'}/2$. The model file includes all processes in the table; the undesired couplings can be set to zero and energy scales to be very large. The final entry uses a left-right symmetric model; the mass of the intermediate $Z/Z'/h$ can be  changed to simulate the desired decay kinematics.}\label{tab:Zp_neutral_library}
 \end{table}
 %
 \begin{table}
@@ -288,7 +289,7 @@ $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. &   DMSM. LLP is fermion $x_2$, p
 \hline
 \end{tabular}
 \end{center}
-\caption{Simplified model library process proposals for $Z'$ (ZP) production mode where the $Z'$ decays to two LLPs plus invisible. For this section, we  use a DM simplified model, where the $Z'$ decays into $x_3 x_3$, and $x_3$ then decays into the LLP (fermion $x_2$ for SM+inv decay mode or scalar $s_2$ for SM decay mode), plus invisible (scalar $s_1$ or fermion $x_1$ respectively).  The same models can also be used for off-shell $Z'$ where $M_X > M_{Z'}/2$. As before, one model file includes all processes in the table.}\label{tab:Zp_inv_neutral_library}
+\caption{Simplified model library process proposals for $Z'$ (ZP) production mode where the $Z'$ decays to two LLPs plus invisible. For this section, we  use a DM simplified model, where the $Z'$ decays into $x_3 x_3$, and $x_3$ then decays into the LLP (fermion $x_2$ for SM+inv decay mode or scalar $s_2$ for SM decay mode), plus invisible (scalar $s_1$ or fermion $x_1$ respectively).  The same models can also be used for off-shell $Z'$ where $M_X > M_{Z'}/2$. One model file (DMSM) includes all processes in the table.}\label{tab:Zp_inv_neutral_library}
 \end{table}
 
 \begin{table}
@@ -305,11 +306,14 @@ $X\rightarrow jj$+inv.& DMSM. LLP is fermion $x_2$, produced via $p p \rightarro
 \hline
 $X\rightarrow \ell_\alpha^+\ell_\alpha^-$+inv. & DMSM. LLP is fermion $x_2$, produced via $p p \rightarrow Z' \rightarrow x_1 x_2$, then $ x_2 \rightarrow \ell^+ \ell^- x_1$;\\
 &or a scalar $s_2$, produced via $p p \rightarrow Z' \rightarrow s_1 s_2$, then $s_2 \rightarrow \ell^+ \ell^-$. \\
+\hline
+$X\rightarrow \ell_\alpha^+jj$ & LRSM. LLP is fermion $\nu_{\rm R}$, produced via $p p \rightarrow Z/Z'/h \rightarrow \bar\nu_{\rm L} \nu_{\rm R}$, then $ \nu_{\rm R} \rightarrow \ell^+ jj$.\\
+
 
 \hline
 \end{tabular}
 \end{center}
-\caption{Simplified model library process proposals for $Z/Z'$ (ZP) production mode where the $Z'$ decays to single LLP plus invisible. For this section, we use a DM simplified model, where the $Z'$ couples to an $x_1\, x_2$ or $s_1\, s_2$ pair. $x_1$ and $s_1$ behave as DM, the LLP $x_2$ decays into $x_1+SM$, and the LLP $s_2$ decays into $SM$. The model file again includes all processes in the table.}\label{tab:Zp_single_neutral_library}
+\caption{Simplified model library process proposals for $Z/Z'$ (ZP) production mode where the $Z'$ decays to single LLP plus invisible. For this section, we use a DM simplified model, where the $Z'$ couples to an $x_1\, x_2$ or $s_1\, s_2$ pair. $x_1$ and $s_1$ behave as DM, the LLP $x_2$ decays into $x_1+SM$, and the LLP $s_2$ decays into $SM$. The DMSM model file again includes all processes in the table except for the last, which is LRSM.}\label{tab:Zp_single_neutral_library}
 \end{table}
 
 \begin{table}
