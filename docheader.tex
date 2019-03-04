@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[svgnames]{xcolor}
 \usepackage{hyperref}
+\usepackage[english]{babel}
 %\usepackage{lineno}
 \usepackage{epstopdf}
 \usepackage{minitoc}
@@ -87,6 +88,12 @@
   \end{fullwidth}
 }
 \newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage}
+
+% Modify table of contents depth dynamically
+\newcommand{\changelocalminitocdepth}[1]{%
+  \addtocontents{toc}{\protect\setcounter{minitocdepth}{#1}}%
+  \setcounter{minitocdepth}{#1}%
+}
 
 \usepackage{etex}
 \usepackage{multirow,mdwlist}
