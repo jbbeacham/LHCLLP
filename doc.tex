@@ -1,13 +1,10 @@
-%\documentclass[a4paper,notitlepage,nobib,debug]{tufte-book}
 \documentclass[a4paper,notitlepage,nobib]{tufte-book}
 \input{docheader}
 \usepackage{lineno}
-%\linenumbers
 
 \makeatletter
 \title{Searching for long-lived particles beyond the Standard Model \\ \noindent at the Large Hadron Collider}
 
-% \\ \smallskip \noindent at CERN}
 \author{LHC LLP Community}
 \date{\today}
 \usepackage{marginfix}
@@ -28,7 +25,6 @@
   \@tufte@orig@endfloat
 }
 
-
 % consistent symbols throughout document
 \input symbols.tex
 
@@ -39,14 +35,6 @@
 \addbibresource{recast-bib.bib}
 \addbibresource{showers.bib}
 
-%\makeatletter
-%\fancypagestyle{mystyle}{%
-%\fancyhf{}%
-%\fancyhead[LE]{\thepage\quad\smallcaps{LHC LLP Community}}% 
-%\fancyhead[RO]{\smallcaps{Searches for Long-Lived Particles Beyond the SM at the LHC}\quad\thepage}%
-%}
-%\makeatother
-
 \begin{document}
 
 %\morefloats
@@ -54,17 +42,10 @@
 
 \input{frontmatter.tex}
 
-
 \setcounter{tocdepth}{1}
 \setcounter{minitocdepth}{3}
 \dominitoc
 \tableofcontents
-
-%\pagebreak
-
-
-
-%\pagestyle{mystyle}
 
 \chapter{Introduction}
 \label{sec:Introduction}
