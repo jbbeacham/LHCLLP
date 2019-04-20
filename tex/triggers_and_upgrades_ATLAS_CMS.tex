@@ -14,7 +14,6 @@ To meet the challenges of the HL-LHC operating conditions, and to fully profit f
 
 \subsubsection{Tracker} \label{sec:upgradetracker}
 
-
 By the start of the HL-LHC, the inner trackers of both experiments must be replaced due to the significant radiation damage and performance degradation they have suffered. To maintain tracking performance in the high-density environment, and to cope with the increase of approximately a factor of ten in the integrated radiation dose, both the ATLAS and CMS experiments will entirely replace their inner tracking detectors.
 
 \paragraph{CMS Upgrade}
@@ -55,7 +54,6 @@ The muon system will be upgraded at both experiments to meet HL-LHC conditions, 
 For the CMS detector, its current muon system consists of three different types of muon detectors. In the barrel region, drift tubes (DTs) are installed along with resistive plate chambers (RPCs). In the endcaps, there are cathode strip chambers (CSCs) together with RPCs. At the HL-LHC, the existing muon detectors will be improved with upgraded electronics to enable $40$~MHz readout, as well as improve the timing resolution from the current $12.5$~ns to $1$~ns~\cite{Lourenco:2283189}. New muon detectors, namely gas electron multipliers (GEMs) and a new version of RPCs, will be added to the endcaps, covering the regions of $1.6<|\eta|<2.4$. Additional muon chambers, labeled ME0, will cover the very forward regions of $2.4<|\eta|<2.8$, a region also covered by the upgraded inner tracker. This will be used for the muon trigger at L1. The additional muon detectors are essential to achieve a high trigger efficiency with an acceptable rate, especially in the forward region. The additional hits in the new endcap muon stations, combined with improved algorithms, permit efficient triggering on displaced muon tracks even in the harsh environment of the HL-LHC.
 
 \paragraph{ATLAS Upgrade}
-
 
 Most of the front-end and detector readout of the ATLAS muon system, including the trigger electronics for the Resistive Plate Chambers (RPC), Thin Gap Chambers (TGC), and Monitored Drift Tube (MDT) chambers, will be replaced to face the higher trigger rates and longer latencies necessary for the new Level-0 (L0) trigger required by the HL-LHC conditions. The MDT chambers will be integrated into the L0 trigger in order to sharpen the momentum threshold. Some of the MDT chambers in the inner barrel layer will be replaced with new, small-diameter MDTs. Additional RPC chambers will be installed in the inner barrel layer to increase the acceptance and robustness of the trigger, and some chambers in high-rate regions will be refurbished. New TGC triplet chambers in the barrel--endcap transition region will replace the current TGC doublets to suppress the high trigger rate from random coincidences in this region. The electronics of all the sub-detectors will need to be replaced due to obsolescence, aging, and radiation damage. During the Phase 1 upgrade (to take place from 2019 to 2021) the New Small Wheel (NSW) chambers will replace the Cathode Strip Chambers (CSC) and the MDT chambers of the innermost endcap wheel by Micromegas and small-strip TGCs. The replacement of the MDT front-end readout will address the trigger rate and latency requirements of the TDAQ system in Phase 2 and allow the use of MDT hit information to improve the muon $\pt$ resolution in the L0 trigger. Additionally, in the upgraded detector all data from the barrel and endcap detectors will be transmitted to FPGAs  at L0, which can be used to implement more advanced and flexible algorithms for muon reconstruction, including the use of neural networks and/or dedicated tracking for non-pointing muons \cite{Collaboration:2285584}.
 
@@ -168,7 +166,6 @@ Because of HLT time constraints, a parallelization of the algorithms is already 
 
 \subsubsection{ATLAS Performance}
 
-
 Excellent tracking performance is also expected with the Inner Tracker (ITk) upgrade of the ATLAS experiment for the HL-LHC era.
 The left panel of Figure~\ref{fig:atlastrackeff} shows the track reconstruction efficiency for jets in $Z'\to\bar{t}t$ events with 200 pile-up for different $\eta$ ranges. The right panel of Figure~\ref{fig:atlastrackeff} shows the fake rate for reconstructed tracks in $t\bar t$ events, and there is clearly substantial improvement over the Run 2 detector performance along with the improved coverage in the forward region.
 
@@ -181,11 +178,8 @@ The left panel of Figure~\ref{fig:atlastrackeff} shows the track reconstruction 
 \end{center}
 \end{figure}
 
-
 In Figure~\ref{fig:atlastrackres}, the resolution of the transverse momentum and the longitudinal impact parameter for single muons with various $\pt$ values is shown as a function of the pseudorapidity both with the current
 detector and projections for after the HL-LHC upgrade using digital clustering to find the tracks. The improvement is even more marked with analogue clustering:~the transverse and longitudinal impact parameter resolutions are shown for different pixel pitches in Figure~\ref{fig:atlastrackanalog}.
-
-
 
 \begin{figure}[t]
 \begin{center}
@@ -284,7 +278,6 @@ Possible improvements for this trigger proposal in the $\beta$ measurement could
 
 \subsubsection{Displaced Muons in CMS}
 
-
 Many BSM theories predict particle decays with displaced muon or muon pairs in its final state, such as dark SUSY and GMSB with smuons.
 In order to demonstrate the physics potential of displaced muons at the HL-LHC with the CMS detector,
 a particular SUSY model is selected where the displaced signature consists of a dimuon final state emerging from the decay of heavy sparticles (smuons).
@@ -300,7 +293,6 @@ as shown in Figure~\ref{fig:perfDisplaced} (left). Figure~\ref{fig:perfDisplaced
 compares the number of hits created by these displaced muons in the CMS muon system in Phase 2 and the current CMS detector.
 The hits plotted here are those associated with the displaced stand-alone muon tracks, which is a muon track reconstruction
 algorithm specifically designed for displaced muons that can only be reconstructed in the muon system~\cite{CMS-DP-2015-015}.
-
 
 \begin{figure}[t]\begin{center}
 \includegraphics[width=0.47\textwidth]{figures/Stage0h1_0_d0_smuon_daughter}
@@ -331,7 +323,6 @@ versus muon $\pt$ threshold for the barrel displaced muon algorithm~\cite{Louren
   \label{fig:cmsL1mu}
 \end{center}
 \end{figure}
-
 
 \paragraph{Reconstruction}
 
@@ -369,7 +360,6 @@ Similarly, the discovery sensitivity is assessed assuming that a signal is prese
 \end{center}
 \end{figure}
 
-
 \paragraph{Sensitivity Projection with a Dark SUSY Model}
 The analysis presented above was reinterpreted using a Dark SUSY model (\cite{Baumgart:2009tn,Falkowski:2010cm}), in which an additional dark $U_D(1)$ symmetry is added as a supersymmetric SM extension. Breaking this symmetry gives rise to an additional massive boson, the so-called dark photon ($\gamma_D$), which couples to SM particles via a small kinetic mixing parameter $\epsilon$. If $\epsilon$ is very weak, the lifetime of the dark photon can range from a few millimeters up to several meters. The lower $\epsilon$, the longer is the dark photon lifetime which then decays displaced from the primary vertex. A golden channel for such searches is the decay to displaced muons.
 
@@ -404,8 +394,6 @@ The event yield after full event selection of both selected muons as a function 
 \end{center}
 \end{figure}
 
-
-%%% Sensitivity in exclusion and discovery
 The search is performed using a simple counting experiment approach. In presence of the expected signal, significance of the corresponding event excess over the expected background is assessed using the likelihood method.
 In order to evaluate the discovery sensitivity the same input is used as in the limit calculation, now with the assumption that one would have such a signal in the data. The discovery sensitivity is shown in the two-dimensional $m_{\gamma_D}$-$c\tau$ plane in the right panel of Figure~\ref{fig:DarkPhoton_Distr_Disc}. This search is sensitive to large decay length of the dark photon.
 
@@ -413,8 +401,6 @@ In absence of a signal, upper limits at $95\%$ C.L. are obtained on a signal
 event yield with respect to the one expected for the considered model. A Bayesian method with a uniform prior for the signal event rate is used and the nuisance
 parameters associated with the systematic uncertainties are modeled with log-normal distributions.
 The resulting limits for the Dark SUSY models are depicted in Figure \ref{fig:NewCompLimit_DarkPhoton}. While the results shown in the left panel of Figure~\ref{fig:NewCompLimit_DarkPhoton} are for a dark photon with a decay length of $1~\mathrm{m}$ as a function of the dark photon mass, the right panel of Figure~\ref{fig:NewCompLimit_DarkPhoton} shows the results for a dark photon mass of $20~\mathrm{GeV}$ as a function of the decay length~\cite{CMS-PAS-FTR-18-002}.
-
-
 
 \begin{figure}[hbtp]
 \begin{center}
@@ -425,9 +411,7 @@ The resulting limits for the Dark SUSY models are depicted in Figure \ref{fig:Ne
 \end{center}
 \end{figure}
 
-
 \subsubsection{Displaced Photons at CMS}
-
 
 A number of new physics scenarios predict new particles that, upon decay, result in displaced photons in the final state (see Section~\ref{sec:proposal} and Section~\ref{subsec:dphotons}). At the CMS experiment, with the scintillating crystal design of the ECAL that provides excellent resolution but lacks pointing capability, the photon arrival time in the ECAL is the main observable used to distinguish signal from background in displaced photon searches.
 
@@ -451,7 +435,6 @@ In Figure~\ref{fig:cmsupgrade_photon} (right), the analysis sensitivity in terms
 
 \subsubsection{Displaced Jets in ATLAS}
 
-
 Neutral long-lived particles that can decay into jets displaced from the proton-proton interaction point arise in many BSM theories (see Chapter~\ref{sec:simplifiedmodel} for an extensive discussion). For example, in hidden sector models a new set of particles and forces is proposed that is weakly coupled to the SM via a communicator particle. The hidden sector is otherwise invisible to the SM sector, but its particles (some of which can be long-lived) may decay to SM particles via the communicator. The lifetimes of these LLPs are typically unconstrained and could be long enough for the LLPs to decay inside the ATLAS detector volume. Such particles produce unique signatures which may have been overlooked by more traditional searches for new physics. One ATLAS search for such displaced jet signatures focuses on LLPs which decay in the ATLAS hadronic calorimeter (HCal) and consequently deposit most of their energy there and very little or none in the electromagnetic calorimeter, and also have few or no charged tracks pointing at the hadronic energy deposits. A signature-driven trigger that optimizes the acceptance for this class of events is required for the online selection.
 
 The existing ATLAS analysis described in Section~\ref{subsec:djets} can likely be improved by planned upgrades by using HCal information splitting the B-C layers in the calorimeter to identify the LLP decay position. 
@@ -470,7 +453,6 @@ Background processes, dominated by QCD dijet production, are suppressed in this 
 \label{fig:Caloratio}
 \end{center}
 \end{figure}
-
 
 \subsubsection{Disappearing Tracks}
 
@@ -548,9 +530,6 @@ Resolution for the reconstruction of the LLP mass in the Higgsino scenario outli
 \end{center}
 \end{figure}
 
-%\noindent {\bf \textcolor{red}{[JB: Can we add a brief, unambiguous statement about whether the upgrade will provide improvement?]}}
-
-
 \paragraph{Possible Improvement to LLPs Searches in General Using Timing Information}
 
 Precision timing at CMS will provide a new tool to suppress the background and enhance the reach for LLPs in the HL-LHC era.
@@ -590,11 +569,9 @@ The background from the pile-up requires the coincidence of a triggered hard eve
 \eeq
 Similar to Eq.~\ref{eq:bkgSV}, $\delta^{\rm PU}_t$ is the timing resolution for the PU background, dominated by the beam spread. The key difference between the background from the pile-up and the background from the same hard collision is that the typical time spread is determined by the beam property for the former, and by the timing resolution for the latter. They typically differ by a factor of a few, e.g., 190~ps versus 30~ps for CMS with the current upgrade plan.
 
-
 Using this estimation, a sensitivity projection is presented with an example signal of a Higgs boson decaying to LLPs with the subsequent decay of the LLPs into $b \bar b$ pairs, with only minimal requirements of one low-$\pt$ ISR jet, with $p_{\rm T,j} > 30$~GeV and $|\eta_j| < 2.5$, and at least one LLP decay inside the detector. Timing information is used to suppress backgrounds. The $95\%$ C.L. sensitivity is shown in Figure~\ref{fig:ctaulimitHiggs}. The decay branching ratio of the LLP $X \to j j$ is assumed to be $100\%$. The projection with $30$~ps timing resolution of the CMS MTD is plotted with thick dashed lines. Compared to other 13 TeV HL-LHC projections (with $3 ~\text{ab}^{-1}$ of integrated luminosity) without the timing information (shown in thinner, dotted and dashed lines), it is suggested that the addition of a selection on timing, under the set of assumptions described above, greatly reduces background and improves sensitivity. The possibility of such a significant improvement is enticing; this projection is determined from theoretical studies~\cite{Liu:2018wte}, however, and it remains to be seen whether it is possible to realize these gains in the experiment. For example, the low threshold of the single jet would require timing information at early levels of the trigger, and out-of-time backgrounds could also reduce the gains from timing information. Nevertheless, this high-level theory analysis provides an inspiration to the experimental collaborations to perform more detailed, internal studies that will ultimately determine how realistic the projections are.
 
 In general, the prospect of improvements in LLP searches at the HL-LHC due to precision timing upgrades for CMS (and ATLAS) remains understudied, and deserves more comprehensive experimental and phenomenological studies, including understanding and reducing out-of-time backgrounds.
-
 
 \begin{figure}[ht]
     \centering
@@ -610,8 +587,6 @@ As discussed in Section~\ref{sec:upgrademachine}, a central feature of the CMS u
 To illustrate the case, a simple toy simulation to study rare Higgs boson decays into new particles with lifetimes of order of a few mm has been performed~\cite{Gershtein:2017tsv}. This study considers all-hadronic final states with low $H_T$, taking SM Higgs boson decays into four jets as an example. Theoretical motivation to look for such decays is very strong; see Section~\ref{sec:motivated_theories} for a detailed discussion. In particular, there is currently
 a blind spot for lifetimes of order 1 cm in searches for new long-lived scalars
 in Higgs decays, i.e. \ensuremath{h \to \phi\phi}\xspace. The goal is to probe very small branching fractions of the Higgs boson, so for this study, $BR[h\rightarrow\phi\phi\rightarrow 4q] = 10^{-5}$ is assumed. For prompt decays, the background is overwhelming, but if the $\phi$ has $c\tau$ of a few mm, the offline analysis has very low backgrounds. The problem is getting such events on tape, in particular through L1. This toy study estimates how an off-pointing track reconstruction at L1 can help. To estimate the efficacy of the approach, the resulting projections are compared with the best alternatives in the absence of an off-pointing track trigger, by using associated Higgs boson production with a $W$ boson that decays leptonically to pass a lepton trigger, or considering L1 calorimeter jets with no associated prompt tracks.
-
-%FTR-18-018
 
 Once these positive results were obtained, a more detailed study using the full
 Phase 2 simulation of the CMS detector was performed~\cite{CMS:2018qgk}.
@@ -630,8 +605,6 @@ The authors propose a simple jet clustering algorithm implementable in firmware,
 as produced by \textsc{FastJet}\xspace~\cite{Cacciari:2011ma}. This simple algorithm produces a similar performance, in both L1 trigger efficiency and rate,
 to the full jet clustering using the anti-\ensuremath{k_t}\xspace algorithm.
 
-
-%Displaced track finding
 Then, the performance of an algorithm for reconstruction of tracks with non-zero impact parameter is presented. This approach extends the baseline CMS L1 Track Trigger design to
 handle tracks with non-zero impact parameter and to include the impact parameter in the track fit. This enhanced design is feasible without greatly altering the track finding approach, but will
 require more FPGA computational power than the current proposal, which only considers only prompt tracks. Tracks passing the selection are clustered using the same algorithm as described above,
@@ -645,7 +618,6 @@ reconstructs tracks in $|\eta|<1.0$. To scale the efficiency for finding track j
 $|\eta|<2.4$ range, a scale factor based on efficiency in the full $\eta$ range and the central $\eta$ range was used. The scale factor
 was comparable to the increase in L1 rate.
 
-%Results
 Figure \ref{fig:reff_dispextra} shows the expected trigger rate as a function of efficiency for the SM and the heavy SM-like Higgs bosons.
 
 \begin{figure}[hbtp]
@@ -676,7 +648,6 @@ are even larger for the events with larger $H_T$, as demonstrated by the simulat
 
 \subsection{Open Questions and New Ideas}\label{sec:upgradeideas}
 
-
 The higher data rate and more powerful machinery in the high-luminosity era bring new prospects to LLP searches. Searches that are too challenging for the current machine may become feasible with the HL-LHC upgrades, and it is important to explore such possibilities to the full extent. Existing search methods, triggering, and reconstruction algorithms should also be updated to take full advantage of the new hardware capabilities. As the upgrade scope is being defined and finalized in the near future, it is of particular importance to evaluate the physics cases, which will also motivate the upgrade and inform its designs.
 
 \subsubsection{New Studies for the HL-LHC}
@@ -704,7 +675,7 @@ pp  &\to&   X +  \mathrm{DM}+\mathrm{DM}^*   \nonumber \\     &\to&  X + \mathrm
 \end{eqnarray}
 where $X$ is any state that can be used to trigger on the event and reconstruct $\slashed{E}_{\rm T}$, such as an ISR jet, and $Y$ depends on the mode by which DM couples inelastically to the SM.
 
-One concrete, representative version of such models can be realized when the mediator is a dark photon and $Y$ is a pair of leptons. The weak coupling between the SM and the hidden sector suggest the heavy eigenstate is meta-stable, creating a displaced signature. Because the mass splitting is small between the two eigenstates, the lepton pair is also typically softer compared with GMSB models, with $\pt$ values of a few to tens of GeV for a $O(10\,\,\mathrm{GeV})$ DM. The displaced muon trigger and reconstruction strategy with the muon system upgrade at CMS can likely improve searches for this scenario. The soft $\pt$ spectrum in this case particularly motivates the lowering of the $\pt$ threshold in the displaced muon trigger turn-on. Moreover, the additional timing information from the fast-timing detector opens up the possibility of reconstructing the mass splitting, while taking advantage of the good resolution of the timing detector for even low-$\pt$ particles. Sensitivity studies for iDM with a dark photon mediator are planned for the CMS MTD upgrade. The projections will also be of value to searches for other types of dark sector models, such as self-interacting dark matter~\cite{Hochberg:2014dra}, that give rise to soft displaced lepton pairs. %{\bf \textcolor{red}{[JB: Can our ATLAS colleagues add a similar discussion about their upgrade potential here?]}}
+One concrete, representative version of such models can be realized when the mediator is a dark photon and $Y$ is a pair of leptons. The weak coupling between the SM and the hidden sector suggest the heavy eigenstate is meta-stable, creating a displaced signature. Because the mass splitting is small between the two eigenstates, the lepton pair is also typically softer compared with GMSB models, with $\pt$ values of a few to tens of GeV for a $O(10\,\,\mathrm{GeV})$ DM. The displaced muon trigger and reconstruction strategy with the muon system upgrade at CMS can likely improve searches for this scenario. The soft $\pt$ spectrum in this case particularly motivates the lowering of the $\pt$ threshold in the displaced muon trigger turn-on. Moreover, the additional timing information from the fast-timing detector opens up the possibility of reconstructing the mass splitting, while taking advantage of the good resolution of the timing detector for even low-$\pt$ particles. Sensitivity studies for iDM with a dark photon mediator are planned for the CMS MTD upgrade. The projections will also be of value to searches for other types of dark sector models, such as self-interacting dark matter~\cite{Hochberg:2014dra}, that give rise to soft displaced lepton pairs.
 
 \item \textbf{Dark showers}
 
@@ -729,18 +700,10 @@ As discussed in Section~\ref{sec:upgradesearch}, by using a prompt object, such 
 While this study is optimistic in assuming that selections on timing can eliminate all backgrounds to the LLP search, it nevertheless serves as important inspiration for more detailed experimental studies to understand the actual extent of the sensitivity gain. The LLP efficiency is largely unaffected by this change, while low-mass LLPs lose sensitivity by a factor of a few.
 
 The CMS MTD timing upgrade for the HL-LHC already provides significant improvement~\cite{Liu:2018wte}. The timing detector outside the ATLAS muon system has the notable benefits of lower background, a larger volume for the LLP to decay and more substantial time delay for the LLP signal due to longer travel distance.
-%As an estimate of the best achievable sensitivity, given that the muon system is an ideal place to look for LLPs at the LHC, we have also considered a hypothetical timing layer outside of the ATLAS MS. We found robust enhanced sensitivity to LLPs at MS using the timing information.
 Moreover, due to the extended time delay of the LLPs in the volume of the muon system, less-precise timing can still achieve similar physics goals.  As a result, with the above caveats it can serve as an estimate of the best achievable sensitivity using timing information in LLP searches.
 
 \item \textbf{New double-sided tracking layer very close to the beamline}
 
 Inspired by the L1 track trigger design at CMS for the HL-LHC, a scenario may be imagined where an additional tracking layer close to the beamline is added, mechanics and radiation hardness permitting. This would allow a track veto close to the IP to be implemented, and extend the LLP sensitivity to even smaller displacements. Moreover, if such a layer can be designed with double-sided modules, similar to the CMS outer tracker approach for the HL-LHC, hit pairs (stubs) from this layer can be used in a L1 track trigger for displaced tracks or disappearing tracks. The feasibility of such an approach would depend on the ability to store and process data at a rate not allowed by current technology. On the other hand, it is helpful to consider more innovative data-scouting methods at trigger level to store and select information, or introduce additional discriminating factors to reduce the rate for particular data streams, for the potential of exploring such signatures.
-
-%\item \textbf{Additional layer of lead between the ATLAS calorimetry and the muon system to veto punch-through jets}
-
-%Outcome of A. Hass, D. Curtin, and J. Beacham project at LBL workshop, summer 2018.
-
-%\item \textbf{More blue-sky ideas}: TBA
-
 
 \end{itemize}

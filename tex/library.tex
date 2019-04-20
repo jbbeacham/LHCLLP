@@ -19,7 +19,6 @@ There are essentially two possible pipelines to simulate LLP events with the lib
 %
 In the final version of the library, we aim to provide example cards to direct the production and decay of LLPs in both pipelines. Note that in all of the simplified model proposals below, any particles \emph{not} present in the production or decay chain should have their masses set to a very large value ($M\gtrsim5$ TeV) to ensure they are sufficiently decoupled from direct production at the LHC.
 
-
 Currently, we only provide simplified model libraries for neutral LLPs. The simplified models for LLPs with electric or color charges are equally compelling, but their simulation is more subtle. In particular, the simulation of the propagation and decay of the LLPs are more challenging if the LLP carries a SM gauge charge. Such effects can be included in detector simulations using GEANT4 \cite{Agostinelli:2002hh}, but decay processes typically need to be hard-coded into GEANT or otherwise interfaced with other MC programs. This is an important issue for the community to address, as discussed in Sections \ref{sec:EMcharge}-\ref{sec:coloredLLPs}. Without implementing the decays, it is straightforward to use the SUSY model to simulate the production of any of the electrically or color charged LLPs.
 
 Finally, we note that there is not currently a set of minimal simplified models to cover dark showers. However, we are collecting models used in studies of dark showers that could potentially be helpful for experimentalists and theorists alike. The existing models are included in the library, along with a very brief description in Section~\ref{sec:darkshowerslibrary}.
@@ -30,7 +29,6 @@ The instructions for simulating the simplified model channels for neutral LLPs a
 
 We begin by presenting the simplified model library instructions for Double Pair Production (DPP) in Table \ref{tab:DPP_neutral_library}, Heavy Parent (HP, QCD-charged parent) in Table \ref{tab:HP_QCD_neutral_library}. We then proceed to the Higgs (HIG) production modes in Tables \ref{tab:Higgs_neutral_library}-\ref{tab:Higgs_single_neutral_library}. For the $Z'$ (ZP) production modes, we use a set of simplified models described in Tables \ref{tab:Zp_neutral_library}-\ref{tab:Zp_single_neutral_library}. 
 A relatively simple model file is provided for each table. In addition, a more adjustable `advanced' model file is provided which includes all ZP production and decay modes, and allows for features such as individual couplings to each generation of quarks. This comes at the cost of a greatly increased set of parameters, and the possibility of including unwanted diagrams if the process is not carefully specified. A simple python script is provided to generate the processes and set unwanted parameters to zero for those users wishing to use the advanced model files.
-
 
 Finally, we provide instructions for the charged-current (CC) production modes in Table \ref{tab:CC_neutral_library}. This production mode is most easily simulated using a left-right symmetric model or other right-handed-neutrino model.
 
@@ -46,8 +44,6 @@ $X\rightarrow \gamma+$inv. & MSSM+GMSB. LLP is a bino $(\tilde\chi^0)$ produced 
 $X\rightarrow jj$& MSSM+RPV. LLP is sneutrino LSP $(\tilde\nu)$ that is pair-produced via weak gauge interactions.  \\
 & $\tilde\nu \rightarrow q\bar q$  via the $QLd^{\rm c}$ operator.\\
 \hline
-%$X\rightarrow jj$+inv.& MSSM+split SUSY. LLP is wino LSP $\tilde\chi^0$ that is pair-produced via weak gauge interactions.  \\
-%&  $\tilde\chi^0\rightarrow q\bar{q}\nu$  via an off-shell sfermion and the  $QLd^{\rm c}$ operator.\\
 $X\rightarrow jj$+inv.& MSSM. LLP is second neutralino (wino) LSP $\tilde\chi_2^0$ that is pair-produced via   \\
 &  weak gauge interactions. $\tilde\chi_2^0\rightarrow q\bar{q}\tilde\chi_1^0$  via an off-shell sfermion, and the $\tilde\chi_1^0$ is invisible  \\
 & with arbitrary mass.\\

@@ -4,7 +4,6 @@
 \text{ \; }\\
 \text{ \; }\\
 
-
 \noindent Long-lived particles (LLPs) arise in many well-motivated theories of physics beyond the SM, ranging from  heavily studied scenarios such as the minimal supersymmetric SM (MSSM)~\cite{Fayet:1976et,Fayet:1977yc,Farrar:1978xj,Fayet:1979sa,Dimopoulos:1981zb} to newer theoretical frameworks such as neutral naturalness~\cite{Chacko:2005pe,Burdman:2006tz,Cai:2008au} and hidden sector dark matter~\cite{Boehm:2002yz,Boehm:2003ha,Pospelov:2007mp,Pospelov:2008zw,ArkaniHamed:2008qn,Pospelov:2008jd}.
 Macroscopic decay lengths of new particles naturally arise from the presence and breaking of symmetries, which can be motivated by cosmology (such as dark matter and baryogenesis)~\cite{Bouquet:1986mq,Campbell:1990fa,Cui:2012jh,Barry:2013nva,Cui:2014twa,Cui:2015eba,Ipek:2016bpf,Feng:2008ya,Baumgart:2009tn,Kaplan:2009ag,Chan:2011aa,Dienes:2011ja,Dienes:2012yz,Kim:2013ivd}, neutrino masses~\cite{Fidalgo:2009dm,Ghosh:2012pq,Helo:2013esa,Antusch:2016vyf,Graesser:2007yj,Graesser:2007pc,Ghosh:2014rha,Izaguirre:2015pga,Maiezza:2015lza,Batell:2016zod,Lara:2018rwv,Cottin:2018kmq,Nemevsek:2018bbt,Curtin:2018ees}, as well as solutions to the hierarchy problem~\cite{Giudice:1998bp,Burdman:2006tz,Cai:2008au,Chacko:2005pe,Fan:2011yu,Barbier:2004ez,Csaki:2013jza,Arvanitaki:2012ps,ArkaniHamed:2012gw}; indeed, LLPs are generically a prediction of new hidden sectors at and below the weak scale~\cite{Chen:1995yu,Thomas:1998wy,Feng:1999fu,Strassler:2006im,Strassler:2006ri,Strassler:2006qa,Han:2007ae,Strassler:2008bv,Strassler:2008fv}. An extensive and encyclopedic compilation of theoretical motivations for LLPs has already been performed for the physics case of the proposed MATHUSLA experiment~\cite{Curtin:2018mvb}, and we refer the reader to this document and the references therein for an in-depth discussion of theoretical motivations for LLPs.
 Given the large number of theories predicting LLPs, however, it is clear that a comprehensive search program for LLPs is critical to fully leverage the LHC's immense capability to illuminate the physics of the weak scale and beyond.
@@ -22,7 +21,6 @@ This framework helps illuminate gaps in coverage and highlight areas where new s
 In our work, we concentrate on establishing an initial basis of simplified models representative of theories giving rise to final states with one or two LLPs~\footnote{Some models predict moderately higher LLP multiplicities, but the coverage of such signatures from 1-2 LLP searches is good provided the LLPs do not overlap in the detector. Our proposed simplified models are not, however, representative of high-multiplicity signatures such as dark showers (see Section~\ref{sec:simplified_future} and Chapter~\ref{sec:showers}).}.
 The simplified model approach is very powerful for LLP signatures:~the typically lower backgrounds for displaced signatures allow searches to be highly inclusive with respect to other objects in the event or the identification of objects originating from the decay of an LLP.
 This enables a single analysis to have sensitivity to a wide variety of models for LLP production and decay.
-
 
 We organize our simplified models in terms of {\bf LLP channels} characterized by a combination of a particular LLP production mode with a particular decay mode.
 Because the production and decay positions of LLPs are physically distinct~\footnote{Indeed, the decay position may be so far from the collision point that external detectors can also be used to search for ultra-long-lived neutral or milli-charged particles~\cite{Pinfold:1181486,Haas:2014dda,Chou:2016lxi,Gligorov:2017nwh,Feng:2017uoz}. }, it is often possible to factorize and consider separately their production and decay~\footnote{In addition to production and decay, a third consideration is the propagation of particles through the detector. While neutral LLPs undergo straightforward propagation, states with electric or color charge (\emph{e.g.}, SUSY $R$-hadrons), or particles with exotic charges such as magnetic monopoles or quirks, typically engage in a more complicated and often very uncertain traverse through the detector. This spoils the factorization of LLP production and decay.  The subtleties related to LLPs with electric or color charge is discussed more in Section~\ref{sec:coloredLLPs}. A trickier question is how to best simulate such states:~since LLPs with electric or color charge interact with the detector material, there must be an interface between the detector simulation software and the program implementing decay. This is discussed further in Section~\ref{sec:geant}.}.
@@ -340,11 +338,9 @@ While the HIG production signatures are best-motivated for the SM-like 125 GeV H
  HP:~slepton pair, $\tilde{\ell}\rightarrow\ell X$ & ${}^\dagger$ & SUSY & SUSY & SUSY & SUSY & SUSY\\
  or chargino pair, $\tilde{\chi}\rightarrow WX$ &&&&&&\\
  \hline 
-% HIG:~$h(h')\rightarrow XX$ & Higgs (DM)  &  & Higgs (DM) &  & Higgs (DM) & \\
  HIG:~$h\rightarrow XX$ & Higgs, DM*  & ${}^\dagger$ & Higgs, DM* & RH$\nu$ & Higgs, DM* &RH$\nu$* \\
   or $\rightarrow XX+\mathrm{inv.}$ &&&&& RH$\nu$* &\\
  \hline 
- %HIG:~$h(h')\rightarrow X+\mathrm{inv.}$ & DM  &  & DM &  & DM & \\
  HIG:~$h\rightarrow X+\mathrm{inv.}$ & DM*, RH$\nu$  & ${}^\dagger$ & DM* & RH$\nu$ & DM* &${}^\dagger$ \\
  \hline
  RES:~$Z(Z')\rightarrow XX$ & $Z'$, DM*  & ${}^\dagger$ & $Z'$, DM* & RH$\nu$ & $Z'$, DM* &$ {}^\dagger$\\
@@ -477,11 +473,6 @@ The modeling of LLP hadronization and propagation is crucial to designing search
 
 Because no $R$-hadrons have been discovered to date and hence their properties cannot be directly measured, $R$-hadron modeling in detector simulations is challenging. We discuss  the challenges of simulating the propagation and decays of  LLPs with color charge in Section~\ref{sec:geant}.
 
-
-
-
-
-
 \section{Proposal for a Simplified Model Library}\label{sec:library}
 
 The simplified models outlined in the above sections provide a common language for theorists and experimentalists to study the sensitivity of existing searches, propose new search ideas, and interpret results in terms of UV models.
@@ -529,8 +520,6 @@ The model contains a whole host of new particles with various gauge charges and 
 Therefore, an MSSM-based model allows for the simulation of many of the simplified model channels.
 In particular, we note that existing UFO variants of the MSSM that include gauge-mediated supersymmetry breaking (GMSB) couplings (including decays to light gravitinos), $R$-parity violation (making unstable the otherwise stable LSPs \cite{Barbier:2004ez,LopezFogliani:2005yw,Ghosh:2017yeh}), and the phenomenological MSSM (pMSSM)~\cite{Djouadi:1998di,Berger:2008cq} already cover most of the SUSY-motivated LLP scenarios. In some cases, the model is modified to give direct couplings between the Higgs states and gluons/photons.
 
-
-
 \item {\bf The Left$-$Right Symmetric Model (LRSM):}~this UFO model is best for simulating UV theories with right-handed neutrinos (RH$\nu$).
 The UFO model supplements the SM by an additional $\mathrm{SU}(2)_{\rm R}$ symmetry, which gives additional charged and neutral gauge bosons.
 The model is available in the simplified models library and contains a right-handed neutrino which is the typical LLP candidate. The LLP  can be produced via SM $W$, $Z$, or via the new gauge and Higgs bosons (both charged and neutral) present in the theory~\footnote{Additional LRSM tools are available at \url{https://sites.google.com/site/leftrighthep/}.}. The LRSM therefore contains many of the charged and neutral current LLP production processes outlined in Section \ref{sec:proposal_neutralLLP}.
@@ -552,7 +541,6 @@ The UFO implementation is from Ref.~\cite{Curtin:2014cca}.
 %
 If additional decay modes are needed beyond those in the specified simplified models, then the library can be updated to include the new couplings mediating the decay.
 Alternatively, the LLPs can be left stable at parton level and decayed in event generators such as Pythia.
-
 
 A detailed list of processes that can be used to simulate each simplified model channel is provided in Appendix~\ref{sec:library_more}.
 The primary purpose of the library is to be used to simulate events for determining acceptances, and, as a result, the signal cross section is not important.
@@ -595,9 +583,6 @@ In scenarios where the quirks carry color charge, the quirks hadronize and can u
 These quirk scenarios can be challenging to model, and no public code exists that allows for the propagation and interaction of quirks with the detector material; we encourage the collaborations to validate and release any internal software they may have to study the propagation of quirks (for more discussion, see the discussion of quirks  in Section~\ref{subsec:funnytracks})~\footnote{Ideally, this software would be well-documented to facilitate sharing between experiments.
 A successful example of readily shareable software between experiments is the G4 package for $R$-hadrons and other particles' interaction with matter, found at~\url{http://r-hadrons.web.cern.ch/r-hadrons/}}.
 
-
-
-
 \section{Limitations of Simplified Models \& Future Opportunities}\label{sec:simplified_future}
 
 We conclude our discussion of simplified models with a more extensive discussion of the limitations of the current simplified model proposal in its application to models of various types, along with opportunities for future development.
@@ -620,7 +605,6 @@ This is both because the individual LLPs grow softer, making them harder to reco
 On the other hand, the high LLP multiplicity may allow for new handles for further rejecting backgrounds, and the kinematics can vary widely based on the model (for example, in some ``quirky'' scenarios, LLPs can be produced in a variety of ways with different kinematic distributions~\cite{Beauchesne:2017ukw}). 
 In extreme cases, signals can even mimic pile-up~\cite{Knapen:2016hky}.
 High-multiplicity signatures therefore require dedicated modeling, and we defer the study of these signatures to Chapter~\ref{sec:showers}.
-
 
 Finally, we conclude by noting that simplified models are intended to provide a general framework to cover a broad swath of models.
 Any simplified model set-up, however, cannot cover every single UV model without becoming as complex as the UV model space itself. As with the case of promptly decaying new particles, care must also be taken in the interpretation of simplified models~\cite{Alves:2011wf,Abdallah:2015ter,Abercrombie:2015wmb,Boveia:2016mrp,Ambrogi:2017lov}:~for example, constraints on simplified models assuming 100\% branching fractions of LLPs to a particular final state may not accurately represent the constraint on a full model due to the large multiplicity of possible decay modes.

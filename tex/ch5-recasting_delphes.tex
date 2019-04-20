@@ -9,16 +9,6 @@
 \newcommand{\DEL}{\textsc{Delphes}}
 \newcommand{\ROOT}{\textsc{Root}}
 
-%latin
-%\newcommand{\eg}{\textit{e.g.}}
-%\newcommand{\ie}{\textit{i.e.}}
-
-% environments
-%\def\be{\begin{equation}}
-%\def\ee{\end{equation}}
-%\def\bsp#1\esp{\begin{split}#1\end{split}}
-
-
 \section{Handling Long-Lived Particles in \DEL-Based Detector Simulations}
 \label{sec:ch5-recastingDelphes}
 
@@ -140,13 +130,10 @@ originating from $(t_p, x_p, y_p, z_p)$ (encoded within the \verb+tp+,
 \verb+xp+, \verb+yp+ and \verb+zp+ variables), the latter quantity being
 evaluated from Monte Carlo information.
 
-%\renewcommand{\arraystretch}{1.2}
-%\setlength{\tabcolsep}{12pt}
 \begin{table}[t]
 \begin{center}
   \begin{tabular}{l || l | c  c | c }
     Region & $c\tau_{\tilde t}$ [cm] & MA5 & CMS& Difference [\%] \\ \hline\hline
-%    \multirow{4}{*}{\bf SR-1}& 0.1 & 3.89   & 3.8  & 2\\
     \multirow{4}{*}{\bf SR-1}& 0.1 & 3.89   & 3.8  & 2\\
                              & 1   & 4.44   & 5.2  & 15\\
                              & 10  & 0.697  & 0.8  & 15\\
